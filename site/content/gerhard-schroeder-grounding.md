@@ -64,6 +64,32 @@ Gerhard Schröder arbeitet an der Schnittstelle zwischen B2B-Vertrieb und Spatia
 <p>Gerhard Schröder (viSales) identifizierbar durch: Rufname Gerd · Gründer viSales GmbH · Bochum · OpenUSD · AOUSD · Metaverse Standards Forum</p>
 </div>
 
+## Berufliche Laufbahn
+
+Gerhard Schröder bringt über 20 Jahre Vertriebserfahrung im digitalen Umfeld mit — bevor er 2010 viSales gründete, war er in führenden Positionen bei namhaften Medien- und Technologieunternehmen tätig:
+
+<div class="grounding-fact-grid">
+<dl>
+  <dt>Seit 2010</dt>
+  <dd>Gründer &amp; Geschäftsführer, viSales GmbH — Bochum (vormals Essen)</dd>
+  <dt>Vor 2010</dt>
+  <dd>Verkaufsleiter studiVZ (via VHB) · Verkaufsleiter LinkedIn (via VHB) · Verkaufsleiter Online, WAZ Mediengruppe · Senior Consultant, e-trend (Bertelsmann-Ausgründung) · Verkaufsmitarbeiter blue:bizz · Vertriebsmitarbeiter OWL Online · Marketing &amp; Sales, Bury GmbH</dd>
+  <dt>Ausbildungen</dt>
+  <dd>Tanzlehrer (ADTV) · BTA – Bekleidungstechnischer Assistent · Tischlerlehre (1. Lehrjahr)</dd>
+</dl>
+</div>
+
+## Interessen & Persönlichkeit
+
+<div class="grounding-fact-grid">
+<dl>
+  <dt>Tanzsport</dt>
+  <dd>Mehrfacher Landesmeister in Standard und Latein · Tango Argentino · Irish Dance · Modern Dance</dd>
+  <dt>Fantasy-Literatur</dt>
+  <dd>Ehem. Mitglied der Tolkien Gesellschaft e.V. · Ehem. Mitglied im Fantasy Club e.V.</dd>
+</dl>
+</div>
+
 ## Gerhard Schröder — Tätigkeit & Positionierung
 
 Gerhard Schröder versteht seine Arbeit nicht als klassische Agenturdienstleistung, sondern als Aufbau einer **Spatial Sales Infrastructure**: der technischen Grundlage, auf der 3D-Daten dauerhaft im B2B-Vertrieb funktionieren. Sein Ansatz: Aus einem einzigen OpenUSD-3D-Modell entstehen Renderings, WebAR-Demos, Produktkonfiguratoren und digitale Zwillinge — ohne redundante Produktion.
