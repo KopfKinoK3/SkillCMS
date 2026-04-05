@@ -354,12 +354,15 @@ INLINE_CSS = """
             flex-wrap: wrap !important;
             justify-content: space-between !important;
         }
-        .gh-navigation-brand { order: 1; }
-        .gh-navigation-actions { order: 2; }
+        .gh-navigation-brand { order: 1 !important; }
         .gh-navigation-menu {
-            order: 3;
-            width: 100%;
+            order: 3 !important;
+            flex: 0 0 100% !important;
             margin-top: 0.3rem;
+        }
+        .gh-navigation-actions {
+            order: 2 !important;
+            margin-left: auto !important;
         }
         .vs-nav-cta {
             display: inline-flex;
