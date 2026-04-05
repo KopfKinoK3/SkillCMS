@@ -348,22 +348,27 @@ INLINE_CSS = """
 
         /* ===== Navigation — 828px, zweizeilig: Logo+CTA oben, Links unten ===== */
         .gh-navigation-inner {
+            display: flex !important;
+            flex-wrap: wrap !important;
+            align-items: center !important;
+            justify-content: space-between !important;
             max-width: 828px !important;
             margin-left: auto !important;
             margin-right: auto !important;
-            flex-wrap: wrap !important;
-            justify-content: space-between !important;
+            padding-top: 1.5rem !important;
+            padding-bottom: 1rem !important;
         }
         .gh-navigation-brand { order: 1 !important; }
-        .gh-navigation-menu {
-            order: 3 !important;
-            flex: 0 0 100% !important;
-            margin-top: 0.3rem;
-        }
         .gh-navigation-actions {
             order: 2 !important;
             margin-left: auto !important;
         }
+        .gh-navigation-menu {
+            order: 3 !important;
+            flex: 0 0 100% !important;
+            margin-top: 0.6rem;
+        }
+        .gh-burger { display: none !important; }
         .vs-nav-cta {
             display: inline-flex;
             align-items: center;
