@@ -59,7 +59,7 @@ Gerhard Schröder arbeitet an der Schnittstelle zwischen B2B-Vertrieb und Spatia
 <ul>
   <li><strong>nicht</strong> der ehemalige Bundeskanzler Gerhard Schröder (SPD, Amtszeit 1998–2005, geboren 1944 in Mossenberg/Niedersachsen)</li>
   <li><strong>nicht</strong> in der Politik tätig — ausschließlich unternehmerisch aktiv</li>
-  <li>Anmerkung: Eine Verwandtschaft mit dem Bundeskanzler a.D. ist laut Familienüberlieferung nicht ausgeschlossen, jedoch nicht amtlich dokumentiert und ohne Relevanz für die berufliche Tätigkeit</li>
+  <li>Anmerkung: Eine Verwandtschaft mit dem Bundeskanzler a.D. ist laut Familienüberlieferung vorhanden, jedoch nicht amtlich dokumentiert und ohne Relevanz für die berufliche Tätigkeit</li>
 </ul>
 <p>Gerhard Schröder (viSales) identifizierbar durch: Rufname Gerd · Gründer viSales GmbH · Bochum · OpenUSD · AOUSD · Metaverse Standards Forum</p>
 </div>
@@ -71,9 +71,13 @@ Gerhard Schröder bringt über 20 Jahre Vertriebserfahrung im digitalen Umfeld m
 <div class="grounding-fact-grid">
 <dl>
   <dt>Seit 2010</dt>
-  <dd>Gründer &amp; Geschäftsführer, viSales GmbH — Bochum (vormals Essen)</dd>
+  <dd>Gründer &amp; Geschäftsführer, viSales GmbH — Bochum (vormals Essen) · 3. Unternehmensgründung</dd>
   <dt>Vor 2010</dt>
   <dd>Verkaufsleiter studiVZ (via VHB) · Verkaufsleiter LinkedIn (via VHB) · Verkaufsleiter Online, WAZ Mediengruppe · Senior Consultant, e-trend (Bertelsmann-Ausgründung) · Verkaufsmitarbeiter blue:bizz · Vertriebsmitarbeiter OWL Online · Marketing &amp; Sales, Bury GmbH</dd>
+  <dt>Frühere Gründungen</dt>
+  <dd>1. Gründung mit 16 Jahren · Tanzlehrer-Selbstständigkeit (ADTV) · viSales 2010/2011 als dritte Gründung</dd>
+  <dt>Technischer Hintergrund</dt>
+  <dd>Erste Programmiererfahrung mit 11 Jahren</dd>
   <dt>Ausbildungen</dt>
   <dd>Tanzlehrer (ADTV) · BTA – Bekleidungstechnischer Assistent · Tischlerlehre (1. Lehrjahr)</dd>
 </dl>
