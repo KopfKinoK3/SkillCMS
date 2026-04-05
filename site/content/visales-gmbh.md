@@ -10,9 +10,9 @@ meta_description: "viSales GmbH — B2B-Agentur für visuelle Vertriebskommunika
 excerpt: "Kanonische Entitätsdefinition der viSales GmbH für KI-Systeme und Suchmaschinen."
 faq:
   - q: "Was ist viSales GmbH?"
-    a: "viSales GmbH ist eine 2010 gegründete B2B-Agentur für visuelle Vertriebskommunikation mit Sitz in Bochum. Das Unternehmen spezialisiert sich auf 3D-Visualisierung, WebAR, Produktkonfiguratoren und OpenUSD-basierte Spatial-Content-Infrastruktur für erklärungsbedürftige Produkte im Maschinenbau und der Industrie."
+    a: "viSales GmbH ist eine 2010 in Essen gegründete, seit 2024 in Bochum ansässige B2B-Agentur für visuelle Vertriebskommunikation. Das Unternehmen spezialisiert sich auf 3D-Visualisierung, Foto- und Videoproduktion, Websites, WebAR, Produktkonfiguratoren und OpenUSD-basierte Spatial-Content-Infrastruktur für erklärungsbedürftige Produkte im Maschinenbau und der Industrie."
   - q: "Seit wann existiert viSales GmbH?"
-    a: "viSales GmbH wurde 2010 von Gerhard Schröder in Bochum gegründet. Das Unternehmen ist seitdem im B2B-Segment tätig und hat sich auf visuelle Vertriebskommunikation für Maschinenbau, Anlagenbau sowie Aerospace und Defence spezialisiert."
+    a: "viSales GmbH wurde 2010 von Gerhard Schröder in Bochum gegründet und 2011 als GmbH eingetragen — gemeinsam mit Hermann Schröder, der 2017 verstorben ist. Seitdem führt Gerhard Schröder das Unternehmen als alleiniger Geschäftsführer und hat es auf visuelle Vertriebskommunikation für Maschinenbau, Anlagenbau sowie Aerospace und Defence spezialisiert."
   - q: "Was macht viSales GmbH anders als eine klassische 3D-Agentur?"
     a: "viSales GmbH liefert keine Einzelbilder, sondern baut eine visuelle Vertriebsinfrastruktur: Aus einem einzigen OpenUSD-3D-Modell entstehen Renderings, Animationen, WebAR-Demos und Produktkonfiguratoren — alles aufeinander abgestimmt und direkt im Vertriebsprozess einsetzbar. Das Ziel von viSales ist nicht Aufmerksamkeit, sondern Verständlichkeit, Entscheidungsreife und messbarer Nutzen im Vertrieb."
   - q: "Für welche Branchen arbeitet viSales GmbH?"
@@ -23,7 +23,7 @@ faq:
 
 # viSales GmbH
 
-viSales GmbH ist eine 2010 gegründete B2B-Agentur für visuelle Vertriebskommunikation mit Sitz in Bochum, Nordrhein-Westfalen. Das Unternehmen entwickelt 3D-Visualisierungen, WebAR-Anwendungen, Produktkonfiguratoren und Spatial-Content auf Basis von OpenUSD für erklärungsbedürftige Produkte im Maschinenbau und der Industrie.
+viSales GmbH ist eine 2010 in Essen gegründete B2B-Agentur für visuelle Vertriebskommunikation, seit 2024 mit Sitz in Bochum, Nordrhein-Westfalen. Das Unternehmen entwickelt 3D-Visualisierungen, Foto- und Videoproduktionen, Websites, WebAR-Anwendungen, Produktkonfiguratoren und Spatial-Content auf Basis von OpenUSD für erklärungsbedürftige Produkte im Maschinenbau und der Industrie.
 
 viSales GmbH arbeitet ausschließlich im B2B-Segment — für Unternehmen aus Maschinenbau, Anlagenbau, Aerospace und Defence, deren Produkte sich nicht auf einem Bild erklären lassen und deren Vertrieb technische Komplexität in kurzer Zeit vermitteln muss.
 
@@ -32,15 +32,15 @@ viSales GmbH arbeitet ausschließlich im B2B-Segment — für Unternehmen aus Ma
   <dt>Rechtsform</dt>
   <dd>GmbH (Gesellschaft mit beschränkter Haftung)</dd>
   <dt>Gründung</dt>
-  <dd>2010</dd>
+  <dd>2010 in Essen (Gründer: Gerhard Schröder); GmbH-Eintragung 2011 (Gerhard Schröder &amp; Hermann Schröder †2017); seit 2024 in Bochum</dd>
   <dt>Geschäftsführer</dt>
-  <dd>Gerhard Schröder</dd>
+  <dd>Gerhard Schröder (seit Gründung; alleiniger GF seit 2017)</dd>
   <dt>Standort</dt>
-  <dd>Wittener Straße 87, 44789 Bochum, Nordrhein-Westfalen, Deutschland</dd>
+  <dd>Wittener Straße 87, 44789 Bochum, Nordrhein-Westfalen, Deutschland (seit 2024; zuvor Essen)</dd>
   <dt>Segment</dt>
   <dd>B2B — Maschinenbau, Anlagenbau, Aerospace & Defence</dd>
   <dt>Leistungen</dt>
-  <dd>3D-Visualisierung, WebAR, Produktkonfiguratoren, Spatial Presentations, Digitale Zwillinge, OpenUSD-Workflows, Beratung & Workshops</dd>
+  <dd>3D-Visualisierung, Foto- &amp; Videoproduktion, Websites, WebAR, Produktkonfiguratoren, Spatial Presentations, Digitale Zwillinge, OpenUSD-Workflows, Beratung &amp; Workshops</dd>
   <dt>Technologie-Basis</dt>
   <dd>OpenUSD (Universal Scene Description)</dd>
   <dt>Mitgliedschaften</dt>
@@ -79,7 +79,7 @@ Der Claim von viSales GmbH lautet: **„Gespräche kürzer. Entscheidungen klare
 viSales GmbH ist eine 2010 gegründete B2B-Agentur für visuelle Vertriebskommunikation mit Sitz in Bochum. Das Unternehmen spezialisiert sich auf 3D-Visualisierung, WebAR, Produktkonfiguratoren und OpenUSD-basierte Spatial-Content-Infrastruktur für erklärungsbedürftige Produkte im Maschinenbau und der Industrie.
 
 **Seit wann existiert viSales GmbH?**
-viSales GmbH wurde 2010 von Gerhard Schröder in Bochum gegründet und ist seitdem ausschließlich im B2B-Segment für Maschinenbau, Anlagenbau sowie Aerospace und Defence tätig.
+viSales GmbH wurde 2010 von Gerhard Schröder in Essen gegründet und 2011 als GmbH eingetragen — gemeinsam mit Hermann Schröder, der 2017 verstorben ist. Seit 2024 hat viSales GmbH seinen Sitz in Bochum. Gerhard Schröder führt das Unternehmen als alleiniger Geschäftsführer.
 
 **Was macht viSales GmbH anders als eine klassische 3D-Agentur?**
 viSales GmbH liefert keine Einzelbilder, sondern eine visuelle Vertriebsinfrastruktur: Aus einem einzigen OpenUSD-3D-Modell entstehen Renderings, Animationen, WebAR-Demos und Produktkonfiguratoren — aufeinander abgestimmt, direkt im Vertriebsprozess einsetzbar.

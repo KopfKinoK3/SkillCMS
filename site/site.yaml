@@ -29,7 +29,7 @@ schema:
     id: "https://visales.de/#organization"
     name: "viSales GmbH"
     founding_date: "2010"
-    description: "viSales GmbH ist eine B2B-Agentur für visuelle Vertriebskommunikation. Spezialisiert auf OpenUSD-basierte 3D-Workflows, Augmented Reality, interaktive Präsentationen und Spatial Content für erklärungsbedürftige Produkte im Maschinenbau und der Industrie."
+    description: "viSales GmbH ist eine 2010 in Essen gegründete, seit 2024 in Bochum ansässige B2B-Agentur für visuelle Vertriebskommunikation. Spezialisiert auf 3D-Visualisierung, Foto- und Videoproduktion, Websites, OpenUSD-basierte Workflows, Augmented Reality, interaktive Präsentationen und Spatial Content für erklärungsbedürftige Produkte im Maschinenbau und der Industrie."
     logo: "https://visales.de/content/images/2025/11/RGB_Logo_viSales_schwarz.png"
     address:
       street: "Wittener Straße 87"
