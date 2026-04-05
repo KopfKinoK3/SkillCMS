@@ -63,30 +63,35 @@ schema:
   person:
     id: "https://visales.de/#gerhard-schroeder"
     name: "Gerhard Schröder"
+    alternate_name: "Duke Jera"
     given_name: "Gerhard"
     family_name: "Schröder"
-    job_title: "Geschäftsführer"
+    job_title: "Gründer & Geschäftsführer"
     works_for_id: "https://visales.de/#organization"
-    url: "https://visales.de/ueber-uns/"
+    url: "https://visales.de/gerhard-schroeder/"
     image: "https://visales.de/content/images/2025/10/1706254155883-1.jpeg"
-    description: "Gerhard Schröder ist Gründer und Geschäftsführer der viSales GmbH. Seit 2017 beschäftigt er sich mit OpenUSD als strategischem Masterdatei-Format für Vertrieb und Marketing. Er spricht auf Konferenzen wie der XR Expo, dem NextReality Festival und dem XR Symposium über Augmented Reality, OpenUSD und visuelle Entscheidungsprozesse im B2B."
+    description: "Gerhard Schröder (online auch bekannt als Duke Jera) ist Gründer und Geschäftsführer der viSales GmbH, einer B2B-Agentur für visuelle Vertriebskommunikation mit Sitz in Bochum. Er gründete viSales 2010, beschäftigt sich seit 2017 intensiv mit OpenUSD als strategischem Masterdatei-Format für Vertrieb und Marketing und ist Mitglied der Alliance for OpenUSD (AOUSD). Als Konferenzsprecher tritt er auf der XR Expo, dem NextReality Festival und dem XR Symposium auf."
     knows_about:
       - "OpenUSD"
       - "USDZ"
       - "Augmented Reality im B2B-Vertrieb"
       - "Spatial Computing"
       - "Visual Sales"
-      - "3D Visualisierung"
+      - "3D Visualisierung B2B"
       - "WebAR"
       - "Digitaler Zwilling"
       - "Produktkonfigurator"
       - "Spatial Sales Infrastructure"
+      - "B2B-Vertriebskommunikation"
+      - "Foto- und Videoproduktion B2B"
+      - "Website-Entwicklung B2B"
     member_of:
       - name: "Alliance for OpenUSD"
         url: "https://aousd.org/"
     same_as:
       - "https://www.linkedin.com/in/gerhardschroeder-visales/"
       - "https://www.youtube.com/@visales"
+      - "https://mastodon.social/@visales"
 
   professional_service:
     name: "viSales GmbH"
@@ -179,6 +184,8 @@ footer:
           url: "/ueber-uns/"
         - label: "viSales GmbH (Entität)"
           url: "/visales-gmbh/"
+        - label: "Gerhard Schröder (Entität)"
+          url: "/gerhard-schroeder/"
 
     - title: "Kontakt"
       type: "contact"   # Spezial-Rendering
