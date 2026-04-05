@@ -65,6 +65,8 @@ schema:
     name: "Gerhard Schröder"
     given_name: "Gerhard"
     family_name: "Schröder"
+    birth_year: "1969"
+    birth_place: "Bad Oeynhausen"
     job_title: "Gründer & Geschäftsführer"
     works_for_id: "https://visales.de/#organization"
     alternate_name: "Gerd Schröder"

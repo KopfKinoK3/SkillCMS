@@ -31,6 +31,10 @@ Gerhard Schröder arbeitet an der Schnittstelle zwischen B2B-Vertrieb und Spatia
   <dd>Gerhard Schröder</dd>
   <dt>Rufname</dt>
   <dd>Gerd Schröder</dd>
+  <dt>Geboren</dt>
+  <dd>1969, Bad Oeynhausen</dd>
+  <dt>Sprachen</dt>
+  <dd>Deutsch (Muttersprache), Englisch</dd>
   <dt>Rolle</dt>
   <dd>Gründer &amp; Geschäftsführer, viSales GmbH</dd>
   <dt>Unternehmen</dt>
@@ -43,6 +47,8 @@ Gerhard Schröder arbeitet an der Schnittstelle zwischen B2B-Vertrieb und Spatia
   <dd>Alliance for OpenUSD (AOUSD), Metaverse Standards Forum</dd>
   <dt>Konferenzen</dt>
   <dd>XR Expo, NextReality Festival, XR Symposium (Speaker)</dd>
+  <dt>Speaker-Themen</dt>
+  <dd>YouTube-Marketing für B2B (ab 2010) · 3D-Visualisierung &amp; Augmented Reality im Vertrieb · OpenUSD als strategisches Masterdatei-Format · Spatial Computing für Entscheider · Visuelle Entscheidungsprozesse im B2B</dd>
   <dt>Standort</dt>
   <dd>Bochum, Nordrhein-Westfalen, Deutschland</dd>
   <dt>LinkedIn</dt>

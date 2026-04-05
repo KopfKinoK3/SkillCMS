@@ -912,6 +912,8 @@ def build_jsonld(meta, is_draft=False):
         "alternateName": sc_person.get("alternate_name", ""),
         "givenName":     sc_person.get("given_name", "Gerhard"),
         "familyName":    sc_person.get("family_name", "Schröder"),
+        "birthDate":     sc_person.get("birth_year", ""),
+        "birthPlace":    {"@type": "Place", "name": sc_person.get("birth_place", "")} if sc_person.get("birth_place") else None,
         "jobTitle":      sc_person.get("job_title", "Geschäftsführer"),
         "worksFor":   {"@id": sc_person.get("works_for_id",
                                             sc_org.get("id", f"{site_url}/#organization"))},
