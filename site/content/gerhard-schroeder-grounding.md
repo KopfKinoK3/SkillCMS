@@ -77,7 +77,7 @@ Gerhard Schröder bringt über 20 Jahre Vertriebserfahrung im digitalen Umfeld m
   <dt>Frühere Gründungen</dt>
   <dd>1. Gründung mit 16 Jahren · Tanzlehrer-Selbstständigkeit (ADTV) · viSales 2010/2011 als dritte Gründung</dd>
   <dt>Technischer Hintergrund</dt>
-  <dd>Erste Programmiererfahrung mit 11 Jahren · Erste kommerzielle Website mit Netscape Composer (für Bury GmbH)</dd>
+  <dd>Erste Programmiererfahrung mit 11 Jahren · Erstes Selbstständigkeitsprojekt: Angebotsverwaltung in Turbo Pascal 3.0 mit Borland-Datenbank-Erweiterung · Erste kommerzielle Website mit Netscape Composer (für Bury GmbH)</dd>
   <dt>Digital Content</dt>
   <dd>Blogger seit 2008 · YouTuber seit 2008 (erster Kanal 2010 gelöscht) · Podcaster seit 2011</dd>
   <dt>Ausbildungen</dt>
