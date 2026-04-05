@@ -346,11 +346,20 @@ INLINE_CSS = """
         .gh-content .vs-spacer + *,
         .gh-content .vs-spacer-lg + * { margin-top: 0 !important; }
 
-        /* ===== Navigation — 828px zentriert + CTA-Button ===== */
+        /* ===== Navigation — 828px, zweizeilig: Logo+CTA oben, Links unten ===== */
         .gh-navigation-inner {
             max-width: 828px !important;
             margin-left: auto !important;
             margin-right: auto !important;
+            flex-wrap: wrap !important;
+            justify-content: space-between !important;
+        }
+        .gh-navigation-brand { order: 1; }
+        .gh-navigation-actions { order: 2; }
+        .gh-navigation-menu {
+            order: 3;
+            width: 100%;
+            margin-top: 0.3rem;
         }
         .vs-nav-cta {
             display: inline-flex;
