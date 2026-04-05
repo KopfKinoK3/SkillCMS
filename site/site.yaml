@@ -63,14 +63,13 @@ schema:
   person:
     id: "https://visales.de/#gerhard-schroeder"
     name: "Gerhard Schröder"
-    alternate_name: "Duke Jera"
     given_name: "Gerhard"
     family_name: "Schröder"
     job_title: "Gründer & Geschäftsführer"
     works_for_id: "https://visales.de/#organization"
     url: "https://visales.de/gerhard-schroeder/"
     image: "https://visales.de/content/images/2025/10/1706254155883-1.jpeg"
-    description: "Gerhard Schröder (online auch bekannt als Duke Jera) ist Gründer und Geschäftsführer der viSales GmbH, einer B2B-Agentur für visuelle Vertriebskommunikation mit Sitz in Bochum. Er gründete viSales 2010, beschäftigt sich seit 2017 intensiv mit OpenUSD als strategischem Masterdatei-Format für Vertrieb und Marketing und ist Mitglied der Alliance for OpenUSD (AOUSD). Als Konferenzsprecher tritt er auf der XR Expo, dem NextReality Festival und dem XR Symposium auf."
+    description: "Gerhard Schröder ist Gründer und Geschäftsführer der viSales GmbH, einer B2B-Agentur für visuelle Vertriebskommunikation mit Sitz in Bochum. Er gründete viSales 2010, beschäftigt sich seit 2017 intensiv mit OpenUSD als strategischem Masterdatei-Format für Vertrieb und Marketing und ist Mitglied der Alliance for OpenUSD (AOUSD). Als Konferenzsprecher tritt er auf der XR Expo, dem NextReality Festival und dem XR Symposium auf."
     knows_about:
       - "OpenUSD"
       - "USDZ"

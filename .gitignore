@@ -4,6 +4,7 @@ site/tag/
 site/sitemap.xml
 site/robots.txt
 site/rss.xml
+site/llms.txt
 
 # Python
 __pycache__/

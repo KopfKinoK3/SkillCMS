@@ -297,18 +297,55 @@ def build_footer_html():
             )
 
         elif col_type == "newsletter":
-            teaser      = col.get("teaser", "")
-            form_action = col.get("form_action", "#")
-            archive_url = col.get("archive_url", "/newsletter/")
-            archive_lbl = col.get("archive_label", "Alle Ausgaben →")
+            teaser        = col.get("teaser", "")
+            archive_url   = col.get("archive_url", "/newsletter/")
+            archive_lbl   = col.get("archive_label", "Alle Ausgaben →")
+            brevo_api_key = col.get("brevo_api_key", "")
+            brevo_list_id = int(col.get("brevo_list_id", 7))
+
+            if brevo_api_key:
+                # JavaScript-basiertes Brevo-Formular — kein Backend nötig
+                form_block = (
+                    f'<form class="vs-newsletter-form" id="vs-brevo-form" action="#" method="post" novalidate>\n'
+                    f'                        <input type="text" name="firstname" placeholder="Vorname (optional)" autocomplete="given-name" aria-label="Vorname" class="vs-input-name">\n'
+                    f'                        <input type="email" name="email" placeholder="E-Mail-Adresse" required autocomplete="email" aria-label="E-Mail-Adresse">\n'
+                    f'                        <button type="submit" class="gh-button">Anmelden</button>\n'
+                    f'                        <div class="vs-form-msg" id="vs-brevo-msg" aria-live="polite" role="status"></div>\n'
+                    f'                    </form>\n'
+                    f'                    <script>\n'
+                    f'                    (function(){{var f=document.getElementById("vs-brevo-form");if(!f)return;'
+                    f'f.addEventListener("submit",function(e){{e.preventDefault();'
+                    f'var em=f.querySelector("input[type=\'email\']").value.trim();'
+                    f'var fn=(f.querySelector("input[name=\'firstname\']")||{{}}).value||"";'
+                    f'var msg=document.getElementById("vs-brevo-msg");'
+                    f'var btn=f.querySelector("button[type=\'submit\']");'
+                    f'btn.disabled=true;btn.textContent="...";'
+                    f'var body={{email:em,listIds:[{brevo_list_id}],updateEnabled:true}};'
+                    f'if(fn)body.attributes={{VORNAME:fn}};'
+                    f'fetch("https://api.brevo.com/v3/contacts",{{method:"POST",'
+                    f'headers:{{"api-key":"{brevo_api_key}","Content-Type":"application/json"}},'
+                    f'body:JSON.stringify(body)}}).then(function(r){{'
+                    f'if(r.status===201||r.status===204){{msg.textContent="\\u2713 Angemeldet! Du h\\u00f6rst bald von mir.";msg.style.color="#2a7f4f";f.reset();}}'
+                    f'else{{return r.json().then(function(d){{msg.textContent=d.message||"Fehler \u2014 bitte erneut versuchen.";msg.style.color="#c0392b";}});}}'
+                    f'}}).catch(function(){{msg.textContent="Verbindungsfehler. Bitte erneut versuchen.";msg.style.color="#c0392b";}}'
+                    f').finally(function(){{btn.disabled=false;btn.textContent="Anmelden";}});}});}})();\n'
+                    f'                    </script>'
+                )
+            else:
+                # Fallback: klassisches Form-POST
+                form_action = col.get("form_action", "#")
+                form_block = (
+                    f'<form class="vs-newsletter-form" action="{form_action}" method="post">\n'
+                    f'                        <input type="email" placeholder="E-Mail-Adresse" required aria-label="E-Mail-Adresse">\n'
+                    f'                        <button type="submit" class="gh-button">Anmelden</button>\n'
+                    f'                    </form>'
+                )
+
             cols_html.append(
                 f'<div class="vs-footer-col vs-footer-newsletter">\n'
                 f'                    {h4}\n'
                 f'                    <p>{teaser}</p>\n'
-                f'                    <form class="vs-newsletter-form" action="{form_action}" method="post">\n'
-                f'                        <input type="email" placeholder="E-Mail-Adresse" required aria-label="E-Mail-Adresse">\n'
-                f'                        <button type="submit" class="gh-button">Anmelden</button>\n'
-                f'                    </form>\n'
+                f'                    {form_block}\n'
                 f'                    <a href="{archive_url}" class="vs-footer-podcast-link">{archive_lbl}</a>\n'
                 f'                </div>'
             )
@@ -560,6 +597,15 @@ INLINE_CSS = """
             font-size: 1.3rem;
             padding: 0.6em 1em;
             color: #fff !important;
+        }
+        .vs-form-msg {
+            font-size: 1.3rem;
+            min-height: 1.8em;
+            font-weight: 500;
+        }
+        .vs-input-name {
+            /* Vorname-Feld: dezent optional markiert */
+            opacity: 0.85;
         }
         .vs-footer-podcast-link {
             display: inline-block;

@@ -4,13 +4,22 @@
 
 ---
 
-## Status
-- [ ] Umsetzungsplan erstellt ← **nächster Schritt**
-- [ ] Schritt 1: Aktuelles Design-Template analysieren (Header + Footer)
-- [ ] Schritt 2: Statische Referenzseite (nur Header + Footer) bauen
-- [ ] Schritt 3: Weitere der ~150 HTML-Seiten anlegen
-- [ ] Schritt 4: FTP-Upload-Workflow definieren
-- [ ] Schritt 5: Deployment testen
+## Status — Build-System (fertig)
+- [x] Markdown → HTML Build-Pipeline (build.py)
+- [x] Ghost Source Theme — CSS-Overrides, Nav 828px, CTA-Button orange
+- [x] Nav responsive: Desktop einzeilig (Logo|Links|CTA), Mobile zweizeilig (kein Burger)
+- [x] Tag-Listings auto-discovery (`/tag/{slug}.html`)
+- [x] RSS 2.0 Feed (`rss.xml`)
+- [x] sitemap.xml + robots.txt
+- [x] **llms.txt** — KI-Crawler-Standard (llmstxt.org), Seiten + Posts + Quellen
+- [x] DX Tooling: `--serve`, `--watch`, `--serve --watch`
+- [x] GitHub Pages Deployment via GitHub Actions
+
+## Offen — Nächste Schritte
+- [ ] Content-Migration: Ghost-Seiten als Dummy-MDs anlegen (Leistungen, Fallbeispiele, Über Uns…)
+- [ ] Skeleton-Snapshot: alle Dummy-Inhalte, ZIP als `SkillCMS-v1.0-skeleton`
+- [ ] FTP-Deployment zu Hetzner (nach Skeleton-Phase)
+- [ ] Fediverse Push (Mastodon) — siehe `TODO-fediverse-push.md`
 
 ---
 
