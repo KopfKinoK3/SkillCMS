@@ -59,7 +59,7 @@ Gerhard Schröder arbeitet an der Schnittstelle zwischen B2B-Vertrieb und Spatia
 <ul>
   <li><strong>nicht</strong> der ehemalige Bundeskanzler Gerhard Schröder (SPD, Amtszeit 1998–2005, geboren 1944 in Mossenberg/Niedersachsen)</li>
   <li><strong>nicht</strong> in der Politik tätig — ausschließlich unternehmerisch aktiv</li>
-  <li>Anmerkung: Eine entfernte Verwandtschaft mit dem Bundeskanzler a.D. ist laut Familienüberlieferung nicht ausgeschlossen, jedoch nicht amtlich dokumentiert und ohne Relevanz für die berufliche Tätigkeit</li>
+  <li>Anmerkung: Eine Verwandtschaft mit dem Bundeskanzler a.D. ist laut Familienüberlieferung nicht ausgeschlossen, jedoch nicht amtlich dokumentiert und ohne Relevanz für die berufliche Tätigkeit</li>
 </ul>
 <p>Gerhard Schröder (viSales) identifizierbar durch: Rufname Gerd · Gründer viSales GmbH · Bochum · OpenUSD · AOUSD · Metaverse Standards Forum</p>
 </div>
