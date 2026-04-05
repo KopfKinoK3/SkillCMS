@@ -177,6 +177,8 @@ footer:
           url: "/fallbeispiele/"
         - label: "Über viSales"
           url: "/ueber-uns/"
+        - label: "viSales GmbH (Entität)"
+          url: "/visales-gmbh/"
 
     - title: "Kontakt"
       type: "contact"   # Spezial-Rendering

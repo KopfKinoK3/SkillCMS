@@ -113,15 +113,23 @@ def cfg(*keys, default=""):
 # Frontmatter-Parsing
 # ---------------------------------------------------------------------------
 def parse_frontmatter(text):
-    """Extrahiert YAML-artiges Frontmatter aus Markdown."""
+    """Extrahiert YAML-Frontmatter aus Markdown via yaml.safe_load.
+    Unterstützt alle YAML-Typen: Strings, Listen, verschachtelte Dicts (z.B. faq:).
+    """
     meta = {}
     if text.startswith("---"):
         parts = text.split("---", 2)
         if len(parts) >= 3:
-            for line in parts[1].strip().split("\n"):
-                if ":" in line:
-                    key, val = line.split(":", 1)
-                    meta[key.strip()] = val.strip().strip('"').strip("'")
+            try:
+                parsed = yaml.safe_load(parts[1]) or {}
+                if isinstance(parsed, dict):
+                    meta = parsed
+            except yaml.YAMLError:
+                # Fallback: naive Zeilen-Parser für einfache key: value
+                for line in parts[1].strip().split("\n"):
+                    if ":" in line and not line.startswith(" "):
+                        key, val = line.split(":", 1)
+                        meta[key.strip()] = val.strip().strip('"').strip("'")
             text = parts[2]
     return meta, text.strip()
 
@@ -361,6 +369,53 @@ INLINE_CSS = """
         .vs-spacer-lg { height: 2rem; }
         .gh-content .vs-spacer + *,
         .gh-content .vs-spacer-lg + * { margin-top: 0 !important; }
+
+        /* ===== Grounding Page — Fact Grid <dl> ===== */
+        .grounding-fact-grid {
+            display: grid;
+            grid-template-columns: minmax(140px, 220px) 1fr;
+            gap: 0;
+            margin: 2rem 0 2.4rem;
+            border: 1px solid rgba(124,139,154,.2);
+            border-radius: 6px;
+            overflow: hidden;
+            font-size: 1.5rem;
+        }
+        .grounding-fact-grid dt,
+        .grounding-fact-grid dd {
+            padding: 0.7em 1.1em;
+            margin: 0;
+            border-bottom: 1px solid rgba(124,139,154,.15);
+        }
+        .grounding-fact-grid dt {
+            font-weight: 700;
+            color: #3a4550;
+            background: rgba(124,139,154,.07);
+        }
+        .grounding-fact-grid dd { color: #1a1a1a; }
+        .grounding-fact-grid dt:last-of-type,
+        .grounding-fact-grid dd:last-of-type { border-bottom: none; }
+
+        /* Disambiguierungs-Block */
+        .grounding-disambig {
+            background: rgba(242,144,42,.07);
+            border-left: 3px solid #f2902a;
+            border-radius: 0 6px 6px 0;
+            padding: 1.2em 1.4em;
+            margin: 2rem 0;
+        }
+        .grounding-disambig p { margin: 0 0 0.4em; font-weight: 700; }
+        .grounding-disambig ul { margin: 0.4em 0 0 1.2em; }
+        .grounding-disambig li { margin-bottom: 0.3em; }
+
+        /* Human Notice */
+        .grounding-notice {
+            font-size: 1.3rem;
+            color: #738a94;
+            border-top: 1px solid rgba(124,139,154,.2);
+            padding-top: 1.2rem;
+            margin-top: 3rem;
+        }
 
         /* ===== Navigation — Desktop: Logo | Links(Mitte) | CTA ===== */
         .gh-navigation-inner {
@@ -850,7 +905,7 @@ def build_jsonld(meta, is_draft=False):
         "url":      sc_website.get("url", site_url),
     }
 
-    # --------------- 5. Article / WebPage ------------------------------------
+    # --------------- 5. Article / WebPage / AboutPage (Grounding) ------------
     if page_type == "post" and date:
         author_name = meta.get("author", sc_person.get("name", "Gerhard Schröder"))
         page_schema = {
@@ -874,6 +929,23 @@ def build_jsonld(meta, is_draft=False):
                                            else f"{site_url}/{og_image}"}
         if keywords:
             page_schema["keywords"] = keywords
+    elif page_type == "grounding":
+        # Grounding Page: AboutPage mit mainEntity → kanonische Entitätsdefinition
+        grounding_entity = meta.get("grounding_entity", "organization")
+        if grounding_entity == "person":
+            main_entity_id = sc_person.get("id", f"{site_url}/#gerhard-schroeder")
+        else:
+            main_entity_id = sc_org.get("id", f"{site_url}/#organization")
+        page_schema = {
+            "@context":   "https://schema.org",
+            "@type":      "AboutPage",
+            "name":       title,
+            "description": page_desc,
+            "url":        canonical,
+            "isPartOf":   {"@type": "WebSite", "name": site_title, "url": site_url},
+            "mainEntity": {"@id": main_entity_id},
+            "dateModified": date_mod or date,
+        }
     else:
         page_schema = {
             "@context":  "https://schema.org",
@@ -884,14 +956,37 @@ def build_jsonld(meta, is_draft=False):
             "isPartOf":  {"@type": "WebSite", "name": site_title, "url": site_url},
         }
 
+    # --------------- 6. FAQPage (optional — aus Frontmatter faq: Liste) ------
+    faq_list   = meta.get("faq", [])
+    faq_schema = None
+    if faq_list and isinstance(faq_list, list):
+        faq_schema = {
+            "@context":   "https://schema.org",
+            "@type":      "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name":  item.get("q", ""),
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text":  item.get("a", ""),
+                    }
+                }
+                for item in faq_list if item.get("q") and item.get("a")
+            ]
+        }
+
     # --------------- Ausgabe -------------------------------------------------
     def ld(schema):
         return (f'    <script type="application/ld+json">\n'
                 f'{json.dumps(schema, ensure_ascii=False, indent=2)}\n'
                 f'    </script>')
 
-    return "\n".join([ld(org_schema), ld(person_schema),
-                      ld(profserv_schema), ld(website_schema), ld(page_schema)])
+    blocks = [ld(org_schema), ld(person_schema),
+              ld(profserv_schema), ld(website_schema), ld(page_schema)]
+    if faq_schema:
+        blocks.append(ld(faq_schema))
+    return "\n".join(blocks)
 
 
 # ---------------------------------------------------------------------------
@@ -1426,8 +1521,24 @@ def build_llms_txt(published_pages):
         lines.append(f"> {site_tagline}\n")
     lines.append("")
 
-    # Seiten
-    pages = [p for p in published_pages if p.get("type") not in ("post",)]
+    # Grounding Pages zuerst — kanonische Entitätsdefinitionen
+    grounding = [p for p in published_pages if p.get("type") == "grounding"]
+    if grounding:
+        lines.append("## Identität\n")
+        lines.append("> Kanonische Entitätsdefinitionen für KI-Systeme und Suchmaschinen.\n")
+        for p in grounding:
+            slug    = p.get("slug", "").strip("/")
+            title   = p.get("title", slug)
+            excerpt = p.get("excerpt", "")
+            url     = f"{site_url}/{slug}/"
+            entry   = f"- [{title}]({url})"
+            if excerpt:
+                entry += f": {excerpt}"
+            lines.append(entry)
+        lines.append("")
+
+    # Seiten (ohne Grounding Pages)
+    pages = [p for p in published_pages if p.get("type") not in ("post", "grounding")]
     if pages:
         lines.append("## Seiten\n")
         for p in pages:
