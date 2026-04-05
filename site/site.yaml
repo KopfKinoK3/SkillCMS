@@ -136,7 +136,9 @@ social:
 contact:
   email: "sales@visales.de"
   phone: "+49 160 806 0361"
-  phone_display: "+49 160 806 0361"
+  phone_display: "+49-160-8060361"
+  address_street: "Wittener Str. 87"
+  address_city: "44789 Bochum"
 
 memberships:
   - label: "Alliance for OpenUSD"
@@ -144,10 +146,13 @@ memberships:
   - label: "Metaverse Standards Forum"
     url: "https://metaverse-standards.org/"
 
-trust_clients: "Siemens · Evonik · K+S · Somfy · Wavin · Carl Hamm · ESA/ESERO · DeterTech · Astrofein · Polaris Spaceplane u.a."
+trust_clients: "Ausgewählte Kunden: Siemens · Evonik · EnBW · Rheingas · Röchling · GROHE · igus · TURCK · WMF · Somfy · Wavin · VEMAG · Astrofein · zgoll: · Krupp Stiftung · Stifterverband · Ruhrmuseum u.a."
 
 footer:
   columns:
+    - title: "Kontakt"
+      type: "contact"
+
     - title: "Visual Sales"
       links:
         - label: "Grafik & Visualisierung"
@@ -156,57 +161,80 @@ footer:
           url: "/interaktive-prasentationen/"
         - label: "Video- & Fotoproduktion"
           url: "/video/"
-        - label: "Produktkonfiguratoren"
+        - label: "Produktkonfiguratoren (Web)"
           url: "/produktkonfigurator/"
-        - label: "Beratung & Workshops"
-          url: "/beratung/"
-        - label: "Vorträge & Impulse"
-          url: "/vortraege-gerhard-schroeder/"
+        - label: "Websites"
+          url: "/websites/"
+      ki_title: "KI & Daten"
+      ki_items:
+        - label: "viSales GmbH (Entität)"
+          url: "/visales-gmbh-grounding/"
+        - label: "Gerhard Schröder (Entität)"
+          url: "/gerhard-schroeder-grounding/"
+        - label: "LLMs.txt"
+          url: "/llms.txt"
+        - label: "Notebook LLM"
+          url: "https://notebooklm.google.com/notebook/8214e4ca-dd3d-4420-9cc5-be74370ea3ed?authuser=1&ref=visales.de"
+          external: true
 
     - title: "Immersive Sales"
       links:
+        - label: "Produktkonfiguratoren (AR/VR)"
+          url: "/ar-konfigurator/"
         - label: "Augmented Reality"
           url: "/augmented-reality/"
         - label: "Messe-Lösungen"
           url: "/messen/"
         - label: "Virtuelle Rundgänge"
           url: "/virtuelle-rundgange/"
+        - label: "Immersive Video"
+          url: "/immersive-video/"
         - label: "Spatial Websites"
           url: "/spatial-website/"
         - label: "Spatial Presentations"
           url: "/spatial-presentation/"
-        - label: "OpenUSD / Omniverse"
+        - label: "OpenUSD / NVIDIA Omniverse"
           url: "/usdbridge/"
 
-    - title: "Praxis"
+    - title: "Strategie"
       links:
-        - label: "Artikel & Insights"
-          url: "/praxis/"
-        - label: "Fallbeispiele"
-          url: "/fallbeispiele/"
-        - label: "Über viSales"
-          url: "/ueber-uns/"
-        - label: "viSales GmbH (Entität)"
-          url: "/visales-gmbh-grounding/"
-        - label: "Gerhard Schröder (Entität)"
-          url: "/gerhard-schroeder-grounding/"
-
-    - title: "Kontakt"
-      type: "contact"   # Spezial-Rendering
-
-    - title: "Feeds"
-      links:
+        - label: "Beratung & Workshops"
+          url: "/beratung/"
+        - label: "Vorträge & Impulse"
+          url: "/vortraege-gerhard-schroeder/"
+      products_url: "/produkte/"
+      products_title: "Produkte"
+      products:
+        - label: "USDconfig"
+          url: "/usdconfig/"
+        - label: "USDbridge"
+          url: "/usdbridge/"
+        - label: "SkillCMS"
+          url: "/skillcms/"
+      feeds_title: "Feeds & Social"
+      feeds_items:
         - label: "RSS Website"
           url: "/rss/"
-        - label: "RSS Podcast"
+        - label: "RSS Visual Com-Podcast"
           url: "/podcast/rss/"
+        - label: "@visales@mastodon.social"
+          url: "https://mastodon.social/@visales"
+          external: true
+        - label: "LinkedIn · Gerhard Schröder"
+          url: "https://www.linkedin.com/in/gerhardschroeder-visales/"
+          external: true
+        - label: "YouTube · Gerhard Schröder"
+          url: "https://www.youtube.com/@visales"
+          external: true
 
-    - title: "Newsletter & Podcast"
-      type: "newsletter"   # Spezial-Rendering
+    - title: "Newsletter"
+      type: "newsletter"
       teaser: "Visual Sales: Einmal im Monat, ohne Marketing-Rhetorik."
+      signup_url: "/newsletter/"
+      signup_label: "Anmeldung →"
       archive_url: "/newsletter/"
-      archive_label: "Alle Ausgaben & Podcast →"
-      form_action: "#"    # <-- Newsletter-Endpoint einsetzen
+      archive_label: "Alle Ausgaben & Podcasts"
+      brevo_embed_file: "_brevo-form.html"
 
 legal:
   - label: "Impressum"

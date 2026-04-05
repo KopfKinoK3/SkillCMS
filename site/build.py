@@ -98,6 +98,37 @@ def load_config():
 
 CONFIG = load_config()
 
+# ---------------------------------------------------------------------------
+# Brevo-Formular-Embed laden und in drei Sektionen splitten
+# ---------------------------------------------------------------------------
+def load_brevo_embed():
+    """Liest _brevo-form.html und gibt (head_html, body_html, foot_html) zurück."""
+    # Dateiname aus site.yaml newsletter-Sektion ermitteln
+    embed_file = ""
+    for col in (CONFIG.get("footer", {}).get("columns", []) or []):
+        if col.get("type") == "newsletter" and col.get("brevo_embed_file"):
+            embed_file = col["brevo_embed_file"]
+            break
+    if not embed_file:
+        return "", "", ""
+    embed_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), embed_file)
+    if not os.path.exists(embed_path):
+        return "", "", ""
+    with open(embed_path, "r", encoding="utf-8") as f:
+        raw = f.read()
+    def extract(start_marker, end_marker):
+        s = raw.find(start_marker)
+        e = raw.find(end_marker)
+        if s == -1 or e == -1:
+            return ""
+        return raw[s + len(start_marker):e].strip()
+    head_html = extract("<!-- ##BREVO_HEAD_START## -->", "<!-- ##BREVO_HEAD_END## -->")
+    body_html = extract("<!-- ##BREVO_BODY_START## -->", "<!-- ##BREVO_BODY_END## -->")
+    foot_html = extract("<!-- ##BREVO_FOOT_START## -->", "<!-- ##BREVO_FOOT_END## -->")
+    return head_html, body_html, foot_html
+
+BREVO_HEAD, BREVO_BODY, BREVO_FOOT = load_brevo_embed()
+
 
 def cfg(*keys, default=""):
     """Greift sicher auf verschachtelte Config-Werte zu."""
@@ -247,6 +278,121 @@ def build_nav_html(active_slug=""):
 
 
 # ---------------------------------------------------------------------------
+# Cookie-Banner (GDPR)
+# ---------------------------------------------------------------------------
+def build_cookie_banner():
+    """Generiert einen GDPR-konformen Cookie-Banner mit 5 Kategorien."""
+    return """
+<div id="vs-cookie-banner" class="vs-cookie-banner" aria-live="polite" role="dialog" aria-label="Cookie-Einstellungen">
+  <div class="vs-cookie-inner">
+    <div class="vs-cookie-text">
+      <strong>Cookies &amp; Datenschutz</strong>
+      <p>Wir nutzen Cookies für Newsletter, Analysen, Werbung und eingebettete Medien (YouTube, Podcast).
+        <a href="/datenschutz/">Datenschutz&shy;erklärung</a>
+      </p>
+    </div>
+    <div class="vs-cookie-actions">
+      <button class="gh-button vs-cookie-btn-all" id="vs-cookie-accept-all">Alle akzeptieren</button>
+      <button class="vs-cookie-btn-settings" id="vs-cookie-toggle-settings">Einstellungen</button>
+      <button class="vs-cookie-btn-deny" id="vs-cookie-deny">Nur notwendige</button>
+    </div>
+  </div>
+  <div id="vs-cookie-settings-panel" class="vs-cookie-settings-panel" hidden>
+    <div class="vs-cookie-cats">
+      <label class="vs-cookie-cat">
+        <span class="vs-cookie-cat-info">
+          <strong>Notwendig</strong>
+          <small>Technisch erforderlich, immer aktiv</small>
+        </span>
+        <span class="vs-cookie-toggle vs-cookie-toggle--disabled is-on"><span></span></span>
+      </label>
+      <label class="vs-cookie-cat">
+        <span class="vs-cookie-cat-info">
+          <strong>Funktional</strong>
+          <small>Newsletter-Anmeldung via Brevo</small>
+        </span>
+        <span class="vs-cookie-toggle" data-cat="funktional"><span></span></span>
+      </label>
+      <label class="vs-cookie-cat">
+        <span class="vs-cookie-cat-info">
+          <strong>Analyse</strong>
+          <small>Google Analytics &amp; Search Console</small>
+        </span>
+        <span class="vs-cookie-toggle" data-cat="analyse"><span></span></span>
+      </label>
+      <label class="vs-cookie-cat">
+        <span class="vs-cookie-cat-info">
+          <strong>Marketing</strong>
+          <small>Google Ads</small>
+        </span>
+        <span class="vs-cookie-toggle" data-cat="marketing"><span></span></span>
+      </label>
+      <label class="vs-cookie-cat">
+        <span class="vs-cookie-cat-info">
+          <strong>Medien</strong>
+          <small>YouTube-Videos, Podcast-Player</small>
+        </span>
+        <span class="vs-cookie-toggle" data-cat="medien"><span></span></span>
+      </label>
+    </div>
+    <div class="vs-cookie-settings-actions">
+      <button class="gh-button vs-cookie-btn-save" id="vs-cookie-save">Auswahl speichern</button>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var STORE_KEY = 'vsConsent';
+  var banner    = document.getElementById('vs-cookie-banner');
+  var panel     = document.getElementById('vs-cookie-settings-panel');
+  var toggles   = banner ? banner.querySelectorAll('.vs-cookie-toggle[data-cat]') : [];
+
+  function getConsent(){ try{ return JSON.parse(localStorage.getItem(STORE_KEY)||'null'); }catch(e){ return null; } }
+  function setConsent(obj){ localStorage.setItem(STORE_KEY, JSON.stringify(obj)); document.dispatchEvent(new CustomEvent('vsCookieConsent', {detail: obj})); }
+  function hideBanner(){ if(banner) banner.style.display='none'; }
+
+  function applyToggles(obj){
+    toggles.forEach(function(t){
+      if(obj && obj[t.dataset.cat]) t.classList.add('is-on');
+      else t.classList.remove('is-on');
+    });
+  }
+
+  var existing = getConsent();
+  if(existing){ hideBanner(); return; }
+
+  if(!banner) return;
+  banner.style.display = 'block';
+
+  document.getElementById('vs-cookie-accept-all').addEventListener('click', function(){
+    var obj = {funktional:true, analyse:true, marketing:true, medien:true};
+    setConsent(obj); hideBanner();
+  });
+
+  document.getElementById('vs-cookie-deny').addEventListener('click', function(){
+    setConsent({funktional:false, analyse:false, marketing:false, medien:false}); hideBanner();
+  });
+
+  document.getElementById('vs-cookie-toggle-settings').addEventListener('click', function(){
+    var hidden = panel.hidden;
+    panel.hidden = !hidden;
+    this.textContent = hidden ? 'Einstellungen schließen' : 'Einstellungen';
+  });
+
+  toggles.forEach(function(t){
+    t.addEventListener('click', function(){ this.classList.toggle('is-on'); });
+  });
+
+  document.getElementById('vs-cookie-save').addEventListener('click', function(){
+    var obj = {};
+    toggles.forEach(function(t){ obj[t.dataset.cat] = t.classList.contains('is-on'); });
+    setConsent(obj); hideBanner();
+  });
+})();
+</script>"""
+
+
+# ---------------------------------------------------------------------------
 # Footer aus Config generieren
 # ---------------------------------------------------------------------------
 def build_footer_html():
@@ -263,9 +409,8 @@ def build_footer_html():
     if trust_clients or membership_links:
         trust_html = f"""
             <div class="vs-footer-trust">
-                {trust_clients}
-                <span class="vs-footer-trust-sep">—</span>
-                Mitglied der {membership_links}
+                <div class="vs-footer-trust-clients">{trust_clients}</div>
+                <div class="vs-footer-trust-member">Mitglied der {membership_links}</div>
             </div>"""
 
     # Spalten
@@ -280,84 +425,154 @@ def build_footer_html():
         h4       = f'<h4>{title}</h4>'
 
         if col_type == "contact":
+            company_name = cfg("site", "company", default="")
+            addr_street  = contact_cfg.get("address_street", "")
+            addr_city    = contact_cfg.get("address_city", "")
+
+            addr_parts = []
+            if company_name: addr_parts.append(company_name)
+            if addr_street:  addr_parts.append(addr_street)
+            if addr_city:    addr_parts.append(addr_city)
+            addr_html = (
+                f'<p class="vs-footer-address">{"<br>".join(addr_parts)}</p>'
+                if addr_parts else ""
+            )
+
+            cta_html = '<a href="/kontakt/" class="gh-button vs-footer-cta">Termin buchen</a>'
+
             contact_links = [
-                f'<li><a href="/kontakt/"><strong>Erstgespräch vereinbaren</strong></a></li>',
                 f'<li><a href="mailto:{contact_cfg.get("email", "")}">{contact_cfg.get("email", "")}</a></li>',
-                f'<li><a href="tel:{contact_cfg.get("phone", "")}">{contact_cfg.get("phone_display", contact_cfg.get("phone", ""))}</a></li>',
+                f'<li><a href="tel:{contact_cfg.get("phone", "").replace(" ", "")}">{contact_cfg.get("phone_display", contact_cfg.get("phone", ""))}</a></li>',
             ]
-            if social_cfg.get("linkedin"):
-                contact_links.append(f'<li><a href="{social_cfg["linkedin"]}" target="_blank" rel="noopener">LinkedIn</a></li>')
-            if social_cfg.get("youtube"):
-                contact_links.append(f'<li><a href="{social_cfg["youtube"]}" target="_blank" rel="noopener">YouTube</a></li>')
-            if social_cfg.get("mastodon"):
-                rel = social_cfg.get("mastodon_rel", "me")
-                contact_links.append(f'<li><a href="{social_cfg["mastodon"]}" target="_blank" rel="noopener {rel}">Mastodon</a></li>')
             cols_html.append(
-                f'<div class="vs-footer-col">{h4}<ul>{"".join(contact_links)}</ul></div>'
+                f'<div class="vs-footer-col">'
+                f'{h4}{addr_html}{cta_html}'
+                f'<ul>{"".join(contact_links)}</ul>'
+                f'</div>'
             )
 
         elif col_type == "newsletter":
-            teaser        = col.get("teaser", "")
-            archive_url   = col.get("archive_url", "/newsletter/")
-            archive_lbl   = col.get("archive_label", "Alle Ausgaben →")
-            brevo_api_key = col.get("brevo_api_key", "")
-            brevo_list_id = int(col.get("brevo_list_id", 7))
+            teaser      = col.get("teaser", "")
+            signup_url  = col.get("signup_url", "/newsletter/")
+            signup_label= col.get("signup_label", "Anmeldung →")
+            archive_url = col.get("archive_url", "/newsletter/")
+            archive_lbl = col.get("archive_label", "Alle Ausgaben & Podcasts")
 
-            if brevo_api_key:
-                # JavaScript-basiertes Brevo-Formular — kein Backend nötig
-                form_block = (
-                    f'<form class="vs-newsletter-form" id="vs-brevo-form" action="#" method="post" novalidate>\n'
-                    f'                        <input type="text" name="firstname" placeholder="Vorname (optional)" autocomplete="given-name" aria-label="Vorname" class="vs-input-name">\n'
-                    f'                        <input type="email" name="email" placeholder="E-Mail-Adresse" required autocomplete="email" aria-label="E-Mail-Adresse">\n'
-                    f'                        <button type="submit" class="gh-button">Anmelden</button>\n'
-                    f'                        <div class="vs-form-msg" id="vs-brevo-msg" aria-live="polite" role="status"></div>\n'
-                    f'                    </form>\n'
-                    f'                    <script>\n'
-                    f'                    (function(){{var f=document.getElementById("vs-brevo-form");if(!f)return;'
-                    f'f.addEventListener("submit",function(e){{e.preventDefault();'
-                    f'var em=f.querySelector("input[type=\'email\']").value.trim();'
-                    f'var fn=(f.querySelector("input[name=\'firstname\']")||{{}}).value||"";'
-                    f'var msg=document.getElementById("vs-brevo-msg");'
-                    f'var btn=f.querySelector("button[type=\'submit\']");'
-                    f'btn.disabled=true;btn.textContent="...";'
-                    f'var body={{email:em,listIds:[{brevo_list_id}],updateEnabled:true}};'
-                    f'if(fn)body.attributes={{VORNAME:fn}};'
-                    f'fetch("https://api.brevo.com/v3/contacts",{{method:"POST",'
-                    f'headers:{{"api-key":"{brevo_api_key}","Content-Type":"application/json"}},'
-                    f'body:JSON.stringify(body)}}).then(function(r){{'
-                    f'if(r.status===201||r.status===204){{msg.textContent="\\u2713 Angemeldet! Du h\\u00f6rst bald von mir.";msg.style.color="#2a7f4f";f.reset();}}'
-                    f'else{{return r.json().then(function(d){{msg.textContent=d.message||"Fehler \u2014 bitte erneut versuchen.";msg.style.color="#c0392b";}});}}'
-                    f'}}).catch(function(){{msg.textContent="Verbindungsfehler. Bitte erneut versuchen.";msg.style.color="#c0392b";}}'
-                    f').finally(function(){{btn.disabled=false;btn.textContent="Anmelden";}});}});}})();\n'
-                    f'                    </script>'
-                )
+            if BREVO_BODY:
+                # Offizielles Brevo-Embed-Formular (aus _brevo-form.html)
+                signup_block = BREVO_BODY
             else:
-                # Fallback: klassisches Form-POST
-                form_action = col.get("form_action", "#")
-                form_block = (
-                    f'<form class="vs-newsletter-form" action="{form_action}" method="post">\n'
-                    f'                        <input type="email" placeholder="E-Mail-Adresse" required aria-label="E-Mail-Adresse">\n'
-                    f'                        <button type="submit" class="gh-button">Anmelden</button>\n'
-                    f'                    </form>'
-                )
+                # Fallback: einfacher CTA-Button
+                signup_block = f'<a href="{signup_url}" class="gh-button vs-footer-signup-btn">{signup_label}</a>'
 
             cols_html.append(
                 f'<div class="vs-footer-col vs-footer-newsletter">\n'
                 f'                    {h4}\n'
                 f'                    <p>{teaser}</p>\n'
-                f'                    {form_block}\n'
-                f'                    <a href="{archive_url}" class="vs-footer-podcast-link">{archive_lbl}</a>\n'
+                f'                    {signup_block}\n'
                 f'                </div>'
             )
+
+        elif col_type == "stacked":
+            # Zwei Spalten übereinander in einer Grid-Zelle
+            def render_section(sec):
+                sec_title = sec.get("title", "")
+                sec_h4 = f'<h4 class="vs-footer-col-title">{sec_title}</h4>' if sec_title else ""
+                sec_links = sec.get("links", [])
+                li = "".join(
+                    f'<li><a href="{lnk["url"]}" target="_blank" rel="noopener">{lnk["label"]}</a></li>'
+                    if lnk.get("external") else
+                    f'<li><a href="{lnk["url"]}">{lnk["label"]}</a></li>'
+                    for lnk in sec_links
+                )
+                # products sub-section
+                prods = sec.get("products", [])
+                prod_html = ""
+                if prods:
+                    p_url   = sec.get("products_url", "")
+                    p_title = sec.get("products_title", "Produkte")
+                    p_head  = f'<a href="{p_url}" class="vs-footer-sublabel-link">{p_title}</a>' if p_url else f'<span class="vs-footer-sublabel">{p_title}</span>'
+                    p_items = "".join(f'<li><a href="{p["url"]}">→ {p["label"]}</a></li>' for p in prods)
+                    p_more  = f'<li class="vs-footer-prod-more"><a href="{p_url}">→ Weitere Produkte</a></li>' if p_url else ""
+                    prod_html = f'<p class="vs-footer-sublabel">{p_head}</p><ul>{p_items}{p_more}</ul>'
+                # ki_items sub-section — als eigene h4
+                ki_cfg = sec.get("ki_items", [])
+                ki_html2 = ""
+                if ki_cfg:
+                    kt = sec.get("ki_title", "KI & Daten")
+                    ki_h4_2 = f'<h4 class="vs-footer-col-title vs-footer-col-subtitle">{kt}</h4>'
+                    ki_parts = []
+                    for k in ki_cfg:
+                        ext = ' target="_blank" rel="noopener"' if k.get("external") else ""
+                        ki_parts.append(f'<li><a href="{k["url"]}"{ext}>{k["label"]}</a></li>')
+                    ki_html2 = f'{ki_h4_2}<ul>{"".join(ki_parts)}</ul>'
+                return f'{sec_h4}<ul>{li}</ul>{prod_html}{ki_html2}'
+
+            sections    = col.get("sections", [])
+            inner_parts = []
+            for idx, sec in enumerate(sections):
+                sep = '<div class="vs-footer-stack-sep"></div>' if idx > 0 else ""
+                inner_parts.append(sep + render_section(sec))
+            cols_html.append(f'<div class="vs-footer-col">{"".join(inner_parts)}</div>')
 
         else:
             links    = col.get("links", [])
             li_items = "".join(
-                f'<li><a href="{lnk["url"]}">{lnk["label"]}</a></li>'
+                f'<li><a href="{lnk["url"]}" target="_blank" rel="noopener">{lnk["label"]}</a></li>'
+                if lnk.get("external")
+                else f'<li><a href="{lnk["url"]}">{lnk["label"]}</a></li>'
                 for lnk in links
             )
+            products = col.get("products", [])
+            products_html = ""
+            if products:
+                prod_url   = col.get("products_url", "")
+                prod_title = col.get("products_title", "Produkte")
+                prod_head  = (
+                    f'<a href="{prod_url}" class="vs-footer-sublabel-link">{prod_title}</a>'
+                    if prod_url else
+                    f'<span class="vs-footer-sublabel">{prod_title}</span>'
+                )
+                prod_items = "".join(
+                    f'<li><a href="{p["url"]}">→ {p["label"]}</a></li>'
+                    for p in products
+                )
+                prod_more = (
+                    f'<li class="vs-footer-prod-more"><a href="{prod_url}">→ Weitere Produkte</a></li>'
+                    if prod_url else ""
+                )
+                products_html = f'<p class="vs-footer-sublabel">{prod_head}</p><ul>{prod_items}{prod_more}</ul>'
+
+            ki_items_cfg = col.get("ki_items", [])
+            ki_html = ""
+            if ki_items_cfg:
+                ki_title = col.get("ki_title", "KI & Daten")
+                ki_url   = col.get("ki_url", "")
+                ki_head  = (
+                    f'<a href="{ki_url}" class="vs-footer-sublabel-link">{ki_title}</a>'
+                    if ki_url else
+                    f'<span class="vs-footer-sublabel">{ki_title}</span>'
+                )
+                ki_list_parts = []
+                for k in ki_items_cfg:
+                    ext_attr = ' target="_blank" rel="noopener"' if k.get("external") else ""
+                    ki_list_parts.append(f'<li><a href="{k["url"]}"{ext_attr}>{k["label"]}</a></li>')
+                ki_list = "".join(ki_list_parts)
+                ki_h4   = f'<h4 class="vs-footer-col-title vs-footer-col-subtitle">{ki_title}</h4>'
+                ki_html = f'{ki_h4}<ul>{ki_list}</ul>'
+            feeds_items_cfg = col.get("feeds_items", [])
+            feeds_html = ""
+            if feeds_items_cfg:
+                feeds_title = col.get("feeds_title", "Feeds & Social")
+                feeds_head  = f'<span class="vs-footer-sublabel">{feeds_title}</span>'
+                feeds_parts = []
+                for f in feeds_items_cfg:
+                    ext_attr = ' target="_blank" rel="noopener"' if f.get("external") else ""
+                    feeds_parts.append(f'<li><a href="{f["url"]}"{ext_attr}>{f["label"]}</a></li>')
+                feeds_html = f'<p class="vs-footer-sublabel">{feeds_head}</p><ul>{"".join(feeds_parts)}</ul>'
+
             cols_html.append(
-                f'<div class="vs-footer-col">{h4}<ul>{li_items}</ul></div>'
+                f'<div class="vs-footer-col">{h4}<ul>{li_items}</ul>{products_html}{feeds_html}{ki_html}</div>'
             )
 
     cols_joined = "\n                ".join(cols_html)
@@ -552,17 +767,37 @@ INLINE_CSS = """
             margin-bottom: 2.5rem;
             border-bottom: 1px solid var(--color-border);
             color: var(--color-secondary-text);
+            line-height: 1.8;
         }
+        .vs-footer-trust-clients { margin-bottom: 0.4em; }
+        .vs-footer-trust-member { font-size: 1.25rem; opacity: 0.75; }
         .vs-footer-trust a { color: var(--ghost-accent-color); }
-        .vs-footer-trust-sep { margin: 0 0.6em; }
+        .vs-footer-sublabel-link {
+            color: var(--color-primary-text) !important;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .vs-footer-sublabel-link:hover { color: var(--ghost-accent-color) !important; }
 
         .vs-footer-grid {
             display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 2rem;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 3rem;
             padding-bottom: 3rem;
             margin-bottom: 2rem;
             border-bottom: 1px solid var(--color-border);
+        }
+        .vs-footer-prod-more { margin-top: 0.4em; }
+        .vs-footer-prod-more a { color: var(--ghost-accent-color) !important; font-size: 1.3rem; }
+        .vs-footer-stack-sep {
+            margin-top: 2.4rem;
+        }
+        .vs-footer-col-subtitle {
+            margin-top: 0 !important;
+            margin-bottom: 0.9em !important;
         }
         .vs-footer-col h4 {
             color: var(--color-primary-text);
@@ -577,6 +812,34 @@ INLINE_CSS = """
         .vs-footer-col li a { font-size: 1.4rem; color: var(--color-secondary-text); }
         .vs-footer-col li a:hover { color: var(--ghost-accent-color); }
         .vs-footer-col ul li a strong { color: var(--ghost-accent-color); }
+
+        .vs-footer-address {
+            font-size: 1.3rem;
+            line-height: 1.7;
+            color: var(--color-secondary-text);
+            margin: 0 0 1.2rem;
+        }
+        .vs-footer-cta {
+            display: inline-block;
+            margin-top: 1.6rem;
+            margin-bottom: 1.8rem;
+            font-size: 1.3rem !important;
+            padding: 0.6em 1.2em !important;
+        }
+        .vs-footer-sublabel {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: rgba(0,0,0,.4);
+            font-weight: 700;
+            margin: 1.4rem 0 0.5rem;
+        }
+        .vs-footer-signup-btn {
+            display: inline-block;
+            margin-bottom: 1rem;
+            font-size: 1.3rem !important;
+            padding: 0.6em 1.2em !important;
+        }
 
         .vs-footer-newsletter p {
             font-size: 1.3rem;
@@ -613,6 +876,23 @@ INLINE_CSS = """
             font-size: 1.3rem;
             color: var(--ghost-accent-color) !important;
         }
+
+        /* ── Brevo-Formular viSales-Overrides ─────────────────────────────── */
+        .vs-footer-newsletter .sib-form { text-align:left !important; background:transparent !important; padding:0 !important; }
+        .vs-footer-newsletter .sib-form-container { max-width:100% !important; }
+        .vs-footer-newsletter #sib-container { max-width:100% !important; border:none !important; background:transparent !important; padding:0.4em 0 !important; }
+        .vs-footer-newsletter .sib-form-block p { margin:0 0 0.4em; font-size:1.3rem; }
+        .vs-footer-newsletter .sib-form-block[style*="font-size:24px"] p,
+        .vs-footer-newsletter .sib-form-block[style*="font-size:32px"] p { display:none; } /* "Visual Sales" Titel — schon im h4 vorhanden */
+        .vs-footer-newsletter .entry__label { font-size:1.2rem !important; color:var(--color-primary-text) !important; }
+        .vs-footer-newsletter .input { font-size:1.3rem !important; border-radius:6px !important; }
+        .vs-footer-newsletter .sib-form-block__button { background-color:#f2902a !important; border-radius:6px !important; font-size:1.3rem !important; padding:0.6em 1.2em !important; width:100%; }
+        .vs-footer-newsletter .entry__specification { font-size:1.1rem !important; }
+        .vs-footer-newsletter .sib-form__declaration { margin-top:0.4em; }
+        .vs-footer-newsletter .sib-form__declaration > div:first-child { display:none; } /* Schild-Icon ausblenden */
+        .vs-footer-newsletter .sib-form__declaration p { font-size:1.1rem !important; color:var(--color-secondary-text) !important; }
+        .vs-footer-newsletter .checkbox_tick_positive { flex-shrink:0; }
+        /* ────────────────────────────────────────────────────────────────── */
 
         .vs-footer-bottom {
             display: flex;
@@ -752,6 +1032,99 @@ INLINE_CSS = """
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
+        }
+
+        /* ===== Cookie-Banner ===== */
+        .vs-cookie-banner {
+            display: none;
+            position: fixed;
+            bottom: 0; left: 0; right: 0;
+            z-index: 9999;
+            background: #fff;
+            border-top: 2px solid var(--ghost-accent-color);
+            box-shadow: 0 -4px 24px rgba(0,0,0,.12);
+            font-size: 1.4rem;
+        }
+        .vs-cookie-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.6rem 2rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .vs-cookie-text { flex: 1; min-width: 220px; }
+        .vs-cookie-text strong { display: block; font-size: 1.5rem; margin-bottom: 0.3em; color: var(--color-primary-text); }
+        .vs-cookie-text p { margin: 0; color: var(--color-secondary-text); font-size: 1.3rem; line-height: 1.5; }
+        .vs-cookie-text a { color: var(--ghost-accent-color); text-decoration: underline; }
+        .vs-cookie-actions { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+        .vs-cookie-btn-all { font-size: 1.3rem !important; padding: 0.55em 1.3em !important; }
+        .vs-cookie-btn-settings {
+            background: none; border: 1px solid var(--color-border);
+            border-radius: 6px; padding: 0.55em 1.1em;
+            font-size: 1.3rem; cursor: pointer; color: var(--color-primary-text);
+        }
+        .vs-cookie-btn-settings:hover { border-color: var(--ghost-accent-color); color: var(--ghost-accent-color); }
+        .vs-cookie-btn-deny {
+            background: none; border: none; padding: 0.55em 0.5em;
+            font-size: 1.2rem; cursor: pointer; color: var(--color-secondary-text);
+            text-decoration: underline; text-underline-offset: 2px;
+        }
+        .vs-cookie-btn-deny:hover { color: var(--color-primary-text); }
+
+        .vs-cookie-settings-panel {
+            border-top: 1px solid var(--color-border);
+            padding: 1.4rem 2rem 1.8rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .vs-cookie-cats {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 0.8rem 2rem;
+            margin-bottom: 1.4rem;
+        }
+        .vs-cookie-cat {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 0.8rem 1rem;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .vs-cookie-cat-info strong { display: block; font-size: 1.3rem; color: var(--color-primary-text); }
+        .vs-cookie-cat-info small { font-size: 1.1rem; color: var(--color-secondary-text); }
+        .vs-cookie-toggle {
+            flex-shrink: 0;
+            width: 40px; height: 22px;
+            background: #d1d5db;
+            border-radius: 99px;
+            position: relative;
+            cursor: pointer;
+            transition: background .2s;
+        }
+        .vs-cookie-toggle span {
+            position: absolute;
+            top: 3px; left: 3px;
+            width: 16px; height: 16px;
+            background: #fff;
+            border-radius: 50%;
+            transition: transform .2s;
+            box-shadow: 0 1px 3px rgba(0,0,0,.2);
+        }
+        .vs-cookie-toggle.is-on { background: var(--ghost-accent-color); }
+        .vs-cookie-toggle.is-on span { transform: translateX(18px); }
+        .vs-cookie-toggle--disabled { opacity: 0.45; cursor: not-allowed; }
+        .vs-cookie-toggle--disabled.is-on { background: var(--ghost-accent-color); }
+        .vs-cookie-settings-actions { display: flex; justify-content: flex-end; }
+        .vs-cookie-btn-save { font-size: 1.3rem !important; padding: 0.55em 1.3em !important; }
+
+        @media (max-width: 640px) {
+            .vs-cookie-inner { flex-direction: column; align-items: flex-start; gap: 1.2rem; }
+            .vs-cookie-cats { grid-template-columns: 1fr 1fr; }
         }
 """
 
@@ -1197,6 +1570,13 @@ def build_page(meta, content_html, is_draft=False):
             f'        </article>'
         )
 
+    # Brevo-Inject nur wenn Embed vorhanden
+    brevo_head_inject = f"<!-- Brevo Form Styles -->\n{BREVO_HEAD}" if BREVO_HEAD else ""
+    brevo_foot_inject = f"<!-- Brevo Form Scripts -->\n{BREVO_FOOT}" if BREVO_FOOT else ""
+
+    # Cookie-Banner
+    cookie_banner = build_cookie_banner()
+
     return f"""<!DOCTYPE html>
 <html lang="de" class="has-dark-text">
 <head>
@@ -1256,6 +1636,7 @@ def build_page(meta, content_html, is_draft=False):
 
     <!-- Structured Data -->
 {jsonld}
+{brevo_head_inject}
 </head>
 <body class="{'post-template' if page_type == 'post' else 'page-template'} page-{slug} has-sans-title has-sans-body">
 {draft_banner}
@@ -1294,6 +1675,8 @@ def build_page(meta, content_html, is_draft=False):
 <script src="{base}assets/js/source.js"></script>
 <script>{INLINE_JS}
 </script>
+{brevo_foot_inject}
+{cookie_banner}
 </body>
 </html>"""
 
