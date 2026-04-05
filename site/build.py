@@ -16,6 +16,22 @@ Usage:
 Generierte Dateien (bei build_all):
     sitemap.xml   — alle published Seiten
     robots.txt    — Suchmaschinen-Direktiven
+    llms.txt      — KI-Crawler-Standard (llmstxt.org)
+
+Frontmatter-Schema (Seiten & Posts):
+    title:            Seitentitel (H1 + <title>)
+    slug:             URL-Pfad, z.B. "augmented-reality"
+    type:             page | post | listing | grounding
+    status:           published | draft
+    date:             ISO-Datum, z.B. "2026-04-05"  (Posts)
+    date_modified:    ISO-Datum — dateModified im Article-Schema
+    meta_description: SEO-Beschreibung (max. 160 Zeichen)
+    og_image:         Pfad oder URL zum Feature Image
+    author:           Name des Autors (Posts, Default: aus site.yaml)
+    keywords:         Komma-getrennte Keywords für Article-Schema
+    tags:             Liste von Tag-Slugs, z.B. [openusd, webar]
+    primary_tag:      Primärer Tag-Slug (für Tag-Listing-Discovery)
+    excerpt:          Kurzbeschreibung für Karten & llms.txt
 
 Struktur:
     content/kontakt.md     →  kontakt.html
@@ -693,92 +709,189 @@ DRAFT_BANNER = """
 # JSON-LD Schema
 # ---------------------------------------------------------------------------
 def build_jsonld(meta, is_draft=False):
-    """Generiert JSON-LD structured data für Organization + WebPage/Article."""
+    """
+    Generiert JSON-LD structured data aus site.yaml schema-Block + Seiten-Frontmatter.
+
+    Siteweite Schemas (jede Seite):
+      - Organization   (@id, foundingDate, address, knowsAbout, memberOf, sameAs)
+      - Person         (@id, jobTitle, worksFor, knowsAbout, memberOf, sameAs)
+      - ProfessionalService (Local SEO: geo, priceRange, telephone)
+      - WebSite
+
+    Seitenspezifisch:
+      - Article        (posts: headline, datePublished, dateModified, keywords, image)
+      - WebPage        (pages: name, description, isPartOf)
+
+    Frontmatter-Felder die ausgewertet werden:
+      title, meta_description, slug, type, date, date_modified,
+      og_image, author, keywords, tags
+    """
     if is_draft:
-        return ""   # Drafts nicht schema-markieren
+        return ""
 
-    site_url    = cfg("site", "url",     default="https://visales.de").rstrip("/")
-    site_title  = cfg("site", "title",   default="viSales")
-    description = cfg("site", "description", default="")
-    logo        = cfg("site", "logo",    default="assets/images/logo-visales.png")
-    email       = cfg("contact", "email", default="")
-    phone       = cfg("contact", "phone", default="")
-    social_cfg  = cfg("social", default={})
-    company     = cfg("site", "company", default="viSales GmbH")
-    location    = cfg("site", "location", default="Bochum")
+    site_url   = cfg("site", "url",   default="https://visales.de").rstrip("/")
+    site_title = cfg("site", "title", default="viSales")
+    site_desc  = cfg("site", "description", default="")
+    site_logo  = cfg("site", "logo",  default="assets/images/logo-visales.png")
+    company    = cfg("site", "company", default="viSales GmbH")
 
-    slug        = meta.get("slug",  "page")
-    title       = meta.get("title", site_title)
-    page_desc   = meta.get("meta_description", description)
-    page_type   = meta.get("type", "page")   # page | leistung | fallbeispiel | post
-    date        = meta.get("date",  "")
-    og_image    = meta.get("og_image", "")
-    canonical   = f"{site_url}/{slug}/"
+    # Schema-Block aus site.yaml
+    sc         = cfg("schema", default={})
+    sc_org     = sc.get("organization", {})   if isinstance(sc, dict) else {}
+    sc_person  = sc.get("person", {})         if isinstance(sc, dict) else {}
+    sc_profserv= sc.get("professional_service", {}) if isinstance(sc, dict) else {}
+    sc_website = sc.get("website", {})        if isinstance(sc, dict) else {}
 
-    # Social-Profile für sameAs
-    same_as = []
-    for key in ("linkedin", "youtube", "mastodon"):
-        url = social_cfg.get(key, "")
-        if url:
-            same_as.append(url)
-    same_as_json = json.dumps(same_as)
+    slug       = meta.get("slug", "page")
+    title      = meta.get("title", site_title)
+    page_desc  = meta.get("meta_description", site_desc)
+    page_type  = meta.get("type", "page")
+    date       = str(meta.get("date", ""))
+    date_mod   = str(meta.get("date_modified", date))
+    og_image   = meta.get("og_image", "")
+    keywords   = meta.get("keywords", "")
+    tags_raw   = meta.get("tags", [])
+    canonical  = f"{site_url}/{slug}/"
 
-    # Organization Schema (auf jeder Seite)
+    # keywords: aus 'keywords' oder 'tags' Frontmatter
+    if not keywords and tags_raw:
+        if isinstance(tags_raw, list):
+            keywords = ", ".join(str(t) for t in tags_raw)
+        elif isinstance(tags_raw, str):
+            keywords = tags_raw
+
+    # --------------- Hilfsfunktionen ----------------------------------------
+    def member_of_list(members):
+        return [{"@type": "Organization", "name": m.get("name",""), "url": m.get("url","")}
+                for m in (members or [])]
+
+    def logo_obj(url):
+        return {"@type": "ImageObject", "url": url}
+
+    def address_obj(a):
+        return {
+            "@type":           "PostalAddress",
+            "streetAddress":   a.get("street", ""),
+            "postalCode":      a.get("postal_code", ""),
+            "addressLocality": a.get("city", ""),
+            "addressRegion":   a.get("region", ""),
+            "addressCountry":  a.get("country", "DE"),
+        }
+
+    # --------------- 1. Organization ----------------------------------------
+    org_logo_url = sc_org.get("logo") or f"{site_url}/{site_logo}"
+    org_addr     = sc_org.get("address", {})
+
     org_schema = {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": company,
-        "url": site_url,
-        "logo": f"{site_url}/{logo}",
-        "email": email,
-        "telephone": phone,
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": location,
-            "addressCountry": "DE"
-        },
-        "sameAs": same_as
+        "@context":    "https://schema.org",
+        "@type":       "Organization",
+        "@id":         sc_org.get("id", f"{site_url}/#organization"),
+        "name":        sc_org.get("name", company),
+        "url":         site_url,
+        "logo":        logo_obj(org_logo_url),
+        "foundingDate": sc_org.get("founding_date", "2010"),
+        "description": sc_org.get("description", site_desc),
+        "address":     address_obj(org_addr),
+        "areaServed":  sc_org.get("area_served", "DE"),
+        "knowsAbout":  sc_org.get("knows_about", []),
+        "memberOf":    member_of_list(sc_org.get("member_of", [])),
+        "sameAs":      sc_org.get("same_as", []),
+    }
+    email = cfg("contact", "email", default="")
+    phone = cfg("contact", "phone", default="")
+    if email: org_schema["email"]     = email
+    if phone: org_schema["telephone"] = phone
+
+    # --------------- 2. Person -----------------------------------------------
+    person_schema = {
+        "@context":   "https://schema.org",
+        "@type":      "Person",
+        "@id":        sc_person.get("id", f"{site_url}/#gerhard-schroeder"),
+        "name":       sc_person.get("name", cfg("author", "name", default="Gerhard Schröder")),
+        "givenName":  sc_person.get("given_name", "Gerhard"),
+        "familyName": sc_person.get("family_name", "Schröder"),
+        "jobTitle":   sc_person.get("job_title", "Geschäftsführer"),
+        "worksFor":   {"@id": sc_person.get("works_for_id",
+                                            sc_org.get("id", f"{site_url}/#organization"))},
+        "url":        sc_person.get("url", f"{site_url}/ueber-uns/"),
+        "image":      sc_person.get("image", cfg("author", "avatar", default="")),
+        "description": sc_person.get("description", ""),
+        "knowsAbout": sc_person.get("knows_about", []),
+        "memberOf":   member_of_list(sc_person.get("member_of", [])),
+        "sameAs":     sc_person.get("same_as", []),
     }
 
-    # WebPage / Article Schema
+    # --------------- 3. ProfessionalService (Local SEO) ----------------------
+    profserv_addr = sc_org.get("address", {})
+    geo_cfg       = sc_profserv.get("geo", {})
+    profserv_schema = {
+        "@context":    "https://schema.org",
+        "@type":       "ProfessionalService",
+        "name":        sc_profserv.get("name", company),
+        "description": sc_profserv.get("description", site_desc),
+        "url":         sc_profserv.get("url", site_url),
+        "telephone":   sc_profserv.get("telephone", phone),
+        "image":       sc_profserv.get("image", org_logo_url),
+        "address":     address_obj(profserv_addr),
+        "priceRange":  sc_profserv.get("price_range", "€€€"),
+    }
+    if geo_cfg.get("latitude"):
+        profserv_schema["geo"] = {
+            "@type":    "GeoCoordinates",
+            "latitude":  geo_cfg["latitude"],
+            "longitude": geo_cfg["longitude"],
+        }
+
+    # --------------- 4. WebSite ----------------------------------------------
+    website_schema = {
+        "@context": "https://schema.org",
+        "@type":    "WebSite",
+        "name":     sc_website.get("name", site_title),
+        "url":      sc_website.get("url", site_url),
+    }
+
+    # --------------- 5. Article / WebPage ------------------------------------
     if page_type == "post" and date:
-        webpage_schema = {
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": title,
-            "description": page_desc,
-            "url": canonical,
-            "datePublished": date,
-            "author": {
-                "@type": "Person",
-                "name": meta.get("author", "Gerhard Schröder"),
-                "url": f"{site_url}/ueber-uns/"
-            },
-            "publisher": {
-                "@type": "Organization",
-                "name": company,
-                "logo": {"@type": "ImageObject", "url": f"{site_url}/{logo}"}
-            }
+        author_name = meta.get("author", sc_person.get("name", "Gerhard Schröder"))
+        page_schema = {
+            "@context":         "https://schema.org",
+            "@type":            "Article",
+            "headline":         title,
+            "description":      page_desc,
+            "url":              canonical,
+            "datePublished":    date,
+            "dateModified":     date_mod or date,
+            "author":           {"@id": sc_person.get("id", f"{site_url}/#gerhard-schroeder"),
+                                 "@type": "Person", "name": author_name},
+            "publisher":        {"@id": sc_org.get("id", f"{site_url}/#organization"),
+                                 "@type": "Organization", "name": company,
+                                 "logo": logo_obj(org_logo_url)},
+            "mainEntityOfPage": {"@type": "WebPage", "@id": canonical},
         }
         if og_image:
-            webpage_schema["image"] = f"{site_url}/{og_image}"
+            page_schema["image"] = {"@type": "ImageObject",
+                                    "url": og_image if og_image.startswith("http")
+                                           else f"{site_url}/{og_image}"}
+        if keywords:
+            page_schema["keywords"] = keywords
     else:
-        webpage_schema = {
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": title,
+        page_schema = {
+            "@context":  "https://schema.org",
+            "@type":     "WebPage",
+            "name":      title,
             "description": page_desc,
-            "url": canonical,
-            "isPartOf": {"@type": "WebSite", "name": site_title, "url": site_url}
+            "url":       canonical,
+            "isPartOf":  {"@type": "WebSite", "name": site_title, "url": site_url},
         }
 
-    org_json     = json.dumps(org_schema,     ensure_ascii=False, indent=2)
-    webpage_json = json.dumps(webpage_schema, ensure_ascii=False, indent=2)
+    # --------------- Ausgabe -------------------------------------------------
+    def ld(schema):
+        return (f'    <script type="application/ld+json">\n'
+                f'{json.dumps(schema, ensure_ascii=False, indent=2)}\n'
+                f'    </script>')
 
-    return (
-        f'    <script type="application/ld+json">\n{org_json}\n    </script>\n'
-        f'    <script type="application/ld+json">\n{webpage_json}\n    </script>'
-    )
+    return "\n".join([ld(org_schema), ld(person_schema),
+                      ld(profserv_schema), ld(website_schema), ld(page_schema)])
 
 
 # ---------------------------------------------------------------------------
@@ -1294,6 +1407,72 @@ def build_robots():
 
 
 # ---------------------------------------------------------------------------
+# llms.txt generieren (KI-Crawler-Standard)
+# ---------------------------------------------------------------------------
+def build_llms_txt(published_pages):
+    """
+    Erzeugt llms.txt nach dem Standard von llmstxt.org.
+    Format: Markdown — H1 Site-Name, Blockquote Tagline,
+    dann Abschnitte für Seiten und Posts mit kurzen Beschreibungen.
+    """
+    site_url     = cfg("site", "url",         default="https://visales.de").rstrip("/")
+    site_title   = cfg("site", "title",       default="viSales")
+    site_desc    = cfg("site", "description", default="")
+    site_tagline = cfg("site", "tagline",     default=site_desc)
+
+    lines = []
+    lines.append(f"# {site_title}\n")
+    if site_tagline:
+        lines.append(f"> {site_tagline}\n")
+    lines.append("")
+
+    # Seiten
+    pages = [p for p in published_pages if p.get("type") not in ("post",)]
+    if pages:
+        lines.append("## Seiten\n")
+        for p in pages:
+            slug    = p.get("slug", "").strip("/")
+            title   = p.get("title", slug)
+            excerpt = p.get("excerpt", "")
+            url     = f"{site_url}/{slug}/" if slug else site_url + "/"
+            entry   = f"- [{title}]({url})"
+            if excerpt:
+                entry += f": {excerpt}"
+            lines.append(entry)
+        lines.append("")
+
+    # Posts
+    posts = [p for p in published_pages if p.get("type") == "post"]
+    if posts:
+        # Neueste zuerst
+        posts_sorted = sorted(posts, key=lambda x: x.get("date", ""), reverse=True)
+        lines.append("## Artikel\n")
+        for p in posts_sorted:
+            slug    = p.get("slug", "").strip("/")
+            title   = p.get("title", slug)
+            excerpt = p.get("excerpt", "")
+            url     = f"{site_url}/{slug}/"
+            entry   = f"- [{title}]({url})"
+            if excerpt:
+                entry += f": {excerpt}"
+            lines.append(entry)
+        lines.append("")
+
+    # Optional: Maschinenlesbare Zusatzquellen
+    lines.append("## Weitere Quellen\n")
+    lines.append(f"- [RSS Feed]({site_url}/rss.xml): Alle Artikel als RSS 2.0")
+    lines.append(f"- [Sitemap]({site_url}/sitemap.xml): Vollständige URL-Liste")
+    lines.append("")
+
+    content = "\n".join(lines)
+    out_path = os.path.join(OUTPUT_DIR, "llms.txt")
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(content)
+
+    print("  ✓ llms.txt")
+
+
+# ---------------------------------------------------------------------------
 # Praxis-Listing /praxis/ bauen
 # ---------------------------------------------------------------------------
 def read_post_meta_yaml(md_path):
@@ -1488,9 +1667,11 @@ def build_all(include_drafts=False, drafts_only=False):
             ok, meta = build_file(fpath, include_drafts=include_drafts, drafts_only=drafts_only)
             if ok and meta:
                 published_pages.append({
-                    "slug": meta.get("slug", ""),
-                    "type": meta.get("type", "page"),
-                    "date": meta.get("date", ""),
+                    "slug":    meta.get("slug", ""),
+                    "type":    meta.get("type", "page"),
+                    "date":    meta.get("date", ""),
+                    "title":   meta.get("title", ""),
+                    "excerpt": meta.get("excerpt", meta.get("description", "")),
                 })
 
     if post_files:
@@ -1499,9 +1680,11 @@ def build_all(include_drafts=False, drafts_only=False):
             ok, meta = build_file(fpath, include_drafts=include_drafts, drafts_only=drafts_only)
             if ok and meta:
                 published_pages.append({
-                    "slug": meta.get("slug", ""),
-                    "type": meta.get("type", "post"),
-                    "date": meta.get("date", ""),
+                    "slug":    meta.get("slug", ""),
+                    "type":    meta.get("type", "post"),
+                    "date":    meta.get("date", ""),
+                    "title":   meta.get("title", ""),
+                    "excerpt": meta.get("excerpt", meta.get("description", "")),
                 })
 
     # Tag-Listings + sitemap.xml + robots.txt nur beim Full-Build
@@ -1540,6 +1723,7 @@ def build_all(include_drafts=False, drafts_only=False):
         build_sitemap(published_pages)
         build_robots()
         build_rss()
+        build_llms_txt(published_pages)
 
     print("\n✓ Fertig.")
 

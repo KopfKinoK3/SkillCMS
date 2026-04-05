@@ -19,6 +19,91 @@ author:
   avatar: "https://visales.de/content/images/2025/10/1706254155883-1.jpeg"
   url: "https://visales.de/author/gerhard/"
 
+# ---------------------------------------------------------------------------
+# Schema.org — strukturierte Daten für SEO und KI-Crawler
+# Werden von build_jsonld() auf jeder Seite eingebettet.
+# ---------------------------------------------------------------------------
+schema:
+
+  organization:
+    id: "https://visales.de/#organization"
+    name: "viSales GmbH"
+    founding_date: "2010"
+    description: "viSales GmbH ist eine B2B-Agentur für visuelle Vertriebskommunikation. Spezialisiert auf OpenUSD-basierte 3D-Workflows, Augmented Reality, interaktive Präsentationen und Spatial Content für erklärungsbedürftige Produkte im Maschinenbau und der Industrie."
+    logo: "https://visales.de/content/images/2025/11/RGB_Logo_viSales_schwarz.png"
+    address:
+      street: "Wittener Straße 87"
+      postal_code: "44789"
+      city: "Bochum"
+      region: "Nordrhein-Westfalen"
+      country: "DE"
+    area_served: "DE"
+    knows_about:
+      - "OpenUSD"
+      - "USDZ"
+      - "Augmented Reality B2B"
+      - "Spatial Computing"
+      - "3D Visualisierung B2B"
+      - "WebAR"
+      - "Digitaler Zwilling"
+      - "Produktkonfigurator"
+      - "Visual Sales"
+      - "Spatial Website"
+      - "Apple Vision Pro B2B"
+    member_of:
+      - name: "Alliance for OpenUSD"
+        url: "https://aousd.org/"
+      - name: "Metaverse Standards Forum"
+        url: "https://metaverse-standards.org/"
+    same_as:
+      - "https://www.linkedin.com/company/visales/"
+      - "https://www.youtube.com/@visales"
+      - "https://mastodon.social/@visales"
+
+  person:
+    id: "https://visales.de/#gerhard-schroeder"
+    name: "Gerhard Schröder"
+    given_name: "Gerhard"
+    family_name: "Schröder"
+    job_title: "Geschäftsführer"
+    works_for_id: "https://visales.de/#organization"
+    url: "https://visales.de/ueber-uns/"
+    image: "https://visales.de/content/images/2025/10/1706254155883-1.jpeg"
+    description: "Gerhard Schröder ist Gründer und Geschäftsführer der viSales GmbH. Seit 2017 beschäftigt er sich mit OpenUSD als strategischem Masterdatei-Format für Vertrieb und Marketing. Er spricht auf Konferenzen wie der XR Expo, dem NextReality Festival und dem XR Symposium über Augmented Reality, OpenUSD und visuelle Entscheidungsprozesse im B2B."
+    knows_about:
+      - "OpenUSD"
+      - "USDZ"
+      - "Augmented Reality im B2B-Vertrieb"
+      - "Spatial Computing"
+      - "Visual Sales"
+      - "3D Visualisierung"
+      - "WebAR"
+      - "Digitaler Zwilling"
+      - "Produktkonfigurator"
+      - "Spatial Sales Infrastructure"
+    member_of:
+      - name: "Alliance for OpenUSD"
+        url: "https://aousd.org/"
+    same_as:
+      - "https://www.linkedin.com/in/gerhardschroeder-visales/"
+      - "https://www.youtube.com/@visales"
+
+  professional_service:
+    name: "viSales GmbH"
+    description: "B2B-Agentur für visuelle Vertriebskommunikation – 3D-Visualisierung, WebAR und Produktkonfiguratoren für Maschinenbau & Industrie. Standort Bochum, bundesweit tätig."
+    telephone: "+49 160 806 0361"
+    email: "sales@visales.de"
+    url: "https://visales.de"
+    image: "https://visales.de/content/images/2025/11/RGB_Logo_viSales_schwarz.png"
+    price_range: "€€€"
+    geo:
+      latitude: "51.4811"
+      longitude: "7.2162"
+
+  website:
+    name: "viSales"
+    url: "https://visales.de"
+
 navigation:
   - label: "Leistungen"
     slug: "leistungen"
