@@ -28,8 +28,10 @@ navigation:
     slug: "praxis"
   - label: "Über Uns"
     slug: "ueber-uns"
-  - label: "Kontakt"
-    slug: "kontakt"
+
+nav_cta:
+  label: "Kontakt"
+  url: "/kontakt/"
 
 social:
   linkedin: "https://www.linkedin.com/in/gerhardschroeder-visales/"

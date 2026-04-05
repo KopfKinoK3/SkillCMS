@@ -346,6 +346,27 @@ INLINE_CSS = """
         .gh-content .vs-spacer + *,
         .gh-content .vs-spacer-lg + * { margin-top: 0 !important; }
 
+        /* ===== Navigation — 828px zentriert + CTA-Button ===== */
+        .gh-navigation-inner {
+            max-width: 828px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+        .vs-nav-cta {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.55em 1.3em;
+            background: var(--ghost-accent-color);
+            color: #fff !important;
+            font-size: 1.4rem;
+            font-weight: 700;
+            border-radius: 6px;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: background 0.2s ease, opacity 0.2s ease;
+        }
+        .vs-nav-cta:hover { background: #e07f20; opacity: 1; }
+
         /* Feature Image — max 828px (720px Textlaufbreite + 15%) */
         .gh-article-image {
             max-width: 828px;
@@ -845,6 +866,15 @@ def build_page(meta, content_html, is_draft=False):
 
     nav_html     = build_nav_html(active_slug=slug)
     footer_html  = build_footer_html()
+
+    # CTA-Button aus site.yaml nav_cta
+    nav_cta_cfg = cfg("nav_cta", default={})
+    if nav_cta_cfg and isinstance(nav_cta_cfg, dict):
+        cta_label = nav_cta_cfg.get("label", "Kontakt")
+        cta_url   = nav_cta_cfg.get("url", "/kontakt/")
+        nav_cta_html = f'<a class="vs-nav-cta" href="{cta_url}">{cta_label}</a>'
+    else:
+        nav_cta_html = ""
     draft_banner = DRAFT_BANNER if is_draft else ""
     jsonld       = build_jsonld(meta, is_draft=is_draft)
 
@@ -954,7 +984,7 @@ def build_page(meta, content_html, is_draft=False):
                     {nav_html}
                 </ul>
             </nav>
-            <div class="gh-navigation-actions"></div>
+            <div class="gh-navigation-actions">{nav_cta_html}</div>
         </div>
     </header>
 
