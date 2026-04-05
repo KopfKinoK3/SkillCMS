@@ -1,6 +1,6 @@
 ---
 title: "viSales GmbH"
-slug: visales-gmbh
+slug: visales-gmbh-grounding
 type: grounding
 grounding_entity: organization
 status: published

@@ -67,7 +67,8 @@ schema:
     family_name: "Schröder"
     job_title: "Gründer & Geschäftsführer"
     works_for_id: "https://visales.de/#organization"
-    url: "https://visales.de/gerhard-schroeder/"
+    alternate_name: "Gerd Schröder"
+    url: "https://visales.de/gerhard-schroeder-grounding/"
     image: "https://visales.de/content/images/2025/10/1706254155883-1.jpeg"
     description: "Gerhard Schröder ist Gründer und Geschäftsführer der viSales GmbH, einer B2B-Agentur für visuelle Vertriebskommunikation mit Sitz in Bochum. Er gründete viSales 2010, beschäftigt sich seit 2017 intensiv mit OpenUSD als strategischem Masterdatei-Format für Vertrieb und Marketing und ist Mitglied der Alliance for OpenUSD (AOUSD). Als Konferenzsprecher tritt er auf der XR Expo, dem NextReality Festival und dem XR Symposium auf."
     knows_about:
@@ -87,6 +88,8 @@ schema:
     member_of:
       - name: "Alliance for OpenUSD"
         url: "https://aousd.org/"
+      - name: "Metaverse Standards Forum"
+        url: "https://metaverse-standards.org/"
     same_as:
       - "https://www.linkedin.com/in/gerhardschroeder-visales/"
       - "https://www.youtube.com/@visales"
@@ -182,9 +185,9 @@ footer:
         - label: "Über viSales"
           url: "/ueber-uns/"
         - label: "viSales GmbH (Entität)"
-          url: "/visales-gmbh/"
+          url: "/visales-gmbh-grounding/"
         - label: "Gerhard Schröder (Entität)"
-          url: "/gerhard-schroeder/"
+          url: "/gerhard-schroeder-grounding/"
 
     - title: "Kontakt"
       type: "contact"   # Spezial-Rendering
