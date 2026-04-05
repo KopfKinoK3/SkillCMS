@@ -1,0 +1,228 @@
+<svg width="800" height="860" viewBox="0 0 800 860"
+     xmlns="http://www.w3.org/2000/svg"
+     font-family="-apple-system, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif">
+
+<defs>
+  <filter id="shadow" x="-4%" y="-4%" width="108%" height="116%">
+    <feDropShadow dx="0" dy="2" stdDeviation="5" flood-color="#000" flood-opacity="0.07"/>
+  </filter>
+  <filter id="shadow-sm" x="-4%" y="-4%" width="108%" height="114%">
+    <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.06"/>
+  </filter>
+  <!-- Orange Pfeil -->
+  <marker id="arr" markerWidth="8" markerHeight="8" refX="6.5" refY="3.5" orient="auto">
+    <path d="M0,0 L0,7 L8,3.5 z" fill="#f97316"/>
+  </marker>
+  <!-- Slate Pfeil (Deployment) -->
+  <marker id="arr-s" markerWidth="8" markerHeight="8" refX="6.5" refY="3.5" orient="auto">
+    <path d="M0,0 L0,7 L8,3.5 z" fill="#475569"/>
+  </marker>
+  <!-- Grau Pfeil (neutral) -->
+  <marker id="arr-g" markerWidth="8" markerHeight="8" refX="6.5" refY="3.5" orient="auto">
+    <path d="M0,0 L0,7 L8,3.5 z" fill="#bbb"/>
+  </marker>
+  <!-- Orange mini -->
+  <marker id="arr-mini" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto">
+    <path d="M0,0 L0,7 L7,3.5 z" fill="#f97316" opacity="0.7"/>
+  </marker>
+</defs>
+
+<!-- ── CANVAS ────────────────────────────────────────────────────── -->
+<rect width="800" height="860" fill="#ffffff"/>
+
+<!-- ── KOPFZEILE ─────────────────────────────────────────────────── -->
+<text x="400" y="30" text-anchor="middle"
+      font-size="10" font-weight="700" letter-spacing="0.14em" fill="#bbb">SKILLCMS · SYSTEMARCHITEKTUR · viSales 2026</text>
+<rect x="16" y="38" width="768" height="2" rx="1" fill="#f97316" opacity="0.25"/>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- MODUL 1: REDAKTION                                             -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<rect x="16" y="56" width="768" height="168" rx="12"
+      fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"/>
+<rect x="16" y="56" width="768" height="4" rx="2" fill="#f97316"/>
+<rect x="16" y="56" width="4" height="168" rx="2" fill="#f97316"/>
+<circle cx="44" cy="80" r="14" fill="#f97316"/>
+<text x="44" y="85" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">1</text>
+<text x="68" y="74" font-size="10" font-weight="700" letter-spacing="0.1em" fill="#f97316">REDAKTION</text>
+<text x="68" y="91" font-size="16" font-weight="700" letter-spacing="-0.01em" fill="#1a1a1a">Inhalte erstellen &amp; veröffentlichen</text>
+<text x="68" y="107" font-size="11" fill="#888">Gerhard schreibt in iA Writer — Speichern = automatischer Push zu GitHub</text>
+<line x1="36" y1="119" x2="764" y2="119" stroke="#f0f0f0" stroke-width="1"/>
+
+<!-- Sub-Section links: iA Writer (Option A) -->
+<rect x="36" y="129" width="354" height="80" rx="8"
+      fill="#fff8f4" stroke="#fbd5bc" stroke-width="1"/>
+<text x="213" y="148" text-anchor="middle"
+      font-size="9.5" font-weight="700" letter-spacing="0.07em" fill="#f97316">OPTION A · iA WRITER</text>
+<text x="213" y="166" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1a">iA Writer + GitHub Sync</text>
+<text x="213" y="183" text-anchor="middle" font-size="11" fill="#555">GitHub-Library direkt in iA Writer</text>
+<text x="213" y="198" text-anchor="middle" font-size="10" fill="#999">Speichern → Commit + Push automatisch</text>
+
+<!-- Sub-Section rechts: Decap CMS (Option B) -->
+<rect x="403" y="129" width="363" height="80" rx="8"
+      fill="#fafafa" stroke="#e8e8e8" stroke-width="1"/>
+<text x="584" y="148" text-anchor="middle"
+      font-size="9.5" font-weight="700" letter-spacing="0.07em" fill="#bbb">OPTION B</text>
+<text x="584" y="166" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1a">Decap CMS</text>
+<text x="584" y="183" text-anchor="middle" font-size="11" fill="#555">Browser-Editor · kein lokales Tool</text>
+<text x="584" y="198" text-anchor="middle" font-size="10" fill="#999">Schreiben → Speichern → fertig</text>
+
+<text x="393" y="173" text-anchor="middle" font-size="10" fill="#ccc" font-weight="600">oder</text>
+
+<!-- ── PFEIL 1 → 2 ─────────────────────────────────────────────── -->
+<line x1="400" y1="224" x2="400" y2="248"
+      stroke="#f97316" stroke-width="1.5" stroke-opacity="0.6"
+      marker-end="url(#arr)"/>
+<text x="420" y="240" font-size="9.5" fill="#bbb" letter-spacing="0.03em">git push</text>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- MODUL 2: GITHUB REPOSITORY                                     -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<rect x="16" y="250" width="768" height="90" rx="12"
+      fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"/>
+<rect x="16" y="250" width="768" height="4" rx="2" fill="#888"/>
+<rect x="16" y="250" width="4" height="90" rx="2" fill="#888"/>
+<circle cx="44" cy="274" r="14" fill="#888"/>
+<text x="44" y="279" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">2</text>
+<text x="68" y="268" font-size="10" font-weight="700" letter-spacing="0.1em" fill="#999">REPOSITORY</text>
+<text x="68" y="285" font-size="16" font-weight="700" letter-spacing="-0.01em" fill="#1a1a1a">GitHub Repository</text>
+<text x="68" y="301" font-size="11" fill="#888">Markdown-Dateien · Bilder · config.yml · Versionskontrolle · Änderungshistorie</text>
+<!-- Badges -->
+<rect x="548" y="269" width="38" height="22" rx="3" fill="#fff" stroke="#888" stroke-width="1.2"/>
+<text x="567" y="283" text-anchor="middle" font-size="7.5" font-weight="700" fill="#888">.md</text>
+<rect x="594" y="269" width="44" height="22" rx="3" fill="#fff" stroke="#888" stroke-width="1.2"/>
+<text x="616" y="283" text-anchor="middle" font-size="7.5" font-weight="700" fill="#888">assets</text>
+<rect x="646" y="269" width="48" height="22" rx="3" fill="#fff" stroke="#888" stroke-width="1.2"/>
+<text x="670" y="283" text-anchor="middle" font-size="7.5" font-weight="700" fill="#888">config</text>
+<rect x="702" y="269" width="64" height="22" rx="3" fill="#fff8f4" stroke="#fbd5bc" stroke-width="1.2"/>
+<text x="734" y="283" text-anchor="middle" font-size="7.5" font-weight="700" fill="#f97316">Actions CI</text>
+
+<!-- ── PFEIL 2 → 3 ─────────────────────────────────────────────── -->
+<line x1="400" y1="340" x2="400" y2="364"
+      stroke="#f97316" stroke-width="1.5" stroke-opacity="0.6"
+      marker-end="url(#arr)"/>
+<text x="420" y="356" font-size="9.5" fill="#bbb" letter-spacing="0.03em">trigger</text>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- MODUL 3: BUILD PIPELINE                                        -->
+<!-- Eleventy läuft auf GitHub Actions — NICHT lokal               -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<rect x="16" y="366" width="768" height="150" rx="12"
+      fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"/>
+<rect x="16" y="366" width="768" height="4" rx="2" fill="#f97316"/>
+<rect x="16" y="366" width="4" height="150" rx="2" fill="#f97316"/>
+<circle cx="44" cy="390" r="14" fill="#f97316"/>
+<text x="44" y="395" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">3</text>
+<text x="68" y="384" font-size="10" font-weight="700" letter-spacing="0.1em" fill="#f97316">BUILD PIPELINE · CLOUD</text>
+<text x="68" y="401" font-size="16" font-weight="700" letter-spacing="-0.01em" fill="#1a1a1a">GitHub Actions → Eleventy → Pagefind</text>
+<text x="68" y="417" font-size="11" fill="#888">Läuft vollständig in der Cloud · Gerhard installiert nichts lokal</text>
+<line x1="36" y1="429" x2="764" y2="429" stroke="#f0f0f0" stroke-width="1"/>
+
+<!-- Drei Inline-Boxen -->
+<!-- Box 1: GitHub Actions -->
+<rect x="36" y="440" width="222" height="60" rx="8"
+      fill="#fff8f4" stroke="#fbd5bc" stroke-width="1"/>
+<text x="147" y="458" text-anchor="middle" font-size="9" font-weight="700" letter-spacing="0.06em" fill="#f97316">GITHUB ACTIONS</text>
+<text x="147" y="474" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1a1a">CI/CD Workflow</text>
+<text x="147" y="490" text-anchor="middle" font-size="10" fill="#888">Startet bei Push</text>
+
+<line x1="258" y1="470" x2="278" y2="470"
+      stroke="#f97316" stroke-width="1.5" stroke-opacity="0.7"
+      marker-end="url(#arr-mini)"/>
+
+<!-- Box 2: Eleventy -->
+<rect x="280" y="440" width="222" height="60" rx="8"
+      fill="#fff8f4" stroke="#fbd5bc" stroke-width="1"/>
+<text x="391" y="458" text-anchor="middle" font-size="9" font-weight="700" letter-spacing="0.06em" fill="#f97316">ELEVENTY (11TY)</text>
+<text x="391" y="474" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1a1a">HTML Build</text>
+<text x="391" y="490" text-anchor="middle" font-size="10" fill="#888">MD → /dist/*.html</text>
+
+<line x1="502" y1="470" x2="522" y2="470"
+      stroke="#f97316" stroke-width="1.5" stroke-opacity="0.7"
+      marker-end="url(#arr-mini)"/>
+
+<!-- Box 3: Pagefind -->
+<rect x="524" y="440" width="222" height="60" rx="8"
+      fill="#fafafa" stroke="#e8e8e8" stroke-width="1"/>
+<text x="635" y="458" text-anchor="middle" font-size="9" font-weight="700" letter-spacing="0.06em" fill="#bbb">PAGEFIND</text>
+<text x="635" y="474" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1a1a">Suchindex</text>
+<text x="635" y="490" text-anchor="middle" font-size="10" fill="#888">EU · kein Drittdienst</text>
+
+<!-- ── PFEIL 3 → 4 ─────────────────────────────────────────────── -->
+<line x1="400" y1="516" x2="400" y2="540"
+      stroke="#475569" stroke-width="1.5" stroke-opacity="0.6"
+      marker-end="url(#arr-s)"/>
+<text x="420" y="532" font-size="9.5" fill="#bbb" letter-spacing="0.03em">SFTP deploy</text>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- MODUL 4: HETZNER / VISALES.DE                                  -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<rect x="16" y="542" width="768" height="90" rx="12"
+      fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"/>
+<rect x="16" y="542" width="768" height="4" rx="2" fill="#475569"/>
+<rect x="16" y="542" width="4" height="90" rx="2" fill="#475569"/>
+<circle cx="44" cy="566" r="14" fill="#475569"/>
+<text x="44" y="571" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">4</text>
+<text x="68" y="560" font-size="10" font-weight="700" letter-spacing="0.1em" fill="#475569">HOSTING · EU · HETZNER</text>
+<text x="68" y="577" font-size="16" font-weight="700" letter-spacing="-0.01em" fill="#1a1a1a">visales.de · Statische HTML-Site</text>
+<text x="68" y="593" font-size="11" fill="#888">Kein PHP · keine Datenbank · kein CMS-Prozess · SSL automatisch · Hetzner Deutschland</text>
+<!-- Badges -->
+<rect x="560" y="557" width="60" height="22" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="590" y="571" text-anchor="middle" font-size="8" font-weight="700" fill="#475569">Hetzner DE</text>
+<rect x="628" y="557" width="50" height="22" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="653" y="571" text-anchor="middle" font-size="8" font-weight="700" fill="#475569">EU only</text>
+<rect x="686" y="557" width="80" height="22" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="726" y="571" text-anchor="middle" font-size="8" font-weight="700" fill="#475569">RSS autom.</text>
+<!-- RSS note -->
+<text x="68" y="619" font-size="10" fill="#bbb">RSS-Feed wird beim Build automatisch generiert → Quelle für Newsletter + Fediverse</text>
+
+<!-- ── PFEIL 4 → 5 (Split) ──────────────────────────────────────── -->
+<path d="M270,632 L270,650 L213,650 L213,666"
+      fill="none" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.5"
+      stroke-dasharray="4,3" marker-end="url(#arr)"/>
+<path d="M530,632 L530,650 L587,650 L587,666"
+      fill="none" stroke="#888" stroke-width="1.5" stroke-opacity="0.5"
+      stroke-dasharray="4,3" marker-end="url(#arr-g)"/>
+<line x1="270" y1="650" x2="530" y2="650"
+      stroke="#e5e5e5" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="175" y="659" text-anchor="middle" font-size="9" fill="#f97316" font-weight="600">RSS</text>
+<text x="625" y="659" text-anchor="middle" font-size="9" fill="#888" font-weight="600">RSS</text>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- MODUL 5: DISTRIBUTION                                          -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<rect x="16" y="668" width="768" height="158" rx="12"
+      fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"/>
+<rect x="16" y="668" width="768" height="4" rx="2" fill="#f97316"/>
+<rect x="16" y="668" width="4" height="158" rx="2" fill="#f97316"/>
+<circle cx="44" cy="692" r="14" fill="#f97316"/>
+<text x="44" y="697" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">5</text>
+<text x="68" y="686" font-size="10" font-weight="700" letter-spacing="0.1em" fill="#f97316">DISTRIBUTION</text>
+<text x="68" y="703" font-size="16" font-weight="700" letter-spacing="-0.01em" fill="#1a1a1a">Newsletter + Fediverse</text>
+<text x="68" y="719" font-size="11" fill="#888">Zwei Kanäle · beide EU-souverän · kein US-Dienst</text>
+<line x1="36" y1="731" x2="764" y2="731" stroke="#f0f0f0" stroke-width="1"/>
+
+<!-- Sub-Section links: Brevo -->
+<rect x="36" y="741" width="354" height="72" rx="8"
+      fill="#fff8f4" stroke="#fbd5bc" stroke-width="1"/>
+<text x="213" y="759" text-anchor="middle"
+      font-size="9.5" font-weight="700" letter-spacing="0.07em" fill="#f97316">NEWSLETTER · BREVO</text>
+<text x="213" y="776" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1a">E-Mail Newsletter</text>
+<text x="213" y="792" text-anchor="middle" font-size="10.5" fill="#555">Paris · EU · DSGVO-nativ · Account vorhanden</text>
+<text x="213" y="806" text-anchor="middle" font-size="10" fill="#999">Manuell monatlich befüllen + versenden</text>
+
+<!-- Sub-Section rechts: Bridgy Fed -->
+<rect x="403" y="741" width="363" height="72" rx="8"
+      fill="#fafafa" stroke="#e8e8e8" stroke-width="1"/>
+<text x="584" y="759" text-anchor="middle"
+      font-size="9.5" font-weight="700" letter-spacing="0.07em" fill="#888">FEDIVERSE · BRIDGY FED</text>
+<text x="584" y="776" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1a">Mastodon &amp; Co.</text>
+<text x="584" y="792" text-anchor="middle" font-size="10.5" fill="#555">ActivityPub via RSS · kein eigener Server</text>
+<text x="584" y="806" text-anchor="middle" font-size="10" fill="#999">h-card + h-entry im Template → automatisch</text>
+
+<!-- ── FUSSZEILE ─────────────────────────────────────────────────── -->
+<line x1="16" y1="838" x2="784" y2="838" stroke="#f0f0f0" stroke-width="1"/>
+<text x="400" y="853" text-anchor="middle"
+      font-size="9.5" fill="#bbb" letter-spacing="0.03em">viSales GmbH · Bochum · SkillCMS Architektur · März 2026 · iA Writer + GitHub + Eleventy + Hetzner + Brevo + Bridgy Fed</text>
+
+</svg>

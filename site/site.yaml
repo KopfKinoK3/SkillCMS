@@ -1,0 +1,120 @@
+# SkillCMS Site-Konfiguration — viSales GmbH
+# Änderungen hier wirken sich auf alle generierten Seiten aus.
+
+site:
+  title: "viSales"
+  url: "https://visales.de"
+  language: "de"
+  description: "B2B-Agentur für visuelle Vertriebskommunikation – spezialisiert auf 3D-Visualisierung, WebAR und OpenUSD für Maschinenbau & Industrie."
+  claim: "Gespräche kürzer, Entscheidungen klarer, Abschlüsse planbarer."
+  logo: "assets/images/logo-visales.png"
+  accent_color: "#f2902a"
+  copyright_year: "2026"
+  company: "viSales GmbH"
+  location: "Bochum"
+
+author:
+  name: "Gerhard Schröder"
+  slug: "gerhard"
+  avatar: "https://visales.de/content/images/2025/10/1706254155883-1.jpeg"
+  url: "https://visales.de/author/gerhard/"
+
+navigation:
+  - label: "Leistungen"
+    slug: "leistungen"
+  - label: "Fallbeispiele"
+    slug: "fallbeispiele"
+  - label: "Praxis"
+    slug: "praxis"
+  - label: "Über Uns"
+    slug: "ueber-uns"
+  - label: "Kontakt"
+    slug: "kontakt"
+
+social:
+  linkedin: "https://www.linkedin.com/in/gerhardschroeder-visales/"
+  youtube: "https://www.youtube.com/@visales"
+  mastodon: "https://mastodon.social/@visales"   # <-- echte URL einsetzen
+  mastodon_rel: "me"
+
+contact:
+  email: "sales@visales.de"
+  phone: "+49 160 806 0361"
+  phone_display: "+49 160 806 0361"
+
+memberships:
+  - label: "Alliance for OpenUSD"
+    url: "https://aousd.org/"
+  - label: "Metaverse Standards Forum"
+    url: "https://metaverse-standards.org/"
+
+trust_clients: "Siemens · Evonik · K+S · Somfy · Wavin · Carl Hamm · ESA/ESERO · DeterTech · Astrofein · Polaris Spaceplane u.a."
+
+footer:
+  columns:
+    - title: "Visual Sales"
+      links:
+        - label: "Grafik & Visualisierung"
+          url: "/grafik-2d-3d/"
+        - label: "Interaktive Präsentationen"
+          url: "/interaktive-prasentationen/"
+        - label: "Video- & Fotoproduktion"
+          url: "/video/"
+        - label: "Produktkonfiguratoren"
+          url: "/produktkonfigurator/"
+        - label: "Beratung & Workshops"
+          url: "/beratung/"
+        - label: "Vorträge & Impulse"
+          url: "/vortraege-gerhard-schroeder/"
+
+    - title: "Immersive Sales"
+      links:
+        - label: "Augmented Reality"
+          url: "/augmented-reality/"
+        - label: "Messe-Lösungen"
+          url: "/messen/"
+        - label: "Virtuelle Rundgänge"
+          url: "/virtuelle-rundgange/"
+        - label: "Spatial Websites"
+          url: "/spatial-website/"
+        - label: "Spatial Presentations"
+          url: "/spatial-presentation/"
+        - label: "OpenUSD / Omniverse"
+          url: "/usdbridge/"
+
+    - title: "Praxis"
+      links:
+        - label: "Artikel & Insights"
+          url: "/praxis/"
+        - label: "Fallbeispiele"
+          url: "/fallbeispiele/"
+        - label: "Über viSales"
+          url: "/ueber-uns/"
+
+    - title: "Kontakt"
+      type: "contact"   # Spezial-Rendering
+
+    - title: "Feeds"
+      links:
+        - label: "RSS Website"
+          url: "/rss/"
+        - label: "RSS Podcast"
+          url: "/podcast/rss/"
+
+    - title: "Newsletter & Podcast"
+      type: "newsletter"   # Spezial-Rendering
+      teaser: "Visual Sales: Einmal im Monat, ohne Marketing-Rhetorik."
+      archive_url: "/newsletter/"
+      archive_label: "Alle Ausgaben & Podcast →"
+      form_action: "#"    # <-- Newsletter-Endpoint einsetzen
+
+legal:
+  - label: "Impressum"
+    url: "/impressum/"
+  - label: "Datenschutz"
+    url: "/datenschutz/"
+
+build:
+  include_drafts: false
+  base_url: "/"
+  output_dir: "."    # relativ zum site/-Verzeichnis

@@ -1,0 +1,19 @@
+# Generierte HTML-Ausgabe — wird von GitHub Actions gebaut, nicht committet
+site/*.html
+site/tag/
+site/sitemap.xml
+site/robots.txt
+site/rss.xml
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+*.swp
