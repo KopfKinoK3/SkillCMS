@@ -1800,13 +1800,13 @@ def build_single(slug, include_drafts=False, drafts_only=False):
     Sucht content/{slug}.md oder content/posts/*{slug}.md und baut die Seite.
     """
     # 1. In content/pages/ und content/ki/
-    for subdir in ["pages", "ki"]:
+    for subdir in ["pages", "ki", "articles", "drafts"]:
         direct = os.path.join(CONTENT_DIR, subdir, f"{slug}.md")
         if os.path.exists(direct):
             return build_file(direct, include_drafts=include_drafts, drafts_only=drafts_only)
 
     # 2. In content/posts/ (mit optionalem Datum-Präfix)
-    posts_dir = os.path.join(CONTENT_DIR, "posts")
+    posts_dir = os.path.join(CONTENT_DIR, "articles")
     if os.path.isdir(posts_dir):
         for fname in os.listdir(posts_dir):
             if fname.endswith(".md") and slug in fname:
@@ -1835,7 +1835,7 @@ def build_rss():
     author_name = cfg("author",  "name",     default="Gerhard Schröder")
     author_tag  = f"{email} ({author_name})" if email else author_name
 
-    posts_dir = os.path.join(CONTENT_DIR, "posts")
+    posts_dir = os.path.join(CONTENT_DIR, "articles")
     items     = []
 
     if os.path.isdir(posts_dir):
@@ -2099,7 +2099,7 @@ def build_tag_listing(tag_slug):
     Filtert published Posts nach primary_tag oder tags-Liste.
     Liest optionale Metadata aus content/tags/{tag_slug}.md.
     """
-    posts_dir = os.path.join(CONTENT_DIR, "posts")
+    posts_dir = os.path.join(CONTENT_DIR, "articles")
 
     # Optionale Tag-Metadata
     tag_md = os.path.join(CONTENT_DIR, "tags", f"{tag_slug}.md")
@@ -2228,15 +2228,15 @@ def collect_md_files():
     files = []
 
     # content/pages/*.md (Seiten)
-    for subdir in ["pages", "ki"]:
+    for subdir in ["pages", "ki", "articles", "drafts"]:
         d = os.path.join(CONTENT_DIR, subdir)
         if os.path.isdir(d):
             for fname in sorted(os.listdir(d)):
                 if fname.endswith(".md"):
                     files.append(os.path.join(d, fname))
 
-    # content/posts/*.md (Blog-Posts)
-    posts_dir = os.path.join(CONTENT_DIR, "posts")
+    # content/articles/*.md (Blog-Posts)
+    posts_dir = os.path.join(CONTENT_DIR, "articles")
     if os.path.isdir(posts_dir):
         for fname in sorted(os.listdir(posts_dir)):
             if fname.endswith(".md"):
@@ -2297,7 +2297,7 @@ def build_all(include_drafts=False, drafts_only=False):
     if not drafts_only:
         # Alle einzigartigen Tags aus published Posts sammeln
         all_tags = set()
-        posts_dir_scan = os.path.join(CONTENT_DIR, "posts")
+        posts_dir_scan = os.path.join(CONTENT_DIR, "articles")
         if os.path.isdir(posts_dir_scan):
             for fname in os.listdir(posts_dir_scan):
                 if not fname.endswith(".md"):
