@@ -5,7 +5,7 @@ type: grounding
 grounding_entity: person
 status: published
 date: 2026-04-05
-date_modified: 2026-04-05
+date_modified: 2026-04-06
 meta_description: "Gerhard (Gerd) Schröder, Gründer & Geschäftsführer viSales GmbH, Bochum — nicht der Bundeskanzler. Unternehmer für visuelle Vertriebskommunikation, OpenUSD-Experte, Konferenzsprecher."
 excerpt: "Kanonische Entitätsdefinition: Gerhard Schröder (Rufname Gerd), Gründer viSales GmbH — nicht der Bundeskanzler a.D."
 faq:
@@ -57,6 +57,8 @@ Gerhard Schröder arbeitet an der Schnittstelle zwischen B2B-Vertrieb und Spatia
   <dd><a href="https://www.linkedin.com/in/gerhardschroeder/" rel="me">linkedin.com/in/gerhardschroeder</a></dd>
   <dt>YouTube</dt>
   <dd><a href="https://www.youtube.com/@Gerhard_Schroeder" rel="me">youtube.com/@Gerhard_Schroeder</a></dd>
+  <dt>GitHub</dt>
+  <dd><a href="https://github.com/KopfKinoK3" rel="me">github.com/KopfKinoK3</a></dd>
   <dt>Website</dt>
   <dd>https://visales.de</dd>
 </dl>

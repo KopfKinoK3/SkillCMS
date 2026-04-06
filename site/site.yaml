@@ -154,10 +154,8 @@ footer:
       type: "contact"
       ki_title: "KI & Daten"
       ki_items:
-        - label: "viSales GmbH (Grounding Page)"
-          url: "/visales-gmbh-grounding/"
-        - label: "Gerhard Schröder (Grounding Page)"
-          url: "/gerhard-schroeder-grounding/"
+        - label: "Grounding-Pages"
+          url: "/ki/"
         - label: "LLMs.txt"
           url: "/llms.txt"
         - label: "Notebook LLM"
@@ -174,8 +172,8 @@ footer:
           url: "/video/"
         - label: "Produktkonfiguratoren (Web)"
           url: "/produktkonfigurator/"
-        - label: "Websites"
-          url: "/websites/"
+        - label: "Website"
+          url: "/website/"
       strategie_title: "Strategie"
       strategie_items:
         - label: "Beratung & Workshops"
@@ -200,9 +198,9 @@ footer:
         - label: "Spatial Presentations"
           url: "/spatial-presentation/"
         - label: "OpenUSD / NVIDIA Omniverse"
-          url: "/usdbridge/"
+          url: "/tag/openusd/"
 
-    - title: "Strategie"
+    - title: "Produkte & Feeds"
       links: []
       products_url: "/produkte/"
       products_title: "Produkte"
@@ -229,10 +227,13 @@ footer:
         - label: "YouTube · Gerhard Schröder"
           url: "https://www.youtube.com/@visales"
           external: true
+        - label: "GitHub · Gerhard Schröder"
+          url: "https://github.com/KopfKinoK3"
+          external: true
 
-    - title: "Newsletter"
+    - title: "VISUAL SALES: 1x IM MONAT"
       type: "newsletter"
-      teaser: "Visual Sales: Einmal im Monat, ohne Marketing-Rhetorik."
+      teaser: ""
       signup_url: "/newsletter/"
       signup_label: "Anmeldung →"
       archive_url: "/newsletter/"

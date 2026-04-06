@@ -497,11 +497,11 @@ def build_footer_html():
                 # Fallback: einfacher CTA-Button
                 signup_block = f'<a href="{signup_url}" class="gh-button vs-footer-signup-btn">{signup_label}</a>'
 
+            teaser_html = f'<p>{teaser}</p>\n                    ' if teaser else ''
             cols_html.append(
                 f'<div class="vs-footer-col vs-footer-newsletter">\n'
                 f'                    {h4}\n'
-                f'                    <p>{teaser}</p>\n'
-                f'                    {signup_block}\n'
+                f'                    {teaser_html}{signup_block}\n'
                 f'                </div>'
             )
 
