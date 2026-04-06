@@ -1,8 +1,14 @@
 ---
 title: "Meine Liebe zu Tolkien (2): Zwei Lehren aus einer Neuseeland-Reise"
 slug: meine-liebe-zu-tolkien-2-zwei-lehren-aus-einer-neuseeland-reise
-feature_image: /assets/images/2026/03/Hobbingen_Neuseeland.jpg
+status: published
+primary_tag: impuls
 tags: [impuls]
+feature_image: /assets/images/2026/03/Hobbingen_Neuseeland.jpg
+author: "Gerhard Schröder"
+author_slug: gerhard
+author_image: /assets/images/2025/10/1706254155883-1.jpeg
+author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit über 15 Jahren spezialisiert auf visuelle Vertriebskommunikation für Maschinenbau & AeroSpace — mit 3D-Visualisierung & OpenUSD. Mitglied der AOUSD, Speaker zu AR & Spatial Sales."
 published_at: 2026-03-02T23:03:38.000Z
 template: post
 ---
@@ -37,7 +43,8 @@ Als ich dort auf dem Gelände war gab es nur noch EIN einziges Band hoch/oben im
 
 **Traurige Anekdote (2):** Auf dem Hinflug ging es via Indien / Singapur nach Australien und Neuseeland. Auf dem Rückflug, da war gerade die Afganistan-Invasion gestartet worden, flogen via Quer über den Indischen Ozean - Weit Weg vom Kriegsgebiet.
 
+&nbsp;
 
-[*Meine Liebe zu Tolkien, Teil 1*](https://visales.de/meine-liebe-zu-tolkien-1/)*:* *Interaktive eBook-Produktion.*
-*Im dritten Teil trifft Mittelerde auf Livestreaming. *
+[*Meine Liebe zu Tolkien, Teil 1*](https://visales.de/meine-liebe-zu-tolkien-1/)*:* *Interaktive eBook-Produktion.*  
+*Im dritten Teil trifft Mittelerde auf Livestreaming. *  
 *Aber das ist eine andere Geschichte...*

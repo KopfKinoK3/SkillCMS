@@ -67,10 +67,22 @@
 
 ## 🔜 Block D — Content-Migration & Deploy
 
+### D0 · Ghost-Exporter — Template-Fixes (Prio 1, Phase 1) 🆕
+
+Erkannt beim Testlauf mit Tolkien-2 + Bildergalerie (2026-04-06):
+
+| # | Problem | Lösung |
+|---|---|---|
+| D0.1 | **Bildergalerie fehlt** — Ghost `gallery`-Node wird als einzelne `![]()`-Liste gerendert, keine echte Galerie-Darstellung | Template: CSS-Grid-Galerie in `screen.css` + HTML-Wrapper im `build.py` für `gallery`-Blöcke |
+| D0.2 | **Kategorie-Slug über Titelbild fehlt** | Template: `primary_tag` aus Frontmatter als Chip/Badge über dem Artikel-Header rendern |
+| D0.3 | **Titelbild im Artikel-Header fehlt** | Template: `feature_image` als Hero-Bild im Post-Header rendern |
+| D0.4 | **Autor-Block fehlt** (Name + Profilbild + Bio + Datum) | Template: Autor-Block unter dem Artikel-Header aus Frontmatter-Feldern `author`, `author_image`, `author_bio`, `published_at` |
+| D0.5 | **Bilder als Broken Link** auf GitHub Pages (lokaler CORS-Block gelöst, GitHub live ✅) | Erledigt via GitHub Pages Deploy |
+
 ### D1 · Content-Migration
 - Ghost-Seiten als Dummy-MDs: Leistungen, Fallbeispiele, Über Uns, …
 - Skeleton-Snapshot: ZIP als `SkillCMS-v1.0-skeleton`
-- Ziel: ~42 statische Seiten + ~130 Blog-Posts
+- Ziel: ~51 Pages + ~200 Posts aus Ghost exportieren
 
 ### D2 · Hetzner Deploy (wenn live)
 - FTP-Zugangsdaten klären
