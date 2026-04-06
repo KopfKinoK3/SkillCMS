@@ -75,8 +75,12 @@ def ensure_deps():
         missing.append("PyYAML")
 
     if missing:
+        # --break-system-packages nur ab pip 22+ (Linux) — auf älteren Systemen weglassen
+        import pip
+        pip_version = tuple(int(x) for x in pip.__version__.split(".")[:2])
+        flags = ["--break-system-packages"] if pip_version >= (22, 0) else []
         subprocess.check_call(
-            [sys.executable, "-m", "pip", "install", "--break-system-packages", "-q"] + missing
+            [sys.executable, "-m", "pip", "install"] + flags + ["-q"] + missing
         )
 
 ensure_deps()
