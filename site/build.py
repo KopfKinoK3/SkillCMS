@@ -1238,6 +1238,7 @@ INLINE_CSS = """
 
         /* ===== D0.4 — Autor-Block unter Content ===== */
         .gh-main { padding-bottom: 0 !important; }
+        .gh-footer { margin-top: 0 !important; }
         .vs-author-block {
             display: flex;
             align-items: flex-start;
