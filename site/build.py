@@ -348,7 +348,16 @@ def build_cookie_banner():
   var toggles   = banner ? banner.querySelectorAll('.vs-cookie-toggle[data-cat]') : [];
 
   function getConsent(){ try{ return JSON.parse(localStorage.getItem(STORE_KEY)||'null'); }catch(e){ return null; } }
-  function setConsent(obj){ localStorage.setItem(STORE_KEY, JSON.stringify(obj)); document.dispatchEvent(new CustomEvent('vsCookieConsent', {detail: obj})); }
+  function setConsent(obj){
+    localStorage.setItem(STORE_KEY, JSON.stringify(obj));
+    document.dispatchEvent(new CustomEvent('vsCookieConsent', {detail: obj}));
+    if(typeof gtag === 'function'){
+      gtag('consent', 'update', {
+        'analytics_storage': obj.analyse ? 'granted' : 'denied',
+        'ad_storage':        obj.marketing ? 'granted' : 'denied'
+      });
+    }
+  }
   function hideBanner(){ if(banner) banner.style.display='none'; }
 
   function applyToggles(obj){
@@ -359,7 +368,16 @@ def build_cookie_banner():
   }
 
   var existing = getConsent();
-  if(existing){ hideBanner(); return; }
+  if(existing){
+    hideBanner();
+    if(typeof gtag === 'function'){
+      gtag('consent', 'update', {
+        'analytics_storage': existing.analyse ? 'granted' : 'denied',
+        'ad_storage':        existing.marketing ? 'granted' : 'denied'
+      });
+    }
+    return;
+  }
 
   if(!banner) return;
   banner.style.display = 'block';
@@ -1588,6 +1606,22 @@ def build_page(meta, content_html, is_draft=False):
     <link rel="canonical" href="{canonical}">
     <link rel="alternate" type="application/rss+xml" title="viSales – Artikel &amp; Insights" href="{base}rss.xml">
     <link rel="alternate" type="application/rss+xml" title="Visual Com Podcast" href="https://visualcom.podcaster.de/visual-com.rss">
+
+    <!-- Google tag (gtag.js) — consent-gesteuert -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JEPNB0BL5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){{dataLayer.push(arguments);}}
+        // Default: alles verweigern bis Consent
+        gtag('consent', 'default', {{
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied',
+            'wait_for_update': 500
+        }});
+        gtag('js', new Date());
+        gtag('config', 'G-8JEPNB0BL5');
+        gtag('config', 'AW-1024175020');
+    </script>
 
     <!-- Open Graph -->
     <meta property="og:title" content="{title}">
