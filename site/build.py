@@ -915,7 +915,9 @@ INLINE_CSS = """
         /* ── Brevo-Formular viSales-Overrides ─────────────────────────────── */
         .vs-footer-newsletter .sib-form { text-align:left !important; background:transparent !important; padding:0 !important; }
         .vs-footer-newsletter .sib-form-container { max-width:100% !important; }
-        .vs-footer-newsletter #sib-container { max-width:100% !important; border:none !important; background:transparent !important; padding:0.4em 0 !important; }
+        .vs-footer-newsletter #sib-container { max-width:100% !important; border:none !important; background:transparent !important; padding:0 !important; margin-top:-0.4em !important; }
+        .vs-footer-newsletter a { color:var(--color-primary-text) !important; text-decoration:underline !important; }
+        .vs-footer-newsletter #sib-container a { color:var(--color-primary-text) !important; }
         .vs-footer-newsletter .sib-form-block p { margin:0 0 0.4em; font-size:1.3rem; }
         .vs-footer-newsletter .sib-form-block[style*="font-size:24px"] p,
         .vs-footer-newsletter .sib-form-block[style*="font-size:32px"] p { display:none; } /* "Visual Sales" Titel — schon im h4 vorhanden */
