@@ -1237,6 +1237,7 @@ INLINE_CSS = """
         .vs-meta-sep { opacity: 0.5; }
 
         /* ===== D0.4 — Autor-Block unter Content ===== */
+        .gh-main { padding-bottom: 0 !important; }
         .vs-author-block {
             display: flex;
             align-items: flex-start;
@@ -1244,8 +1245,8 @@ INLINE_CSS = """
             max-width: 720px;
             margin-left: auto;
             margin-right: auto;
-            padding: 3rem 0 2rem;
-            margin-top: 1rem;
+            padding: 3rem 0 4rem;
+            margin-top: 3rem;
             border-top: 1px solid var(--color-border);
         }
         .vs-author-block-avatar {
