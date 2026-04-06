@@ -152,6 +152,17 @@ footer:
   columns:
     - title: "Kontakt"
       type: "contact"
+      ki_title: "KI & Daten"
+      ki_items:
+        - label: "viSales GmbH (Grounding Page)"
+          url: "/visales-gmbh-grounding/"
+        - label: "Gerhard Schröder (Grounding Page)"
+          url: "/gerhard-schroeder-grounding/"
+        - label: "LLMs.txt"
+          url: "/llms.txt"
+        - label: "Notebook LLM"
+          url: "https://notebooklm.google.com/notebook/8214e4ca-dd3d-4420-9cc5-be74370ea3ed?authuser=1&ref=visales.de"
+          external: true
 
     - title: "Visual Sales"
       links:
@@ -165,17 +176,12 @@ footer:
           url: "/produktkonfigurator/"
         - label: "Websites"
           url: "/websites/"
-      ki_title: "KI & Daten"
-      ki_items:
-        - label: "viSales GmbH (Entität)"
-          url: "/visales-gmbh-grounding/"
-        - label: "Gerhard Schröder (Entität)"
-          url: "/gerhard-schroeder-grounding/"
-        - label: "LLMs.txt"
-          url: "/llms.txt"
-        - label: "Notebook LLM"
-          url: "https://notebooklm.google.com/notebook/8214e4ca-dd3d-4420-9cc5-be74370ea3ed?authuser=1&ref=visales.de"
-          external: true
+      strategie_title: "Strategie"
+      strategie_items:
+        - label: "Beratung & Workshops"
+          url: "/beratung/"
+        - label: "Vorträge & Impulse"
+          url: "/vortraege-gerhard-schroeder/"
 
     - title: "Immersive Sales"
       links:
@@ -197,11 +203,7 @@ footer:
           url: "/usdbridge/"
 
     - title: "Strategie"
-      links:
-        - label: "Beratung & Workshops"
-          url: "/beratung/"
-        - label: "Vorträge & Impulse"
-          url: "/vortraege-gerhard-schroeder/"
+      links: []
       products_url: "/produkte/"
       products_title: "Produkte"
       products:

@@ -462,10 +462,24 @@ def build_footer_html():
                 f'<li><a href="mailto:{contact_cfg.get("email", "")}">{contact_cfg.get("email", "")}</a></li>',
                 f'<li><a href="tel:{contact_cfg.get("phone", "").replace(" ", "")}">{contact_cfg.get("phone_display", contact_cfg.get("phone", ""))}</a></li>',
             ]
+
+            # KI & Daten sub-section (same h4 style as column title)
+            ki_items_contact = col.get("ki_items", [])
+            ki_contact_html = ""
+            if ki_items_contact:
+                ki_t = col.get("ki_title", "KI & Daten")
+                ki_h4_contact = f'<h4 class="vs-footer-col-subtitle">{ki_t}</h4>'
+                ki_contact_parts = []
+                for k in ki_items_contact:
+                    ext_attr = ' target="_blank" rel="noopener"' if k.get("external") else ""
+                    ki_contact_parts.append(f'<li><a href="{k["url"]}"{ext_attr}>{k["label"]}</a></li>')
+                ki_contact_html = f'{ki_h4_contact}<ul>{"".join(ki_contact_parts)}</ul>'
+
             cols_html.append(
                 f'<div class="vs-footer-col">'
                 f'{h4}{addr_html}{cta_html}'
                 f'<ul>{"".join(contact_links)}</ul>'
+                f'{ki_contact_html}'
                 f'</div>'
             )
 
@@ -541,56 +555,52 @@ def build_footer_html():
                 else f'<li><a href="{lnk["url"]}">{lnk["label"]}</a></li>'
                 for lnk in links
             )
+
+            # Strategie sub-section (same h4 heading style as column title)
+            strategie_items = col.get("strategie_items", [])
+            strategie_html = ""
+            if strategie_items:
+                strat_title = col.get("strategie_title", "Strategie")
+                strat_h4 = f'<h4 class="vs-footer-col-subtitle">{strat_title}</h4>'
+                strat_parts = []
+                for s in strategie_items:
+                    ext_attr = ' target="_blank" rel="noopener"' if s.get("external") else ""
+                    strat_parts.append(f'<li><a href="{s["url"]}"{ext_attr}>{s["label"]}</a></li>')
+                strategie_html = f'{strat_h4}<ul>{"".join(strat_parts)}</ul>'
+
             products = col.get("products", [])
             products_html = ""
             if products:
                 prod_url   = col.get("products_url", "")
                 prod_title = col.get("products_title", "Produkte")
-                prod_head  = (
-                    f'<a href="{prod_url}" class="vs-footer-sublabel-link">{prod_title}</a>'
+                prod_h4    = (
+                    f'<h4 class="vs-footer-col-subtitle"><a href="{prod_url}" class="vs-footer-sub-h4-link">{prod_title}</a></h4>'
                     if prod_url else
-                    f'<span class="vs-footer-sublabel">{prod_title}</span>'
+                    f'<h4 class="vs-footer-col-subtitle">{prod_title}</h4>'
                 )
                 prod_items = "".join(
-                    f'<li><a href="{p["url"]}">→ {p["label"]}</a></li>'
+                    f'<li class="vs-footer-prod-item"><a href="{p["url"]}">→ {p["label"]}</a></li>'
                     for p in products
                 )
                 prod_more = (
-                    f'<li class="vs-footer-prod-more"><a href="{prod_url}">→ Weitere Produkte</a></li>'
+                    f'<li class="vs-footer-prod-more vs-footer-prod-item"><a href="{prod_url}">→ Weitere Produkte</a></li>'
                     if prod_url else ""
                 )
-                products_html = f'<p class="vs-footer-sublabel">{prod_head}</p><ul>{prod_items}{prod_more}</ul>'
+                products_html = f'{prod_h4}<ul>{prod_items}{prod_more}</ul>'
 
-            ki_items_cfg = col.get("ki_items", [])
-            ki_html = ""
-            if ki_items_cfg:
-                ki_title = col.get("ki_title", "KI & Daten")
-                ki_url   = col.get("ki_url", "")
-                ki_head  = (
-                    f'<a href="{ki_url}" class="vs-footer-sublabel-link">{ki_title}</a>'
-                    if ki_url else
-                    f'<span class="vs-footer-sublabel">{ki_title}</span>'
-                )
-                ki_list_parts = []
-                for k in ki_items_cfg:
-                    ext_attr = ' target="_blank" rel="noopener"' if k.get("external") else ""
-                    ki_list_parts.append(f'<li><a href="{k["url"]}"{ext_attr}>{k["label"]}</a></li>')
-                ki_list = "".join(ki_list_parts)
-                ki_h4   = f'<h4 class="vs-footer-col-title vs-footer-col-subtitle">{ki_title}</h4>'
-                ki_html = f'{ki_h4}<ul>{ki_list}</ul>'
             feeds_items_cfg = col.get("feeds_items", [])
             feeds_html = ""
             if feeds_items_cfg:
                 feeds_title = col.get("feeds_title", "Feeds & Social")
-                feeds_head  = f'<span class="vs-footer-sublabel">{feeds_title}</span>'
+                feeds_h4 = f'<h4 class="vs-footer-col-subtitle">{feeds_title}</h4>'
                 feeds_parts = []
                 for f in feeds_items_cfg:
                     ext_attr = ' target="_blank" rel="noopener"' if f.get("external") else ""
                     feeds_parts.append(f'<li><a href="{f["url"]}"{ext_attr}>{f["label"]}</a></li>')
-                feeds_html = f'<p class="vs-footer-sublabel">{feeds_head}</p><ul>{"".join(feeds_parts)}</ul>'
+                feeds_html = f'{feeds_h4}<ul>{"".join(feeds_parts)}</ul>'
 
             cols_html.append(
-                f'<div class="vs-footer-col">{h4}<ul>{li_items}</ul>{products_html}{feeds_html}{ki_html}</div>'
+                f'<div class="vs-footer-col">{h4}<ul>{li_items}</ul>{strategie_html}{products_html}{feeds_html}</div>'
             )
 
     cols_joined = "\n                ".join(cols_html)
@@ -810,13 +820,20 @@ INLINE_CSS = """
         }
         .vs-footer-prod-more { margin-top: 0.4em; }
         .vs-footer-prod-more a { color: var(--ghost-accent-color) !important; font-size: 1.3rem; }
+        .vs-footer-prod-item a { color: var(--color-secondary-text) !important; }
+        .vs-footer-prod-item a:hover { color: var(--ghost-accent-color) !important; }
         .vs-footer-stack-sep {
             margin-top: 2.4rem;
         }
         .vs-footer-col-subtitle {
-            margin-top: 0 !important;
+            margin-top: 2.2rem !important;
             margin-bottom: 0.9em !important;
         }
+        .vs-footer-sub-h4-link {
+            color: var(--color-primary-text) !important;
+            text-decoration: none;
+        }
+        .vs-footer-sub-h4-link:hover { color: var(--ghost-accent-color) !important; }
         .vs-footer-col h4 {
             color: var(--color-primary-text);
             font-size: 1.5rem;
