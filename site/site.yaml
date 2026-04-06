@@ -58,7 +58,7 @@ schema:
         url: "https://metaverse-standards.org/"
     same_as:
       - "https://www.linkedin.com/company/visales/"
-      - "https://www.youtube.com/@visales"
+      - "https://www.youtube.com/@Gerhard_Schroeder"
       - "https://mastodon.social/@visales"
 
   person:
@@ -95,7 +95,7 @@ schema:
         url: "https://metaverse-standards.org/"
     same_as:
       - "https://www.linkedin.com/in/gerhardschroeder-visales/"
-      - "https://www.youtube.com/@visales"
+      - "https://www.youtube.com/@Gerhard_Schroeder"
       - "https://mastodon.social/@visales"
 
   professional_service:
@@ -130,7 +130,7 @@ nav_cta:
 
 social:
   linkedin: "https://www.linkedin.com/in/gerhardschroeder-visales/"
-  youtube: "https://www.youtube.com/@visales"
+  youtube: "https://www.youtube.com/@Gerhard_Schroeder"
   mastodon: "https://mastodon.social/@visales"   # <-- echte URL einsetzen
   mastodon_rel: "me"
 
@@ -226,7 +226,7 @@ footer:
           url: "https://www.linkedin.com/in/gerhardschroeder-visales/"
           external: true
         - label: "YouTube · Gerhard Schröder"
-          url: "https://www.youtube.com/@visales"
+          url: "https://www.youtube.com/@Gerhard_Schroeder"
           external: true
         - label: "GitHub · Gerhard Schröder"
           url: "https://github.com/KopfKinoK3"

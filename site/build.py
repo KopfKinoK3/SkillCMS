@@ -495,6 +495,8 @@ def build_footer_html():
                 signup_block = BREVO_BODY
             else:
                 # Fallback: einfacher CTA-Button
+                # ⚠ WARNUNG: _brevo-form.html fehlt oder hat keine ##BREVO_BODY_START## Marker
+                print("  ⚠  Newsletter-Formular: _brevo-form.html nicht gefunden oder Marker fehlen → Fallback-Button aktiv")
                 signup_block = f'<a href="{signup_url}" class="gh-button vs-footer-signup-btn">{signup_label}</a>'
 
             teaser_html = f'<p>{teaser}</p>\n                    ' if teaser else ''
@@ -1168,21 +1170,18 @@ INLINE_CSS = """
             .vs-cookie-cats { grid-template-columns: 1fr 1fr; }
         }
 
-        /* ===== D0.2 — Kategorie-Badge (über Titel) ===== */
+        /* ===== D0.2 — Kategorie-Badge (über Titel) — 1:1 Ghost-Stil ===== */
         .vs-post-category-badge {
             display: inline-block;
-            background: var(--ghost-accent-color);
-            color: #fff !important;
-            font-size: 1.1rem;
+            color: var(--ghost-accent-color) !important;
+            font-size: 1.2rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.08em;
-            padding: 0.3em 0.85em;
-            border-radius: 3px;
             text-decoration: none;
-            margin-bottom: 1.4rem;
+            margin-bottom: 1rem;
         }
-        .vs-post-category-badge:hover { background: #d97c1a; color: #fff !important; }
+        .vs-post-category-badge:hover { opacity: 0.8; }
 
         /* ===== D0.3 — Feature Image ===== */
         .vs-feature-image-wrap {

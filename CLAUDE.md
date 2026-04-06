@@ -90,9 +90,21 @@ site/
 
 ---
 
+## ⚠️ Newsletter-Footer — NICHT ANFASSEN
+
+Die Newsletter-Spalte (Spalte 5) enthält das Brevo-Einbettungsformular aus `site/_brevo-form.html`.
+
+**Regeln:**
+- `_brevo-form.html` ist eine externe Datei — **NICHT löschen, NICHT umbenennen, NICHT bearbeiten**
+- In `site.yaml` unter `footer.columns` muss `type: newsletter` + `brevo_embed_file: _brevo-form.html` stehen — **NICHT entfernen**
+- Das Formular wird automatisch gerendert wenn `_brevo-form.html` vorhanden und `##BREVO_BODY_START##` / `##BREVO_BODY_END##` Marker darin enthalten sind
+- Beim Build erscheint `⚠ Newsletter-Formular: Fallback-Button aktiv` wenn das Formular fehlt — das ist ein Fehler, kein Normalzustand
+- **Titel der Newsletter-Spalte:** `"VISUAL SALES: 1x IM MONAT"` — nicht ändern
+
 ## Wichtige Hinweise
 
 - **API-Keys (Brevo etc.) NICHT in `site.yaml`** — GitHub Push Protection blockt den Push
 - Stabiler lokaler Pfad: `~/Documents/Claude/Software_Dev/SkillCMS`
 - Bei Konflikten zwischen Chats: `git pull` vor jeder Arbeitssitzung
 - HTML-Dateien in `site/` sind Build-Output — die Quelle sind immer `.md` + `build.py` + `site.yaml`
+- **YouTube-URL:** `https://www.youtube.com/@Gerhard_Schroeder` (nicht `@visales`)
