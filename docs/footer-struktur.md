@@ -30,20 +30,9 @@ Der Footer wird vollständig aus `site/site.yaml` generiert. Keine Änderungen i
 - Spatial Presentations → `/spatial-presentation/`
 - OpenUSD / NVIDIA Omniverse → `/tag/openusd/`
 
-### 4. Produkte & Feeds
-- **Produkte:** USDconfig, USDbridge, SkillCMS
-- **Feeds & Social:**
-  - RSS Website → `/rss/`
-  - RSS Visual Com-Podcast → https://visualcom.podcaster.de/visual-com.rss
-  - Mastodon @visales
-  - LinkedIn · Gerhard Schröder
-  - YouTube · Gerhard Schröder
-  - GitHub · Gerhard Schröder → https://github.com/KopfKinoK3
-
-### 5. Newsletter
+### 4. Newsletter
 - Titel: **VISUAL SALES: 1x IM MONAT**
-- Kein Teaser-Text
-- Kein "E-Mail-Adresse"-Label
+- Kein Teaser-Text, kein Label über dem Eingabefeld
 - Formular: Brevo-Embed aus `_brevo-form.html`
 - Archiv-Link: Alle Ausgaben & Podcasts → `/newsletter/`
 
