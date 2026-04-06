@@ -11,8 +11,9 @@ author: "Gerhard Schröder"
 author_slug: gerhard
 author_image: /assets/images/2025/10/1706254155883-1.jpeg
 author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit über 15 Jahren spezialisiert auf visuelle Vertriebskommunikation für Maschinenbau & AeroSpace — mit 3D-Visualisierung & OpenUSD. Mitglied der AOUSD, Speaker zu AR & Spatial Sales."
+date: "2026-03-26"
 published_at: 2026-03-26T12:44:29.000Z
-template: post
+type: post
 ---
 
 Letzte Woche habe ich einem Kunden gezeigt, wie sein Produkt in Augmented Reality aussieht. Auf dem iPhone, direkt im Safari. Kein App-Download, kein QR-Code-Scan mit Drittanbieter-App. Einfach ein Link, tippen, fertig. Das kennt er schon. Dann habe ich ihm gezeigt, was passiert, wenn man unten im AR-Viewer auf den Button tippt. 
