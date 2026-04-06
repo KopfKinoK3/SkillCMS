@@ -4,7 +4,7 @@ slug: meine-liebe-zu-tolkien-2-zwei-lehren-aus-einer-neuseeland-reise
 status: published
 primary_tag: impuls
 tags: [impuls]
-feature_image: https://visales.de/content/images/2026/03/Hobbingen_Neuseeland.jpg
+feature_image: https://kopfkinok3.github.io/SkillCMS/assets/images/2026/03/Hobbingen_Neuseeland.jpg
 author: "Gerhard Schröder"
 author_slug: gerhard
 author_image: /assets/images/2025/10/1706254155883-1.jpeg
@@ -32,13 +32,13 @@ Als ich dort auf dem Gelände war gab es nur noch EIN einziges Band hoch/oben im
 <div class="kg-card kg-gallery-card kg-width-wide">
 <div class="kg-gallery-container">
 <div class="kg-gallery-row">
-<div class="kg-gallery-image"><a href="https://visales.de/content/images/2026/01/Hobbingen.jpeg"><img src="https://visales.de/content/images/2026/01/Hobbingen.jpeg" alt="Hobbingen"></a></div>
-<div class="kg-gallery-image"><a href="https://visales.de/content/images/2026/01/Gerhard_Schr--der_Neuseeland-1.jpeg"><img src="https://visales.de/content/images/2026/01/Gerhard_Schr--der_Neuseeland-1.jpeg" alt="Gerhard Schröder Neuseeland"></a></div>
-<div class="kg-gallery-image"><a href="https://visales.de/content/images/2026/01/Hobbingen_ohne_Baum.jpeg"><img src="https://visales.de/content/images/2026/01/Hobbingen_ohne_Baum.jpeg" alt="Hobbingen ohne Baum"></a></div>
+<div class="kg-gallery-image"><a href="https://kopfkinok3.github.io/SkillCMS/assets/images/2026/01/Hobbingen.jpeg"><img src="https://kopfkinok3.github.io/SkillCMS/assets/images/2026/01/Hobbingen.jpeg" alt="Hobbingen"></a></div>
+<div class="kg-gallery-image"><a href="https://kopfkinok3.github.io/SkillCMS/assets/images/2026/01/Gerhard_Schr--der_Neuseeland-1.jpeg"><img src="https://kopfkinok3.github.io/SkillCMS/assets/images/2026/01/Gerhard_Schr--der_Neuseeland-1.jpeg" alt="Gerhard Schröder Neuseeland"></a></div>
+<div class="kg-gallery-image"><a href="https://kopfkinok3.github.io/SkillCMS/assets/images/2026/01/Hobbingen_ohne_Baum.jpeg"><img src="https://kopfkinok3.github.io/SkillCMS/assets/images/2026/01/Hobbingen_ohne_Baum.jpeg" alt="Hobbingen ohne Baum"></a></div>
 </div>
 <div class="kg-gallery-row">
-<div class="kg-gallery-image"><a href="https://visales.de/content/images/2026/01/Baum.jpg"><img src="https://visales.de/content/images/2026/01/Baum.jpg" alt="Baum"></a></div>
-<div class="kg-gallery-image"><a href="https://visales.de/content/images/2026/03/Gerhard_Schroeder_Neuseeland.jpg"><img src="https://visales.de/content/images/2026/03/Gerhard_Schroeder_Neuseeland.jpg" alt="Gerhard Schröder Neuseeland"></a></div>
+<div class="kg-gallery-image"><a href="https://kopfkinok3.github.io/SkillCMS/assets/images/2026/01/Baum.jpg"><img src="https://kopfkinok3.github.io/SkillCMS/assets/images/2026/01/Baum.jpg" alt="Baum"></a></div>
+<div class="kg-gallery-image"><a href="https://kopfkinok3.github.io/SkillCMS/assets/images/2026/03/Gerhard_Schroeder_Neuseeland.jpg"><img src="https://kopfkinok3.github.io/SkillCMS/assets/images/2026/03/Gerhard_Schroeder_Neuseeland.jpg" alt="Gerhard Schröder Neuseeland"></a></div>
 </div>
 </div>
 </div>
