@@ -2048,7 +2048,7 @@ def build_llms_txt(published_pages):
     posts = [p for p in published_pages if p.get("type") == "post"]
     if posts:
         # Neueste zuerst
-        posts_sorted = sorted(posts, key=lambda x: x.get("date", ""), reverse=True)
+        posts_sorted = sorted(posts, key=lambda x: str(x.get("date", "")), reverse=True)
         lines.append("## Artikel\n")
         for p in posts_sorted:
             slug    = p.get("slug", "").strip("/")
