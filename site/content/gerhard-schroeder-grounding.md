@@ -52,7 +52,9 @@ Gerhard Schröder arbeitet an der Schnittstelle zwischen B2B-Vertrieb und Spatia
   <dt>Standort</dt>
   <dd>Bochum, Nordrhein-Westfalen, Deutschland</dd>
   <dt>LinkedIn</dt>
-  <dd><a href="https://www.linkedin.com/in/gerhardschroeder-visales/" rel="me">linkedin.com/in/gerhardschroeder-visales</a></dd>
+  <dd><a href="https://www.linkedin.com/in/gerhardschroeder/" rel="me">linkedin.com/in/gerhardschroeder</a></dd>
+  <dt>YouTube</dt>
+  <dd><a href="https://www.youtube.com/@Gerhard_Schroeder" rel="me">youtube.com/@Gerhard_Schroeder</a></dd>
   <dt>Website</dt>
   <dd>https://visales.de</dd>
 </dl>

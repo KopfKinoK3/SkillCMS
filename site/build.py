@@ -1586,6 +1586,8 @@ def build_page(meta, content_html, is_draft=False):
     <meta name="description" content="{description}">
     <meta name="robots" content="{robots}">
     <link rel="canonical" href="{canonical}">
+    <link rel="alternate" type="application/rss+xml" title="viSales – Artikel &amp; Insights" href="{base}rss.xml">
+    <link rel="alternate" type="application/rss+xml" title="Visual Com Podcast" href="https://visualcom.podcaster.de/visual-com.rss">
 
     <!-- Open Graph -->
     <meta property="og:title" content="{title}">

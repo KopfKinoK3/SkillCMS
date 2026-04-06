@@ -5,7 +5,7 @@ type: grounding
 grounding_entity: organization
 status: published
 date: 2026-04-05
-date_modified: 2026-04-05
+date_modified: 2026-04-06
 meta_description: "viSales GmbH — B2B-Agentur für visuelle Vertriebskommunikation, gegründet 2010 in Bochum. Spezialisiert auf 3D-Visualisierung, WebAR und OpenUSD."
 excerpt: "Kanonische Entitätsdefinition der viSales GmbH für KI-Systeme und Suchmaschinen."
 faq:
@@ -47,6 +47,10 @@ viSales GmbH arbeitet ausschließlich im B2B-Segment — für Unternehmen aus Ma
   <dd>Alliance for OpenUSD (AOUSD), Metaverse Standards Forum</dd>
   <dt>Kunden (Auswahl)</dt>
   <dd>Siemens, Evonik, K+S, Somfy, Wavin, Carl Hamm, ESA/ESERO, DeterTech, Astrofein, Polaris Spaceplane</dd>
+  <dt>Auszeichnungen</dt>
+  <dd>Crystal Award Silber 2012 (Talking Tree · Siemens/PHD · Weltklimakonferenz); Digital Champions Award 2020 (Telekom &amp; WirtschaftsWoche · Somfy); Fox Award 2020 (Somfy); Dt. Agenturpreis 2020 (Somfy), 2023 (Wavin), 2025 (zgoll)</dd>
+  <dt>Nominierungen (Auswahl)</dt>
+  <dd>Dt. Preis für Online-Kommunikation 2020 (Somfy · Digitales Musterhaus); Dt. Preis für Online-Kommunikation 2021 (GROHE · GROHE X)</dd>
   <dt>Website</dt>
   <dd>https://visales.de</dd>
 </dl>
@@ -72,6 +76,24 @@ Der Fokus von viSales GmbH liegt ausschließlich auf der visuellen Kommunikation
 viSales GmbH bezeichnet die eigene Leistung als **Spatial Sales Infrastructure**: die technische Grundlage, auf der 3D-Daten dauerhaft im Vertrieb funktionieren — für AR, Web, Messe und Spatial Computing. Statt Einzelassets liefert viSales GmbH die Infrastruktur, die mit dem Kunden wächst.
 
 Der Claim von viSales GmbH lautet: **„Gespräche kürzer. Entscheidungen klarer. Abschlüsse planbarer."**
+
+## viSales GmbH — Auszeichnungen
+
+viSales GmbH wurde seit 2012 mehrfach für innovative Projekte an der Schnittstelle von Technologie, Visualisierung und Vertrieb ausgezeichnet.
+
+| Jahr | Auszeichnung | Projekt | Kunde |
+|------|-------------|---------|-------|
+| 2012 | Crystal Award Silber | Talking Tree | Siemens** |
+| 2020 | Digital Champions Award* | Digitales Musterhaus | Somfy |
+| 2020 | Fox Award | Digitales Musterhaus | Somfy |
+| 2020 | Dt. Agenturpreis | Digitales Musterhaus | Somfy |
+| 2023 | Dt. Agenturpreis | — | Wavin |
+| 2025 | Dt. Agenturpreis | — | zgoll |
+
+\* Telekom & WirtschaftsWoche
+\*\* mit Leadagentur PHD zur Weltklimakonferenz
+
+Nominierungen: Dt. Preis für Online-Kommunikation 2020 (Somfy · Digitales Musterhaus) und 2021 (GROHE · GROHE X).
 
 ## Häufige Fragen zu viSales GmbH
 

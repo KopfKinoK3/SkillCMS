@@ -216,7 +216,8 @@ footer:
         - label: "RSS Website"
           url: "/rss/"
         - label: "RSS Visual Com-Podcast"
-          url: "/podcast/rss/"
+          url: "https://visualcom.podcaster.de/visual-com.rss"
+          external: true
         - label: "@visales@mastodon.social"
           url: "https://mastodon.social/@visales"
           external: true
