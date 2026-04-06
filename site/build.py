@@ -1232,15 +1232,14 @@ INLINE_CSS = """
         }
         .vs-meta-sep { opacity: 0.5; }
 
-        /* ===== D0.4 — Autor-Block (zwischen Header und Feature-Image) ===== */
+        /* ===== D0.4 — Autor-Block unter Content ===== */
         .vs-author-block {
             display: flex;
             align-items: flex-start;
             gap: 1.6rem;
-            padding: 2rem 0 2.4rem;
-            margin-top: 0.8rem;
-            border-bottom: 1px solid var(--color-border);
-            margin-bottom: 2.4rem;
+            padding: 3rem 0 2rem;
+            margin-top: 1rem;
+            border-top: 1px solid var(--color-border);
         }
         .vs-author-block-avatar {
             width: 64px; height: 64px;
@@ -1292,8 +1291,7 @@ INLINE_CSS = """
         }
         .kg-gallery-image img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: auto;
             display: block;
             transition: transform 0.3s ease;
         }
@@ -1719,6 +1717,20 @@ def build_post_article_html(meta, content_html, is_draft=False):
         <img src="{feature_image}" alt="{title}" loading="eager">
     </figure>"""
 
+    # Autor-Block unter Content
+    author_block_html = ""
+    if author_name and author_avatar:
+        bio_html = f'<p class="vs-author-bio">{author_bio}</p>' if author_bio else ""
+        author_block_html = f"""
+            <aside class="vs-author-block gh-canvas">
+                <img class="vs-author-block-avatar" src="{author_avatar}" alt="{author_name}">
+                <div class="vs-author-block-text">
+                    <span class="vs-author-block-label">Über den Autor</span>
+                    <a href="{author_url}" class="vs-author-block-name">{author_name}</a>
+                    {bio_html}
+                </div>
+            </aside>"""
+
     draft_label = ' <span style="color:#f2902a">[DRAFT]</span>' if is_draft else ""
 
     return f"""        <article class="{article_class}">
@@ -1730,6 +1742,7 @@ def build_post_article_html(meta, content_html, is_draft=False):
             <section class="gh-content gh-canvas is-body">
                 {content_html}
             </section>
+            {author_block_html}
         </article>"""
 
 
