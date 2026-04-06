@@ -830,6 +830,9 @@ INLINE_CSS = """
             margin-top: 2.2rem !important;
             margin-bottom: 0.9em !important;
         }
+        .vs-footer-col > h4.vs-footer-col-subtitle:first-child {
+            margin-top: 0 !important;
+        }
         .vs-footer-sub-h4-link {
             color: var(--color-primary-text) !important;
             text-decoration: none;
