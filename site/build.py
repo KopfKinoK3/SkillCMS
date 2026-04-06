@@ -1197,33 +1197,40 @@ INLINE_CSS = """
             display: block;
         }
 
-        /* ===== D0.3 — Artikel-Meta (kompakt) ===== */
+        /* ===== D0.3 — Artikel-Meta (Ghost-Stil) ===== */
         .vs-article-meta {
             display: flex;
             align-items: center;
-            gap: 0.8rem;
-            margin-top: 1.2rem;
-            margin-bottom: 0.4rem;
-            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 3.2rem;
         }
         .vs-meta-avatar {
-            width: 36px; height: 36px;
+            width: 48px; height: 48px;
             border-radius: 50%;
             object-fit: cover;
             flex-shrink: 0;
         }
         .vs-meta-text {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15em;
+        }
+        .vs-meta-author {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primary-text);
+        }
+        .vs-meta-author a { color: inherit; text-decoration: none; }
+        .vs-meta-author a:hover { color: var(--ghost-accent-color); }
+        .vs-meta-sub {
             font-size: 1.35rem;
             color: var(--color-secondary-text);
             display: flex;
             align-items: center;
             gap: 0.4em;
-            flex-wrap: wrap;
         }
-        .vs-meta-text a { color: var(--color-primary-text); text-decoration: none; font-weight: 600; }
-        .vs-meta-text a:hover { color: var(--ghost-accent-color); }
-        .vs-meta-author { font-weight: 600; color: var(--color-primary-text); }
-        .vs-meta-sep { opacity: 0.4; }
+        .vs-meta-sep { opacity: 0.5; }
 
         /* ===== D0.4 — Autor-Block (zwischen Header und Feature-Image) ===== */
         .vs-author-block {
@@ -1696,10 +1703,11 @@ def build_post_article_html(meta, content_html, is_draft=False):
                 {avatar_html}
                 <div class="vs-meta-text">
                     <span class="vs-meta-author"><a href="{author_url}">{author_name}</a></span>
-                    <span class="vs-meta-sep">·</span>
-                    <time datetime="{date_str}">{date_display}</time>
-                    <span class="vs-meta-sep">·</span>
-                    <span>{reading_time} min</span>
+                    <div class="vs-meta-sub">
+                        <time datetime="{date_str}">{date_display}</time>
+                        <span class="vs-meta-sep">&mdash;</span>
+                        <span>{reading_time} min read</span>
+                    </div>
                 </div>
             </div>"""
 
