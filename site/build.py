@@ -1167,6 +1167,152 @@ INLINE_CSS = """
             .vs-cookie-inner { flex-direction: column; align-items: flex-start; gap: 1.2rem; }
             .vs-cookie-cats { grid-template-columns: 1fr 1fr; }
         }
+
+        /* ===== D0.2 — Kategorie-Badge ===== */
+        .vs-post-category-badge {
+            display: inline-block;
+            background: var(--ghost-accent-color);
+            color: #fff !important;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            padding: 0.3em 0.85em;
+            border-radius: 3px;
+            text-decoration: none;
+            margin-bottom: 1.6rem;
+        }
+        .vs-post-category-badge:hover { background: #d97c1a; color: #fff !important; }
+
+        /* ===== D0.3 — Feature Image ===== */
+        .vs-feature-image-wrap {
+            position: relative;
+            margin: 0 0 3rem;
+            border-radius: 8px;
+            overflow: hidden;
+            max-height: 520px;
+        }
+        .vs-feature-image-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .vs-feature-image-wrap .vs-post-category-badge {
+            position: absolute;
+            top: 1.6rem;
+            left: 1.6rem;
+            margin: 0;
+            z-index: 2;
+            box-shadow: 0 2px 8px rgba(0,0,0,.25);
+        }
+
+        /* ===== D0.3 — Artikel-Meta (kompakt) ===== */
+        .vs-article-meta {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-top: 1.2rem;
+            margin-bottom: 0.4rem;
+            flex-wrap: wrap;
+        }
+        .vs-meta-avatar {
+            width: 36px; height: 36px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .vs-meta-text {
+            font-size: 1.35rem;
+            color: var(--color-secondary-text);
+            display: flex;
+            align-items: center;
+            gap: 0.4em;
+            flex-wrap: wrap;
+        }
+        .vs-meta-text a { color: var(--color-primary-text); text-decoration: none; font-weight: 600; }
+        .vs-meta-text a:hover { color: var(--ghost-accent-color); }
+        .vs-meta-author { font-weight: 600; color: var(--color-primary-text); }
+        .vs-meta-sep { opacity: 0.4; }
+
+        /* ===== D0.4 — Autor-Block unter Content ===== */
+        .vs-author-block {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.6rem;
+            padding: 2.4rem 0;
+            margin-top: 3rem;
+            border-top: 1px solid var(--color-border);
+        }
+        .vs-author-block-avatar {
+            width: 64px; height: 64px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .vs-author-block-text { display: flex; flex-direction: column; gap: 0.3rem; }
+        .vs-author-block-label {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            color: var(--color-secondary-text);
+            font-weight: 700;
+        }
+        .vs-author-block-name {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--color-primary-text);
+            text-decoration: none;
+        }
+        .vs-author-block-name:hover { color: var(--ghost-accent-color); }
+        .vs-author-bio {
+            font-size: 1.35rem;
+            color: var(--color-secondary-text);
+            margin: 0.3rem 0 0;
+            line-height: 1.6;
+        }
+
+        /* ===== D0.1 — Galerie-Grid (kg-gallery-card) ===== */
+        .kg-gallery-card {
+            width: 100%;
+            margin: 2rem 0;
+        }
+        .kg-gallery-container {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .kg-gallery-row {
+            display: flex;
+            gap: 6px;
+        }
+        .kg-gallery-image {
+            flex: 1;
+            overflow: hidden;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .kg-gallery-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .kg-gallery-image img:hover { transform: scale(1.02); }
+
+        /* PhotoSwipe lightbox trigger */
+        .kg-gallery-image a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 640px) {
+            .vs-author-block { flex-direction: column; gap: 1rem; }
+            .vs-feature-image-wrap { border-radius: 0; max-height: 280px; }
+            .kg-gallery-row { flex-direction: column; }
+        }
 """
 
 
@@ -1204,6 +1350,53 @@ INLINE_JS = """
             }
         });
     });
+
+    // D0.1 — Galerie Lightbox via PhotoSwipe 5
+    (function() {
+        var galleries = document.querySelectorAll('.kg-gallery-card');
+        if (!galleries.length) return;
+
+        // Lade PhotoSwipe dynamisch
+        var cssLink = document.createElement('link');
+        cssLink.rel = 'stylesheet';
+        cssLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.min.css';
+        document.head.appendChild(cssLink);
+
+        var script = document.createElement('script');
+        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/umd/photoswipe.umd.min.js';
+        script.onload = function() {
+            galleries.forEach(function(gallery) {
+                var images = gallery.querySelectorAll('.kg-gallery-image img');
+                var items = [];
+                images.forEach(function(img) {
+                    var w = img.naturalWidth  || img.getAttribute('width')  || 1200;
+                    var h = img.naturalHeight || img.getAttribute('height') || 800;
+                    items.push({ src: img.src, width: parseInt(w), height: parseInt(h) });
+                });
+
+                images.forEach(function(img, idx) {
+                    // Wrap in <a> falls noch nicht vorhanden
+                    if (img.parentElement.tagName !== 'A') {
+                        var a = document.createElement('a');
+                        a.href = img.src;
+                        img.parentNode.insertBefore(a, img);
+                        a.appendChild(img);
+                    }
+                    img.parentElement.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        var pswp = new PhotoSwipe({
+                            dataSource: items,
+                            index: idx,
+                            bgOpacity: 0.92,
+                            showHideAnimationType: 'fade',
+                        });
+                        pswp.init();
+                    });
+                });
+            });
+        };
+        document.body.appendChild(script);
+    })();
 """
 
 
@@ -1480,68 +1673,82 @@ def format_date_de(date_str):
 
 
 def build_post_article_html(meta, content_html, is_draft=False):
-    """Baut den <article>-Block für type:post mit Header, Meta, Feature Image."""
+    """Baut den <article>-Block für type:post mit Header, Meta, Feature Image, Autor-Block."""
     title         = meta.get("title", "")
     primary_tag   = meta.get("primary_tag", "")
     feature_image = meta.get("feature_image", "")
-    date_raw      = meta.get("date", "")
+    date_raw      = meta.get("date", "") or meta.get("published_at", "")
     date_str      = str(date_raw).split("T")[0] if date_raw else ""
 
-    # Author from site.yaml
-    author_name   = cfg("author", "name",   default="Gerhard Schröder")
+    # Author from frontmatter or site.yaml
+    author_name   = meta.get("author",       cfg("author", "name",   default="Gerhard Schröder"))
     author_url    = cfg("author", "url",    default="/author/gerhard/")
     author_avatar = cfg("author", "avatar", default="")
+    author_bio    = cfg("author", "bio",    default="")
 
     date_display  = format_date_de(date_str) if date_str else ""
     reading_time  = calc_reading_time(content_html)
     tag_slug      = primary_tag.lower().replace(" ", "-") if primary_tag else ""
     article_class = f"gh-article post{' tag-' + tag_slug if tag_slug else ''}"
 
-    # Tag label
-    tag_html = ""
+    # D0.2 — Kategorie-Badge (über Feature-Image)
+    badge_html = ""
     if primary_tag:
-        tag_html = f'<a class="gh-article-tag" href="/tag/{tag_slug}/">{primary_tag}</a>\n'
+        badge_html = f'<a class="vs-post-category-badge" href="/tag/{tag_slug}/">{primary_tag}</a>'
 
-    # Author/date meta row
+    # Author/date meta row (kompakt, unter Titel)
     avatar_html = ""
     if author_avatar:
-        avatar_html = f"""<div class="gh-article-author-image instapaper_ignore">
-                <a href="{author_url}">
-                    <img class="author-profile-image" src="{author_avatar}" alt="{author_name}">
-                </a>
-            </div>"""
+        avatar_html = f'<img class="vs-meta-avatar" src="{author_avatar}" alt="{author_name}">'
 
     meta_html = f"""
-            <div class="gh-article-meta">
+            <div class="gh-article-meta vs-article-meta">
                 {avatar_html}
-                <div class="gh-article-meta-wrapper">
-                    <h4 class="gh-article-author-name"><a href="{author_url}">{author_name}</a></h4>
-                    <div class="gh-article-meta-content">
-                        <time class="gh-article-meta-date" datetime="{date_str}">{date_display}</time>
-                        <span class="gh-article-meta-length">&nbsp;&#8212; {reading_time} min read</span>
-                    </div>
+                <div class="vs-meta-text">
+                    <span class="vs-meta-author"><a href="{author_url}">{author_name}</a></span>
+                    <span class="vs-meta-sep">·</span>
+                    <time datetime="{date_str}">{date_display}</time>
+                    <span class="vs-meta-sep">·</span>
+                    <span>{reading_time} min</span>
                 </div>
             </div>"""
 
-    # Feature image
+    # D0.3 — Feature Image mit Badge darüber
     feature_html = ""
     if feature_image:
         feature_html = f"""
-    <figure class="gh-article-image">
-        <img src="{feature_image}" alt="{title}">
+    <figure class="gh-article-image vs-feature-image-wrap">
+        {badge_html}
+        <img src="{feature_image}" alt="{title}" loading="eager">
     </figure>"""
+
+    # D0.4 — Autor-Block unter Content
+    author_block_html = ""
+    if author_name:
+        bio_html = f'<p class="vs-author-bio">{author_bio}</p>' if author_bio else ""
+        avatar_block = f'<img class="vs-author-block-avatar" src="{author_avatar}" alt="{author_name}">' if author_avatar else ""
+        author_block_html = f"""
+    <aside class="vs-author-block gh-canvas">
+        {avatar_block}
+        <div class="vs-author-block-text">
+            <span class="vs-author-block-label">Über den Autor</span>
+            <a href="{author_url}" class="vs-author-block-name">{author_name}</a>
+            {bio_html}
+        </div>
+    </aside>"""
 
     draft_label = ' <span style="color:#f2902a">[DRAFT]</span>' if is_draft else ""
 
     return f"""        <article class="{article_class}">
             <header class="gh-article-header gh-canvas">
-                {tag_html}<h1 class="gh-article-title is-title">{title}{draft_label}</h1>
+                <h1 class="gh-article-title is-title">{title}{draft_label}</h1>
                 {meta_html}
             </header>
             {feature_html}
             <section class="gh-content gh-canvas is-body">
                 {content_html}
             </section>
+            {author_block_html}
         </article>"""
 
 
