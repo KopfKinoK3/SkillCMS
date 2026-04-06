@@ -1187,24 +1187,24 @@ INLINE_CSS = """
         /* ===== D0.3 — Feature Image ===== */
         .vs-feature-image-wrap {
             position: relative;
-            margin: 0 0 3rem;
+            display: block;
+            max-width: 920px;
+            margin: 0 auto 3rem;
             border-radius: 8px;
             overflow: hidden;
-            max-height: 520px;
         }
         .vs-feature-image-wrap img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: auto;
             display: block;
         }
         .vs-feature-image-wrap .vs-post-category-badge {
             position: absolute;
-            top: 1.6rem;
-            left: 1.6rem;
+            top: 1.4rem;
+            left: 1.4rem;
             margin: 0;
             z-index: 2;
-            box-shadow: 0 2px 8px rgba(0,0,0,.25);
+            box-shadow: 0 2px 8px rgba(0,0,0,.3);
         }
 
         /* ===== D0.3 — Artikel-Meta (kompakt) ===== */
@@ -1235,14 +1235,15 @@ INLINE_CSS = """
         .vs-meta-author { font-weight: 600; color: var(--color-primary-text); }
         .vs-meta-sep { opacity: 0.4; }
 
-        /* ===== D0.4 — Autor-Block unter Content ===== */
+        /* ===== D0.4 — Autor-Block (zwischen Header und Feature-Image) ===== */
         .vs-author-block {
             display: flex;
             align-items: flex-start;
             gap: 1.6rem;
-            padding: 2.4rem 0;
-            margin-top: 3rem;
-            border-top: 1px solid var(--color-border);
+            padding: 2rem 0 2.4rem;
+            margin-top: 0.8rem;
+            border-bottom: 1px solid var(--color-border);
+            margin-bottom: 2.4rem;
         }
         .vs-author-block-avatar {
             width: 64px; height: 64px;
@@ -1691,12 +1692,12 @@ def build_post_article_html(meta, content_html, is_draft=False):
     tag_slug      = primary_tag.lower().replace(" ", "-") if primary_tag else ""
     article_class = f"gh-article post{' tag-' + tag_slug if tag_slug else ''}"
 
-    # D0.2 — Kategorie-Badge (über Feature-Image)
+    # D0.2 — Kategorie-Badge (absolut auf Feature-Image)
     badge_html = ""
     if primary_tag:
         badge_html = f'<a class="vs-post-category-badge" href="/tag/{tag_slug}/">{primary_tag}</a>'
 
-    # Author/date meta row (kompakt, unter Titel)
+    # Kompakte Meta-Zeile: Avatar · Name · Datum · Lesezeit
     avatar_html = ""
     if author_avatar:
         avatar_html = f'<img class="vs-meta-avatar" src="{author_avatar}" alt="{author_name}">'
@@ -1713,7 +1714,22 @@ def build_post_article_html(meta, content_html, is_draft=False):
                 </div>
             </div>"""
 
-    # D0.3 — Feature Image mit Badge darüber
+    # D0.4 — Autor-Block DIREKT nach Header, VOR dem Feature-Image
+    author_block_html = ""
+    if author_name:
+        bio_html = f'<p class="vs-author-bio">{author_bio}</p>' if author_bio else ""
+        avatar_block = f'<img class="vs-author-block-avatar" src="{author_avatar}" alt="{author_name}">' if author_avatar else ""
+        author_block_html = f"""
+            <div class="vs-author-block gh-canvas">
+                {avatar_block}
+                <div class="vs-author-block-text">
+                    <span class="vs-author-block-label">Über den Autor</span>
+                    <a href="{author_url}" class="vs-author-block-name">{author_name}</a>
+                    {bio_html}
+                </div>
+            </div>"""
+
+    # D0.3 — Feature Image mit Badge oben-links (position:relative am Wrapper)
     feature_html = ""
     if feature_image:
         feature_html = f"""
@@ -1722,21 +1738,6 @@ def build_post_article_html(meta, content_html, is_draft=False):
         <img src="{feature_image}" alt="{title}" loading="eager">
     </figure>"""
 
-    # D0.4 — Autor-Block unter Content
-    author_block_html = ""
-    if author_name:
-        bio_html = f'<p class="vs-author-bio">{author_bio}</p>' if author_bio else ""
-        avatar_block = f'<img class="vs-author-block-avatar" src="{author_avatar}" alt="{author_name}">' if author_avatar else ""
-        author_block_html = f"""
-    <aside class="vs-author-block gh-canvas">
-        {avatar_block}
-        <div class="vs-author-block-text">
-            <span class="vs-author-block-label">Über den Autor</span>
-            <a href="{author_url}" class="vs-author-block-name">{author_name}</a>
-            {bio_html}
-        </div>
-    </aside>"""
-
     draft_label = ' <span style="color:#f2902a">[DRAFT]</span>' if is_draft else ""
 
     return f"""        <article class="{article_class}">
@@ -1744,11 +1745,11 @@ def build_post_article_html(meta, content_html, is_draft=False):
                 <h1 class="gh-article-title is-title">{title}{draft_label}</h1>
                 {meta_html}
             </header>
+            {author_block_html}
             {feature_html}
             <section class="gh-content gh-canvas is-body">
                 {content_html}
             </section>
-            {author_block_html}
         </article>"""
 
 
