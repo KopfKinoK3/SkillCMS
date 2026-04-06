@@ -21,7 +21,9 @@ GitHub Pages deployed automatisch von `main` — URL: https://kopfkinok3.github.
 site/
   build.py          # Build-Script (Python 3, PyYAML + Markdown benötigt)
   site.yaml         # Globale Konfiguration, Schema.org, Navigation, Footer
-  content/          # Markdown-Seiten und Posts
+  content/
+    pages/          # Statische Seiten (kontakt, praxis, über-uns …)
+    ki/             # Grounding Pages für KI-Crawler (Entity-Seiten)
     posts/          # Blog-Posts (Dateiname: YYYY-MM-DD-slug.md)
   dist/             # Build-Output (nicht committen — wird von build.py erzeugt)
 ```
