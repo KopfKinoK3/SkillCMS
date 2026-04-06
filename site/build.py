@@ -1742,10 +1742,11 @@ def build_single(slug, include_drafts=False, drafts_only=False):
     """
     Sucht content/{slug}.md oder content/posts/*{slug}.md und baut die Seite.
     """
-    # 1. Direkt in content/
-    direct = os.path.join(CONTENT_DIR, f"{slug}.md")
-    if os.path.exists(direct):
-        return build_file(direct, include_drafts=include_drafts, drafts_only=drafts_only)
+    # 1. In content/pages/ und content/ki/
+    for subdir in ["pages", "ki"]:
+        direct = os.path.join(CONTENT_DIR, subdir, f"{slug}.md")
+        if os.path.exists(direct):
+            return build_file(direct, include_drafts=include_drafts, drafts_only=drafts_only)
 
     # 2. In content/posts/ (mit optionalem Datum-Präfix)
     posts_dir = os.path.join(CONTENT_DIR, "posts")
@@ -2169,10 +2170,13 @@ def collect_md_files():
     """Sammelt alle Markdown-Dateien aus content/ und content/posts/."""
     files = []
 
-    # content/*.md (Seiten)
-    for fname in sorted(os.listdir(CONTENT_DIR)):
-        if fname.endswith(".md"):
-            files.append(os.path.join(CONTENT_DIR, fname))
+    # content/pages/*.md (Seiten)
+    for subdir in ["pages", "ki"]:
+        d = os.path.join(CONTENT_DIR, subdir)
+        if os.path.isdir(d):
+            for fname in sorted(os.listdir(d)):
+                if fname.endswith(".md"):
+                    files.append(os.path.join(d, fname))
 
     # content/posts/*.md (Blog-Posts)
     posts_dir = os.path.join(CONTENT_DIR, "posts")
