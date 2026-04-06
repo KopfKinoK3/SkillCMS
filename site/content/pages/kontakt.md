@@ -1,8 +1,9 @@
 ---
 title: "Erstes Gespräch zur Einordnung"
 slug: kontakt
-published_at: 2025-12-30T19:12:59.000Z
-template: post
+status: published
+date: 2025-12-30
+meta_description: "Direkt mit Gerhard Schröder sprechen — 30 Minuten zur Einordnung ob visuelle Vertriebskommunikation für euer B2B-Produkt sinnvoll ist. Kein Pitch, keine Verpflichtung."
 ---
 
 ## Auf einen Blick
