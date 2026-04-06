@@ -201,7 +201,18 @@ footer:
           url: "/tag/openusd/"
 
     - title: "Feeds & Social"
-      links:
+      links: []
+      products_title: "Produkte"
+      products_url: "/produkte/"
+      products:
+        - label: "USDconfig"
+          url: "/usdconfig/"
+        - label: "USDbridge"
+          url: "/usdbridge/"
+        - label: "SkillCMS"
+          url: "/skillcms/"
+      feeds_title: "Feeds & Social"
+      feeds_items:
         - label: "RSS Website"
           url: "/rss/"
         - label: "RSS Visual Com-Podcast"
