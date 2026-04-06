@@ -599,8 +599,9 @@ def build_footer_html():
                     feeds_parts.append(f'<li><a href="{f["url"]}"{ext_attr}>{f["label"]}</a></li>')
                 feeds_html = f'{feeds_h4}<ul>{"".join(feeds_parts)}</ul>'
 
+            main_list = f'<ul>{li_items}</ul>' if li_items else ''
             cols_html.append(
-                f'<div class="vs-footer-col">{h4}<ul>{li_items}</ul>{strategie_html}{products_html}{feeds_html}</div>'
+                f'<div class="vs-footer-col">{h4}{main_list}{strategie_html}{products_html}{feeds_html}</div>'
             )
 
     cols_joined = "\n                ".join(cols_html)
