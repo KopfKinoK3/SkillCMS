@@ -1168,7 +1168,7 @@ INLINE_CSS = """
             .vs-cookie-cats { grid-template-columns: 1fr 1fr; }
         }
 
-        /* ===== D0.2 — Kategorie-Badge ===== */
+        /* ===== D0.2 — Kategorie-Badge (über Titel) ===== */
         .vs-post-category-badge {
             display: inline-block;
             background: var(--ghost-accent-color);
@@ -1180,13 +1180,12 @@ INLINE_CSS = """
             padding: 0.3em 0.85em;
             border-radius: 3px;
             text-decoration: none;
-            margin-bottom: 1.6rem;
+            margin-bottom: 1.4rem;
         }
         .vs-post-category-badge:hover { background: #d97c1a; color: #fff !important; }
 
         /* ===== D0.3 — Feature Image ===== */
         .vs-feature-image-wrap {
-            position: relative;
             display: block;
             max-width: 920px;
             margin: 0 auto 3rem;
@@ -1197,14 +1196,6 @@ INLINE_CSS = """
             width: 100%;
             height: auto;
             display: block;
-        }
-        .vs-feature-image-wrap .vs-post-category-badge {
-            position: absolute;
-            top: 1.4rem;
-            left: 1.4rem;
-            margin: 0;
-            z-index: 2;
-            box-shadow: 0 2px 8px rgba(0,0,0,.3);
         }
 
         /* ===== D0.3 — Artikel-Meta (kompakt) ===== */
@@ -1310,8 +1301,7 @@ INLINE_CSS = """
         }
 
         @media (max-width: 640px) {
-            .vs-author-block { flex-direction: column; gap: 1rem; }
-            .vs-feature-image-wrap { border-radius: 0; max-height: 280px; }
+            .vs-feature-image-wrap { border-radius: 0; }
             .kg-gallery-row { flex-direction: column; }
         }
 """
@@ -1692,10 +1682,10 @@ def build_post_article_html(meta, content_html, is_draft=False):
     tag_slug      = primary_tag.lower().replace(" ", "-") if primary_tag else ""
     article_class = f"gh-article post{' tag-' + tag_slug if tag_slug else ''}"
 
-    # D0.2 — Kategorie-Badge (absolut auf Feature-Image)
+    # D0.2 — Kategorie-Badge ÜBER dem Titel
     badge_html = ""
     if primary_tag:
-        badge_html = f'<a class="vs-post-category-badge" href="/tag/{tag_slug}/">{primary_tag}</a>'
+        badge_html = f'<a class="vs-post-category-badge" href="/tag/{tag_slug}/">{primary_tag}</a>\n'
 
     # Kompakte Meta-Zeile: Avatar · Name · Datum · Lesezeit
     avatar_html = ""
@@ -1714,27 +1704,11 @@ def build_post_article_html(meta, content_html, is_draft=False):
                 </div>
             </div>"""
 
-    # D0.4 — Autor-Block DIREKT nach Header, VOR dem Feature-Image
-    author_block_html = ""
-    if author_name:
-        bio_html = f'<p class="vs-author-bio">{author_bio}</p>' if author_bio else ""
-        avatar_block = f'<img class="vs-author-block-avatar" src="{author_avatar}" alt="{author_name}">' if author_avatar else ""
-        author_block_html = f"""
-            <div class="vs-author-block gh-canvas">
-                {avatar_block}
-                <div class="vs-author-block-text">
-                    <span class="vs-author-block-label">Über den Autor</span>
-                    <a href="{author_url}" class="vs-author-block-name">{author_name}</a>
-                    {bio_html}
-                </div>
-            </div>"""
-
-    # D0.3 — Feature Image mit Badge oben-links (position:relative am Wrapper)
+    # D0.3 — Feature Image (kein Badge darauf)
     feature_html = ""
     if feature_image:
         feature_html = f"""
     <figure class="gh-article-image vs-feature-image-wrap">
-        {badge_html}
         <img src="{feature_image}" alt="{title}" loading="eager">
     </figure>"""
 
@@ -1742,10 +1716,9 @@ def build_post_article_html(meta, content_html, is_draft=False):
 
     return f"""        <article class="{article_class}">
             <header class="gh-article-header gh-canvas">
-                <h1 class="gh-article-title is-title">{title}{draft_label}</h1>
+                {badge_html}<h1 class="gh-article-title is-title">{title}{draft_label}</h1>
                 {meta_html}
             </header>
-            {author_block_html}
             {feature_html}
             <section class="gh-content gh-canvas is-body">
                 {content_html}
