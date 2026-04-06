@@ -200,6 +200,26 @@ footer:
         - label: "OpenUSD / NVIDIA Omniverse"
           url: "/tag/openusd/"
 
+    - title: "Feeds & Social"
+      links:
+        - label: "RSS Website"
+          url: "/rss/"
+        - label: "RSS Visual Com-Podcast"
+          url: "https://visualcom.podcaster.de/visual-com.rss"
+          external: true
+        - label: "@visales@mastodon.social"
+          url: "https://mastodon.social/@visales"
+          external: true
+        - label: "LinkedIn · Gerhard Schröder"
+          url: "https://www.linkedin.com/in/gerhardschroeder-visales/"
+          external: true
+        - label: "YouTube · Gerhard Schröder"
+          url: "https://www.youtube.com/@visales"
+          external: true
+        - label: "GitHub · Gerhard Schröder"
+          url: "https://github.com/KopfKinoK3"
+          external: true
+
     - title: "VISUAL SALES: 1x IM MONAT"
       type: "newsletter"
       teaser: ""
