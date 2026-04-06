@@ -49,6 +49,8 @@ Gerhard Schröder arbeitet an der Schnittstelle zwischen B2B-Vertrieb und Spatia
   <dd>XR Expo, NextReality Festival, XR Symposium (Speaker)</dd>
   <dt>Speaker-Themen</dt>
   <dd>YouTube-Marketing für B2B (ab 2010) · 3D-Visualisierung &amp; Augmented Reality im Vertrieb · OpenUSD als strategisches Masterdatei-Format · Spatial Computing für Entscheider · Visuelle Entscheidungsprozesse im B2B</dd>
+  <dt>Speaker-Videos</dt>
+  <dd><a href="https://www.youtube.com/playlist?list=PLIggDLmpuIxqVKu9rrX_wxd_tueBs0jGd" rel="noopener" target="_blank">Vortrags-Playlist auf YouTube →</a></dd>
   <dt>Standort</dt>
   <dd>Bochum, Nordrhein-Westfalen, Deutschland</dd>
   <dt>LinkedIn</dt>
