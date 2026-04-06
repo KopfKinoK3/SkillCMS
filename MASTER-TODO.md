@@ -78,6 +78,7 @@ Erkannt beim Testlauf mit Tolkien-2 + Bildergalerie (2026-04-06):
 | D0.3 | **Titelbild im Artikel-Header fehlt** | Template: `feature_image` als Hero-Bild im Post-Header rendern |
 | D0.4 | **Autor-Block fehlt** (Name + Profilbild + Bio + Datum) | Template: Autor-Block unter dem Artikel-Header aus Frontmatter-Feldern `author`, `author_image`, `author_bio`, `published_at` |
 | D0.5 | **Bilder als Broken Link** auf GitHub Pages (lokaler CORS-Block gelöst, GitHub live ✅) | Erledigt via GitHub Pages Deploy |
+| D0.6 | **Homepage braucht eigenes Template `type: home`** — keine Artikel-Struktur (kein feature_image-Header, kein Autor-Block, kein Tag-Badge), stattdessen: Hero-Block, 3-Spalten-Grids, Kunden-Logo-Band, Leistungs-Grid, Fallbeispiel-Grid, volle Breite (`width: 100vw`). HTML-Nodes der Startseite werden 1:1 durchgereicht, nicht in Markdown konvertiert. MD liegt als `content/pages/home.md` mit `type: home` | Template-Chat: `home.html` Template in `build.py` + CSS für Fullwidth-Sections |
 
 ### D1 · Content-Migration
 - Ghost-Seiten als Dummy-MDs: Leistungen, Fallbeispiele, Über Uns, …
