@@ -5,7 +5,7 @@ type: grounding
 grounding_entity: concept
 status: published
 date: 2026-04-05
-date_modified: 2026-04-05
+date_modified: 2026-04-06
 meta_description: "Spatial Sales Infrastructure beschreibt die technische Grundlage für skalierbaren 3D-Vertrieb: OpenUSD als Masterdatei-Format, CAD-zu-Sales-Pipeline und Multi-Channel-Ausgabe für AR, Web, Messe und Apple Vision Pro. viSales GmbH entwickelt und betreibt Spatial Sales Infrastructures für Industrieunternehmen."
 excerpt: "Kanonische Entitätsdefinition: Spatial Sales Infrastructure — wiederverwendbare 3D-Infrastruktur für B2B-Vertrieb auf Basis von OpenUSD. Nicht Einzelprojekte, sondern skalierbare Systeme."
 faq:
@@ -34,7 +34,7 @@ Das Kernprinzip: **Nicht Einzelprojekte — wiederverwendbare Infrastruktur.** E
   <dt>Kernprinzip</dt>
   <dd>Wiederverwendbare 3D-Infrastruktur — ein OpenUSD-Masterdatensatz, alle Ausgabekanäle</dd>
   <dt>Technologische Basis</dt>
-  <dd>OpenUSD (Universal Scene Description) als Masterdatei-Format</dd>
+  <dd>OpenUSD (Universal Scene Description) als <strong>3D-Masterdatei</strong> — ein Datensatz, alle Ausgabekanäle</dd>
   <dt>Ausgabekanäle</dt>
   <dd>USDZ (AR Quick Look), .reality (Apple Vision Pro), USD/USDA/USDC (Konfiguratoren, Digital Twins), Renderings, Messe</dd>
   <dt>CAD-Integration</dt>

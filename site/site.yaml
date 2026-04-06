@@ -200,7 +200,7 @@ footer:
         - label: "OpenUSD / NVIDIA Omniverse"
           url: "/tag/openusd/"
 
-    - title: "Feeds & Social"
+    - title: ""
       links: []
       products_title: "Produkte"
       products_url: "/produkte/"
