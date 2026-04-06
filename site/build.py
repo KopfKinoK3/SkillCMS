@@ -440,7 +440,7 @@ def build_footer_html():
     for col in columns:
         col_type = col.get("type", "links")
         title    = col.get("title", "")
-        h4       = f'<h4>{title}</h4>'
+        h4       = f'<h4>{title}</h4>' if title else ''
 
         if col_type == "contact":
             company_name = cfg("site", "company", default="")
