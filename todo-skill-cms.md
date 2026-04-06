@@ -15,11 +15,28 @@
 - [x] DX Tooling: `--serve`, `--watch`, `--serve --watch`
 - [x] GitHub Pages Deployment via GitHub Actions
 
+## Render-Skill (Cowork-Automatisierung)
+
+Ziel: `python3 site/build.py` als Skill — damit ohne Terminal nutzbar.
+
+| Phase | Inhalt | Status |
+|---|---|---|
+| **Phase 1** — Local Render | `build.py` ausführen, Output prüfen, fertig | 🔜 als nächstes |
+| **Phase 2** — Render + GitHub | + git add/commit/push, Actions-Status | nach Phase 1 |
+| **Phase 3** — Render + Deploy | + FTP/SSH Hetzner, RSS-Ping, Mastodon-Post | wenn live |
+
+→ Skill-Name: `skillcms-render`
+→ Ablageort: `.claude/skills/skillcms-render/SKILL.md`
+
+---
+
 ## Offen — Nächste Schritte
+
+- [ ] **Render-Skill Phase 1** bauen (`skillcms-render`)
 - [ ] Content-Migration: Ghost-Seiten als Dummy-MDs anlegen (Leistungen, Fallbeispiele, Über Uns…)
 - [ ] Skeleton-Snapshot: alle Dummy-Inhalte, ZIP als `SkillCMS-v1.0-skeleton`
-- [ ] FTP-Deployment zu Hetzner (nach Skeleton-Phase)
-- [ ] Fediverse Push (Mastodon) — siehe `TODO-fediverse-push.md`
+- [ ] FTP-Deployment zu Hetzner (nach Skeleton-Phase) → Render-Skill Phase 3
+- [ ] Fediverse Push (Mastodon) — siehe `TODO-fediverse-push.md` → Render-Skill Phase 3
 
 ---
 
