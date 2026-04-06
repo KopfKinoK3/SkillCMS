@@ -4,7 +4,7 @@ slug: spatial-sales-infrastructure
 meta_title: "Spatial Sales Infrastructure: Der 3D-Markt für Vertrieb 2026–2030 | viSales"
 meta_description: "Was sich im 3D-Markt für Vertrieb und Marketing bis 2030 verändert — und warum OpenUSD, Spatial Computing und CAD-Pipelines zur gleichen Infrastruktur gehören."
 feature_image: https://visales.de/content/images/2026/03/Spatial-Sales-Infrastructure.jpeg
-tags: [impuls, Vertriebskommunikation]
+tags: [impuls, vertriebskommunikation]
 published_at: 2026-03-15T12:23:35.000Z
 template: post
 ---

@@ -2435,20 +2435,13 @@ def collect_md_files():
     """Sammelt alle Markdown-Dateien aus content/ und content/posts/."""
     files = []
 
-    # content/pages/*.md (Seiten)
+    # content/pages/*.md, ki/*.md, articles/*.md, drafts/*.md
     for subdir in ["pages", "ki", "articles", "drafts"]:
         d = os.path.join(CONTENT_DIR, subdir)
         if os.path.isdir(d):
             for fname in sorted(os.listdir(d)):
                 if fname.endswith(".md"):
                     files.append(os.path.join(d, fname))
-
-    # content/articles/*.md (Blog-Posts)
-    posts_dir = os.path.join(CONTENT_DIR, "articles")
-    if os.path.isdir(posts_dir):
-        for fname in sorted(os.listdir(posts_dir)):
-            if fname.endswith(".md"):
-                files.append(os.path.join(posts_dir, fname))
 
     return files
 
