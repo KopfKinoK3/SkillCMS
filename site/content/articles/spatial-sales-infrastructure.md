@@ -6,6 +6,7 @@ meta_description: "Was sich im 3D-Markt für Vertrieb und Marketing bis 2030 ver
 feature_image: https://visales.de/content/images/2026/03/Spatial-Sales-Infrastructure.jpeg
 tags: [impuls, vertriebskommunikation]
 published_at: 2026-03-15T12:23:35.000Z
+type: post
 template: post
 ---
 
