@@ -705,7 +705,7 @@ INLINE_CSS = """
             display: flex !important;
             flex-wrap: nowrap !important;
             align-items: center !important;
-            max-width: 828px !important;
+            max-width: 920px !important;
             margin-left: auto !important;
             margin-right: auto !important;
             padding-top: 1.2rem !important;
@@ -1237,6 +1237,9 @@ INLINE_CSS = """
             display: flex;
             align-items: flex-start;
             gap: 1.6rem;
+            max-width: 720px;
+            margin-left: auto;
+            margin-right: auto;
             padding: 3rem 0 2rem;
             margin-top: 1rem;
             border-top: 1px solid var(--color-border);
