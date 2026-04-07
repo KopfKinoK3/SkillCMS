@@ -1249,47 +1249,13 @@ INLINE_CSS = """
             padding-bottom: 4rem;
         }
         .vs-faq-heading {
-            font-size: 1.8rem;
+            font-size: 1.4rem;
             font-weight: 700;
             color: var(--color-secondary-text);
             text-transform: uppercase;
-            letter-spacing: 0.06em;
-            margin-bottom: 2.4rem;
+            letter-spacing: 0.08em;
+            margin-bottom: 1.6rem;
         }
-        .vs-faq-item {
-            margin-bottom: 0.6rem;
-        }
-        .vs-faq-question {
-            font-size: 1.6rem;
-            font-weight: 600;
-            color: var(--color-primary-text);
-            cursor: pointer;
-            padding: 1rem 0;
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 1rem;
-        }
-        .vs-faq-question::-webkit-details-marker { display: none; }
-        .vs-faq-question::after {
-            content: "+";
-            font-size: 2rem;
-            font-weight: 300;
-            color: var(--ghost-accent-color);
-            flex-shrink: 0;
-            transition: transform 0.2s ease;
-        }
-        details[open] .vs-faq-question::after {
-            transform: rotate(45deg);
-        }
-        .vs-faq-answer {
-            padding: 0.4rem 0 1.4rem;
-            font-size: 1.5rem;
-            color: var(--color-secondary-text);
-            line-height: 1.7;
-        }
-        .vs-faq-answer p { margin: 0; }
         .vs-author-block {
             display: flex;
             align-items: flex-start;
@@ -1792,20 +1758,18 @@ def build_post_article_html(meta, content_html, is_draft=False):
             </aside>"""
 
     # FAQ-Block aus Frontmatter — nach Autor-Box, vor Footer
+    # Rendert via convert_toggles() → gleiches kg-toggle-card Design wie Content-Toggles
     faq_block_html = ""
     faq_list = meta.get("faq", [])
     if faq_list and isinstance(faq_list, list):
-        faq_items_html = ""
+        faq_items_raw = ""
         for item in faq_list:
             q = item.get("q", "")
             a = item.get("a", "")
             if q and a:
-                faq_items_html += f"""
-                <details class="vs-faq-item">
-                    <summary class="vs-faq-question">{q}</summary>
-                    <div class="vs-faq-answer"><p>{a}</p></div>
-                </details>"""
-        if faq_items_html:
+                faq_items_raw += f"<details><summary>{q}</summary>{a}</details>\n"
+        if faq_items_raw:
+            faq_items_html = convert_toggles(faq_items_raw)
             faq_block_html = f"""
             <section class="vs-faq-block gh-canvas">
                 <h2 class="vs-faq-heading">Häufige Fragen</h2>
