@@ -1,5 +1,6 @@
 # Generierte HTML-Ausgabe — wird von GitHub Actions gebaut, nicht committet
 site/*.html
+!site/_brevo-form.html
 site/tag/
 site/sitemap.xml
 site/robots.txt
