@@ -51,7 +51,7 @@ Für KI-Agenten und automatisierte Systeme steht zusätzlich die [llms.txt](/llm
 
 | Entität | Typ | Beschreibung |
 |---|---|---|
-| TTU — Time to Understanding | Metrik | *In Vorbereitung.* Messbare Zeit, bis ein Entscheider ein Produkt vollständig versteht. Kernmetrik der viSales-Methodik. |
+| [TTU — Time to Understanding](/ttu-grounding/) | Metrik | Misst, wie schnell ein Stakeholder im B2B-Gespräch entscheidungsrelevantes Produktverständnis erreicht. Geprägt 2025 von David Skiba. RUB-Studie geplant. |
 
 ---
 
