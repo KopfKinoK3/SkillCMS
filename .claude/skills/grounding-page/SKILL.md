@@ -1,3 +1,9 @@
+---
+name: grounding-page
+description: Erstellt und pflegt Grounding Pages für viSales SkillCMS — kanonische Entitätsdefinitionen für KI-Systeme, Suchmaschinen und LLM-Crawler. Trigger auf: "Grounding anlegen", "neue Grounding-Seite", "Entität definieren", "Grounding für [Begriff]", "KI-Seite", "llms.txt erweitern", "kanonische Definition".
+version: 1.0.0
+---
+
 # Grounding Page Skill — viSales SkillCMS
 
 Erstellt neue Grounding-Seiten für viSales SkillCMS. Eine Grounding Page ist eine kanonische Entitätsdefinition für KI-Systeme, Suchmaschinen und LLM-Crawler — strukturiert nach dem viSales-Standard mit Fact-Grid, FAQs, Abgrenzung und llms.txt-Eintrag.

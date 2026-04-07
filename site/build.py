@@ -212,10 +212,95 @@ def convert_toggles(html):
 
 
 # ---------------------------------------------------------------------------
+# Shortcode-Prozessoren (vor Markdown-Konvertierung)
+# ---------------------------------------------------------------------------
+def load_brevo_form():
+    """Lädt die Brevo-Form aus _brevo-form.html und extrahiert den BODY-Teil."""
+    brevo_path = os.path.join(SITE_DIR, "_brevo-form.html")
+    if not os.path.exists(brevo_path):
+        return ""
+
+    with open(brevo_path, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    # Extrahiere den Content zwischen <!-- ##BREVO_BODY_START## --> und <!-- ##BREVO_BODY_END## -->
+    match = re.search(
+        r'<!--\s*##BREVO_BODY_START##\s*-->\s*(.*?)\s*<!--\s*##BREVO_BODY_END##\s*-->',
+        content,
+        re.DOTALL
+    )
+    if not match:
+        return ""
+
+    return match.group(1).strip()
+
+
+def process_newsletter_shortcode(md_text):
+    """
+    Verarbeitet [newsletter: "Text"] Shortcode und ersetzt ihn durch
+    den vollständigen Inline-Newsletter-Block mit umbenannten IDs.
+    """
+    def replace_newsletter(match):
+        subtitle = match.group(1)
+
+        # Lade die Brevo-Form
+        brevo_html = load_brevo_form()
+        if not brevo_html:
+            return match.group(0)  # Fallback: Shortcode unverändert lassen
+
+        # Ersetze die IDs für Inline-Form
+        replacements = [
+            ('id="sib-form"', 'id="sib-form-inline"'),
+            ('id="sib-container"', 'id="sib-container-inline"'),
+            ('id="sib-form-container"', 'id="sib-form-container-inline"'),
+            ('id="error-message"', 'id="error-message-inline"'),
+            ('id="success-message"', 'id="success-message-inline"'),
+            ('id="EMAIL"', 'id="EMAIL-inline"'),
+            ('id="OPT_IN"', 'id="OPT_IN-inline"'),
+            ('form="sib-form"', 'form="sib-form-inline"'),
+            # Label für OPT_IN anpassen
+            ('for="EMAIL"', 'for="EMAIL-inline"'),
+        ]
+
+        brevo_modified = brevo_html
+        for old, new in replacements:
+            brevo_modified = brevo_modified.replace(old, new)
+
+        # Weißen Hintergrund + Border vom sib-container entfernen
+        import re as _re2
+        brevo_modified = _re2.sub(
+            r'(id="sib-container-inline"[^>]*style=")[^"]*(")',
+            r'\1text-align:left; background:transparent; border:none; max-width:100%; padding:0; direction:ltr\2',
+            brevo_modified
+        )
+
+        # Ersetze das Label für OPT_IN (for-Attribut hinzufügen, falls nicht vorhanden)
+        brevo_modified = brevo_modified.replace(
+            '<label>\n                    <input type="checkbox" class="input_replaced" value="1" id="OPT_IN-inline"',
+            '<label for="OPT_IN-inline">\n                    <input type="checkbox" class="input_replaced" value="1" id="OPT_IN-inline"'
+        )
+
+        # Baue den Inline-Newsletter-Block
+        inline_block = f'''<div class="vs-inline-newsletter">
+  <p class="vs-nl-headline">Visual Sales — {subtitle}</p>
+  {brevo_modified}
+</div>'''
+
+        return inline_block
+
+    # Regex für [newsletter: "..."] (mit escaped Quotes innerhalb)
+    pattern = r'\[newsletter:\s*"([^"]+)"\s*\]'
+    return re.sub(pattern, replace_newsletter, md_text)
+
+
+# ---------------------------------------------------------------------------
 # Markdown → HTML
 # ---------------------------------------------------------------------------
 def md_to_html(md_text):
     """Konvertiert Markdown zu HTML (Spacer, Blockquote-Flatten, Toggles)."""
+    # Shortcode-Prozessoren VOR Markdown-Konvertierung
+    md_text = process_newsletter_shortcode(md_text)
+
     # Spacer-Divs einfügen (Doppel-/Dreifach-Leerzeilen)
     lines = md_text.split('\n')
     protected = []
@@ -833,9 +918,14 @@ INLINE_CSS = """
             border-left: 4px solid #f2902a;
             border-radius: 6px;
         }
-        .vs-inline-newsletter strong { font-size: 1.5rem; }
-        .vs-inline-newsletter p { margin: 0.4em 0 0; }
-        .vs-inline-brevo { margin-top: 1em; }
+        .vs-nl-headline { font-size: 1.5rem; font-weight: 700; margin: 0 0 1em; }
+        .vs-nl-headline strong { color: var(--ghost-accent-color); }
+        .vs-inline-newsletter .sib-form,
+        .vs-inline-newsletter .sib-form-container { background: transparent !important; padding: 0 !important; text-align: left !important; }
+        #sib-container-inline { background: transparent !important; border: none !important; max-width: 100% !important; padding: 0 !important; }
+        .vs-inline-newsletter .sib-form-block__button { background-color: #f2902a !important; border-radius: 6px !important; width: 100%; }
+        .vs-inline-newsletter .entry__specification { font-size: 1.1rem !important; color: #888 !important; }
+        .vs-inline-newsletter .sib-form__declaration > div:first-child { display: none; }
         /* ────────────────────────────────────────────────────────────────── */
         .vs-footer-prod-more { margin-top: 0.4em; }
         .vs-footer-prod-more a { color: var(--ghost-accent-color) !important; font-size: 1.3rem; }
