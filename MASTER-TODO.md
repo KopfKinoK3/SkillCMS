@@ -80,6 +80,15 @@ Erkannt beim Testlauf mit Tolkien-2 + Bildergalerie (2026-04-06):
 | D0.5 | **Bilder als Broken Link** auf GitHub Pages (lokaler CORS-Block gelöst, GitHub live ✅) | Erledigt via GitHub Pages Deploy |
 | D0.6 | **Homepage braucht eigenes Template `type: home`** — keine Artikel-Struktur (kein feature_image-Header, kein Autor-Block, kein Tag-Badge), stattdessen: Hero-Block, 3-Spalten-Grids, Kunden-Logo-Band, Leistungs-Grid, Fallbeispiel-Grid, volle Breite (`width: 100vw`). HTML-Nodes der Startseite werden 1:1 durchgereicht, nicht in Markdown konvertiert. MD liegt als `content/pages/home.md` mit `type: home` | Template-Chat: `home.html` Template in `build.py` + CSS für Fullwidth-Sections |
 
+### D0.7 · FAQ-Konvention im Ghost-Exporter ✅ (2026-04-07)
+
+- Ghost-Artikel nutzen `<details>/<summary>` für zwei Zwecke: Content-Toggles (Exkurse) und FAQ (Q&A am Ende)
+- **Konvention:** FAQ-Toggles in Ghost mit `<div class="post-faq">` wrappen
+- **Exporter:** erkennt `post-faq`-Wrapper → extrahiert als `faq:` Liste ins Frontmatter → entfernt Block aus Content
+- **Content-Toggles** ohne Wrapper bleiben unverändert im Content
+- `ghost_exporter.py`: `extract_faq_from_content()` implementiert und getestet
+- Skill-Abo-Artikel: alle 4 Toggles sind Content-Toggles → kein `faq:` nötig ✅
+
 ### D1 · Content-Migration
 - Ghost-Seiten als Dummy-MDs: Leistungen, Fallbeispiele, Über Uns, …
 - Skeleton-Snapshot: ZIP als `SkillCMS-v1.0-skeleton`
