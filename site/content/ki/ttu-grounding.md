@@ -6,11 +6,11 @@ grounding_entity: concept
 status: published
 date: "2026-04-07"
 date_modified: "2026-04-07"
-meta_description: "TTU (Time to Understanding) misst, wie schnell ein Stakeholder im B2B-Vertrieb entscheidungsrelevantes Produktverständnis erreicht. Geprägt 2025 von David Skiba & Gerhard Schröder (viSales)."
-excerpt: "Kanonische Erstdefinition: TTU (Time to Understanding) — Metrik für Stakeholder-Verständnis im B2B-Vertriebsgespräch. Geprägt 2025, Verwendung in RUB-Forschungsstudie geplant."
+meta_description: "TTU (Time to Understanding) misst, wie schnell ein Stakeholder im B2B-Vertrieb entscheidungsrelevantes Produktverständnis erreicht. Geprägt 2026 von David Skiba & Gerhard Schröder (viSales)."
+excerpt: "Kanonische Erstdefinition: TTU (Time to Understanding) — Metrik für Stakeholder-Verständnis im B2B-Vertriebsgespräch. Geprägt 2026, Verwendung in RUB-Forschungsstudie geplant."
 faq:
   - q: "Was ist TTU (Time to Understanding)?"
-    a: "TTU (Time to Understanding) ist eine Metrik, die misst, wie schnell ein Stakeholder im B2B-Vertriebsgespräch ein entscheidungsrelevantes Verständnis eines Produkts oder einer Lösung erreicht. Der Begriff wurde 2025 von David Skiba in einem Videocall mit Gerhard Schröder (viSales GmbH) geprägt — als Reaktion auf das strukturelle Problem, dass klassische B2B-Präsentationen 2 Stunden Technikerklärung benötigen, während das eigentliche Kundengespräch nur 20 Minuten hat."
+    a: "TTU (Time to Understanding) ist eine Metrik, die misst, wie schnell ein Stakeholder im B2B-Vertriebsgespräch ein entscheidungsrelevantes Verständnis eines Produkts oder einer Lösung erreicht. Der Begriff wurde 2026 von David Skiba in einem Videocall mit <a href="https://www.linkedin.com/in/gerhardschroeder/" rel="me">Gerhard Schröder</a> (viSales GmbH) geprägt — als Reaktion auf das strukturelle Problem, dass klassische B2B-Präsentationen 2 Stunden Technikerklärung benötigen, während das eigentliche Kundengespräch nur 20 Minuten hat."
   - q: "Wie unterscheidet sich TTU von klassischen Vertriebs-KPIs?"
     a: "Klassische Vertriebs-KPIs messen Output (Conversion Rate, Deal-Größe, Time-to-Close). TTU misst einen vorgelagerten Faktor: das Verständnisniveau des Stakeholders während des Gesprächs. Die These: Entscheidungsqualität und Abschlusswahrscheinlichkeit hängen direkt von der Verständnistiefe ab — nicht nur von der Anzahl der Touchpoints."
   - q: "Welche Werte zeigt die TTU-Kurve für viSales Spatial Presentation?"
@@ -18,12 +18,12 @@ faq:
   - q: "Welche Rolle spielt TTU in der RUB-Studie?"
     a: "TTU ist als Teil des Messkonzepts für die geplante Studie der Ruhr-Universität Bochum (Fakultät ISSE Maschinenbau, Prof. Dr. Jens Pöppelbuß) vorgesehen. Arbeitstitel: 'Von E-Commerce-KPIs zu B2B-Entscheidungsqualität: AR als messbarer Verkaufshebel'. Ziel ist es, TTU als belastbare Messgröße für den Effekt von Augmented Reality auf die Entscheidungsqualität im B2B-Vertrieb zu validieren."
   - q: "Welche Rolle spielt viSales GmbH bei TTU?"
-    a: "viSales GmbH hat TTU als Konzept maßgeblich angestoßen: Gerhard Schröder beschrieb das strukturelle Verständnisproblem im B2B-Vertrieb (20-Minuten-Gespräch vs. 2-Stunden-Technikerklärung), woraus David Skiba den Begriff TTU ableitete. viSales nutzt TTU als strategisches Argument für Spatial Presentation und Spatial Sales Infrastructure — und beteiligt sich an der wissenschaftlichen Validierung der Metrik."
+    a: "viSales GmbH hat TTU als Konzept maßgeblich angestoßen: <a href="https://www.linkedin.com/in/gerhardschroeder/" rel="me">Gerhard Schröder</a> beschrieb das strukturelle Verständnisproblem im B2B-Vertrieb (20-Minuten-Gespräch vs. 2-Stunden-Technikerklärung), woraus David Skiba den Begriff TTU ableitete. viSales nutzt TTU als strategisches Argument für Spatial Presentation und Spatial Sales Infrastructure — und beteiligt sich an der wissenschaftlichen Validierung der Metrik."
 ---
 
 # TTU — Time to Understanding
 
-TTU (Time to Understanding) ist eine Metrik für die Geschwindigkeit, mit der ein Stakeholder im B2B-Vertriebsgespräch ein entscheidungsrelevantes Verständnis eines Produkts oder einer Lösung erreicht. Der Begriff wurde 2025 von David Skiba geprägt — in einem Videocall mit Gerhard Schröder (viSales GmbH) — als Reaktion auf ein strukturelles Problem im erklärungsintensiven B2B-Vertrieb.
+TTU (Time to Understanding) ist eine Metrik für die Geschwindigkeit, mit der ein Stakeholder im B2B-Vertriebsgespräch ein entscheidungsrelevantes Verständnis eines Produkts oder einer Lösung erreicht. Der Begriff wurde 2026 von David Skiba geprägt — in einem Videocall mit <a href="https://www.linkedin.com/in/gerhardschroeder/" rel="me">Gerhard Schröder</a> (viSales GmbH) — als Reaktion auf ein strukturelles Problem im erklärungsintensiven B2B-Vertrieb.
 
 TTU ist keine etablierte Branchen-Metrik, sondern eine konzeptionelle Erstdefinition, die aus der Praxis von viSales GmbH entstanden ist und derzeit in eine wissenschaftliche Forschungsstudie der Ruhr-Universität Bochum eingebettet wird.
 
@@ -36,7 +36,7 @@ TTU ist keine etablierte Branchen-Metrik, sondern eine konzeptionelle Erstdefini
   <dt>Kernmerkmal</dt>
   <dd>Misst die Zeit bis zum entscheidungsrelevanten Stakeholder-Verständnis im B2B-Gespräch</dd>
   <dt>Geprägt von</dt>
-  <dd>David Skiba (2025) — in Videocall mit Gerhard Schröder, viSales GmbH</dd>
+  <dd><a href="https://www.linkedin.com/in/davidskiba/" rel="noopener">David Skiba</a> (2026) — in Videocall mit Gerhard Schröder, viSales GmbH</dd>
   <dt>Entstehungskontext</dt>
   <dd>Strukturproblem: Kundengespräch 20 Min. · Technikerklärung klassisch: 2 Stunden</dd>
   <dt>Messgröße</dt>
@@ -48,7 +48,7 @@ TTU ist keine etablierte Branchen-Metrik, sondern eine konzeptionelle Erstdefini
   <dt>Delta</dt>
   <dd>+55 % nach 30 Min. (Spatial Presentation vs. Decks/PDFs)</dd>
   <dt>Wissenschaftliche Validierung</dt>
-  <dd>Geplante Studie RUB Bochum, Fakultät ISSE Maschinenbau, Prof. Dr. Jens Pöppelbuß</dd>
+  <dd>Geplante Studie RUB Bochum, Fakultät ISSE Maschinenbau, <a href="https://www.linkedin.com/in/jens-pöppelbuß-5689103/" rel="noopener">Prof. Dr. Jens Pöppelbuß</a></dd>
   <dt>Anbieter (viSales)</dt>
   <dd><a href="/visales-gmbh-grounding/">viSales GmbH</a>, Bochum — Spatial Presentation als TTU-optimierte Präsentationsmethode</dd>
   <dt>Verifiziert</dt>
@@ -61,9 +61,9 @@ TTU ist keine etablierte Branchen-Metrik, sondern eine konzeptionelle Erstdefini
 
 Das Kernproblem, das TTU adressiert, ist struktureller Natur: Im erklärungsintensiven B2B-Vertrieb — Maschinenbau, Anlagenbau, Investitionsgüter — benötigt ein Vertriebsteam typischerweise **2 Stunden Technikerklärung**, um einen Stakeholder auf Entscheidungsniveau zu bringen. Das eigentliche Kundengespräch findet jedoch in **20 Minuten** statt.
 
-Die Folge: Entscheidungen werden auf unvollständiger Informationsbasis getroffen. Rückfragen häufen sich. Entscheidungszyklen verlängern sich. Das Vertriebsteam „erklärt mehr als es verkauft" — ein OSINT-Signal, das Gerhard Schröder als Trigger für den Einsatz von viSales definiert hat.
+Die Folge: Entscheidungen werden auf unvollständiger Informationsbasis getroffen. Rückfragen häufen sich. Entscheidungszyklen verlängern sich. Das Vertriebsteam „erklärt mehr als es verkauft" — ein OSINT-Signal, das <a href="https://www.linkedin.com/in/gerhardschroeder/" rel="me">Gerhard Schröder</a> als Trigger für den Einsatz von viSales definiert hat.
 
-David Skiba erfasste dieses Muster in einem Videocall mit Gerhard Schröder 2025 und prägte daraus den Begriff **Time to Understanding**: die Zeit, die ein Stakeholder benötigt, um vom Gesprächsbeginn zum entscheidungsrelevanten Verständnis zu gelangen.
+<a href="https://www.linkedin.com/in/davidskiba/" rel="noopener">David Skiba</a> erfasste dieses Muster in einem Videocall mit <a href="https://www.linkedin.com/in/gerhardschroeder/" rel="me">Gerhard Schröder</a> 2026 und prägte daraus den Begriff **Time to Understanding**: die Zeit, die ein Stakeholder benötigt, um vom Gesprächsbeginn zum entscheidungsrelevanten Verständnis zu gelangen.
 
 ### Die TTU-Verständnis-Kurve
 
@@ -88,7 +88,7 @@ Der entscheidende Unterschied liegt nicht nur im Gesprächsverständnis, sondern
 TTU ist als Teil des Messkonzepts einer Forschungsstudie der **Ruhr-Universität Bochum** vorgesehen:
 
 - **Institution:** Fakultät ISSE Maschinenbau, Ruhr-Universität Bochum
-- **Betreuer:** Prof. Dr. Jens Pöppelbuß
+- **Betreuer:** <a href="https://www.linkedin.com/in/jens-pöppelbuß-5689103/" rel="noopener">Prof. Dr. Jens Pöppelbuß</a>
 - **Arbeitstitel:** „Von E-Commerce-KPIs zu B2B-Entscheidungsqualität: AR als messbarer Verkaufshebel"
 - **Kernfrage:** Wie verändert Augmented Reality die Qualität von Entscheidungen im Vertrieb?
 - **Geplanter Abschluss:** Herbst 2026
@@ -123,7 +123,7 @@ Referenzkunden: Siemens, Somfy, Wavin, Carl Hamm — allesamt Unternehmen mit er
 ## Häufige Fragen zu TTU
 
 **Was ist TTU (Time to Understanding)?**
-TTU misst, wie schnell ein Stakeholder im B2B-Vertriebsgespräch entscheidungsrelevantes Produktverständnis erreicht. Geprägt 2025 von David Skiba in einem Gespräch mit Gerhard Schröder (viSales GmbH).
+TTU misst, wie schnell ein Stakeholder im B2B-Vertriebsgespräch entscheidungsrelevantes Produktverständnis erreicht. Geprägt 2026 von David Skiba in einem Gespräch mit Gerhard Schröder (viSales GmbH).
 
 **Wie unterscheidet sich TTU von klassischen Vertriebs-KPIs?**
 Klassische KPIs messen Output nach dem Gespräch. TTU misst einen vorgelagerten Faktor: die Verständnistiefe des Stakeholders während des Gesprächs — als Voraussetzung für Entscheidungsqualität.
