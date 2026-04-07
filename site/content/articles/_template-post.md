@@ -124,5 +124,19 @@ keywords: "keyword1, keyword2, keyword3"
 [Optional: Link zu weiterführendem Artikel oder Kontakt]
 
 ---
-*[Meine Liebe zu Tolkien, Teil 1](https://visales.de/...) — [Kurzbeschreibung verwandter Artikel]*
-<!-- Verwandte Artikel verlinken — optional, aber gut für Interlinking -->
+*[Verwandter Artikel](https://visales.de/...) — [Kurzbeschreibung]*
+<!-- Verwandte Artikel verlinken — optional, gut für Interlinking -->
+
+<!-- ============================================================ -->
+<!-- FAQ — NICHT hier im Content eintragen!                       -->
+<!-- FAQs gehören ins Frontmatter unter faq: (YAML-Liste oben)   -->
+<!-- build.py rendert sie automatisch NACH der Autoren-Box        -->
+<!-- als aufklappbare Toggles mit FAQPage-Schema (JSON-LD)        -->
+<!--                                                              -->
+<!-- Beispiel-Struktur im Frontmatter:                            -->
+<!-- faq:                                                         -->
+<!--   - q: "Was ist XY?"                                        -->
+<!--     a: "XY ist..."                                          -->
+<!--   - q: "Wie funktioniert XY?"                               -->
+<!--     a: "XY funktioniert..."                                  -->
+<!-- ============================================================ -->
