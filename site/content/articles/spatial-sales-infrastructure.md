@@ -8,6 +8,13 @@ tags: [impuls, vertriebskommunikation]
 published_at: 2026-03-15T12:23:35.000Z
 type: post
 template: post
+faq:
+  - q: "Was ist Spatial Sales Infrastructure?"
+    a: "Spatial Sales Infrastructure bezeichnet die technische Grundlage für skalierbaren 3D-Vertrieb — OpenUSD als Masterdatei-Format, CAD-Pipelines, WebAR und digitale Zwillinge in einer gemeinsamen Infrastruktur statt in getrennten Silos."
+  - q: "Warum gehören 3D-Visualisierung, AR und Digital Twins zur gleichen Infrastruktur?"
+    a: "Weil sie alle auf denselben 3D-Daten basieren. Wer OpenUSD als Masterdatei nutzt, kann daraus automatisiert USDZ für AR Quick Look, GLB für WebAR und hochauflösende Renderings erzeugen — ohne redundante Produktion, mit konsistenter Qualität."
+  - q: "Was verändert sich im 3D-Markt bis 2030?"
+    a: "OpenUSD wird zum offenen Standard für 3D-Inhalte — vergleichbar mit HTML für Websites. Unternehmen die jetzt eine saubere CAD-to-Sales-Pipeline aufbauen, haben einen strukturellen Vorsprung gegenüber Wettbewerbern die weiter in Einzel-Tools denken."
 ---
 
 - **Der 3D-Markt ist heute in drei getrennte Ökosysteme aufgeteilt — und zwischen Industrial Digital Twins und Spatial Commerce klafft eine Marktlücke, die kaum jemand bearbeitet.**
