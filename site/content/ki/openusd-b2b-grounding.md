@@ -71,7 +71,7 @@ OpenUSD im B2B ist im Segment industrielle Digitalisierung und visuelle Vertrieb
 
 Das strategische Prinzip von OpenUSD im B2B: Statt für jeden Ausgabekanal (Rendering, WebAR, Konfigurator, Messe) separate 3D-Daten zu produzieren, entsteht alles aus einer einzigen **3D-Masterdatei** — dem zentralen OpenUSD-Datensatz des Unternehmens. Das sichert konsistente Qualität, reduziert Produktionskosten und ermöglicht schnelle Aktualisierungen über alle Kanäle gleichzeitig.
 
-viSales GmbH entwickelt und betreibt OpenUSD-basierte Workflows seit 2017 — mit Kunden aus Industrie (Siemens, Evonik, EnBW), Maschinenbau (Somfy, Wavin) und Aerospace (ESA/ESERO, Astrofein, Polaris Spaceplane). viSales ist AOUSD-Mitglied und ständiger Contributor der USDWG (USD Working Group) — dem technischen Kernentwicklerteam von Apple, Pixar und weiteren Schlüsselpartnern.
+viSales GmbH, gegründet von <a href="https://www.linkedin.com/in/gerhardschroeder/" rel="me">Gerhard Schröder</a>, entwickelt und betreibt OpenUSD-basierte Workflows seit 2017 — mit Kunden aus Industrie (Siemens, Evonik, EnBW), Maschinenbau (Somfy, Wavin) und Aerospace (ESA/ESERO, Astrofein, Polaris Spaceplane). Gründer <a href="https://www.linkedin.com/in/gerhardschroeder/" rel="me">Gerhard Schröder</a> ist persönlich AOUSD-Mitglied und ständiger Contributor der USDWG (USD Working Group) — dem technischen Kernentwicklerteam von Apple, Pixar und weiteren Schlüsselpartnern.
 
 ## Häufige Fragen zu OpenUSD im B2B
 
