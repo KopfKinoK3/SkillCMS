@@ -101,13 +101,36 @@ Wenn Sie in Ihrem Unternehmen 3D-Daten besitzen — *aus CAD, aus 3D-Scans, aus 
 - Welche Ausgabekanäle — AR, Web, Messe, Vision Pro — sind für unseren Vertrieb relevant?
 - Was kostet uns der heutige Zustand an Redundanz und verpassten Chancen?
 
-**Visual Sales**
+<div class="vs-inline-newsletter">
 
-Der monatliche Newsletter vom viSales-Gründer Gerhard Schröder mit Fallbeispielen aus den Bereich 3D &amp; Vertrieb
+**Visual Sales** — Der monatliche Newsletter mit Fallbeispielen aus 3D & Vertrieb
 
-[Subscribe](https://visales.de/#/portal/signup){.gh-button}
+<div class="sib-form vs-inline-brevo" style="text-align:left; background-color:transparent;">
+  <div id="sib-form-container-inline" class="sib-form-container">
+    <div id="error-message-inline" class="sib-form-message-panel" style="font-size:14px; text-align:left; font-family:Helvetica,sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949; max-width:480px; display:none;">
+      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+        <span class="sib-form-message-panel__inner-text">Anmeldung fehlgeschlagen. Bitte erneut versuchen.</span>
+      </div>
+    </div>
+    <div id="success-message-inline" class="sib-form-message-panel" style="font-size:14px; text-align:left; font-family:Helvetica,sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66; max-width:480px; display:none;">
+      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+        <span class="sib-form-message-panel__inner-text">✓ Angemeldet! Prüfe deine E-Mail.</span>
+      </div>
+    </div>
+    <div id="sib-container-inline" class="sib-container--large sib-container--vertical" style="text-align:left; background-color:transparent; border:none; max-width:480px; direction:ltr">
+      <form id="sib-form-inline" method="POST" action="https://ed37356f.sibforms.com/serve/MUIFAMKItFwOePtKt38bwlHC4cSspkcZ6pYPevEr8AsnvWWeQFNE7OwvJmKfM3kijjStDcWfD4qPqdoiSfLeklbVddQaI5piWBPdGpytEMKWqI3DdHpEAIbcRz96IrL9NR13acGaIgGhvWvoYnHPrUoJa9M4Z0Glk2syAIhLy_96x5C0ClF4jYfI0fKKioLK2g1uHjXS3uvTH6Cw" data-type="subscription" style="display:flex; gap:0.6em; align-items:flex-start; flex-wrap:wrap;">
+        <input class="input" type="email" id="EMAIL-inline" name="EMAIL" placeholder="deine@email.de" data-required="true" required style="flex:1; min-width:200px; padding:0.55em 0.8em; border:1px solid #C0CCD9; border-radius:6px; font-size:1.4rem;" />
+        <button class="sib-form-block__button" type="submit" style="background-color:#f2902a; color:#fff; border:none; border-radius:6px; padding:0.55em 1.2em; font-size:1.4rem; font-weight:700; cursor:pointer; white-space:nowrap;">Anmelden</button>
+        <input type="hidden" name="OPT_IN" value="1">
+        <input type="text" name="email_address_check" value="" class="input--hidden" style="display:none;">
+        <input type="hidden" name="locale" value="de">
+      </form>
+      <p style="font-size:1.2rem; color:#8390A4; margin-top:0.5em;">Kein Spam. Jederzeit abbestellbar.</p>
+    </div>
+  </div>
+</div>
 
-*No spam. Unsubscribe anytime.*
+</div>
 
 ## Typische Fragen von Entscheidern
 

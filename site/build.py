@@ -825,6 +825,18 @@ INLINE_CSS = """
             margin-bottom: 2rem;
             border-bottom: 1px solid var(--color-border);
         }
+        /* ── Inline Newsletter-Block im Artikel ───────────────────────────── */
+        .vs-inline-newsletter {
+            margin: 2.4em 0;
+            padding: 1.6em 2em;
+            background: #f8f5f0;
+            border-left: 4px solid #f2902a;
+            border-radius: 6px;
+        }
+        .vs-inline-newsletter strong { font-size: 1.5rem; }
+        .vs-inline-newsletter p { margin: 0.4em 0 0; }
+        .vs-inline-brevo { margin-top: 1em; }
+        /* ────────────────────────────────────────────────────────────────── */
         .vs-footer-prod-more { margin-top: 0.4em; }
         .vs-footer-prod-more a { color: var(--ghost-accent-color) !important; font-size: 1.3rem; }
         .vs-footer-prod-item a { color: var(--color-secondary-text) !important; }
