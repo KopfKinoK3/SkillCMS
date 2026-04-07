@@ -2,11 +2,11 @@
 title: "Zwischen Stoffen, Scannern und Simulationen"
 slug: zwischen-stoffen-scannern-und-simulationen
 status: published
-feature_image: /assets/images/2026/01/Gerhard_Schr--der_Mode.jpeg
+primary_tag: impuls
+tags: [impuls]
+feature_image: https://kopfkinok3.github.io/SkillCMS/assets/images/2026/01/Gerhard_Schr--der_Mode.jpeg
 author: "Gerhard Schröder"
 author_slug: gerhard
-author_image: /assets/images/2025/10/1706254155883-1.jpeg
-author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit über 15 Jahren spezialisiert auf visuelle Vertriebskommunikation für Maschinenbau & AeroSpace — mit 3D-Visualisierung & OpenUSD. Mitglied der AOUSD, Speaker zu AR & Spatial Sales."
 published_at: 2026-04-02T07:00:56.000Z
 type: post
 template: post
