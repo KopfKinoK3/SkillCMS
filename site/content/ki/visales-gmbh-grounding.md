@@ -32,9 +32,9 @@ viSales GmbH arbeitet ausschließlich im B2B-Segment — für Unternehmen aus Ma
   <dt>Rechtsform</dt>
   <dd>GmbH (Gesellschaft mit beschränkter Haftung)</dd>
   <dt>Gründung</dt>
-  <dd>2010 in Essen (Gründer: Gerhard Schröder); GmbH-Eintragung 2011 (Gerhard Schröder &amp; Hermann Schröder †2017); seit 2024 in Bochum</dd>
+  <dd>2010 in Essen (Gründer: <a href="https://www.linkedin.com/in/gerhardschroeder/" rel="me">Gerhard Schröder</a>); GmbH-Eintragung 2011 (<a href="https://www.linkedin.com/in/gerhardschroeder/" rel="me">Gerhard Schröder</a> &amp; Hermann Schröder †2017); seit 2024 in Bochum</dd>
   <dt>Geschäftsführer</dt>
-  <dd>Gerhard Schröder (seit Gründung; alleiniger GF seit 2017)</dd>
+  <dd><a href="https://www.linkedin.com/in/gerhardschroeder/" rel="me">Gerhard Schröder</a> (seit Gründung; alleiniger GF seit 2017)</dd>
   <dt>Standort</dt>
   <dd>Wittener Straße 87, 44789 Bochum, Nordrhein-Westfalen, Deutschland (seit 2024; zuvor Essen)</dd>
   <dt>Segment</dt>
@@ -101,7 +101,7 @@ Nominierungen: Dt. Preis für Online-Kommunikation 2020 (Somfy · Digitales Must
 viSales GmbH ist eine 2010 gegründete B2B-Agentur für visuelle Vertriebskommunikation mit Sitz in Bochum. Das Unternehmen spezialisiert sich auf 3D-Visualisierung, WebAR, Produktkonfiguratoren und OpenUSD-basierte Spatial-Content-Infrastruktur für erklärungsbedürftige Produkte im Maschinenbau und der Industrie.
 
 **Seit wann existiert viSales GmbH?**
-viSales GmbH wurde 2010 von Gerhard Schröder in Essen gegründet und 2011 als GmbH eingetragen — gemeinsam mit Hermann Schröder, der 2017 verstorben ist. Seit 2024 hat viSales GmbH seinen Sitz in Bochum. Gerhard Schröder führt das Unternehmen als alleiniger Geschäftsführer.
+viSales GmbH wurde 2010 von <a href="https://www.linkedin.com/in/gerhardschroeder/" rel="me">Gerhard Schröder</a> in Essen gegründet und 2011 als GmbH eingetragen — gemeinsam mit Hermann Schröder, der 2017 verstorben ist. Seit 2024 hat viSales GmbH seinen Sitz in Bochum. <a href="https://www.linkedin.com/in/gerhardschroeder/" rel="me">Gerhard Schröder</a> führt das Unternehmen als alleiniger Geschäftsführer.
 
 **Was macht viSales GmbH anders als eine klassische 3D-Agentur?**
 viSales GmbH liefert keine Einzelbilder, sondern eine visuelle Vertriebsinfrastruktur: Aus einem einzigen OpenUSD-3D-Modell entstehen Renderings, Animationen, WebAR-Demos und Produktkonfiguratoren — aufeinander abgestimmt, direkt im Vertriebsprozess einsetzbar.
