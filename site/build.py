@@ -1803,11 +1803,24 @@ def build_post_article_html(meta, content_html, is_draft=False):
     date_raw      = meta.get("date", "") or meta.get("published_at", "")
     date_str      = str(date_raw).split("T")[0] if date_raw else ""
 
+    # Relativer Basis-Pfad: Artikel liegen im Root, daher kein ../
+    slug       = meta.get("slug", "")
+    slug_depth = len([p for p in slug.split("/") if p]) - 1
+    base       = "../" * max(0, slug_depth)
+
+    # Lokale Pfade (beginnen mit /assets/) → relativ machen für GitHub Pages Subdir
+    def make_relative(path):
+        if path and path.startswith("/"):
+            return base + path.lstrip("/")
+        return path
+
+    feature_image = make_relative(feature_image)
+
     # Author from frontmatter or site.yaml
     author_name   = meta.get("author",       cfg("author", "name",   default="Gerhard Schröder"))
     author_url    = cfg("author", "url",    default="/author/gerhard/")
-    author_avatar = cfg("author", "avatar", default="")
-    author_bio    = cfg("author", "bio",    default="")
+    author_avatar = make_relative(meta.get("author_image", "") or cfg("author", "avatar", default=""))
+    author_bio    = meta.get("author_bio", "") or cfg("author", "bio", default="")
 
     date_display  = format_date_de(date_str) if date_str else ""
     reading_time  = calc_reading_time(content_html)
@@ -1817,7 +1830,7 @@ def build_post_article_html(meta, content_html, is_draft=False):
     # D0.2 — Kategorie-Badge ÜBER dem Titel
     badge_html = ""
     if primary_tag:
-        badge_html = f'<a class="vs-post-category-badge" href="/tag/{tag_slug}/">{primary_tag}</a>\n'
+        badge_html = f'<a class="vs-post-category-badge" href="{base}tag/{tag_slug}/">{primary_tag}</a>\n'
 
     # Kompakte Meta-Zeile: Avatar · Name · Datum · Lesezeit
     avatar_html = ""
@@ -1916,7 +1929,7 @@ def build_page(meta, content_html, is_draft=False):
     # og:image priority: feature_image > og_image > default logo
     og_img_src   = feature_image or og_image
     og_image_url = og_img_src if og_img_src.startswith("http") else (
-                   f"{site_url}/{og_img_src}" if og_img_src else f"{site_url}/assets/images/logo-visales.png")
+                   f"{site_url}/{og_img_src.lstrip('/')}" if og_img_src else f"{site_url}/assets/images/logo-visales.png")
     og_type      = "article" if page_type == "post" else "website"
     robots       = "noindex, nofollow" if is_draft else "index, follow"
     full_title      = f"{title} \u2014 {site_title}" if title != site_title else title
