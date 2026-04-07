@@ -1801,7 +1801,15 @@ def build_post_article_html(meta, content_html, is_draft=False):
     primary_tag   = meta.get("primary_tag", "")
     feature_image = meta.get("feature_image", "")
     date_raw      = meta.get("date", "") or meta.get("published_at", "")
-    date_str      = str(date_raw).split("T")[0] if date_raw else ""
+    # YAML kann published_at als datetime-Objekt parsen → .isoformat() oder str() + split
+    if date_raw:
+        import datetime as _dt
+        if isinstance(date_raw, (_dt.datetime, _dt.date)):
+            date_str = date_raw.strftime("%Y-%m-%d")
+        else:
+            date_str = str(date_raw).split("T")[0].split(" ")[0][:10]
+    else:
+        date_str = ""
 
     # Relativer Basis-Pfad: Artikel liegen im Root, daher kein ../
     slug       = meta.get("slug", "")
