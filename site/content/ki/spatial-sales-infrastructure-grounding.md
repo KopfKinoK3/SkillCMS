@@ -87,7 +87,7 @@ Aus der OpenUSD-Masterdatei entstehen simultan: AR Quick Look (USDZ) für das Ku
 
 Die klassische Agentur-Logik produziert Einzelassets: ein Rendering für die Broschüre, eine AR-Demo für die Messe, ein Video für die Website — jedes Mal isoliert, jedes Mal mit Bruch in der Datenbasis. Wenn sich ein Produkt ändert, müssen alle Einzelassets neu produziert werden.
 
-Spatial Sales Infrastructure dreht diese Logik um: Die Investition erfolgt einmalig in die strukturierte OpenUSD-Masterdatei. Alle Ausgaben sind automatisiert, konsistent und skalierbar. Für Unternehmen mit erklärungsbedürftigen Produkten und wachsenden Kanal-Anforderungen ist das der entscheidende Unterschied.
+Spatial Sales Infrastructure — konzipiert von <a href="https://www.linkedin.com/in/gerhardschroeder/" rel="me">Gerhard Schröder</a>, viSales GmbH — dreht diese Logik um: Die Investition erfolgt einmalig in die strukturierte OpenUSD-Masterdatei. Alle Ausgaben sind automatisiert, konsistent und skalierbar. Für Unternehmen mit erklärungsbedürftigen Produkten und wachsenden Kanal-Anforderungen ist das der entscheidende Unterschied.
 
 ## Häufige Fragen zu Spatial Sales Infrastructure
 
