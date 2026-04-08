@@ -3,7 +3,7 @@ title: "Skill-Abo #1: Prompt Injection Scanner, wenn dein KI-Agent das Falsche l
 slug: skill-abo-1-prompt-injection-scanner
 type: post
 status: published
-date: 2026-04-05
+date: "2026-04-05"
 author: Gerhard Schröder
 feature_image: https://visales.de/content/images/2026/03/Skill-Abo-Prompt-Injection-Mark-Zimmermann.jpg
 primary_tag: skill-abo

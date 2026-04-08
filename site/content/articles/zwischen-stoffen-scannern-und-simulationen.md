@@ -7,9 +7,9 @@ tags: [impuls]
 feature_image: https://kopfkinok3.github.io/SkillCMS/assets/images/2026/01/Gerhard_Schr--der_Mode.jpeg
 author: "Gerhard Schröder"
 author_slug: gerhard
+date: "2026-04-02"
 published_at: "2026-04-02T07:00:56.000Z"
 type: post
-template: post
 ---
 
 Als ich vor über 25 Jahren meine Ausbildung im Bereich Modedesign abschloss, war ich ein Unikum: Der einzige Mann unter knapp 30 Frauen – und wohl der Einzige, der sich mehr für Nähroboter als für Stickrahmen interessierte.
