@@ -1,10 +1,10 @@
 # SkillCMS — Master ToDo
 > Konsolidiert aus: `todo-skill-cms.md`, `KI-ToDo.md`, `TODO-fediverse-push.md`
-> Stand: 2026-04-06
+> Stand: 2026-04-08
 
 ---
 
-## ✅ Erledigt — Build-System
+## ✅ Erledigt — Build-System & Skills
 
 - Build-Pipeline: Markdown → HTML (`build.py`)
 - Ghost Source Theme + CSS-Overrides
@@ -15,125 +15,150 @@
 - GitHub Pages Deployment via Actions
 - Brevo Newsletter-Form (einheitlich in allen Seiten)
 - GA4 + Google Ads + Cookie Consent Mode v2
-- Footer: 4 Spalten, responsive, Brevo-Form
+- Footer: 4 Spalten, responsive, Brevo-Form, first-child margin-fix
 - Grounding Pages: viSales GmbH ✅, Gerhard Schröder ✅, 5 Kern-Themen ✅
+- **Render-Skill Phase 1** (lokaler Build) ✅
+- **Render-Skill Phase 2** (+ Git commit + GitHub Push) ✅
+- FAQ-Konvention Ghost-Exporter: `post-faq`-Wrapper → `faq:` Frontmatter ✅
+- D0.2 Kategorie-Badge über Titelbild ✅
+- D0.3 Titelbild im Post-Header ✅
+- D0.4 Autor-Block (Name, Bild, Bio, Datum) ✅
+- D0.5 Bilder Broken Links via GitHub Pages gelöst ✅
 
 ---
 
-## 🔜 Block A — Cowork-Skills (nächster Schritt)
+## 🗂️ Aktive Chats & Zuständigkeiten
 
-### A1 · Render-Skill `skillcms-render`
-| Phase | Inhalt | Wann |
+| Chat | Zuständig für | Status |
 |---|---|---|
-| **Phase 1** | Local Render: `build.py` ausführen, Output prüfen | **jetzt** |
-| **Phase 2** | + git add/commit/push, GitHub Actions Status | nach Phase 1 |
-| **Phase 3** | + FTP/SSH Hetzner, RSS-Ping, Mastodon-Post | wenn live |
-
-→ Ablage: `.claude/skills/skillcms-render/SKILL.md`
-
----
-
-## 🔜 Block B — KI-Readiness (parallel möglich)
-
-### B1 · Grounding-Template (Phase 0.4)
-- MD-Template mit fester Frontmatter-Struktur (`type: grounding`, `grounding_entity`, `faq`)
-- Prüfen: rendert build.py JSON-LD + `<dl>` korrekt aus MD?
-- `site/templates/` ist leer — aus bestehendem 0.1/0.2 ableiten
-
-### B2 · llms.txt erweitern (Phase 1)
-- Grounding Pages in `llms.txt` referenzieren (Identität zuerst)
-- Build erweitern: MD-Quelldateien zusätzlich nach `/content/artikel-slug.md` ausgeben
-- `llms-full.txt` generieren (alle Artikel gebündelt, optional)
-- Bestand nachziehen: alle bisherigen Artikel als MD bereitstellen
-
-### B3 · Artikel verknüpfen (Phase 2)
-- Artikel 2025 updaten: Fußnote „Seit 2026 setzen wir das selbst um → /llms.txt"
-- Artikel 2026 updaten: konkrete Links zu /llms.txt + Spatial-Demo
-- Interlinking als Content-Cluster: 2025 (Warum) ↔ 2026 (Wie) ↔ Grounding (Was)
+| **Dieser Chat** (Render/Build) | build.py, Render-Skill, MASTER-TODO | aktiv |
+| **Ghost-Export** | ghost_exporter.py, MD-Migration aus Ghost | aktiv |
+| **Template** | build.py Templates: post, home, grounding | aktiv |
+| **KI-Website** | Grounding Pages, llms.txt, KI-Readiness | aktiv |
+| **Newsletter** | Brevo-Kampagnen, Newsletter-Content | aktiv |
+| **Leistungen** | Leistungs-Seiten als MD-Content | aktiv |
+| **Fediverse** | Mastodon-Push, Publish-Flow | on hold |
+| **Homepage 2.0** | type:home Template, Hero, Grids | aktiv |
 
 ---
 
-## 🔜 Block C — Spatial-Demo (wenn Assets bereit)
+## 🔜 Block A — Render-Skill
 
-- **C1** Stufe 1: AR Quick Look Button (USDZ-Asset auswählen)
-- **C2** Stufe 2: Spatial Foto prüfen + einbetten (falls Asset vorhanden)
-- **C3** Stufe 3: `<model>`-Tag mit GLB einbetten
-- **C4** Stufe 4: USDconfig-Konfigurator iframe einbauen ✅ Asset vorhanden
-- **C5** Stufe 5: Videos bereits eingebunden — Begleittext prüfen
-- **C6** Standalone-URL: `visales.de/demo` → USDconfig-Demo-Player
-- **C7** Cross-Linking: `/spatial-website/` ↔ `/usdconfig-demo/` + Drei-Türen-Artikel
+### A1 · `skillcms-render` — Phasen
+| Phase | Inhalt | Status |
+|---|---|---|
+| Phase 1 | Local Render: `build.py` ausführen, Output prüfen | ✅ fertig |
+| Phase 2 | + git add/commit/push, GitHub Actions Status | ✅ fertig |
+| Phase 3 | + FTP/SSH Hetzner, RSS-Ping, Mastodon-Post | 🔜 wenn live |
+
+**Offen:**
+- [ ] Render-Skill: `template: post` → `type: post` Migrations-Warnung einbauen (warnt beim Build wenn altes Schema erkannt wird)
+
+---
+
+## 🔜 Block B — KI-Readiness
+> Chat: **KI-Website**
+
+### B1 · Grounding-Template
+- [ ] MD-Template mit fester Frontmatter-Struktur dokumentieren
+- [ ] Prüfen: rendert build.py JSON-LD + `<dl>` korrekt aus MD?
+
+### B2 · llms.txt erweitern
+- [ ] Grounding Pages in `llms.txt` referenzieren (Identität zuerst)
+- [ ] Build: MD-Quelldateien zusätzlich nach `/content/[slug].md` ausgeben
+- [ ] `llms-full.txt` generieren (alle Artikel gebündelt)
+- [ ] Bestand nachziehen: alle bisherigen Artikel als MD
+
+### B3 · Artikel verknüpfen
+- [ ] Artikel 2025: Fußnote „Seit 2026 setzen wir das selbst um → /llms.txt"
+- [ ] Artikel 2026: Links zu /llms.txt + Spatial-Demo
+- [ ] Interlinking als SEO-Cluster
+
+---
+
+## 🔜 Block C — Spatial-Demo
+> Wartet auf Assets
+
+- [ ] **C1** Stufe 1: AR Quick Look Button (USDZ wählen)
+- [ ] **C2** Stufe 2: Spatial Foto (falls vorhanden)
+- [ ] **C3** Stufe 3: `<model>`-Tag mit GLB
+- [ ] **C4** Stufe 4: USDconfig-Konfigurator iframe ✅ Asset vorhanden
+- [ ] **C5** Stufe 5: Videos eingebunden — Begleittext prüfen
+- [ ] **C6** `visales.de/demo` → USDconfig-Demo-Player
+- [ ] **C7** Cross-Linking + Drei-Türen-Artikel
 
 ---
 
 ## 🔜 Block D — Content-Migration & Deploy
 
-### D0 · Ghost-Exporter — Template-Fixes (Prio 1, Phase 1) 🆕
+### D0 · Ghost-Exporter Fixes
+> Chat: **Ghost-Export** + **Template**
 
-Erkannt beim Testlauf mit Tolkien-2 + Bildergalerie (2026-04-06):
-
-| # | Problem | Lösung |
+| # | Problem | Status |
 |---|---|---|
-| D0.1 | **Bildergalerie fehlt** — Ghost `gallery`-Node wird als einzelne `![]()`-Liste gerendert, keine echte Galerie-Darstellung | Template: CSS-Grid-Galerie in `screen.css` + HTML-Wrapper im `build.py` für `gallery`-Blöcke |
-| D0.2 | **Kategorie-Slug über Titelbild fehlt** | Template: `primary_tag` aus Frontmatter als Chip/Badge über dem Artikel-Header rendern |
-| D0.3 | **Titelbild im Artikel-Header fehlt** | Template: `feature_image` als Hero-Bild im Post-Header rendern |
-| D0.4 | **Autor-Block fehlt** (Name + Profilbild + Bio + Datum) | Template: Autor-Block unter dem Artikel-Header aus Frontmatter-Feldern `author`, `author_image`, `author_bio`, `published_at` |
-| D0.5 | **Bilder als Broken Link** auf GitHub Pages (lokaler CORS-Block gelöst, GitHub live ✅) | Erledigt via GitHub Pages Deploy |
-| D0.6 | **Homepage braucht eigenes Template `type: home`** — keine Artikel-Struktur (kein feature_image-Header, kein Autor-Block, kein Tag-Badge), stattdessen: Hero-Block, 3-Spalten-Grids, Kunden-Logo-Band, Leistungs-Grid, Fallbeispiel-Grid, volle Breite (`width: 100vw`). HTML-Nodes der Startseite werden 1:1 durchgereicht, nicht in Markdown konvertiert. MD liegt als `content/pages/home.md` mit `type: home` | Template-Chat: `home.html` Template in `build.py` + CSS für Fullwidth-Sections |
+| D0.1 | Bildergalerie: CSS-Grid + HTML-Wrapper in build.py | 🔜 offen |
+| D0.2 | Kategorie-Badge über Titelbild | ✅ erledigt |
+| D0.3 | Titelbild im Post-Header | ✅ erledigt |
+| D0.4 | Autor-Block (Name, Bild, Bio, Datum) | ✅ erledigt |
+| D0.5 | Bilder Broken Links | ✅ erledigt |
+| D0.6 | Homepage `type: home` Template | 🔜 Chat: Homepage 2.0 |
+| D0.7 | FAQ-Konvention im Exporter | ✅ erledigt |
 
-### D0.7 · FAQ-Konvention im Ghost-Exporter ✅ (2026-04-07)
-
-- Ghost-Artikel nutzen `<details>/<summary>` für zwei Zwecke: Content-Toggles (Exkurse) und FAQ (Q&A am Ende)
-- **Konvention:** FAQ-Toggles in Ghost mit `<div class="post-faq">` wrappen
-- **Exporter:** erkennt `post-faq`-Wrapper → extrahiert als `faq:` Liste ins Frontmatter → entfernt Block aus Content
-- **Content-Toggles** ohne Wrapper bleiben unverändert im Content
-- `ghost_exporter.py`: `extract_faq_from_content()` implementiert und getestet
-- Skill-Abo-Artikel: alle 4 Toggles sind Content-Toggles → kein `faq:` nötig ✅
+**Frage an Ghost-Export-Chat:**
+> „Welche Frontmatter-Felder gibt der Exporter aktuell aus? Nutzt er `type: post` oder noch `template: post`? Und: wird `date:` als String `"2026-03-26"` oder als datetime-Objekt exportiert?"
 
 ### D1 · Content-Migration
-- Ghost-Seiten als Dummy-MDs: Leistungen, Fallbeispiele, Über Uns, …
-- Skeleton-Snapshot: ZIP als `SkillCMS-v1.0-skeleton`
-- Ziel: ~51 Pages + ~200 Posts aus Ghost exportieren
+> Chat: **Leistungen** + **Ghost-Export**
 
-### D2 · Hetzner Deploy (wenn live)
-- FTP-Zugangsdaten klären
-- Deploy-Workflow in Render-Skill Phase 3 integrieren
-- URL-Schema prüfen (1:1 zu aktuellem Ghost-Schema?)
+- [ ] ~51 Ghost-Pages als MD (Leistungen, Fallbeispiele, Über Uns, …)
+- [ ] ~200 Ghost-Posts exportieren + schema-fix (type: post, date als String)
+- [ ] Skeleton-Snapshot: ZIP `SkillCMS-v1.0-skeleton`
 
-### D3 · Fediverse Push — Mastodon
-- Mastodon-Account `@visales@mastodon.social` prüfen/einrichten
-- Token testen (liegt in `TODO-fediverse-push.md`)
-- Publish-Flow: HTML → RSS → Mastodon-Vorschlag → Review → POST → FTP
-- In Render-Skill Phase 3 integrieren
+### D2 · Hetzner Deploy
+> Chat: **Dieser Chat** (Render-Skill Phase 3)
+
+- [ ] FTP-Zugangsdaten klären
+- [ ] URL-Schema 1:1 zu Ghost prüfen
+- [ ] Render-Skill Phase 3 bauen
+
+### D3 · Fediverse Push
+> Chat: **Fediverse** (on hold bis live)
+
+- [ ] Mastodon-Account `@visales@mastodon.social` prüfen
+- [ ] Token testen (`TODO-fediverse-push.md`)
+- [ ] In Render-Skill Phase 3 integrieren
 
 ---
 
-## 🔜 Block E — Kommunikation (erst wenn Phase A–B live)
+## 🔜 Block E — Kommunikation
+> Erst wenn Block B live ist
 
-- Case-Study-Artikel: „Wie wir unsere Website KI-ready gemacht haben"
-- „Drei-Türen-Check" als Lead-Magnet / Infografik
-- LinkedIn-Post: Referenzimplementierung
-- Newsletter via Brevo: beide KI-Artikel + Spatial-Demo
+- [ ] Case-Study: „Wie wir unsere Website KI-ready gemacht haben"
+- [ ] „Drei-Türen-Check" als Lead-Magnet
+- [ ] LinkedIn-Post: Referenzimplementierung
+- [ ] Newsletter via Brevo: KI-Artikel + Spatial-Demo
 
 ---
 
 ## Offene Fragen
 
 - FTP-Zugangsdaten Hetzner: vorhanden?
-- URL-Schema: 1:1 zu Ghost oder neu strukturieren?
-- Mastodon-Account `@visales`: schon aktiv?
+- URL-Schema: 1:1 zu Ghost oder neu?
+- Mastodon `@visales`: Account schon aktiv?
+- author_image-Pfad `/assets/images/2025/10/1706254155883-1.jpeg` — liegt das Bild im Repo?
 
 ---
 
 ## Empfohlene Reihenfolge
 
-1. **A1 Phase 1** — Render-Skill lokal bauen
-2. **B1** — Grounding-Template finalisieren
-3. **B2/B3** — llms.txt + Artikel-Verlinkung
-4. **A1 Phase 2** — Render + GitHub im Skill
-5. **D1** — Content-Migration starten
-6. **C** — Spatial-Demo (parallel, wenn Assets bereit)
-7. **D2/D3** — Deploy + Mastodon (= A1 Phase 3)
+1. ✅ A1 Phase 1+2 — Render-Skill fertig
+2. **D0.1** — Bildergalerie-Fix (Template-Chat)
+3. **D0.6** — Homepage-Template (Homepage-2.0-Chat)
+4. **D1** — Ghost-Export + Content-Migration
+5. **B2** — llms.txt erweitern (KI-Website-Chat)
+6. **C** — Spatial-Demo (wenn Assets bereit)
+7. **D2/D3** — Deploy + Mastodon → A1 Phase 3
 8. **E** — Kommunikation
 
 ---
-*Zusammengeführt: 2026-04-06 | Duke Jera / viSales*
+*Aktualisiert: 2026-04-08 | Duke Jera / viSales*
