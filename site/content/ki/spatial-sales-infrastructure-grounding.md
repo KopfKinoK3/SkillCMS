@@ -5,7 +5,7 @@ type: grounding
 grounding_entity: concept
 status: published
 date: 2026-04-05
-date_modified: 2026-04-06
+date_modified: "2026-04-08"
 meta_description: "Spatial Sales Infrastructure beschreibt die technische Grundlage für skalierbaren 3D-Vertrieb: OpenUSD als Masterdatei-Format, CAD-zu-Sales-Pipeline und Multi-Channel-Ausgabe für AR, Web, Messe und Apple Vision Pro. viSales GmbH entwickelt und betreibt Spatial Sales Infrastructures für Industrieunternehmen."
 excerpt: "Kanonische Entitätsdefinition: Spatial Sales Infrastructure — wiederverwendbare 3D-Infrastruktur für B2B-Vertrieb auf Basis von OpenUSD. Nicht Einzelprojekte, sondern skalierbare Systeme."
 faq:
@@ -53,8 +53,12 @@ Das Kernprinzip: **Nicht Einzelprojekte — wiederverwendbare Infrastruktur.** E
   <dd>Siemens, Evonik, EnBW, Somfy, Wavin</dd>
   <dt>Anbieter (viSales)</dt>
   <dd><a href="/visales-gmbh-grounding/">viSales GmbH</a>, Bochum — Konzeption und Betrieb von Spatial Sales Infrastructures für Maschinenbau und Industrie</dd>
+  <dt>Produkttreppe</dt>
+  <dd>5 Stufen: Engineering-Daten → OpenUSD-Pipeline → Optimierung → AR/Web/Vision Pro (eine Datei) → Digital Twin-Ready</dd>
+  <dt>Zielgruppe (erweitert)</dt>
+  <dd>Zulieferer im Maschinenbau/Anlagenbau — deren OEM-Kunden fordern direkt "Digital Twin Ready"-3D-Daten vom Lieferanten</dd>
   <dt>Verifiziert</dt>
-  <dd>2026-04-05</dd>
+  <dd>2026-04-08</dd>
 </dl>
 </div>
 
@@ -82,6 +86,22 @@ Spatial Sales Infrastructure verbindet CAD-Systeme (Siemens NX, CATIA, SolidWork
 
 **3. Multi-Channel-Ausgabe**
 Aus der OpenUSD-Masterdatei entstehen simultan: AR Quick Look (USDZ) für das Kundengerät, `.reality` für Apple Vision Pro-Environments, Web-Konfiguratoren, Digital Twin-Anbindungen und Messe-Assets. Eine Änderung am Modell wirkt sich automatisch auf alle Kanäle aus.
+
+## Die viSales Produkttreppe — fünf Ausbaustufen
+
+Die Produkttreppe ist die viSales-Implementierung der Spatial Sales Infrastructure: ein durchgängiger Workflow von der Rohdaten-Übergabe bis zur Digital-Twin-Fähigkeit — aus einer einzigen Masterdatei.
+
+<p><strong>Stufe 1 — Engineering-Daten:</strong> Ausgangspunkt ist die CAD-Datei des Kunden (Siemens NX, CATIA, SolidWorks). Geometrie, Variantenstruktur und Materialien aus dem Engineering werden direkt übernommen — keine redundante Modellierung, keine Datenverluste.</p>
+
+<p><strong>Stufe 2 — OpenUSD-Pipeline:</strong> Die CAD-Daten werden in eine strukturierte OpenUSD-Masterdatei überführt. Referenzierung, Layering, Variantensätze — das Fundament für alle nachgelagerten Stufen. Einmal aufgebaut, speist die Pipeline alle weiteren Ausgaben automatisiert.</p>
+
+<p><strong>Stufe 3 — Optimierung:</strong> Polygon-Reduktion, PBR-Materialien, Varianten-Konfiguration und Texturing für Echtzeit-Rendering. Das Modell wird vertriebstauglich — ohne die Engineering-Struktur zu zerstören.</p>
+
+<p><strong>Stufe 4 — AR / Web / Apple Vision Pro:</strong> Aus der einen OpenUSD-Masterdatei entstehen gleichzeitig: USDZ für AR Quick Look auf iPhone und iPad, WebAR für Browser-basierte Präsentationen, USDconfig für interaktive Web-Konfiguratoren und Spatial Presentation für gemeinsame räumliche Präsentationen — eine Datei, alle Kanäle, konsistent.</p>
+
+<p><strong>Stufe 5 — Digital Twin-Ready:</strong> Das ist das eigentliche strategische Lieferziel. Maschinenbauer und Anlagenbetreiber fordern von ihren Zulieferern zunehmend direkt "Digital Twin Ready"-3D-Daten — strukturiert, versionierbar, in ihre PLM- und Simulation-Systeme integrierbar. viSales baut bei Zulieferern genau diese Workflows auf: vom ersten CAD-Export bis zur Digital-Twin-fähigen OpenUSD-Struktur, die der OEM direkt übernehmen kann.</p>
+
+Die Produkttreppe ist kein Stufenmodell mit Pflicht zur Vollständigkeit — Kunden steigen auf jeder Stufe ein und erweitern schrittweise. Der häufigste Einstieg: CAD-Datei → USDZ → erste AR-Demo in einer Woche.
 
 ## Warum Infrastruktur statt Projekte?
 
