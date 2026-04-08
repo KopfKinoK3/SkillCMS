@@ -1,0 +1,282 @@
+<svg width="800" height="1010" viewBox="0 0 800 1010" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif">
+
+<defs>
+  
+  <filter id="shadow" x="-4%" y="-4%" width="108%" height="116%">
+    <fedropshadow dx="0" dy="2" stdDeviation="5" flood-color="#000" flood-opacity="0.07"></fedropshadow>
+  </filter>
+  <filter id="shadow-sm" x="-4%" y="-4%" width="108%" height="114%">
+    <fedropshadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.06"></fedropshadow>
+  </filter>
+
+  
+  <marker id="arr" markerWidth="8" markerHeight="8" refX="6.5" refY="3.5" orient="auto">
+    <path d="M0,0 L0,7 L8,3.5 z" fill="#f97316"></path>
+  </marker>
+  
+  <marker id="arr-c" markerWidth="8" markerHeight="8" refX="6.5" refY="3.5" orient="auto">
+    <path d="M0,0 L0,7 L8,3.5 z" fill="#0891b2"></path>
+  </marker>
+  
+  <marker id="arr-g" markerWidth="8" markerHeight="8" refX="6.5" refY="3.5" orient="auto">
+    <path d="M0,0 L0,7 L8,3.5 z" fill="#bbb"></path>
+  </marker>
+</defs>
+
+
+
+<rect width="800" height="880" fill="#ffffff"></rect>
+
+
+
+<text x="400" y="30" text-anchor="middle" font-size="10" font-weight="700" letter-spacing="0.14em" fill="#bbb">USDCONFIG · SYSTEMARCHITEKTUR · by viSales</text>
+
+<rect x="16" y="38" width="768" height="2" rx="1" fill="#f97316" opacity="0.25"></rect>
+
+
+
+
+<rect x="260" y="54" width="280" height="54" rx="10" fill="#fff" filter="url(#shadow-sm)" stroke="#e5e5e5" stroke-width="1"></rect>
+
+<rect x="260" y="54" width="4" height="54" rx="2" fill="#f97316"></rect>
+
+
+<g transform="translate(280, 68)">
+  <rect width="18" height="22" rx="2" fill="none" stroke="#ccc" stroke-width="1.2"></rect>
+  <path d="M11,0 L18,7 L11,7 Z" fill="#f0f0f0" stroke="#ccc" stroke-width="1"></path>
+  <line x1="3" y1="12" x2="15" y2="12" stroke="#ddd" stroke-width="1"></line>
+  <line x1="3" y1="16" x2="12" y2="16" stroke="#ddd" stroke-width="1"></line>
+</g>
+
+<text x="312" y="73" font-size="13" font-weight="700" fill="#1a1a1a">USDZ Masterdatei</text>
+<text x="312" y="90" font-size="11" fill="#999">Quelle · eine Datei · mit oder ohne Varianten</text>
+
+
+
+<line x1="400" y1="108" x2="400" y2="134" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#arr)"></line>
+
+
+
+
+<rect x="16" y="137" width="768" height="160" rx="12" fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"></rect>
+
+<rect x="16" y="137" width="768" height="4" rx="2" fill="#f97316"></rect>
+
+<rect x="16" y="137" width="4" height="160" rx="2" fill="#f97316"></rect>
+
+
+<circle cx="44" cy="161" r="14" fill="#f97316"></circle>
+<text x="44" y="166" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">1</text>
+
+
+<text x="68" y="155" font-size="10" font-weight="700" letter-spacing="0.1em" fill="#f97316">MODUL</text>
+<text x="68" y="172" font-size="16" font-weight="700" letter-spacing="-0.01em" fill="#1a1a1a">USDconfig-Analyzer</text>
+
+
+<text x="68" y="188" font-size="11" fill="#888">Liest die USDZ Masterdatei · erkennt Struktur und Varianten</text>
+
+
+<line x1="36" y1="198" x2="770" y2="198" stroke="#f0f0f0" stroke-width="1"></line>
+
+
+<rect x="36" y="207" width="354" height="76" rx="8" fill="#fafafa" stroke="#e8e8e8" stroke-width="1"></rect>
+<text x="213" y="226" text-anchor="middle" font-size="9.5" font-weight="700" letter-spacing="0.07em" fill="#bbb">KEINE VARIANTEN</text>
+<text x="213" y="246" text-anchor="middle" font-size="12" fill="#555">Liest USDZ-Struktur · Metadaten</text>
+<text x="213" y="263" text-anchor="middle" font-size="12" fill="#555">Schreibt Basis-Steuerungsdatei</text>
+<text x="213" y="277" text-anchor="middle" font-size="10.5" fill="#bbb">Fertig nach diesem Schritt</text>
+
+
+<rect x="403" y="207" width="363" height="76" rx="8" fill="#fff8f4" stroke="#fbd5bc" stroke-width="1"></rect>
+<text x="584" y="226" text-anchor="middle" font-size="9.5" font-weight="700" letter-spacing="0.07em" fill="#f97316">VARIANT-SETS ERKANNT</text>
+<text x="584" y="246" text-anchor="middle" font-size="12" fill="#555">Analysiert alle Variant-Sets</text>
+<text x="584" y="263" text-anchor="middle" font-size="12" fill="#555">Klassifiziert: strukturell · material</text>
+<text x="584" y="277" text-anchor="middle" font-size="10.5" fill="#bbb">Schreibt vollständige Steuerungsdatei</text>
+
+
+<text x="393" y="252" text-anchor="middle" font-size="10" fill="#ccc" font-weight="600">oder</text>
+
+
+
+<path d="M213,283 L213,320 L388,320 L400,338" fill="none" stroke="#ccc" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arr-g)"></path>
+<path d="M584,283 L584,320 L412,320 L400,338" fill="none" stroke="#f97316" stroke-width="1.3" stroke-dasharray="4,3" stroke-opacity="0.5" marker-end="url(#arr)"></path>
+
+
+
+
+<rect x="246" y="341" width="308" height="56" rx="10" fill="#fff" filter="url(#shadow-sm)" stroke="#e0e0e0" stroke-width="1"></rect>
+<rect x="246" y="341" width="4" height="56" rx="2" fill="#888"></rect>
+
+
+<g transform="translate(264, 354)">
+  <rect width="20" height="24" rx="2" fill="none" stroke="#ccc" stroke-width="1.2"></rect>
+  <text x="10" y="16" text-anchor="middle" font-size="8.5" font-weight="700" fill="#aaa">{…}</text>
+</g>
+
+<text x="298" y="360" font-size="13" font-weight="700" fill="#1a1a1a">Steuerungsdatei</text>
+<text x="298" y="376" font-size="11" fill="#888">config.json · Varianten · Pfade · Metadaten</text>
+<text x="298" y="390" font-size="10" fill="#bbb">Variant-Sets · Optionen · Typen · AR-Flag</text>
+
+
+
+<line x1="400" y1="397" x2="400" y2="423" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#arr)"></line>
+
+
+<path d="M246,369 L130,369 L130,510 L18,510" fill="none" stroke="#ddd" stroke-width="1" stroke-dasharray="5,4"></path>
+<text x="130" y="445" text-anchor="middle" font-size="9" fill="#ccc" transform="rotate(-90, 130, 445)">USDZ Master</text>
+
+
+
+
+<rect x="16" y="426" width="768" height="154" rx="12" fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"></rect>
+<rect x="16" y="426" width="768" height="4" rx="2" fill="#f97316"></rect>
+<rect x="16" y="426" width="4" height="154" rx="2" fill="#f97316"></rect>
+
+<circle cx="44" cy="450" r="14" fill="#f97316"></circle>
+<text x="44" y="455" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">2</text>
+
+<text x="68" y="444" font-size="10" font-weight="700" letter-spacing="0.1em" fill="#f97316">MODUL</text>
+<text x="68" y="461" font-size="16" font-weight="700" letter-spacing="-0.01em" fill="#1a1a1a">USDconfig-Generator</text>
+<text x="68" y="477" font-size="11" fill="#888">Erstellt Einzeldateien aus Masterdatei + Steuerungsdatei</text>
+
+<line x1="36" y1="486" x2="770" y2="486" stroke="#f0f0f0" stroke-width="1"></line>
+
+
+<rect x="36" y="494" width="360" height="72" rx="8" fill="#f0fdfe" stroke="#a5f0f9" stroke-width="1"></rect>
+<text x="216" y="513" text-anchor="middle" font-size="9.5" font-weight="700" letter-spacing="0.07em" fill="#0891b2">STRUKTURELLE VARIANTEN</text>
+<text x="216" y="533" text-anchor="middle" font-size="12" fill="#555">Geometrie-Unterschiede · Armlehnen · Sitzschale</text>
+<text x="216" y="550" text-anchor="middle" font-size="12" fill="#555">→ 1 USDZ + 1 GLB pro Kombination</text>
+<text x="216" y="562" text-anchor="middle" font-size="10.5" fill="#999">überschaubare Anzahl an Einzeldateien</text>
+
+
+<rect x="407" y="494" width="363" height="72" rx="8" fill="#fff8f4" stroke="#fbd5bc" stroke-width="1"></rect>
+<text x="588" y="513" text-anchor="middle" font-size="9.5" font-weight="700" letter-spacing="0.07em" fill="#f97316">MATERIAL-VARIANTEN</text>
+<text x="588" y="533" text-anchor="middle" font-size="12" fill="#555">Farben · Texturen · Oberflächen</text>
+<text x="588" y="550" text-anchor="middle" font-size="12" fill="#555">→ KHR_materials_variants im GLB</text>
+<text x="588" y="562" text-anchor="middle" font-size="10.5" fill="#999">kein Datei-Reload beim Farbwechsel</text>
+
+
+
+<line x1="400" y1="581" x2="400" y2="607" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#arr)"></line>
+
+
+
+
+<rect x="16" y="610" width="768" height="66" rx="10" fill="#fafafa" stroke="#e8e8e8" stroke-width="1"></rect>
+
+<text x="36" y="630" font-size="9.5" font-weight="700" letter-spacing="0.09em" fill="#bbb">DATEISAMMLUNG</text>
+
+
+<g transform="translate(36, 636)">
+  
+  <rect x="0" y="0" width="34" height="22" rx="3" fill="#fff" stroke="#0891b2" stroke-width="1.2"></rect>
+  <text x="17" y="14" text-anchor="middle" font-size="7.5" font-weight="700" fill="#0891b2">USDZ</text>
+  <rect x="38" y="0" width="30" height="22" rx="3" fill="#fff" stroke="#f97316" stroke-width="1.2"></rect>
+  <text x="53" y="14" text-anchor="middle" font-size="7.5" font-weight="700" fill="#f97316">GLB</text>
+  <text x="34" y="34" text-anchor="middle" font-size="9" fill="#bbb">Var. A</text>
+
+  
+  <rect x="88" y="0" width="34" height="22" rx="3" fill="#fff" stroke="#0891b2" stroke-width="1.2"></rect>
+  <text x="105" y="14" text-anchor="middle" font-size="7.5" font-weight="700" fill="#0891b2">USDZ</text>
+  <rect x="126" y="0" width="30" height="22" rx="3" fill="#fff" stroke="#f97316" stroke-width="1.2"></rect>
+  <text x="141" y="14" text-anchor="middle" font-size="7.5" font-weight="700" fill="#f97316">GLB</text>
+  <text x="122" y="34" text-anchor="middle" font-size="9" fill="#bbb">Var. B</text>
+
+  
+  <rect x="176" y="0" width="34" height="22" rx="3" fill="#fff" stroke="#0891b2" stroke-width="1.2"></rect>
+  <text x="193" y="14" text-anchor="middle" font-size="7.5" font-weight="700" fill="#0891b2">USDZ</text>
+  <rect x="214" y="0" width="30" height="22" rx="3" fill="#fff" stroke="#f97316" stroke-width="1.2"></rect>
+  <text x="229" y="14" text-anchor="middle" font-size="7.5" font-weight="700" fill="#f97316">GLB</text>
+  <text x="210" y="34" text-anchor="middle" font-size="9" fill="#bbb">Var. C</text>
+
+  
+  <rect x="264" y="0" width="34" height="22" rx="3" fill="#fff" stroke="#0891b2" stroke-width="1.2"></rect>
+  <text x="281" y="14" text-anchor="middle" font-size="7.5" font-weight="700" fill="#0891b2">USDZ</text>
+  <rect x="302" y="0" width="30" height="22" rx="3" fill="#fff" stroke="#f97316" stroke-width="1.2"></rect>
+  <text x="317" y="14" text-anchor="middle" font-size="7.5" font-weight="700" fill="#f97316">GLB</text>
+  <text x="298" y="34" text-anchor="middle" font-size="9" fill="#bbb">Var. D</text>
+
+  
+  <rect x="352" y="0" width="34" height="22" rx="3" fill="#fff" stroke="#0891b2" stroke-width="1.2"></rect>
+  <text x="369" y="14" text-anchor="middle" font-size="7.5" font-weight="700" fill="#0891b2">USDZ</text>
+  <rect x="390" y="0" width="30" height="22" rx="3" fill="#fff" stroke="#f97316" stroke-width="1.2"></rect>
+  <text x="405" y="14" text-anchor="middle" font-size="7.5" font-weight="700" fill="#f97316">GLB</text>
+  <text x="386" y="34" text-anchor="middle" font-size="9" fill="#bbb">Var. E</text>
+
+  
+  <text x="446" y="14" font-size="14" fill="#ccc" letter-spacing="2">···</text>
+</g>
+
+
+<rect x="592" y="636" width="30" height="14" rx="2" fill="none" stroke="#0891b2" stroke-width="1.2"></rect>
+<text x="628" y="647" font-size="9.5" fill="#888">iOS · AR Quick Look</text>
+<rect x="592" y="655" width="30" height="14" rx="2" fill="none" stroke="#f97316" stroke-width="1.2"></rect>
+<text x="628" y="666" font-size="9.5" fill="#888">3D Browser · AR Fallback</text>
+
+
+
+<line x1="400" y1="677" x2="400" y2="703" stroke="#0891b2" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#arr-c)"></line>
+
+
+
+
+<rect x="16" y="706" width="768" height="112" rx="12" fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"></rect>
+<rect x="16" y="706" width="768" height="4" rx="2" fill="#0891b2"></rect>
+<rect x="16" y="706" width="4" height="112" rx="2" fill="#0891b2"></rect>
+
+<circle cx="44" cy="730" r="14" fill="#0891b2"></circle>
+<text x="44" y="735" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">3</text>
+
+<text x="68" y="724" font-size="10" font-weight="700" letter-spacing="0.1em" fill="#0891b2">MODUL</text>
+<text x="68" y="741" font-size="16" font-weight="700" letter-spacing="-0.01em" fill="#1a1a1a">USDconfig-Produktkonfigurator</text>
+<text x="68" y="757" font-size="11" fill="#888">Externes Varianten-Menü · 3D-Viewer im Browser</text>
+
+<line x1="36" y1="766" x2="770" y2="766" stroke="#f0f0f0" stroke-width="1"></line>
+
+
+<rect x="36" y="774" width="358" height="32" rx="7" fill="#f0fdfe" stroke="#a5f0f9" stroke-width="1"></rect>
+<text x="60" y="786" font-size="9.5" font-weight="700" letter-spacing="0.07em" fill="#0891b2">SAFARI (aktuell)</text>
+<text x="60" y="800" font-size="11" fill="#555">&lt;model&gt;-Tag · USDZ nativ · OpenUSD direkt im Browser</text>
+
+
+<rect x="404" y="774" width="362" height="32" rx="7" fill="#fafafa" stroke="#e8e8e8" stroke-width="1"></rect>
+<text x="428" y="786" font-size="9.5" font-weight="700" letter-spacing="0.07em" fill="#aaa">ANDERE BROWSER</text>
+<text x="428" y="800" font-size="11" fill="#555">model-viewer · GLB · KHR_materials_variants</text>
+
+
+
+<line x1="400" y1="819" x2="400" y2="845" stroke="#0891b2" stroke-width="1.5" stroke-opacity="0.5" marker-end="url(#arr-c)"></line>
+
+
+
+
+<rect x="16" y="848" width="768" height="112" rx="12" fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"></rect>
+<rect x="16" y="848" width="768" height="4" rx="2" fill="#0891b2"></rect>
+<rect x="16" y="848" width="4" height="112" rx="2" fill="#0891b2"></rect>
+
+<circle cx="44" cy="872" r="14" fill="#0891b2"></circle>
+<text x="44" y="877" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">4</text>
+
+<text x="68" y="866" font-size="10" font-weight="700" letter-spacing="0.1em" fill="#0891b2">MODUL</text>
+<text x="68" y="883" font-size="16" font-weight="700" letter-spacing="-0.01em" fill="#1a1a1a">USDconfig-AR-Player</text>
+<text x="68" y="899" font-size="11" fill="#888">AR-Button · geräteabhängige Weiterleitung · kein App-Download</text>
+
+<line x1="36" y1="908" x2="770" y2="908" stroke="#f0f0f0" stroke-width="1"></line>
+
+
+<rect x="36" y="916" width="358" height="32" rx="7" fill="#f0fdfe" stroke="#a5f0f9" stroke-width="1"></rect>
+<text x="60" y="928" font-size="9.5" font-weight="700" letter-spacing="0.07em" fill="#0891b2">iOS · iPadOS · VISION PRO</text>
+<text x="60" y="942" font-size="11" fill="#555">AR Quick Look · USDZ · RealityKit · nativ · ohne App</text>
+
+
+<rect x="404" y="916" width="362" height="32" rx="7" fill="#fafafa" stroke="#e8e8e8" stroke-width="1"></rect>
+<text x="428" y="928" font-size="9.5" font-weight="700" letter-spacing="0.07em" fill="#aaa">ANDROID</text>
+<text x="428" y="942" font-size="11" fill="#555">Google Scene Viewer · WebXR · GLB</text>
+
+
+
+<line x1="16" y1="978" x2="784" y2="978" stroke="#f0f0f0" stroke-width="1"></line>
+<text x="400" y="993" text-anchor="middle" font-size="9.5" fill="#bbb" letter-spacing="0.03em">
+  Analyzer + Generator: Python-Pipeline · Modul 3 + 4: Browser · HTML / JS · keine Installation
+</text>
+
+</svg>
