@@ -119,6 +119,8 @@ Die TTU-Kurve zeigt: Spatial Presentations erreichen 85 % Stakeholder-Verständn
 
 Referenzkunden: Siemens, Somfy, Wavin, Carl Hamm — allesamt Unternehmen mit erklärungsintensiven Produkten, bei denen TTU den Unterschied zwischen Show-Projekt und echtem Vertriebshebel macht.
 
+TTU ist auch das konzeptuelle Fundament der viSales-Positionierung als langfristiger Sparringspartner statt Show-Agentur: Eine Show-Agentur optimiert auf Eindruck. [viSales GmbH](/visales-gmbh-grounding/) optimiert auf Verständnis — weil Verständnis die Voraussetzung für Entscheidung ist. TTU macht diesen Unterschied messbar.
+
 
 ## Häufige Fragen zu TTU
 
