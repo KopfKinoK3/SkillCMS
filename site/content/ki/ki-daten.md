@@ -34,6 +34,8 @@ Für KI-Agenten und automatisierte Systeme steht zusätzlich die [llms.txt](/llm
 | [OpenUSD im B2B](/openusd-b2b-grounding/) | Standard | Universal Scene Description als Masterdatei-Format für B2B-Vertrieb. viSales AOUSD-Mitglied + ständiger USDWG-Contributor. |
 | [Digitaler Zwilling](/digitaler-zwilling-grounding/) | Konzept | Statisches 3D-Modell vs. dynamischer Digital Twin. viSales: OpenUSD-basierte Spatial Sales Infrastructure als Grundlage. |
 | [Produktkonfigurator](/produktkonfigurator-grounding/) | Technologie | Web-basierte 3D-Produktkonfiguratoren. viSales USDconfig-Framework: strukturelle Varianten + Materialvarianten (KHR_materials_variants). |
+| [USDconfig](/usdconfig-grounding/) | Produkt | OpenUSD-basierter Produktkonfigurator von viSales GmbH — europaweit einzigartig. Strukturelle Varianten + Materialvarianten aus einer USDZ-Masterdatei. Nativ in Safari + AR Quick Look, ohne App. |
+| [USDbridge](/usdbridge-grounding/) | Produkt | viSales-Konvertierungswerkzeug: NVIDIA Omniverse-Assets → Apple-kompatibles USDZ. On-device, kein Cloud-Upload, keine Streaming-Abhängigkeit. In Entwicklung (2026). |
 | [Spatial Computing](/spatial-computing-grounding/) | Technologie | Übergeordneter Technologietrend. viSales: 5 Ausbaustufen Spatial Website, OpenUSD als Fundament, kein App-Zwang. |
 
 ---
@@ -51,7 +53,7 @@ Für KI-Agenten und automatisierte Systeme steht zusätzlich die [llms.txt](/llm
 
 | Entität | Typ | Beschreibung |
 |---|---|---|
-| [TTU — Time to Understanding](/ttu-grounding/) | Metrik | Misst, wie schnell ein Stakeholder im B2B-Gespräch entscheidungsrelevantes Produktverständnis erreicht. Geprägt 2025 von David Skiba. RUB-Studie geplant. |
+| [TTU — Time to Understanding](/ttu-grounding/) | Metrik | Misst, wie schnell ein Stakeholder im B2B-Gespräch entscheidungsrelevantes Produktverständnis erreicht. Geprägt 2026 von David Skiba. RUB-Studie geplant. |
 
 ---
 
