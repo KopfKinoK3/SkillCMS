@@ -316,6 +316,13 @@ def md_to_html(md_text):
     md_text = re.sub(r'\n{4,}', '\n\n<div class="vs-spacer-lg"></div>\n\n', md_text)
     md_text = re.sub(r'\n{3}',  '\n\n<div class="vs-spacer"></div>\n\n',    md_text)
 
+    # Bold/Italic-Cleanup: Leerzeichen direkt nach ** / * oder vor ** / * entfernen
+    # Verhindert kaputte Formatierung wie "** Text**" oder "**Text **"
+    md_text = re.sub(r'\*\*\s+', '**', md_text)   # ** text → **text
+    md_text = re.sub(r'\s+\*\*', '**', md_text)   # text ** → text**
+    md_text = re.sub(r'\*\s+',   '*',  md_text)   # * text  → *text
+    md_text = re.sub(r'\s+\*',   '*',  md_text)   # text *  → text*
+
     html = md_lib.markdown(
         md_text,
         extensions=["extra", "meta", "smarty"],
