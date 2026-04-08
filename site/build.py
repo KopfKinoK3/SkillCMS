@@ -316,12 +316,24 @@ def md_to_html(md_text):
     md_text = re.sub(r'\n{4,}', '\n\n<div class="vs-spacer-lg"></div>\n\n', md_text)
     md_text = re.sub(r'\n{3}',  '\n\n<div class="vs-spacer"></div>\n\n',    md_text)
 
-    # Bold/Italic-Cleanup: Leerzeichen direkt nach ** / * oder vor ** / * entfernen
+    # Bold/Italic-Cleanup: Leerzeichen INNERHALB von ** / * spans entfernen
     # Verhindert kaputte Formatierung wie "** Text**" oder "**Text **"
-    md_text = re.sub(r'\*\*\s+', '**', md_text)   # ** text → **text
-    md_text = re.sub(r'\s+\*\*', '**', md_text)   # text ** → text**
-    md_text = re.sub(r'\*\s+',   '*',  md_text)   # * text  → *text
-    md_text = re.sub(r'\s+\*',   '*',  md_text)   # text *  → text*
+    # WICHTIG: nur nach öffnendem ** (gefolgt von Nicht-Whitespace) und vor schließendem **
+    # NICHT global \s+** — das würde "- **bold**" List-Items zerstören!
+    # Bold/Italic-Cleanup: NUR Leerzeichen direkt nach öffnendem ** (wenn davor kein List-Marker)
+    # und Trailing-Space vor schließendem ** (wenn dahinter kein weiteres * oder Zeilenende)
+    # "- **text**" darf NICHT zu "-**text**" werden → nur nach echten Word-Chars entfernen
+    # Artefakt-Fix: Trailing space VOR schließendem ** wenn dahinter Whitespace/Zeilenende/Satzzeichen
+    # "text **\n" / "text ** " / "text **." → "text**"
+    # Das sind eindeutige Ghost-Export-Artefakte (kein echtes "außen"-Leerzeichen)
+    md_text = re.sub(r'( +)\*\*(\s)', r'**\2', md_text)       # "text **\n" → "text**\n"
+    md_text = re.sub(r'( +)\*\*$', '**', md_text, flags=re.MULTILINE)  # "text **" am Zeilenende
+    # Öffnendes ** mit nachfolgendem Space (kein Wort davor): "** text" → "**text"
+    md_text = re.sub(r'(^|\s)\*\*( +)(?=\S)', r'\1**', md_text, flags=re.MULTILINE)
+    # Italic entsprechend
+    md_text = re.sub(r'( +)\*(\s)', r'*\2', md_text)
+    md_text = re.sub(r'( +)\*$', '*', md_text, flags=re.MULTILINE)
+    md_text = re.sub(r'(^|\s)\*( +)(?=\S)', r'\1*', md_text, flags=re.MULTILINE)
 
     html = md_lib.markdown(
         md_text,
@@ -346,6 +358,24 @@ def md_to_html(md_text):
     )
 
     html = convert_toggles(html)
+
+    # CTA-Button: [Text](url){.gh-button .cta-X} → <a class="gh-button cta-X" href="url">Text</a>
+    # Python-Markdown rendert {.class} als plain text — wir fixen das im HTML-Output
+    def replace_cta_button(m):
+        text, url, classes = m.group(1), m.group(2), m.group(3)
+        css = classes.replace('.', ' ').strip()
+        alignment = 'center'
+        if 'cta-left' in classes: alignment = 'left'
+        elif 'cta-right' in classes: alignment = 'right'
+        return f'<p style="text-align:{alignment}"><a class="{css.strip()}" href="{url}">{text}</a></p>'
+
+    # Pattern: <a href="url">Text</a>{.gh-button .cta-center} (nach Markdown-Rendering)
+    html = re.sub(
+        r'<a href="([^"]+)">([^<]+)</a>\{([^}]+)\}',
+        lambda m: f'<p style="text-align:center"><a class="{m.group(3).replace(".", " ").strip()}" href="{m.group(1)}">{m.group(2)}</a></p>',
+        html
+    )
+
     return html
 
 
@@ -1802,6 +1832,14 @@ def format_date_de(date_str):
         return str(date_str)
 
 
+def rebase_paths(html_content, base):
+    """Ersetzt absolute /assets/-Pfade in HTML durch relative (für GitHub Pages Subdir)."""
+    if not base:
+        return html_content
+    # src="/assets/... → src="assets/... (mit base-Präfix)
+    html_content = re.sub(r'(src|href)="(/assets/)', lambda m: f'{m.group(1)}="{base}{m.group(2).lstrip("/")}', html_content)
+    return html_content
+
 def build_post_article_html(meta, content_html, is_draft=False):
     """Baut den <article>-Block für type:post mit Header, Meta, Feature Image, Autor-Block."""
     title         = meta.get("title", "")
@@ -1900,9 +1938,10 @@ def build_post_article_html(meta, content_html, is_draft=False):
                 faq_items_raw += f"<details><summary>{q}</summary>{a}</details>\n"
         if faq_items_raw:
             faq_items_html = convert_toggles(faq_items_raw)
+            faq_heading_text = str(meta.get("faq_heading", "") or "Häufige Fragen")
             faq_block_html = f"""
             <section class="vs-faq-block gh-canvas">
-                <h2 class="vs-faq-heading">Häufige Fragen</h2>
+                <h2 class="vs-faq-heading">{faq_heading_text}</h2>
                 {faq_items_html}
             </section>"""
 
@@ -1915,7 +1954,7 @@ def build_post_article_html(meta, content_html, is_draft=False):
             </header>
             {feature_html}
             <section class="gh-content gh-canvas is-body">
-                {content_html}
+                {rebase_paths(content_html, base)}
             </section>
             {author_block_html}
             {faq_block_html}

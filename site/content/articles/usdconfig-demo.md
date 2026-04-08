@@ -14,6 +14,7 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: 2026-03-25T23:02:16.000Z
 type: post
 template: post
+faq_heading: "Typische (Technik-) Entscheiderfragen"
 faq:
   - q: "Welche 3D-Formate werden unterstützt?"
     a: "USDconfig arbeitet nativ mit USDZ (OpenUSD) und GLB (glTF 2.0). USDZ ist das Primärformat für Safari-Rendering und iOS-AR via Quick Look. GLB wird für alle anderen Browser sowie Android-AR via Scene Viewer genutzt. CAD-Daten aus gängigen Systemen (STEP, SolidWorks, CATIA) werden im Rahmen der viSales-Pipeline konvertiert."
@@ -131,7 +132,3 @@ Wir begleiten Unternehmen vom ersten USDZ-Modell bis zum vollständigen Web-Konf
 &nbsp;
 
 &nbsp;
-
-## Typische (Technik-) Entscheiderfragen
-
-
