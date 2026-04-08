@@ -7,7 +7,7 @@ tags: [impuls]
 feature_image: https://kopfkinok3.github.io/SkillCMS/assets/images/2026/01/Gerhard_Schr--der_Mode.jpeg
 author: "Gerhard Schröder"
 author_slug: gerhard
-published_at: 2026-04-02T07:00:56.000Z
+published_at: "2026-04-02T07:00:56.000Z"
 type: post
 template: post
 ---

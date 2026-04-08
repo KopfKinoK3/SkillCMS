@@ -11,7 +11,7 @@ author: "Gerhard Schröder"
 author_slug: gerhard
 author_image: /assets/images/2025/10/1706254155883-1.jpeg
 author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit über 15 Jahren spezialisiert auf visuelle Vertriebskommunikation für Maschinenbau & AeroSpace — mit 3D-Visualisierung & OpenUSD. Mitglied der AOUSD, Speaker zu AR & Spatial Sales."
-published_at: 2026-03-25T23:02:16.000Z
+published_at: "2026-03-25T23:02:16.000Z"
 type: post
 template: post
 faq_heading: "Typische (Technik-) Entscheiderfragen"
