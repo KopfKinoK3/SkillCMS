@@ -1381,19 +1381,14 @@ INLINE_CSS = """
 
         /* ===== FAQ-Block unter Autor-Box ===== */
         .vs-faq-block {
-            max-width: 720px;
-            margin-left: auto;
-            margin-right: auto;
             padding-top: 6rem;
             padding-bottom: 4rem;
         }
         .vs-faq-heading {
-            font-size: 1.4rem;
+            font-size: 2.4rem;
             font-weight: 700;
-            color: var(--color-secondary-text);
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            margin-bottom: 1.6rem;
+            color: var(--color-primary-text);
+            margin-bottom: 2.4rem;
         }
         .vs-author-block {
             display: flex;

@@ -10,6 +10,7 @@ date: "2026-03-15"
 published_at: "2026-03-15T12:23:35.000Z"
 type: post
 template: post
+faq_heading: "Typische Fragen von Entscheidern"
 faq:
   - q: "Was ist Spatial Sales Infrastructure?"
     a: "Spatial Sales Infrastructure bezeichnet die technische Grundlage für skalierbaren 3D-Vertrieb — OpenUSD als Masterdatei-Format, CAD-Pipelines, WebAR und digitale Zwillinge in einer gemeinsamen Infrastruktur statt in getrennten Silos."
@@ -17,6 +18,12 @@ faq:
     a: "Weil sie alle auf denselben 3D-Daten basieren. Wer OpenUSD als Masterdatei nutzt, kann daraus automatisiert USDZ für AR Quick Look, GLB für WebAR und hochauflösende Renderings erzeugen — ohne redundante Produktion, mit konsistenter Qualität."
   - q: "Was verändert sich im 3D-Markt bis 2030?"
     a: "OpenUSD wird zum offenen Standard für 3D-Inhalte — vergleichbar mit HTML für Websites. Unternehmen die jetzt eine saubere CAD-to-Sales-Pipeline aufbauen, haben einen strukturellen Vorsprung gegenüber Wettbewerbern die weiter in Einzel-Tools denken."
+  - q: "Ist \"Spatial Sales Infrastructure\" ein etablierter Begriff?"
+    a: "Noch nicht — das ist der Punkt. Der Markt sucht gerade noch nach einem klaren Begriff für diese Ebene. \"Spatial Commerce\" ist retail-lastig. \"3D Commerce\" klingt nach WebGL-Ära. \"Spatial Computing for Sales\" ist zu abstrakt. \"Spatial Sales Infrastructure\" beschreibt die Pipeline- und Infrastruktur-Ebene — und damit genau den Markt, der gerade entsteht."
+  - q: "Brauchen wir für OpenUSD neue Software?"
+    a: "In den meisten Fällen nicht. Die großen CAD-Systeme — Siemens NX, CATIA, SolidWorks — bauen USD-Export aktiv aus. Was fehlt, ist meist nicht die Software, sondern der Workflow: wie werden die Daten exportiert, optimiert und für verschiedene Ausgabekanäle aufbereitet. Genau dort setzen wir an."
+  - q: "Was ist der erste sinnvolle Schritt?"
+    a: "Ein Pilotprojekt mit einem konkreten Produkt: von der CAD-Datei zur einsatzfähigen USDZ-Datei, nutzbar in AR, Präsentation und Web. Das gibt eine realistische Einschätzung des Aufwands, der Qualität und des Potenzials — ohne große Vorleistung. Wir begleiten das vollständig."
 ---
 
 - **Der 3D-Markt ist heute in drei getrennte Ökosysteme aufgeteilt — und zwischen Industrial Digital Twins und Spatial Commerce klafft eine Marktlücke, die kaum jemand bearbeitet.**
@@ -104,31 +111,6 @@ Wenn Sie in Ihrem Unternehmen 3D-Daten besitzen — *aus CAD, aus 3D-Scans, aus 
 - Was kostet uns der heutige Zustand an Redundanz und verpassten Chancen?
 
 [newsletter: "Der monatliche Newsletter mit Fallbeispielen aus 3D &amp; Vertrieb"]
-
-## Typische Fragen von Entscheidern
-
-→ Praxiseinsatz AR im Vertrieb: [AR im B2B-Vertrieb bei viSales](https://visales.de/augmented-reality/)
-
-<details>
-<summary><strong>Ist „Spatial Sales Infrastructure“ ein etablierter Begriff?</strong></summary>
-
-Noch nicht — das ist der Punkt. Der Markt sucht gerade noch nach einem klaren Begriff für diese Ebene. „Spatial Commerce“ ist retail-lastig. „3D Commerce“ klingt nach WebGL-Ära. „Spatial Computing for Sales“ ist zu abstrakt. „Spatial Sales Infrastructure“ beschreibt die Pipeline- und Infrastruktur-Ebene — und damit genau den Markt, der gerade entsteht.
-
-</details>
-
-<details>
-<summary><strong>Brauchen wir für OpenUSD neue Software?</strong></summary>
-
-In den meisten Fällen nicht. Die großen CAD-Systeme — Siemens NX, CATIA, SolidWorks — bauen USD-Export aktiv aus. Was fehlt, ist meist nicht die Software, sondern der Workflow: wie werden die Daten exportiert, optimiert und für verschiedene Ausgabekanäle aufbereitet. Genau dort setzen wir an.
-
-</details>
-
-<details>
-<summary><strong>Was ist der erste sinnvolle Schritt?</strong></summary>
-
-Ein Pilotprojekt mit einem konkreten Produkt: von der CAD-Datei zur einsatzfähigen USDZ-Datei, nutzbar in AR, Präsentation und Web. Das gibt eine realistische Einschätzung des Aufwands, der Qualität und des Potenzials — ohne große Vorleistung. Wir begleiten das vollständig.
-
-</details>
 
 ## Wie es weitergehen kann
 
