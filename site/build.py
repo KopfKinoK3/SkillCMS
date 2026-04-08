@@ -923,7 +923,7 @@ INLINE_CSS = """
         .vs-inline-newsletter .sib-form,
         .vs-inline-newsletter .sib-form-container { background: transparent !important; padding: 0 !important; text-align: left !important; }
         #sib-container-inline { background: transparent !important; border: none !important; max-width: 100% !important; padding: 0 !important; }
-        .vs-inline-newsletter .sib-form-block__button { background-color: #f2902a !important; border-radius: 6px !important; width: 100%; }
+        .vs-inline-newsletter .sib-form-block__button { background-color: #f2902a !important; border-radius: 100px !important; width: auto !important; display: inline-flex !important; padding: .8em 1.4em !important; }
         .vs-inline-newsletter .entry__specification { font-size: 1.1rem !important; color: #888 !important; }
         .vs-inline-newsletter .sib-form__declaration > div:first-child { display: none; }
         /* ────────────────────────────────────────────────────────────────── */
@@ -1035,7 +1035,7 @@ INLINE_CSS = """
         .vs-footer-newsletter .sib-form-block[style*="font-size:32px"] p { display:none; } /* "Visual Sales" Titel — schon im h4 vorhanden */
         .vs-footer-newsletter .entry__label { font-size:1.2rem !important; color:var(--color-primary-text) !important; }
         .vs-footer-newsletter .input { font-size:1.3rem !important; border-radius:6px !important; }
-        .vs-footer-newsletter .sib-form-block__button { background-color:#f2902a !important; border-radius:6px !important; font-size:1.3rem !important; padding:0.6em 1.2em !important; width:100%; }
+        .vs-footer-newsletter .sib-form-block__button { background-color:#f2902a !important; border-radius:100px !important; font-size:1.3rem !important; padding:.8em 1.4em !important; width:auto !important; display:inline-flex !important; }
         .vs-footer-newsletter .entry__specification { font-size:1.1rem !important; }
         .vs-footer-newsletter .sib-form__declaration { margin-top:0.4em; }
         .vs-footer-newsletter .sib-form__declaration > div:first-child { display:none; } /* Schild-Icon ausblenden */
