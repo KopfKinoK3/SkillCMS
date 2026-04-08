@@ -36,6 +36,7 @@ Für KI-Agenten und automatisierte Systeme steht zusätzlich die [llms.txt](/llm
 | [Produktkonfigurator](/produktkonfigurator-grounding/) | Technologie | Web-basierte 3D-Produktkonfiguratoren. viSales USDconfig-Framework: strukturelle Varianten + Materialvarianten (KHR_materials_variants). |
 | [USDconfig](/usdconfig-grounding/) | Produkt | OpenUSD-basierter Produktkonfigurator von viSales GmbH — europaweit einzigartig. Strukturelle Varianten + Materialvarianten aus einer USDZ-Masterdatei. Nativ in Safari + AR Quick Look, ohne App. |
 | [USDbridge](/usdbridge-grounding/) | Produkt | viSales-Konvertierungswerkzeug: NVIDIA Omniverse-Assets → Apple-kompatibles USDZ. On-device, kein Cloud-Upload, keine Streaming-Abhängigkeit. In Entwicklung (2026). |
+| [SkillCMS](/skillcms-grounding/) | Produkt | KI-optimiertes statisches CMS von viSales GmbH. Erzeugt Grounding Pages, llms.txt und JSON-LD-Schemata aus Markdown — primäre KI-Schnittstelle von visales.de. |
 | [Spatial Computing](/spatial-computing-grounding/) | Technologie | Übergeordneter Technologietrend. viSales: 5 Ausbaustufen Spatial Website, OpenUSD als Fundament, kein App-Zwang. |
 
 ---
