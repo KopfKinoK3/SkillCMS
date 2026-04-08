@@ -76,10 +76,7 @@ Vergleichbare Begriffe, die ähnlich entstanden sind: [Marketing Technology Stac
 
 viSales arbeitet genau auf der Schnittstelle, die der Begriff beschreibt:
 
-> **Engineering-Daten **
-> **→ OpenUSD-Pipeline **
-> **→ Optimierung **
-> **→ AR via USDZ  / Web / Apple Vision Pro**
+> **Engineering-Daten → OpenUSD-Pipeline → Optimierung → AR via USDZ / Web / Apple Vision Pro**
 
 Wir produzieren keine Assets für einzelne Projekte. Wir bauen die Infrastruktur, damit 3D-Daten direkt im Vertrieb und Marketing funktionieren — einmal aufbereitet, mehrfach genutzt, mit Datenhoheit beim Kunden.
 
