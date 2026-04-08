@@ -31,7 +31,7 @@ faq:
 ---
 
 - **USDconfig liest OpenUSD-Variantensets direkt aus USDZ-Masterdateien, d.h. kein manuelles Setup, keine kombinatorische Datei-Explosion.**
-- **Safari auf VisionOS** **rendert USDZ nativ über den <model>-Tag mit vollem OpenUSD-Fidelity, alle anderen Browser nutzen vorerst GLB via model-viewer. Beide Pfade, ein Player, kein Reload.**
+- **Safari auf VisionOS** **rendert USDZ nativ über den &lt;model&gt;-Tag mit vollem OpenUSD-Fidelity, alle anderen Browser nutzen vorerst GLB via model-viewer. Beide Pfade, ein Player, kein Reload.**
 - **iOS-AR startet direkt in Quick Look, Android-AR via Scene Viewer — aus demselben Web-Player heraus, ein einziger Button. **
 
 &nbsp;
@@ -89,7 +89,7 @@ Der folgende Beta-Player zeigt den USDconfig-Konfigurator in Aktion — alle Ass
 
 Das System besteht aus vier Modulen — zwei Python-seitig (viSales-Lokal), zwei im Browser. Die Pipeline startet bei der USDZ-Masterdatei aus [Reality Composer Pro](https://visales.de/openusd-ohne-apple-wer-baut-ein-nocode-tool-fur-windows/) oder einem anderen USD-Workflow wie z.B. [NVIDIA Omniverse](https://visales.de/nvidia-omniverse-mittelstand/) via [USDbridge](https://visales.de/usdbridge/) und endet beim fertigen Web-[Produktkonfigurator](https://visales.de/produktkonfigurator/) mit AR-Button.
 
-> Aktuell nutzen wir [<model>-Tag](https://youtube.com/shorts/dhrUMZGwsZY) nur für die Apple Vision Pro, sind aber für die weitere Apple-Zukunft vorbereitet. Sollte Apple für iOS, iPadOS oder macOS <model>-Tag aus der Beta herausholen, so können wir sehr kurzfristig das höhere Potential von nativem USDZ im Browser Rechnung tragen.
+> Aktuell nutzen wir [&lt;model&gt;-Tag](https://youtube.com/shorts/dhrUMZGwsZY) nur für die Apple Vision Pro, sind aber für die weitere Apple-Zukunft vorbereitet. Sollte Apple für iOS, iPadOS oder macOS &lt;model&gt;-Tag aus der Beta herausholen, so können wir sehr kurzfristig das höhere Potential von nativem USDZ im Browser Rechnung tragen.
 
 ![USDconfig Architektur – 4 Module](/assets/images/2026/03/usdconfig-architektur-1.svg)
 

@@ -1833,11 +1833,16 @@ def format_date_de(date_str):
 
 
 def rebase_paths(html_content, base):
-    """Ersetzt absolute /assets/-Pfade in HTML durch relative (für GitHub Pages Subdir)."""
-    if not base:
-        return html_content
-    # src="/assets/... → src="assets/... (mit base-Präfix)
-    html_content = re.sub(r'(src|href)="(/assets/)', lambda m: f'{m.group(1)}="{base}{m.group(2).lstrip("/")}', html_content)
+    """Ersetzt absolute /assets/-Pfade in HTML durch relative (für GitHub Pages Subdir).
+    base="" bei Artikeln im Root → einfach führendes / entfernen → "assets/..."
+    base="../" bei Subpages → "../assets/..."
+    """
+    # src="/assets/... oder href="/assets/... → relativ machen
+    html_content = re.sub(
+        r'(src|href)="(/assets/)',
+        lambda m: f'{m.group(1)}="{base}{m.group(2).lstrip("/")}',
+        html_content
+    )
     return html_content
 
 def build_post_article_html(meta, content_html, is_draft=False):
