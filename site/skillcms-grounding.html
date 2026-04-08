@@ -989,6 +989,14 @@
     },
     {
       "@type": "Question",
+      "name": "Ist SkillCMS für Teams nutzbar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — für 2–5 Personen. Teamarbeit läuft über Shared Skills und Shared Files via Nextcloud. Keine komplexe Rechteverwaltung: Skills werden lokal installiert und geteilt. Ghost-Integration mit eigenem FAQ-Skill und Schema-Markup-Skills macht den Workflow komplett."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Welche Rolle spielt viSales GmbH bei SkillCMS?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -1083,10 +1091,16 @@
   <dd>Co-Creation mit KI (Claude Cowork) → Markdown-Datei (Human-in-the-Loop) → Feedback-Schleifen → Publish-Skill → statisches HTML + alle Kanäle</dd>
 
   <dt>Publish-Kanäle (ein Schritt)</dt>
-  <dd>Statisches HTML · RSS · Newsletter (Brevo) · Mastodon · LinkedIn · Google Business Profile · YouTube Community Tab (optional)</dd>
+  <dd>Statisches HTML · RSS · Newsletter (Brevo) · Mastodon · LinkedIn · Google Business Profile · YouTube Community Tab (optional) · Ghost (Blog mit FAQ-Skill + Feature-Snippet-Optimierung)</dd>
+
+  <dt>Schema-Markup</dt>
+  <dd>Google Schema automatisch: Personen, Produkte, Unternehmen, FAQPage — erzeugt via Skills in einem Content-Workflow</dd>
 
   <dt>KI-Schnittstellen</dt>
   <dd>llms.txt (kuratiert) · llms-full.txt (vollständig) · Grounding Pages · JSON-LD FAQPage-Schema · NotebookLM-Integration (Audio/KI-Podcast)</dd>
+
+  <dt>Team-Betrieb</dt>
+  <dd>2–5 Personen · Shared Skills + Shared Files via Nextcloud · keine komplexe Rechteverwaltung · Skills lokal installiert</dd>
 
   <dt>Tech-Stack</dt>
   <dd>Python 3 · Markdown + YAML-Frontmatter · Statisches HTML · FTP-Deployment · Hausschrift lokal auf Server (keine externen Font-Abhängigkeiten)</dd>
@@ -1127,6 +1141,7 @@ Publish-Skill
 └─────────────────────────────────────────────┘
 </code></pre>
 <p>Die KI übernimmt die Schreibarbeit — Gerhard Schröder behält Kontrolle über Inhalt, Ton und Freigabe. Der Publish-Skill erledigt die Kanalverteilung automatisiert. Externe Dienste wie YouTube oder LinkedIn sind dabei bewusste Marketing-Entscheidungen, keine technischen Pflichtbestandteile.</p>
+<p>Für Ghost-Artikel existieren eigens entwickelte Skills: ein FAQ-Skill erzeugt gleichzeitig strukturierte FAQ-Toggles und Feature-Snippet-optimierte Antworten. Weitere Skills legen Google Schema Markup automatisch an — für Personen, Produkte, Unternehmen und FAQPage. Ein Content-Workflow aus einer Hand, von der Idee bis zum indexierbaren Suchergebnis.</p>
 <h3>Statische Website als Strategie</h3>
 <p>Das Ergebnis ist eine vollständig statische Website: keine Datenbankabfragen, keine serverseitige Logik, keine Angriffsfläche. Die Hausschrift liegt lokal auf dem Server — keine externen Font-Anfragen, keine DSGVO-Grauzone, keine Ladezeit-Risiken. Gut für SEO, gut für Sicherheit, gut für KI-Crawler.</p>
 <p>NotebookLM ist auf visales.de eingebunden: Menschen können Inhalte als KI-generierten Podcast konsumieren — ein weiterer Zugangsweg zum selben Content-Korpus.</p>
@@ -1146,6 +1161,7 @@ Publish-Skill
   <li><strong>nicht</strong> ein klassischer Static-Site-Generator wie Jekyll oder Hugo — SkillCMS ist KI-First konzipiert und integriert den gesamten Kanalverteilungs-Workflow, nicht nur den Build-Schritt.</li>
   <li><strong>nicht</strong> ein Open-Source-Projekt oder kommerzielles Produkt — SkillCMS ist eine interne Entwicklung von viSales GmbH, nicht als Tool für Dritte veröffentlicht.</li>
   <li><strong>nicht</strong> abhängig von externen Kanälen — LinkedIn, YouTube, GBP sind bewusste Marketing-Entscheidungen. Die Kernfunktion (statische Website + KI-Infrastruktur) funktioniert ohne sie.</li>
+  <li><strong>nicht</strong> eine Enterprise-Lösung mit Rechteverwaltung — SkillCMS ist für 2–5-Personen-Teams konzipiert. Teamarbeit erfolgt über Shared Skills und Shared Files via Nextcloud, ohne komplexe Rollen- oder Rechtelogik.</li>
 </ul>
 </div>
 
@@ -1157,7 +1173,7 @@ Publish-Skill
 <p>Das Ergebnis ist keine Agentur-Software, sondern ein Denkmodell in Code: Wie muss eine B2B-Website 2026 aufgebaut sein, damit KI-Agenten, Suchmaschinen und Menschen sie gleichzeitig optimal nutzen können?</p>
 <div class="vs-spacer"></div>
 
-<h2>Häufige Fragen zu SkillCMS<strong>Was ist SkillCMS?</strong>Ein KI-augmentierter Publish-Workflow — von der Co-Creation mit Claude bis zur statischen Website mit allen Kanälen in einem Schritt. Kein klassisches CMS, keine Datenbank, keine grafische Oberfläche.<strong>Welche Kanäle bespielt SkillCMS in einem Schritt?</strong>Statisches HTML, RSS, Newsletter (Brevo), Mastodon, LinkedIn, Google Business Profile und YouTube Community Tab. Freigabe-Prozesse sind als Skills eingebaut.<strong>Was unterscheidet SkillCMS von WordPress oder Ghost?</strong>Kein Admin-Interface, keine Datenbank, kein Plugin-System. Ghost läuft parallel für den Blog. SkillCMS ist der Workflow für die statische Haupt-Website — schneller, sicherer, KI-optimierter.<strong>Was ist Vibe Contenting?</strong>Der Ansatz, Content authentisch und atmosphärisch mit KI als Co-Autor zu erstellen — ohne CMS-Overhead. SkillCMS ist die Infrastruktur dafür.<strong>Wie ist SkillCMS für KI optimiert?</strong>llms.txt + llms-full.txt als KI-Indizes, Grounding Pages als Entitätsdefinitionen, JSON-LD-Schemata, NotebookLM-Integration. Zwei der drei Website-Zugangstore werden bei jedem Publish automatisch bedient.<strong>Wer hat SkillCMS entwickelt?</strong>Gerhard Schröder (viSales GmbH), April 2026, in ca. einer Woche mit KI-Unterstützung. Konzeptuelle Grundlagen: 2024–2026. Grundlage: 20+ Jahre Blogging, 2 Jahre KI-Praxis.</h2>
+<h2>Häufige Fragen zu SkillCMS<strong>Was ist SkillCMS?</strong>Ein KI-augmentierter Publish-Workflow — von der Co-Creation mit Claude bis zur statischen Website mit allen Kanälen in einem Schritt. Kein klassisches CMS, keine Datenbank, keine grafische Oberfläche.<strong>Welche Kanäle bespielt SkillCMS in einem Schritt?</strong>Statisches HTML, RSS, Newsletter (Brevo), Mastodon, LinkedIn, Google Business Profile und YouTube Community Tab. Freigabe-Prozesse sind als Skills eingebaut.<strong>Was unterscheidet SkillCMS von WordPress oder Ghost?</strong>Kein Admin-Interface, keine Datenbank, kein Plugin-System. Ghost läuft parallel für den Blog. SkillCMS ist der Workflow für die statische Haupt-Website — schneller, sicherer, KI-optimierter.<strong>Was ist Vibe Contenting?</strong>Der Ansatz, Content authentisch und atmosphärisch mit KI als Co-Autor zu erstellen — ohne CMS-Overhead. SkillCMS ist die Infrastruktur dafür.<strong>Wie ist SkillCMS für KI optimiert?</strong>llms.txt + llms-full.txt als KI-Indizes, Grounding Pages als Entitätsdefinitionen, JSON-LD-Schemata, NotebookLM-Integration. Zwei der drei Website-Zugangstore werden bei jedem Publish automatisch bedient.<strong>Ist SkillCMS für Teams nutzbar?</strong>Ja — für 2–5 Personen. Teamarbeit läuft über Shared Skills und Shared Files via Nextcloud. Keine komplexe Rechteverwaltung: Skills werden lokal installiert und über Nextcloud geteilt. Für größere Teams oder Enterprise-Anforderungen ist SkillCMS nicht konzipiert.<strong>Wer hat SkillCMS entwickelt?</strong>Gerhard Schröder (viSales GmbH), April 2026, in ca. einer Woche mit KI-Unterstützung. Konzeptuelle Grundlagen: 2024–2026. Grundlage: 20+ Jahre Blogging, 2 Jahre KI-Praxis.</h2>
 <div class="vs-spacer"></div>
 
 <div class="grounding-notice">
