@@ -1,0 +1,69 @@
+<svg width="800" height="194" viewBox="0 0 800 194" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif">
+
+<defs>
+  <filter id="shadow" x="-4%" y="-4%" width="108%" height="116%">
+    <fedropshadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.07"></fedropshadow>
+  </filter>
+</defs>
+
+<rect width="800" height="194" fill="#ffffff"></rect>
+
+
+
+
+<rect x="16" y="16" width="246" height="76" rx="10" fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"></rect>
+<rect x="16" y="16" width="246" height="4" rx="2" fill="#f97316"></rect>
+<rect x="16" y="16" width="4" height="76" rx="2" fill="#f97316"></rect>
+<text x="34" y="37" font-size="9" font-weight="700" letter-spacing="0.09em" fill="#f97316">FRAMEWORK</text>
+<text x="34" y="52" font-size="13" font-weight="700" letter-spacing="-0.01em" fill="#1a1a1a">USDconfig</text>
+<text x="34" y="66" font-size="10" fill="#888">Konfigurationslogiken für AR &amp; Spatial</text>
+<text x="34" y="80" font-size="10" fill="#888">Variantenstrukturen ohne starren Konfigurator</text>
+
+
+<rect x="277" y="16" width="246" height="76" rx="10" fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"></rect>
+<rect x="277" y="16" width="246" height="4" rx="2" fill="#0891b2"></rect>
+<rect x="277" y="16" width="4" height="76" rx="2" fill="#0891b2"></rect>
+<text x="295" y="37" font-size="9" font-weight="700" letter-spacing="0.09em" fill="#0891b2">KONVERTER</text>
+<text x="295" y="52" font-size="13" font-weight="700" letter-spacing="-0.01em" fill="#1a1a1a">USDbridge</text>
+<text x="295" y="66" font-size="10" fill="#888">Omniverse-Inhalte nativ auf Apple-Geräten</text>
+<text x="295" y="80" font-size="10" fill="#888">Ohne Streaming · ohne App-Entwicklung</text>
+
+
+<rect x="538" y="16" width="246" height="76" rx="10" fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"></rect>
+<rect x="538" y="16" width="246" height="4" rx="2" fill="#475569"></rect>
+<rect x="538" y="16" width="4" height="76" rx="2" fill="#475569"></rect>
+<text x="556" y="37" font-size="9" font-weight="700" letter-spacing="0.09em" fill="#475569">IN ENTWICKLUNG</text>
+<text x="556" y="52" font-size="13" font-weight="700" letter-spacing="-0.01em" fill="#1a1a1a">Spatial-Website-Generator</text>
+<text x="556" y="66" font-size="10" fill="#888">Räumliche Environments für Gespräche</text>
+<text x="556" y="80" font-size="10" fill="#888">Apple Vision Pro · FaceTime · kundenspez.</text>
+
+
+
+
+<rect x="16" y="104" width="246" height="76" rx="10" fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"></rect>
+<rect x="16" y="104" width="246" height="4" rx="2" fill="#f97316"></rect>
+<rect x="16" y="104" width="4" height="76" rx="2" fill="#f97316"></rect>
+<text x="34" y="125" font-size="9" font-weight="700" letter-spacing="0.09em" fill="#f97316">KOSTENLOS</text>
+<text x="34" y="140" font-size="13" font-weight="700" letter-spacing="-0.01em" fill="#1a1a1a">pic2usdz</text>
+<text x="34" y="154" font-size="10" fill="#888">2D-Pläne &amp; Bilder direkt als AR prüfen</text>
+<text x="34" y="168" font-size="10" fill="#888">Ohne App · ohne Registrierung · sofort</text>
+
+
+<rect x="277" y="104" width="246" height="76" rx="10" fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"></rect>
+<rect x="277" y="104" width="246" height="4" rx="2" fill="#0891b2"></rect>
+<rect x="277" y="104" width="4" height="76" rx="2" fill="#0891b2"></rect>
+<text x="295" y="125" font-size="9" font-weight="700" letter-spacing="0.09em" fill="#0891b2">PRODUKT</text>
+<text x="295" y="140" font-size="13" font-weight="700" letter-spacing="-0.01em" fill="#1a1a1a">AR-Player</text>
+<text x="295" y="154" font-size="10" fill="#888">AR-Inhalte auf Apple &amp; Android ausgeben</text>
+<text x="295" y="168" font-size="10" fill="#888">Einmalig installiert · kein Abo-Modell</text>
+
+
+<rect x="538" y="104" width="246" height="76" rx="10" fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"></rect>
+<rect x="538" y="104" width="246" height="4" rx="2" fill="#475569"></rect>
+<rect x="538" y="104" width="4" height="76" rx="2" fill="#475569"></rect>
+<text x="556" y="125" font-size="9" font-weight="700" letter-spacing="0.09em" fill="#475569">OPENSOURCE · LEGACY</text>
+<text x="556" y="140" font-size="13" font-weight="700" letter-spacing="-0.01em" fill="#1a1a1a">ConfigXR</text>
+<text x="556" y="154" font-size="10" fill="#888">Konfigurationslogik für AR – früher Ansatz</text>
+<text x="556" y="168" font-size="10" fill="#888">Basis für USDconfig · GitHub OpenSource</text>
+
+</svg>

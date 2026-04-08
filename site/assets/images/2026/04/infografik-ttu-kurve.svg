@@ -1,0 +1,149 @@
+<svg width="800" height="575" viewBox="0 0 800 575" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif">
+
+<defs>
+  <filter id="shadow" x="-4%" y="-4%" width="108%" height="116%">
+    <fedropshadow dx="0" dy="2" stdDeviation="5" flood-color="#000" flood-opacity="0.07"></fedropshadow>
+  </filter>
+  <filter id="shadow-sm" x="-4%" y="-4%" width="108%" height="114%">
+    <fedropshadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.06"></fedropshadow>
+  </filter>
+  <linearGradient id="grad-cyan" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#0891b2" stop-opacity="0.18"></stop>
+    <stop offset="100%" stop-color="#0891b2" stop-opacity="0.02"></stop>
+  </linearGradient>
+  <linearGradient id="grad-gray" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#888" stop-opacity="0.10"></stop>
+    <stop offset="100%" stop-color="#888" stop-opacity="0.01"></stop>
+  </linearGradient>
+  <clipPath id="chart-clip">
+    <rect x="90" y="100" width="650" height="300"></rect>
+  </clipPath>
+</defs>
+
+
+<rect width="800" height="575" fill="#ffffff"></rect>
+
+
+<text x="400" y="28" text-anchor="middle" font-size="10" font-weight="700" letter-spacing="0.14em" fill="#bbb">
+  TIME-TO-UNDERSTANDING · VERSTÄNDNIS-KURVE · by viSales
+</text>
+<rect x="16" y="36" width="768" height="2" rx="1" fill="#f97316" opacity="0.25"></rect>
+
+
+<text x="90" y="65" font-size="20" font-weight="700" letter-spacing="-0.02em" fill="#1a1a1a">
+  Stakeholder-Verständnis im Verkaufsgespräch
+</text>
+<text x="90" y="85" font-size="12" fill="#888">
+  Klassische Präsentation (Decks/PDFs) vs. viSales Spatial Presentation
+</text>
+
+
+<rect x="90" y="100" width="650" height="300" rx="8" fill="#fafafa" stroke="#f0f0f0" stroke-width="1"></rect>
+
+
+<line x1="90" y1="400" x2="740" y2="400" stroke="#e5e5e5" stroke-width="1"></line>
+<line x1="90" y1="325" x2="740" y2="325" stroke="#e5e5e5" stroke-width="0.8" stroke-dasharray="4,3"></line>
+<line x1="90" y1="250" x2="740" y2="250" stroke="#e5e5e5" stroke-width="0.8" stroke-dasharray="4,3"></line>
+<line x1="90" y1="175" x2="740" y2="175" stroke="#e5e5e5" stroke-width="0.8" stroke-dasharray="4,3"></line>
+<line x1="90" y1="100" x2="740" y2="100" stroke="#e5e5e5" stroke-width="0.8" stroke-dasharray="4,3"></line>
+
+
+<line x1="252" y1="100" x2="252" y2="400" stroke="#ebebeb" stroke-width="0.8" stroke-dasharray="3,3"></line>
+<line x1="415" y1="100" x2="415" y2="400" stroke="#ebebeb" stroke-width="0.8" stroke-dasharray="3,3"></line>
+<line x1="577" y1="100" x2="577" y2="400" stroke="#ebebeb" stroke-width="0.8" stroke-dasharray="3,3"></line>
+
+
+<text x="78" y="404" text-anchor="end" font-size="10" fill="#bbb">0%</text>
+<text x="78" y="329" text-anchor="end" font-size="10" fill="#bbb">25%</text>
+<text x="78" y="254" text-anchor="end" font-size="10" fill="#bbb">50%</text>
+<text x="78" y="179" text-anchor="end" font-size="10" fill="#bbb">75%</text>
+<text x="78" y="104" text-anchor="end" font-size="10" fill="#bbb">100%</text>
+
+
+<text x="22" y="250" text-anchor="middle" font-size="10" fill="#bbb" letter-spacing="0.06em" transform="rotate(-90, 22, 250)">STAKEHOLDER-VERSTÄNDNIS (%)</text>
+
+
+
+<path d="M 90,370 C 144,370 198,310 252,310 C 306,310 361,280 415,280 C 469,280 523,295 577,295 C 631,295 686,355 740,355 L 740,400 L 90,400 Z" fill="url(#grad-gray)" clip-path="url(#chart-clip)"></path>
+
+
+<path d="M 90,370 C 144,370 198,145 252,145 C 306,145 361,130 415,130 C 469,130 523,136 577,136 C 631,136 686,130 740,130 L 740,400 L 90,400 Z" fill="url(#grad-cyan)" clip-path="url(#chart-clip)"></path>
+
+
+
+<path d="M 90,370 C 144,370 198,310 252,310 C 306,310 361,280 415,280 C 469,280 523,295 577,295 C 631,295 686,355 740,355" fill="none" stroke="#b0b0b0" stroke-width="2.5" stroke-linecap="round" clip-path="url(#chart-clip)"></path>
+
+
+<path d="M 90,370 C 144,370 198,145 252,145 C 306,145 361,130 415,130 C 469,130 523,136 577,136 C 631,136 686,130 740,130" fill="none" stroke="#0891b2" stroke-width="3" stroke-linecap="round" clip-path="url(#chart-clip)"></path>
+
+
+
+<circle cx="90" cy="370" r="4" fill="#fff" stroke="#b0b0b0" stroke-width="2"></circle>
+<circle cx="252" cy="310" r="4" fill="#fff" stroke="#b0b0b0" stroke-width="2"></circle>
+<circle cx="415" cy="280" r="4" fill="#fff" stroke="#b0b0b0" stroke-width="2"></circle>
+<circle cx="577" cy="295" r="4" fill="#fff" stroke="#b0b0b0" stroke-width="2"></circle>
+<circle cx="740" cy="355" r="4" fill="#fff" stroke="#b0b0b0" stroke-width="2"></circle>
+
+
+<circle cx="90" cy="370" r="5" fill="#fff" stroke="#0891b2" stroke-width="2.5"></circle>
+<circle cx="252" cy="145" r="5" fill="#0891b2" stroke="#0891b2" stroke-width="2.5"></circle>
+<circle cx="415" cy="130" r="5" fill="#0891b2" stroke="#0891b2" stroke-width="2.5"></circle>
+<circle cx="577" cy="136" r="5" fill="#0891b2" stroke="#0891b2" stroke-width="2.5"></circle>
+<circle cx="740" cy="130" r="5" fill="#0891b2" stroke="#0891b2" stroke-width="2.5"></circle>
+
+
+
+<rect x="258" y="118" width="126" height="24" rx="4" fill="#0891b2" filter="url(#shadow-sm)"></rect>
+<text x="321" y="133" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff">85 % nach 30 Min.</text>
+
+
+<rect x="421" y="265" width="96" height="22" rx="4" fill="#fff" stroke="#d0d0d0" stroke-width="1" filter="url(#shadow-sm)"></rect>
+<text x="469" y="279" text-anchor="middle" font-size="10" fill="#888">Max. 40 %</text>
+
+
+<line x1="252" y1="155" x2="252" y2="300" stroke="#f97316" stroke-width="1.5" stroke-dasharray="3,2" stroke-opacity="0.6"></line>
+<rect x="174" y="215" width="72" height="22" rx="4" fill="#fff8f4" stroke="#fbd5bc" stroke-width="1"></rect>
+<text x="210" y="229" text-anchor="middle" font-size="10" font-weight="700" fill="#f97316">Δ +55 %</text>
+
+
+<rect x="632" y="220" width="100" height="34" rx="4" fill="#f0fdfe" stroke="#a5f0f9" stroke-width="1"></rect>
+<text x="682" y="234" text-anchor="middle" font-size="9.5" font-weight="700" fill="#0891b2">Post-Meeting</text>
+<text x="682" y="248" text-anchor="middle" font-size="9" fill="#0891b2">90 % vs. 15 %</text>
+
+
+<text x="90" y="422" text-anchor="middle" font-size="10" fill="#888">Meeting Start</text>
+<text x="252" y="422" text-anchor="middle" font-size="10" fill="#888">30 Min.</text>
+<text x="252" y="434" text-anchor="middle" font-size="9" fill="#bbb">(Pitch)</text>
+<text x="415" y="422" text-anchor="middle" font-size="10" fill="#888">60 Min.</text>
+<text x="415" y="434" text-anchor="middle" font-size="9" fill="#bbb">(Vertiefung)</text>
+<text x="577" y="422" text-anchor="middle" font-size="10" fill="#888">120 Min.</text>
+<text x="577" y="434" text-anchor="middle" font-size="9" fill="#bbb">(Tech-Details)</text>
+<text x="740" y="422" text-anchor="middle" font-size="10" fill="#888">Post-Meeting</text>
+
+
+<rect x="90" y="448" width="14" height="3" rx="1" fill="#0891b2"></rect>
+<circle cx="97" cy="449.5" r="4.5" fill="#0891b2"></circle>
+<text x="108" y="453" font-size="11" fill="#555">viSales Spatial Presentation</text>
+
+<rect x="280" y="447" width="14" height="3" rx="1" fill="#b0b0b0"></rect>
+<circle cx="287" cy="448.5" r="4" fill="#fff" stroke="#b0b0b0" stroke-width="2"></circle>
+<text x="298" y="453" font-size="11" fill="#888">Klassische Präsentation (Decks/PDFs)</text>
+
+
+<rect x="16" y="470" width="768" height="68" rx="8" fill="#fff8f4" stroke="#fbd5bc" stroke-width="1" filter="url(#shadow-sm)"></rect>
+<rect x="16" y="470" width="4" height="68" rx="2" fill="#f97316"></rect>
+<text x="36" y="490" font-size="9.5" font-weight="700" letter-spacing="0.08em" fill="#f97316">OSINT TRIGGER SIGNAL #1</text>
+<text x="36" y="508" font-size="12" fill="#1a1a1a" font-style="italic">
+  „Wir verbringen 50 % des Verkaufsgesprächs damit, zu erklären, wie es funktioniert."
+</text>
+<text x="36" y="527" font-size="10.5" fill="#888">
+  Wenn ein Vertriebsteam mehr erklärt als verkauft — ist das der Moment, in dem viSales gebraucht wird.
+</text>
+
+
+<line x1="16" y1="548" x2="784" y2="548" stroke="#f0f0f0" stroke-width="1"></line>
+<text x="400" y="563" text-anchor="middle" font-size="9.5" fill="#bbb" letter-spacing="0.03em">
+  visales.de · Visuelle Vertriebskommunikation für Maschinenbau &amp; Industrie · © viSales GmbH
+</text>
+
+</svg>

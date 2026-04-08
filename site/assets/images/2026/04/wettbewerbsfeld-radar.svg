@@ -1,0 +1,127 @@
+<svg width="800" height="720" viewBox="0 0 800 720" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif">
+
+<defs>
+  <filter id="shadow" x="-4%" y="-4%" width="108%" height="116%">
+    <fedropshadow dx="0" dy="2" stdDeviation="5" flood-color="#000" flood-opacity="0.07"></fedropshadow>
+  </filter>
+  <filter id="shadow-sm" x="-4%" y="-4%" width="108%" height="114%">
+    <fedropshadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.06"></fedropshadow>
+  </filter>
+</defs>
+
+
+<rect width="800" height="720" fill="#ffffff"></rect>
+
+
+<text x="400" y="28" text-anchor="middle" font-size="10" font-weight="700" letter-spacing="0.14em" fill="#bbb">WETTBEWERBSPOSITIONIERUNG · SHORTLIST-ANALYSE · by viSales</text>
+<rect x="16" y="36" width="768" height="2" rx="1" fill="#f97316" opacity="0.25"></rect>
+
+
+<text x="400" y="68" text-anchor="middle" font-size="20" font-weight="700" letter-spacing="-0.01em" fill="#1a1a1a">Das Wettbewerbsfeld: Wer steht auf der Shortlist?</text>
+<text x="400" y="88" text-anchor="middle" font-size="12" fill="#888">Vier Anbieter-Typen im B2B-Vertrieb für erklärungsbedürftige Produkte</text>
+
+
+
+
+
+
+<polygon points="400,150 564.6,245 564.6,435 400,530 235.4,435 235.4,245" fill="none" stroke="#e8e8e8" stroke-width="1"></polygon>
+
+<polygon points="400,197.5 523.5,268.75 523.5,411.25 400,482.5 276.5,411.25 276.5,268.75" fill="none" stroke="#e8e8e8" stroke-width="0.8" stroke-dasharray="4,3"></polygon>
+
+<polygon points="400,245 482.3,292.5 482.3,387.5 400,435 317.7,387.5 317.7,292.5" fill="none" stroke="#e8e8e8" stroke-width="0.8" stroke-dasharray="4,3"></polygon>
+
+<polygon points="400,292.5 441.2,316.25 441.2,363.75 400,387.5 358.8,363.75 358.8,316.25" fill="none" stroke="#e8e8e8" stroke-width="0.8" stroke-dasharray="4,3"></polygon>
+
+
+<line x1="400" y1="340" x2="400" y2="150" stroke="#e0e0e0" stroke-width="0.8"></line>
+<line x1="400" y1="340" x2="564.6" y2="245" stroke="#e0e0e0" stroke-width="0.8"></line>
+<line x1="400" y1="340" x2="564.6" y2="435" stroke="#e0e0e0" stroke-width="0.8"></line>
+<line x1="400" y1="340" x2="400" y2="530" stroke="#e0e0e0" stroke-width="0.8"></line>
+<line x1="400" y1="340" x2="235.4" y2="435" stroke="#e0e0e0" stroke-width="0.8"></line>
+<line x1="400" y1="340" x2="235.4" y2="245" stroke="#e0e0e0" stroke-width="0.8"></line>
+
+
+
+<text x="400" y="132" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1a1a">System-Verständnis</text>
+
+<text x="582" y="238" text-anchor="start" font-size="11" font-weight="700" fill="#1a1a1a">Vertriebsprozess-</text>
+<text x="582" y="252" text-anchor="start" font-size="11" font-weight="700" fill="#1a1a1a">Integration</text>
+
+<text x="582" y="435" text-anchor="start" font-size="11" font-weight="700" fill="#1a1a1a">Visuelle Qualität</text>
+
+<text x="400" y="552" text-anchor="middle" font-size="11" font-weight="700" fill="#1a1a1a">Immersives Erlebnis</text>
+
+<text x="218" y="435" text-anchor="end" font-size="11" font-weight="700" fill="#1a1a1a">Konfigurationslogik</text>
+
+<text x="218" y="245" text-anchor="end" font-size="11" font-weight="700" fill="#1a1a1a">Skalierbarkeit</text>
+
+
+
+
+
+<polygon points="400,264 482.3,292.5 449.5,359.5 400,376 248.8,420.5 268.2,258" fill="#e0e0e0" fill-opacity="0.15" stroke="#bbb" stroke-width="1.5" stroke-opacity="0.5"></polygon>
+
+
+
+<polygon points="400,245 465.9,292.5 548.7,416 400,416 350.8,360.5 317.7,292.5" fill="#999" fill-opacity="0.1" stroke="#999" stroke-width="1.5" stroke-opacity="0.5"></polygon>
+
+
+
+<polygon points="400,283 449.5,311.5 499,397 400,519 367.2,358 334.4,264" fill="#0891b2" fill-opacity="0.08" stroke="#0891b2" stroke-width="1.5" stroke-opacity="0.4"></polygon>
+
+
+
+<polygon points="400,169 548.7,254.5 515.5,401 400,492 301.5,397 317.7,292.5" fill="#f97316" fill-opacity="0.12" stroke="#f97316" stroke-width="2.5" stroke-opacity="0.8"></polygon>
+
+
+<circle cx="400" cy="169" r="5" fill="#f97316"></circle>
+<circle cx="548.7" cy="254.5" r="5" fill="#f97316"></circle>
+<circle cx="515.5" cy="401" r="5" fill="#f97316"></circle>
+<circle cx="400" cy="492" r="5" fill="#f97316"></circle>
+<circle cx="301.5" cy="397" r="5" fill="#f97316"></circle>
+<circle cx="317.7" cy="292.5" r="5" fill="#f97316"></circle>
+
+
+<circle cx="400" cy="283" r="3.5" fill="#0891b2"></circle>
+<circle cx="449.5" cy="311.5" r="3.5" fill="#0891b2"></circle>
+<circle cx="499" cy="397" r="3.5" fill="#0891b2"></circle>
+<circle cx="400" cy="519" r="3.5" fill="#0891b2"></circle>
+<circle cx="367.2" cy="358" r="3.5" fill="#0891b2"></circle>
+<circle cx="334.4" cy="264" r="3.5" fill="#0891b2"></circle>
+
+
+<circle cx="400" cy="340" r="3" fill="#e0e0e0"></circle>
+
+
+<rect x="80" y="580" width="640" height="110" rx="12" fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"></rect>
+
+
+<rect x="110" y="600" width="28" height="4" rx="2" fill="#f97316"></rect>
+<circle cx="124" cy="602" r="4" fill="#f97316"></circle>
+<text x="146" y="606" font-size="12" font-weight="700" fill="#f97316">viSales — Der Verständnis-Partner</text>
+<text x="146" y="620" font-size="10" fill="#888">Stärke: System-Verständnis + Vertriebsprozess. Metrik: TTU (Time-to-Understanding)</text>
+
+
+<rect x="110" y="636" width="28" height="4" rx="2" fill="#0891b2"></rect>
+<circle cx="124" cy="638" r="3.5" fill="#0891b2"></circle>
+<text x="146" y="642" font-size="12" font-weight="700" fill="#0891b2">Wow-Anbieter — VR/AR-Agenturen</text>
+<text x="146" y="655" font-size="10" fill="#888">Stärke: Immersives Erlebnis. Schwäche: Keine Vertriebsprozess-Integration</text>
+
+
+<rect x="110" y="668" width="28" height="3" rx="1.5" fill="#999"></rect>
+<text x="146" y="674" font-size="12" font-weight="700" fill="#999">Detail-Anbieter — Industrielle 3D-Studios</text>
+<text x="510" y="674" font-size="10" fill="#bbb">Stärke: Visuelle Qualität</text>
+
+
+<rect x="110" y="686" width="28" height="3" rx="1.5" fill="#bbb" stroke="#bbb" stroke-width="0.5"></rect>
+<text x="146" y="692" font-size="12" font-weight="700" fill="#bbb">Logik-Anbieter — CPQ-Systeme</text>
+<text x="510" y="692" font-size="10" fill="#bbb">Stärke: Konfigurationslogik</text>
+
+
+<line x1="16" y1="708" x2="784" y2="708" stroke="#f0f0f0" stroke-width="1"></line>
+<text x="400" y="718" text-anchor="middle" font-size="9.5" fill="#bbb" letter-spacing="0.03em">
+  Quelle: Positionierungsanalyse · Externe Bewertung (David Skiba, März 2026) · viSales GmbH
+</text>
+
+</svg>

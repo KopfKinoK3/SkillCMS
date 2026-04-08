@@ -1,0 +1,114 @@
+<svg width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif">
+
+<defs>
+  <filter id="shadow" x="-4%" y="-4%" width="108%" height="116%">
+    <fedropshadow dx="0" dy="2" stdDeviation="5" flood-color="#000" flood-opacity="0.07"></fedropshadow>
+  </filter>
+</defs>
+
+
+<rect width="800" height="300" fill="#ffffff"></rect>
+
+
+<rect x="16" y="16" width="246" height="268" rx="12" fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"></rect>
+<rect x="16" y="16" width="246" height="4" rx="2" fill="#f97316"></rect>
+<rect x="16" y="16" width="4" height="268" rx="2" fill="#f97316"></rect>
+
+
+<circle cx="42" cy="44" r="14" fill="#f97316"></circle>
+<text x="42" y="49" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">1</text>
+
+
+<text x="64" y="37" font-size="9" font-weight="700" letter-spacing="0.10em" fill="#f97316">KLASSISCH</text>
+<text x="64" y="53" font-size="14" font-weight="700" letter-spacing="-0.01em" fill="#1a1a1a">Visual Sales</text>
+<text x="64" y="68" font-size="10" fill="#888">Erklären. Zeigen. Überzeugen.</text>
+
+
+<line x1="30" y1="80" x2="250" y2="80" stroke="#f0f0f0" stroke-width="1"></line>
+
+
+<circle cx="34" cy="97" r="3" fill="#f97316"></circle>
+<text x="44" y="101" font-size="11" fill="#555">Grafik &amp; Visualisierung</text>
+
+<circle cx="34" cy="119" r="3" fill="#f97316"></circle>
+<text x="44" y="123" font-size="11" fill="#555">Interaktive Präsentationen</text>
+
+<circle cx="34" cy="141" r="3" fill="#f97316"></circle>
+<text x="44" y="145" font-size="11" fill="#555">Video &amp; Foto</text>
+
+<circle cx="34" cy="163" r="3" fill="#f97316"></circle>
+<text x="44" y="167" font-size="11" fill="#555">Konfiguratoren (Web)</text>
+
+<circle cx="34" cy="185" r="3" fill="#f97316"></circle>
+<text x="44" y="189" font-size="11" fill="#555">Beratung &amp; Workshops</text>
+
+<circle cx="34" cy="207" r="3" fill="#f97316"></circle>
+<text x="44" y="211" font-size="11" fill="#555">Vorträge &amp; Impulse</text>
+
+<circle cx="34" cy="229" r="3" fill="#f97316"></circle>
+<text x="44" y="233" font-size="11" fill="#555">OpenUSD / NVIDIA Omniverse</text>
+
+
+
+<rect x="277" y="16" width="246" height="268" rx="12" fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"></rect>
+<rect x="277" y="16" width="246" height="4" rx="2" fill="#0891b2"></rect>
+<rect x="277" y="16" width="4" height="268" rx="2" fill="#0891b2"></rect>
+
+<circle cx="303" cy="44" r="14" fill="#0891b2"></circle>
+<text x="303" y="49" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">2</text>
+
+<text x="325" y="37" font-size="9" font-weight="700" letter-spacing="0.10em" fill="#0891b2">IMMERSIV</text>
+<text x="325" y="53" font-size="14" font-weight="700" letter-spacing="-0.01em" fill="#1a1a1a">Immersive Visual Sales</text>
+<text x="325" y="68" font-size="10" fill="#888">Erleben. Konfigurieren. Entscheiden.</text>
+
+<line x1="291" y1="80" x2="511" y2="80" stroke="#f0f0f0" stroke-width="1"></line>
+
+<circle cx="295" cy="97" r="3" fill="#0891b2"></circle>
+<text x="305" y="101" font-size="11" fill="#555">Messe &amp; Expo-Lösungen</text>
+
+<circle cx="295" cy="119" r="3" fill="#0891b2"></circle>
+<text x="305" y="123" font-size="11" fill="#555">AR-Konfiguratoren</text>
+
+<circle cx="295" cy="141" r="3" fill="#0891b2"></circle>
+<text x="305" y="145" font-size="11" fill="#555">Virtuelle Rundgänge</text>
+
+<circle cx="295" cy="163" r="3" fill="#0891b2"></circle>
+<text x="305" y="167" font-size="11" fill="#555">Augmented Reality</text>
+
+<circle cx="295" cy="185" r="3" fill="#0891b2"></circle>
+<text x="305" y="189" font-size="11" fill="#555">Spatial Websites</text>
+
+<circle cx="295" cy="207" r="3" fill="#0891b2"></circle>
+<text x="305" y="211" font-size="11" fill="#555">OpenUSD / Omniverse</text>
+
+<circle cx="295" cy="229" r="3" fill="#0891b2"></circle>
+<text x="305" y="233" font-size="11" fill="#555">USDconfig &amp; USDbridge</text>
+
+
+
+<rect x="538" y="16" width="246" height="268" rx="12" fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"></rect>
+<rect x="538" y="16" width="246" height="4" rx="2" fill="#475569"></rect>
+<rect x="538" y="16" width="4" height="268" rx="2" fill="#475569"></rect>
+
+<circle cx="564" cy="44" r="14" fill="#475569"></circle>
+<text x="564" y="49" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">3</text>
+
+<text x="586" y="37" font-size="9" font-weight="700" letter-spacing="0.10em" fill="#475569">BERATUNG</text>
+<text x="586" y="53" font-size="14" font-weight="700" letter-spacing="-0.01em" fill="#1a1a1a">Strategie &amp; Einordnung</text>
+<text x="586" y="68" font-size="10" fill="#888">Einordnen. Planen. Begleiten.</text>
+
+<line x1="552" y1="80" x2="772" y2="80" stroke="#f0f0f0" stroke-width="1"></line>
+
+<circle cx="556" cy="97" r="3" fill="#475569"></circle>
+<text x="566" y="101" font-size="11" fill="#555">Ersteinordnung &amp; Audit</text>
+
+<circle cx="556" cy="119" r="3" fill="#475569"></circle>
+<text x="566" y="123" font-size="11" fill="#555">OpenUSD-Workshop</text>
+
+<circle cx="556" cy="141" r="3" fill="#475569"></circle>
+<text x="566" y="145" font-size="11" fill="#555">Pilotprojekt-Konzept</text>
+
+<circle cx="556" cy="163" r="3" fill="#475569"></circle>
+<text x="566" y="167" font-size="11" fill="#555">Vorträge von Gerhard Schröder</text>
+
+</svg>

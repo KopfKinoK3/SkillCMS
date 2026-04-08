@@ -11,9 +11,21 @@ author: "Gerhard Schröder"
 author_slug: gerhard
 author_image: /assets/images/2025/10/1706254155883-1.jpeg
 author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit über 15 Jahren spezialisiert auf visuelle Vertriebskommunikation für Maschinenbau & AeroSpace — mit 3D-Visualisierung & OpenUSD. Mitglied der AOUSD, Speaker zu AR & Spatial Sales."
-date: "2026-03-26"
 published_at: "2026-03-26T12:44:29.000Z"
 type: post
+template: post
+faq_heading: "Häufige Fragen zu AR Quick Look Banner"
+faq:
+  - q: "Was ist AR Quick Look Banner in Safari?"
+    a: "AR Quick Look Banner ist eine Apple-Funktion in Safari, die einen anpassbaren Aktions-Button direkt über dem 3D-Viewer einblendet. Statt nur ein Produkt zu betrachten, kann der Nutzer aus der AR-Ansicht heraus direkt handeln – Anfrage stellen, konfigurieren oder kaufen. Kein App-Download, läuft ab iOS 13.3."
+  - q: "Welche drei Banner-Typen bietet Apple AR Quick Look?"
+    a: "Apple unterscheidet drei Typen: Custom Action Banner – ein einfacher Button mit frei definierbarer Aktion (z.&nbsp;B. Anfrage, Termin). Custom HTML Banner – vollständig anpassbares Banner mit eigenem HTML-Inhalt. Apple Pay Banner – direkter Kauf-Button aus der AR-Ansicht, mit Apple Pay als Zahlungsmethode."
+  - q: "Warum sind AR Quick Look Banner für den B2B-Vertrieb relevant?"
+    a: "Sie verwandeln einen passiven 3D-Viewer in einen aktiven Vertriebskanal: Interessenten können direkt aus der AR-Ansicht eine Anfrage schicken oder einen Termin buchen. Der Schritt vom Erleben zum Handeln wird minimal. Besonders wirksam auf Messen und in Produkt-E-Mails mit QR-Code-Link."
+  - q: "Auf welchen Geräten funktioniert AR Quick Look Banner?"
+    a: "AR Quick Look Banner funktioniert auf allen Apple-Geräten mit Safari ab iOS 13.3: iPhone und iPad. macOS Safari zeigt USDZ als 3D-Viewer, aber ohne AR-Funktion. Android-Geräte nutzen Google Scene Viewer – dort ist keine Banner-Funktion verfügbar."
+  - q: "Wie aufwendig ist die technische Umsetzung von AR Quick Look Banner?"
+    a: "Minimal. Ein einziges HTML-Attribut am Link-Tag genügt für Custom Action. Für Custom HTML Banner wird eine kleine HTML-Datei als Parameter übergeben. Wer bereits USDZ-Dateien und einen Webserver hat, kann das Feature in unter einer Stunde umsetzen – ohne App-Entwicklung, ohne Backend."
 ---
 
 Letzte Woche habe ich einem Kunden gezeigt, wie sein Produkt in Augmented Reality aussieht. Auf dem iPhone, direkt im Safari. Kein App-Download, kein QR-Code-Scan mit Drittanbieter-App. Einfach ein Link, tippen, fertig. Das kennt er schon. Dann habe ich ihm gezeigt, was passiert, wenn man unten im AR-Viewer auf den Button tippt. 
@@ -95,40 +107,3 @@ Wir begleiten Unternehmen vom ersten USDZ-Modell bis zum eingebetteten AR-Erlebn
 &nbsp;
 
 &nbsp;
-
-## Häufige Fragen zu AR Quick Look Banner
-
-<details>
-<summary><strong>Was ist AR Quick Look Banner in Safari?</strong></summary>
-
-AR Quick Look Banner ist eine Apple-Funktion in Safari, die einen anpassbaren Aktions-Button direkt über dem 3D-Viewer einblendet. Statt nur ein Produkt zu betrachten, kann der Nutzer aus der AR-Ansicht heraus direkt handeln – Anfrage stellen, konfigurieren oder kaufen. Kein App-Download, läuft ab iOS 13.3.
-
-</details>
-
-<details>
-<summary><strong>Welche drei Banner-Typen bietet Apple AR Quick Look?</strong></summary>
-
-Apple unterscheidet drei Typen: **Custom Action Banner** – ein einfacher Button mit frei definierbarer Aktion (z. B. Anfrage, Termin). **Custom HTML Banner** – vollständig anpassbares Banner mit eigenem HTML-Inhalt. **Apple Pay Banner** – direkter Kauf-Button aus der AR-Ansicht, mit Apple Pay als Zahlungsmethode.
-
-</details>
-
-<details>
-<summary><strong>Warum sind AR Quick Look Banner für den B2B-Vertrieb relevant?</strong></summary>
-
-Sie verwandeln einen passiven 3D-Viewer in einen aktiven Vertriebskanal: Interessenten können direkt aus der AR-Ansicht eine Anfrage schicken oder einen Termin buchen. Der Schritt vom Erleben zum Handeln wird minimal. Besonders wirksam auf Messen und in Produkt-E-Mails mit QR-Code-Link.
-
-</details>
-
-<details>
-<summary><strong>Auf welchen Geräten funktioniert AR Quick Look Banner?</strong></summary>
-
-AR Quick Look Banner funktioniert auf allen Apple-Geräten mit Safari ab iOS 13.3: iPhone und iPad. macOS Safari zeigt USDZ als 3D-Viewer, aber ohne AR-Funktion. Android-Geräte nutzen Google Scene Viewer – dort ist keine Banner-Funktion verfügbar.
-
-</details>
-
-<details>
-<summary><strong>Wie aufwendig ist die technische Umsetzung von AR Quick Look Banner?</strong></summary>
-
-Minimal. Ein einziges HTML-Attribut am Link-Tag genügt für Custom Action. Für Custom HTML Banner wird eine kleine HTML-Datei als Parameter übergeben. Wer bereits USDZ-Dateien und einen Webserver hat, kann das Feature in unter einer Stunde umsetzen – ohne App-Entwicklung, ohne Backend.
-
-</details>

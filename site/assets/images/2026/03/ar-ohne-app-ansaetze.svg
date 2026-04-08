@@ -1,0 +1,189 @@
+<svg width="800" height="820" viewBox="0 0 800 820" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif">
+
+<defs>
+  <filter id="shadow" x="-4%" y="-4%" width="108%" height="116%">
+    <fedropshadow dx="0" dy="2" stdDeviation="5" flood-color="#000" flood-opacity="0.07"></fedropshadow>
+  </filter>
+  <filter id="shadow-sm" x="-4%" y="-4%" width="108%" height="114%">
+    <fedropshadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.06"></fedropshadow>
+  </filter>
+
+  <marker id="arr" markerWidth="8" markerHeight="8" refX="6.5" refY="3.5" orient="auto">
+    <path d="M0,0 L0,7 L8,3.5 z" fill="#f97316"></path>
+  </marker>
+  <marker id="arr-c" markerWidth="8" markerHeight="8" refX="6.5" refY="3.5" orient="auto">
+    <path d="M0,0 L0,7 L8,3.5 z" fill="#0891b2"></path>
+  </marker>
+  <marker id="arr-g" markerWidth="8" markerHeight="8" refX="6.5" refY="3.5" orient="auto">
+    <path d="M0,0 L0,7 L8,3.5 z" fill="#bbb"></path>
+  </marker>
+</defs>
+
+
+<rect width="800" height="820" fill="#ffffff"></rect>
+
+
+<text x="400" y="30" text-anchor="middle" font-size="10" font-weight="700" letter-spacing="0.14em" fill="#bbb">AR OHNE APP · TECHNISCHE ANSÄTZE · by viSales</text>
+<rect x="16" y="38" width="768" height="2" rx="1" fill="#f97316" opacity="0.25"></rect>
+
+
+<rect x="280" y="56" width="240" height="50" rx="10" fill="#fff" filter="url(#shadow-sm)" stroke="#e0e0e0" stroke-width="1"></rect>
+<rect x="280" y="56" width="4" height="50" rx="2" fill="#888"></rect>
+<text x="400" y="77" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a1a">Geräteklasse</text>
+<text x="400" y="94" text-anchor="middle" font-size="10.5" fill="#999">Welche Endgeräte sollen unterstützt werden?</text>
+
+
+<path d="M340,106 L340,126 L210,126 L210,146" fill="none" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#arr)"></path>
+<path d="M460,106 L460,126 L590,126 L590,146" fill="none" stroke="#0891b2" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#arr-c)"></path>
+
+
+
+
+<rect x="96" y="150" width="228" height="46" rx="10" fill="#fff" filter="url(#shadow-sm)" stroke="#f97316" stroke-width="1.5"></rect>
+<circle cx="120" cy="173" r="11" fill="#f97316"></circle>
+<text x="120" y="177" text-anchor="middle" font-size="9" font-weight="800" fill="#fff">A</text>
+<text x="210" y="170" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1a">Apple Only</text>
+<text x="210" y="186" text-anchor="middle" font-size="10" fill="#999">iOS · iPadOS · Vision Pro</text>
+
+
+<rect x="476" y="150" width="228" height="46" rx="10" fill="#fff" filter="url(#shadow-sm)" stroke="#0891b2" stroke-width="1.5"></rect>
+<circle cx="500" cy="173" r="11" fill="#0891b2"></circle>
+<text x="500" y="177" text-anchor="middle" font-size="9" font-weight="800" fill="#fff">B</text>
+<text x="590" y="170" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1a">Apple + Android</text>
+<text x="590" y="186" text-anchor="middle" font-size="10" fill="#999">Alle Smartphones · Browser</text>
+
+
+<path d="M150,196 L150,216 L130,216 L130,240" fill="none" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#arr)"></path>
+<path d="M270,196 L270,216 L320,216 L320,240" fill="none" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#arr)"></path>
+
+
+<line x1="590" y1="196" x2="590" y2="240" stroke="#0891b2" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#arr-c)"></line>
+
+
+
+
+<rect x="16" y="244" width="230" height="200" rx="12" fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"></rect>
+<rect x="16" y="244" width="230" height="4" rx="2" fill="#f97316"></rect>
+<rect x="16" y="244" width="4" height="200" rx="2" fill="#f97316"></rect>
+
+<circle cx="44" cy="268" r="14" fill="#f97316"></circle>
+<text x="44" y="273" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">1</text>
+
+<text x="68" y="262" font-size="9.5" font-weight="700" letter-spacing="0.07em" fill="#f97316">ANSATZ</text>
+<text x="68" y="279" font-size="15" font-weight="700" letter-spacing="-0.01em" fill="#1a1a1a">AR Quick Look</text>
+<text x="68" y="296" font-size="11" fill="#888">USDZ · RealityKit · nativ</text>
+
+<line x1="36" y1="308" x2="232" y2="308" stroke="#f0f0f0" stroke-width="1"></line>
+
+<text x="36" y="328" font-size="11" fill="#555">AR-Objekt direkt im Raum</text>
+<text x="36" y="345" font-size="11" fill="#555">platzieren und betrachten</text>
+
+<line x1="36" y1="358" x2="232" y2="358" stroke="#f0f0f0" stroke-width="1"></line>
+
+<text x="36" y="375" font-size="10" fill="#999">✓ Kein App-Download</text>
+<text x="36" y="392" font-size="10" fill="#999">✓ VariantSets / Konfiguration</text>
+<text x="36" y="409" font-size="10" fill="#999">✓ Audio · Prozedurale Mat.</text>
+<text x="36" y="426" font-size="10" fill="#999">✓ Jedes iPhone seit 6S</text>
+
+
+<rect x="265" y="244" width="230" height="200" rx="12" fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"></rect>
+<rect x="265" y="244" width="230" height="4" rx="2" fill="#f97316"></rect>
+<rect x="265" y="244" width="4" height="200" rx="2" fill="#f97316"></rect>
+
+<circle cx="293" cy="268" r="14" fill="#f97316"></circle>
+<text x="293" y="273" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">2</text>
+
+<text x="317" y="262" font-size="9.5" font-weight="700" letter-spacing="0.07em" fill="#f97316">ANSATZ</text>
+<text x="317" y="279" font-size="15" font-weight="700" letter-spacing="-0.01em" fill="#1a1a1a">App Clips</text>
+<text x="317" y="296" font-size="11" fill="#888">Native Mini-App · kein Store</text>
+
+<line x1="285" y1="308" x2="481" y2="308" stroke="#f0f0f0" stroke-width="1"></line>
+
+<text x="285" y="328" font-size="11" fill="#555">Interaktive App-Erfahrung</text>
+<text x="285" y="345" font-size="11" fill="#555">ohne Installation aus dem Store</text>
+
+<line x1="285" y1="358" x2="481" y2="358" stroke="#f0f0f0" stroke-width="1"></line>
+
+<text x="285" y="375" font-size="10" fill="#999">✓ Volle App-Logik (max. 15 MB)</text>
+<text x="285" y="392" font-size="10" fill="#999">✓ QR-Code / NFC / Link</text>
+<text x="285" y="409" font-size="10" fill="#999">✓ Eigene UI + Interaktion</text>
+<text x="285" y="426" font-size="10" fill="#999">⚠ Nur Apple · iOS 14+</text>
+
+
+<rect x="514" y="244" width="270" height="200" rx="12" fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"></rect>
+<rect x="514" y="244" width="270" height="4" rx="2" fill="#0891b2"></rect>
+<rect x="514" y="244" width="4" height="200" rx="2" fill="#0891b2"></rect>
+
+<circle cx="542" cy="268" r="14" fill="#0891b2"></circle>
+<text x="542" y="273" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">3</text>
+
+<text x="566" y="262" font-size="9.5" font-weight="700" letter-spacing="0.07em" fill="#0891b2">ANSATZ</text>
+<text x="566" y="279" font-size="15" font-weight="700" letter-spacing="-0.01em" fill="#1a1a1a">Web-AR über WebXR</text>
+<text x="566" y="296" font-size="11" fill="#888">Browser · GLB · plattformübergreifend</text>
+
+<line x1="534" y1="308" x2="770" y2="308" stroke="#f0f0f0" stroke-width="1"></line>
+
+<text x="534" y="328" font-size="11" fill="#555">AR-Erlebnis komplett im Browser,</text>
+<text x="534" y="345" font-size="11" fill="#555">benötigt WebApp-Infrastruktur</text>
+
+<line x1="534" y1="358" x2="770" y2="358" stroke="#f0f0f0" stroke-width="1"></line>
+
+<text x="534" y="375" font-size="10" fill="#999">✓ Apple + Android</text>
+<text x="534" y="392" font-size="10" fill="#999">✓ Volle kreative Freiheit</text>
+<text x="534" y="409" font-size="10" fill="#999">⚠ Performance geräteabhängig</text>
+<text x="534" y="426" font-size="10" fill="#999">⚠ WebApp-Entwicklung nötig</text>
+
+
+
+<line x1="649" y1="444" x2="649" y2="470" stroke="#0891b2" stroke-width="1.5" stroke-opacity="0.5" marker-end="url(#arr-c)"></line>
+
+<rect x="514" y="474" width="270" height="120" rx="12" fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"></rect>
+<rect x="514" y="474" width="270" height="4" rx="2" fill="#0891b2"></rect>
+<rect x="514" y="474" width="4" height="120" rx="2" fill="#0891b2"></rect>
+
+<text x="534" y="496" font-size="9.5" font-weight="700" letter-spacing="0.07em" fill="#0891b2">TECHNOLOGIE-STACK</text>
+
+
+<rect x="534" y="508" width="234" height="32" rx="7" fill="#f0fdfe" stroke="#a5f0f9" stroke-width="1"></rect>
+<text x="551" y="520" font-size="9.5" font-weight="700" fill="#0891b2">Three.js</text>
+<text x="551" y="534" font-size="10.5" fill="#555">3D-Rendering · Animation · Szenen</text>
+
+
+<rect x="534" y="548" width="234" height="32" rx="7" fill="#f0fdfe" stroke="#a5f0f9" stroke-width="1"></rect>
+<text x="551" y="560" font-size="9.5" font-weight="700" fill="#0891b2">8th Wall</text>
+<text x="551" y="574" font-size="10.5" fill="#555">AR-Tracking · Interaktion · SLAM</text>
+
+
+
+<rect x="16" y="630" width="768" height="2" rx="1" fill="#f97316" opacity="0.15"></rect>
+
+<rect x="16" y="650" width="768" height="130" rx="12" fill="#fafafa" stroke="#e8e8e8" stroke-width="1"></rect>
+
+<text x="400" y="672" text-anchor="middle" font-size="9.5" font-weight="700" letter-spacing="0.1em" fill="#bbb">AUF EINEN BLICK</text>
+
+
+<rect x="36" y="688" width="234" height="76" rx="8" fill="#fff8f4" stroke="#fbd5bc" stroke-width="1"></rect>
+<text x="153" y="706" text-anchor="middle" font-size="9.5" font-weight="700" letter-spacing="0.05em" fill="#f97316">AR QUICK LOOK</text>
+<text x="153" y="724" text-anchor="middle" font-size="11" fill="#555">Schnellster Weg zu AR</text>
+<text x="153" y="740" text-anchor="middle" font-size="11" fill="#555">Kein Code · Kein Download</text>
+<text x="153" y="756" text-anchor="middle" font-size="10" fill="#999">→ Ideal für Produktpräsentation</text>
+
+
+<rect x="283" y="688" width="234" height="76" rx="8" fill="#fff8f4" stroke="#fbd5bc" stroke-width="1"></rect>
+<text x="400" y="706" text-anchor="middle" font-size="9.5" font-weight="700" letter-spacing="0.05em" fill="#f97316">APP CLIPS</text>
+<text x="400" y="724" text-anchor="middle" font-size="11" fill="#555">Maximale Interaktion</text>
+<text x="400" y="740" text-anchor="middle" font-size="11" fill="#555">Eigene UI · Native Performance</text>
+<text x="400" y="756" text-anchor="middle" font-size="10" fill="#999">→ Ideal für komplexe Konfig.</text>
+
+
+<rect x="530" y="688" width="234" height="76" rx="8" fill="#f0fdfe" stroke="#a5f0f9" stroke-width="1"></rect>
+<text x="647" y="706" text-anchor="middle" font-size="9.5" font-weight="700" letter-spacing="0.05em" fill="#0891b2">WEB-AR</text>
+<text x="647" y="724" text-anchor="middle" font-size="11" fill="#555">Maximale Reichweite</text>
+<text x="647" y="740" text-anchor="middle" font-size="11" fill="#555">Alle Geräte · Ein Link</text>
+<text x="647" y="756" text-anchor="middle" font-size="10" fill="#999">→ Ideal für Cross-Platform</text>
+
+
+<line x1="16" y1="798" x2="784" y2="798" stroke="#f0f0f0" stroke-width="1"></line>
+<text x="400" y="813" text-anchor="middle" font-size="9.5" fill="#bbb" letter-spacing="0.03em">Alle drei Ansätze funktionieren ohne App Store · QR-Code oder Link genügt · viSales berät bei der Auswahl</text>
+
+</svg>
