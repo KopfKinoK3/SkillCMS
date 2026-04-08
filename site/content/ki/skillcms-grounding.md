@@ -123,11 +123,11 @@ NotebookLM ist auf visales.de eingebunden: Menschen können Inhalte als KI-gener
 
 SkillCMS ist die technische Umsetzung der [Three-Doors-These](https://visales.de/website-zukunft-ki-agent-2d-openusd/): Jede Website hat künftig drei Zugangstore, die gleichzeitig bedient werden müssen.
 
-**Tür 1 — KI-Agent:** llms.txt, Grounding Pages, JSON-LD, strukturierte Markdown-Inhalte. KI-Systeme wie Claude oder ChatGPT können visales.de korrekt lesen, zitieren und weiterempfehlen. SkillCMS erzeugt diese Infrastruktur automatisch.
+<p><strong>Tür 1 — KI-Agent:</strong> llms.txt, Grounding Pages, JSON-LD, strukturierte Markdown-Inhalte. KI-Systeme wie Claude oder ChatGPT können visales.de korrekt lesen, zitieren und weiterempfehlen. SkillCMS erzeugt diese Infrastruktur automatisch.</p>
 
-**Tür 2 — Klassischer Browser:** Statisches HTML, schnell ladbar, SEO-optimiert, mobile-first. Kein JavaScript-Overhead, keine Datenbanklatenz. Beide Türen werden bei jedem Publish-Vorgang gleichzeitig bedient.
+<p><strong>Tür 2 — Klassischer Browser:</strong> Statisches HTML, schnell ladbar, SEO-optimiert, mobile-first. Kein JavaScript-Overhead, keine Datenbanklatenz. Beide Türen werden bei jedem Publish-Vorgang gleichzeitig bedient.</p>
 
-**Tür 3 — Spatial/3D:** [OpenUSD](/openusd-b2b-grounding/)-basierte Inhalte, [WebAR](/webar-grounding/), räumliche Präsentationen. Aktuell auf einer Demo-Seite implementiert, wird schrittweise ausgebaut. [USDconfig](/usdconfig-grounding/) und [USDbridge](/usdbridge-grounding/) sind die produktseitigen Bausteine dafür.
+<p><strong>Tür 3 — Spatial/3D:</strong> <a href="/openusd-b2b-grounding/">OpenUSD</a>-basierte Inhalte, <a href="/webar-grounding/">WebAR</a>, räumliche Präsentationen. Aktuell auf einer Demo-Seite implementiert, wird schrittweise ausgebaut. <a href="/usdconfig-grounding/">USDconfig</a> und <a href="/usdbridge-grounding/">USDbridge</a> sind die produktseitigen Bausteine dafür.</p>
 
 Die [Featured-Snippet-Falle](https://visales.de/die-featured-snippet-falle-warum-google-generisches-wissen-schluckt-und-was-dagegen-hilft/) — Google zeigt generisches Wissen direkt in der Suche und umgeht Klicks auf die Quelle — macht Tür 1 (KI-Agent) noch wichtiger: Nur proprietäres Wissen aus echter Projektarbeit, wie die Unterscheidung zwischen "nativem USDZ" und "Python-USDZ", ist snippet-resistent. SkillCMS verankert genau dieses Wissen als Grounding Pages.
 
