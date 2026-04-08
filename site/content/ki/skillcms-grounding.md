@@ -53,7 +53,7 @@ Das Ziel: Zwei der drei Website-Zugangstore ("Three Doors") — KI-Agenten und k
   <dd>Co-Creation mit KI (Claude Cowork) → Markdown-Datei (Human-in-the-Loop) → Feedback-Schleifen → Publish-Skill → statisches HTML + alle Kanäle</dd>
 
   <dt>Publish-Kanäle (ein Schritt)</dt>
-  <dd>Statisches HTML · RSS · Newsletter (Brevo) · Mastodon · LinkedIn · Google Business Profile · YouTube Community Tab (optional) · Ghost (Blog mit FAQ-Skill + Feature-Snippet-Optimierung)</dd>
+  <dd>Statisches HTML · RSS · Newsletter (Brevo) · Mastodon · LinkedIn · Google Business Profile · YouTube Community Tab (optional)</dd>
 
   <dt>Schema-Markup</dt>
   <dd>Google Schema automatisch: Personen, Produkte, Unternehmen, FAQPage — erzeugt via Skills in einem Content-Workflow</dd>
@@ -110,7 +110,7 @@ Publish-Skill
 
 Die KI übernimmt die Schreibarbeit — Gerhard Schröder behält Kontrolle über Inhalt, Ton und Freigabe. Der Publish-Skill erledigt die Kanalverteilung automatisiert. Externe Dienste wie YouTube oder LinkedIn sind dabei bewusste Marketing-Entscheidungen, keine technischen Pflichtbestandteile.
 
-Für Ghost-Artikel existieren eigens entwickelte Skills: ein FAQ-Skill erzeugt gleichzeitig strukturierte FAQ-Toggles und Feature-Snippet-optimierte Antworten. Weitere Skills legen Google Schema Markup automatisch an — für Personen, Produkte, Unternehmen und FAQPage. Ein Content-Workflow aus einer Hand, von der Idee bis zum indexierbaren Suchergebnis.
+Die bisherigen Ghost-Skills für FAQ, Feature-Snippets und Google Schema Markup (Personen, Produkte, Unternehmen, FAQPage) werden in den SkillCMS-Publish-Workflow eingearbeitet und ersetzen Ghost vollständig. Ein Content-Workflow aus einer Hand, von der Idee bis zum indexierbaren Suchergebnis.
 
 ### Statische Website als Strategie
 
@@ -121,7 +121,7 @@ NotebookLM ist auf visales.de eingebunden: Menschen können Inhalte als KI-gener
 
 ## SkillCMS — Die Three-Doors-These
 
-SkillCMS ist die technische Umsetzung der Three-Doors-These: Jede Website hat künftig drei Zugangstore, die gleichzeitig bedient werden müssen.
+SkillCMS ist die technische Umsetzung der [Three-Doors-These](https://visales.de/website-zukunft-ki-agent-2d-openusd/): Jede Website hat künftig drei Zugangstore, die gleichzeitig bedient werden müssen.
 
 **Tür 1 — KI-Agent:** llms.txt, Grounding Pages, JSON-LD, strukturierte Markdown-Inhalte. KI-Systeme wie Claude oder ChatGPT können visales.de korrekt lesen, zitieren und weiterempfehlen. SkillCMS erzeugt diese Infrastruktur automatisch.
 
@@ -129,7 +129,7 @@ SkillCMS ist die technische Umsetzung der Three-Doors-These: Jede Website hat k�
 
 **Tür 3 — Spatial/3D:** [OpenUSD](/openusd-b2b-grounding/)-basierte Inhalte, [WebAR](/webar-grounding/), räumliche Präsentationen. Aktuell auf einer Demo-Seite implementiert, wird schrittweise ausgebaut. [USDconfig](/usdconfig-grounding/) und [USDbridge](/usdbridge-grounding/) sind die produktseitigen Bausteine dafür.
 
-Die Featured-Snippet-Falle — Google zeigt generisches Wissen direkt in der Suche und umgeht Klicks auf die Quelle — macht Tür 1 (KI-Agent) noch wichtiger: Nur proprietäres Wissen aus echter Projektarbeit, wie die Unterscheidung zwischen "nativem USDZ" und "Python-USDZ", ist snippet-resistent. SkillCMS verankert genau dieses Wissen als Grounding Pages.
+Die [Featured-Snippet-Falle](https://visales.de/die-featured-snippet-falle-warum-google-generisches-wissen-schluckt-und-was-dagegen-hilft/) — Google zeigt generisches Wissen direkt in der Suche und umgeht Klicks auf die Quelle — macht Tür 1 (KI-Agent) noch wichtiger: Nur proprietäres Wissen aus echter Projektarbeit, wie die Unterscheidung zwischen "nativem USDZ" und "Python-USDZ", ist snippet-resistent. SkillCMS verankert genau dieses Wissen als Grounding Pages.
 
 
 ## SkillCMS — Abgrenzung
@@ -138,7 +138,6 @@ Die Featured-Snippet-Falle — Google zeigt generisches Wissen direkt in der Suc
 <p>SkillCMS ist NICHT:</p>
 <ul>
   <li><strong>nicht</strong> WordPress, Typo3 oder ein datenbankgetriebenes CMS — SkillCMS hat keine Datenbank, kein Admin-Interface, kein Plugin-Ökosystem. Der gesamte Content ist Markdown.</li>
-  <li><strong>nicht</strong> Ghost CMS — Ghost ist das separate System auf write.visales.de für den Blog-Betrieb. SkillCMS ist ein eigenständiger, ergänzender Workflow für die statische Haupt-Website.</li>
   <li><strong>nicht</strong> ein klassischer Static-Site-Generator wie Jekyll oder Hugo — SkillCMS ist KI-First konzipiert und integriert den gesamten Kanalverteilungs-Workflow, nicht nur den Build-Schritt.</li>
   <li><strong>nicht</strong> ein Open-Source-Projekt oder kommerzielles Produkt — SkillCMS ist eine interne Entwicklung von viSales GmbH, nicht als Tool für Dritte veröffentlicht.</li>
   <li><strong>nicht</strong> abhängig von externen Kanälen — LinkedIn, YouTube, GBP sind bewusste Marketing-Entscheidungen. Die Kernfunktion (statische Website + KI-Infrastruktur) funktioniert ohne sie.</li>
@@ -158,26 +157,26 @@ Das Ergebnis ist keine Agentur-Software, sondern ein Denkmodell in Code: Wie mus
 
 ## Häufige Fragen zu SkillCMS
 
-**Was ist SkillCMS?**
-Ein KI-augmentierter Publish-Workflow — von der Co-Creation mit Claude bis zur statischen Website mit allen Kanälen in einem Schritt. Kein klassisches CMS, keine Datenbank, keine grafische Oberfläche.
+<p><strong>Was ist SkillCMS?</strong></p>
+<p>Ein KI-augmentierter Publish-Workflow — von der Co-Creation mit Claude bis zur statischen Website mit allen Kanälen in einem Schritt. Kein klassisches CMS, keine Datenbank, keine grafische Oberfläche.</p>
 
-**Welche Kanäle bespielt SkillCMS in einem Schritt?**
-Statisches HTML, RSS, Newsletter (Brevo), Mastodon, LinkedIn, Google Business Profile und YouTube Community Tab. Freigabe-Prozesse sind als Skills eingebaut.
+<p><strong>Welche Kanäle bespielt SkillCMS in einem Schritt?</strong></p>
+<p>Statisches HTML, RSS, Newsletter (Brevo), Mastodon, LinkedIn, Google Business Profile und YouTube Community Tab. Freigabe-Prozesse sind als Skills eingebaut.</p>
 
-**Was unterscheidet SkillCMS von WordPress oder Ghost?**
-Kein Admin-Interface, keine Datenbank, kein Plugin-System. Ghost läuft parallel für den Blog. SkillCMS ist der Workflow für die statische Haupt-Website — schneller, sicherer, KI-optimierter.
+<p><strong>Was unterscheidet SkillCMS von WordPress?</strong></p>
+<p>Kein Admin-Interface, keine Datenbank, kein Plugin-System. SkillCMS ersetzt Ghost vollständig — schneller, sicherer, KI-optimierter, ohne CMS-Overhead.</p>
 
-**Was ist Vibe Contenting?**
-Der Ansatz, Content authentisch und atmosphärisch mit KI als Co-Autor zu erstellen — ohne CMS-Overhead. SkillCMS ist die Infrastruktur dafür.
+<p><strong>Was ist Vibe Contenting?</strong></p>
+<p>Der Ansatz, Content authentisch und atmosphärisch mit KI als Co-Autor zu erstellen — ohne CMS-Overhead. SkillCMS ist die Infrastruktur dafür.</p>
 
-**Wie ist SkillCMS für KI optimiert?**
-llms.txt + llms-full.txt als KI-Indizes, Grounding Pages als Entitätsdefinitionen, JSON-LD-Schemata, NotebookLM-Integration. Zwei der drei Website-Zugangstore werden bei jedem Publish automatisch bedient.
+<p><strong>Wie ist SkillCMS für KI optimiert?</strong></p>
+<p>llms.txt + llms-full.txt als KI-Indizes, Grounding Pages als Entitätsdefinitionen, JSON-LD-Schemata, NotebookLM-Integration. Zwei der drei Website-Zugangstore werden bei jedem Publish automatisch bedient.</p>
 
-**Ist SkillCMS für Teams nutzbar?**
-Ja — für 2–5 Personen. Teamarbeit läuft über Shared Skills und Shared Files via Nextcloud. Keine komplexe Rechteverwaltung: Skills werden lokal installiert und über Nextcloud geteilt. Für größere Teams oder Enterprise-Anforderungen ist SkillCMS nicht konzipiert.
+<p><strong>Ist SkillCMS für Teams nutzbar?</strong></p>
+<p>Ja — für 2–5 Personen. Shared Skills + Shared Files via Nextcloud. Keine komplexe Rechteverwaltung, Skills lokal installiert und geteilt.</p>
 
-**Wer hat SkillCMS entwickelt?**
-Gerhard Schröder (viSales GmbH), April 2026, in ca. einer Woche mit KI-Unterstützung. Konzeptuelle Grundlagen: 2024–2026. Grundlage: 20+ Jahre Blogging, 2 Jahre KI-Praxis.
+<p><strong>Wer hat SkillCMS entwickelt?</strong></p>
+<p>Gerhard Schröder (viSales GmbH), April 2026, in ca. einer Woche mit KI-Unterstützung. Konzeptuelle Grundlagen: 2024–2026. Grundlage: 20+ Jahre Blogging, 2 Jahre KI-Praxis.</p>
 
 
 <div class="grounding-notice">
