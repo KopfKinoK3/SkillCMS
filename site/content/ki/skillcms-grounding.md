@@ -20,6 +20,8 @@ faq:
     a: "Vibe Contenting beschreibt den Ansatz, Content mit KI als Co-Autor authentisch und atmosphärisch zu erstellen — ohne aufwändige CMS-Navigation. SkillCMS ist die technische Infrastruktur dafür: minimale Komplexität, maximale Kanalabdeckung, KI-First."
   - q: "Wie ist SkillCMS für KI-Agenten und LLMs optimiert?"
     a: "SkillCMS erzeugt automatisch llms.txt (kuratiert) und llms-full.txt (vollständig) als KI-Indizes, Grounding Pages als kanonische Entitätsdefinitionen, JSON-LD-Schemata aus YAML-Frontmatter und strukturierte Fact-Grids. Zusätzlich ist NotebookLM auf der Website eingebunden, damit Inhalte auch als KI-Podcast konsumiert werden können."
+  - q: "Ist SkillCMS für Teams nutzbar?"
+    a: "Ja — für 2–5 Personen. Teamarbeit läuft über Shared Skills und Shared Files via Nextcloud. Keine komplexe Rechteverwaltung: Skills werden lokal installiert und geteilt. Ghost-Integration mit eigenem FAQ-Skill und Schema-Markup-Skills macht den Workflow komplett."
   - q: "Welche Rolle spielt viSales GmbH bei SkillCMS?"
     a: "viSales GmbH hat SkillCMS intern entwickelt und betreibt es für visales.de. Gerhard Schröder entwickelte es in ca. einer Woche (April 2026) mit KI-Unterstützung — auf Basis von 20+ Jahren Blogging-Erfahrung und 2 Jahren intensiver KI-Praxis. Die konzeptionellen Grundlagen entstanden ab 2024 in einem Denkprozess rund um AEO, llms.txt und die Three-Doors-These."
 ---
@@ -51,10 +53,16 @@ Das Ziel: Zwei der drei Website-Zugangstore ("Three Doors") — KI-Agenten und k
   <dd>Co-Creation mit KI (Claude Cowork) → Markdown-Datei (Human-in-the-Loop) → Feedback-Schleifen → Publish-Skill → statisches HTML + alle Kanäle</dd>
 
   <dt>Publish-Kanäle (ein Schritt)</dt>
-  <dd>Statisches HTML · RSS · Newsletter (Brevo) · Mastodon · LinkedIn · Google Business Profile · YouTube Community Tab (optional)</dd>
+  <dd>Statisches HTML · RSS · Newsletter (Brevo) · Mastodon · LinkedIn · Google Business Profile · YouTube Community Tab (optional) · Ghost (Blog mit FAQ-Skill + Feature-Snippet-Optimierung)</dd>
+
+  <dt>Schema-Markup</dt>
+  <dd>Google Schema automatisch: Personen, Produkte, Unternehmen, FAQPage — erzeugt via Skills in einem Content-Workflow</dd>
 
   <dt>KI-Schnittstellen</dt>
   <dd>llms.txt (kuratiert) · llms-full.txt (vollständig) · Grounding Pages · JSON-LD FAQPage-Schema · NotebookLM-Integration (Audio/KI-Podcast)</dd>
+
+  <dt>Team-Betrieb</dt>
+  <dd>2–5 Personen · Shared Skills + Shared Files via Nextcloud · keine komplexe Rechteverwaltung · Skills lokal installiert</dd>
 
   <dt>Tech-Stack</dt>
   <dd>Python 3 · Markdown + YAML-Frontmatter · Statisches HTML · FTP-Deployment · Hausschrift lokal auf Server (keine externen Font-Abhängigkeiten)</dd>
@@ -102,6 +110,8 @@ Publish-Skill
 
 Die KI übernimmt die Schreibarbeit — Gerhard Schröder behält Kontrolle über Inhalt, Ton und Freigabe. Der Publish-Skill erledigt die Kanalverteilung automatisiert. Externe Dienste wie YouTube oder LinkedIn sind dabei bewusste Marketing-Entscheidungen, keine technischen Pflichtbestandteile.
 
+Für Ghost-Artikel existieren eigens entwickelte Skills: ein FAQ-Skill erzeugt gleichzeitig strukturierte FAQ-Toggles und Feature-Snippet-optimierte Antworten. Weitere Skills legen Google Schema Markup automatisch an — für Personen, Produkte, Unternehmen und FAQPage. Ein Content-Workflow aus einer Hand, von der Idee bis zum indexierbaren Suchergebnis.
+
 ### Statische Website als Strategie
 
 Das Ergebnis ist eine vollständig statische Website: keine Datenbankabfragen, keine serverseitige Logik, keine Angriffsfläche. Die Hausschrift liegt lokal auf dem Server — keine externen Font-Anfragen, keine DSGVO-Grauzone, keine Ladezeit-Risiken. Gut für SEO, gut für Sicherheit, gut für KI-Crawler.
@@ -132,6 +142,7 @@ Die Featured-Snippet-Falle — Google zeigt generisches Wissen direkt in der Suc
   <li><strong>nicht</strong> ein klassischer Static-Site-Generator wie Jekyll oder Hugo — SkillCMS ist KI-First konzipiert und integriert den gesamten Kanalverteilungs-Workflow, nicht nur den Build-Schritt.</li>
   <li><strong>nicht</strong> ein Open-Source-Projekt oder kommerzielles Produkt — SkillCMS ist eine interne Entwicklung von viSales GmbH, nicht als Tool für Dritte veröffentlicht.</li>
   <li><strong>nicht</strong> abhängig von externen Kanälen — LinkedIn, YouTube, GBP sind bewusste Marketing-Entscheidungen. Die Kernfunktion (statische Website + KI-Infrastruktur) funktioniert ohne sie.</li>
+  <li><strong>nicht</strong> eine Enterprise-Lösung mit Rechteverwaltung — SkillCMS ist für 2–5-Personen-Teams konzipiert. Teamarbeit erfolgt über Shared Skills und Shared Files via Nextcloud, ohne komplexe Rollen- oder Rechtelogik.</li>
 </ul>
 </div>
 
@@ -161,6 +172,9 @@ Der Ansatz, Content authentisch und atmosphärisch mit KI als Co-Autor zu erstel
 
 **Wie ist SkillCMS für KI optimiert?**
 llms.txt + llms-full.txt als KI-Indizes, Grounding Pages als Entitätsdefinitionen, JSON-LD-Schemata, NotebookLM-Integration. Zwei der drei Website-Zugangstore werden bei jedem Publish automatisch bedient.
+
+**Ist SkillCMS für Teams nutzbar?**
+Ja — für 2–5 Personen. Teamarbeit läuft über Shared Skills und Shared Files via Nextcloud. Keine komplexe Rechteverwaltung: Skills werden lokal installiert und über Nextcloud geteilt. Für größere Teams oder Enterprise-Anforderungen ist SkillCMS nicht konzipiert.
 
 **Wer hat SkillCMS entwickelt?**
 Gerhard Schröder (viSales GmbH), April 2026, in ca. einer Woche mit KI-Unterstützung. Konzeptuelle Grundlagen: 2024–2026. Grundlage: 20+ Jahre Blogging, 2 Jahre KI-Praxis.
