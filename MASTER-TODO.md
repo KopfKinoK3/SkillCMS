@@ -104,8 +104,10 @@
 | D0.6 | Homepage `type: home` Template | 🔜 Chat: Homepage 2.0 |
 | D0.7 | FAQ-Konvention im Exporter | ✅ erledigt |
 
-**Frage an Ghost-Export-Chat:**
-> „Welche Frontmatter-Felder gibt der Exporter aktuell aus? Nutzt er `type: post` oder noch `template: post`? Und: wird `date:` als String `"2026-03-26"` oder als datetime-Objekt exportiert?"
+**✅ Beantwortet (2026-04-08):**
+- Exporter gibt `type: post` aus ✅
+- `published_at` wurde als datetime-Objekt geparst (YAML-Bug) → Fix: Anführungszeichen im Exporter ✅
+- Alle bestehenden MD-Dateien im Repo bereinigt: `date:` als String, `template: post` entfernt ✅
 
 ### D1 · Content-Migration
 > Chat: **Leistungen** + **Ghost-Export**
