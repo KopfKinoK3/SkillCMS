@@ -1874,6 +1874,9 @@ def build_post_article_html(meta, content_html, is_draft=False):
     author_url    = cfg("author", "url",    default="/author/gerhard/")
     author_avatar = make_relative(meta.get("author_image", "") or cfg("author", "avatar", default=""))
     author_bio    = meta.get("author_bio", "") or cfg("author", "bio", default="")
+    # KI-Attribution: optionale Felder text_credit und image_credit
+    text_credit   = meta.get("text_credit", "")
+    image_credit  = meta.get("image_credit", "")
 
     date_display  = format_date_de(date_str) if date_str else ""
     reading_time  = calc_reading_time(content_html)
@@ -1890,6 +1893,13 @@ def build_post_article_html(meta, content_html, is_draft=False):
     if author_avatar:
         avatar_html = f'<img class="vs-meta-avatar" src="{author_avatar}" alt="{author_name}">'
 
+    # KI-Credit-Segmente für Meta-Zeile aufbauen
+    ki_credits_html = ""
+    if text_credit:
+        ki_credits_html += f'\n                        <span class="vs-meta-sep">&middot;</span>\n                        <span>Text: {text_credit}</span>'
+    if image_credit:
+        ki_credits_html += f'\n                        <span class="vs-meta-sep">&middot;</span>\n                        <span>Bild: {image_credit}</span>'
+
     meta_html = f"""
             <div class="gh-article-meta vs-article-meta">
                 {avatar_html}
@@ -1897,8 +1907,8 @@ def build_post_article_html(meta, content_html, is_draft=False):
                     <span class="vs-meta-author"><a href="{author_url}">{author_name}</a></span>
                     <div class="vs-meta-sub">
                         <time datetime="{date_str}">{date_display}</time>
-                        <span class="vs-meta-sep">&mdash;</span>
-                        <span>{reading_time} min read</span>
+                        <span class="vs-meta-sep">&middot;</span>
+                        <span>{reading_time} min read</span>{ki_credits_html}
                     </div>
                 </div>
             </div>"""
