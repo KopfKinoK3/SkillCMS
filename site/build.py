@@ -2012,7 +2012,7 @@ def build_page(meta, content_html, is_draft=False):
             f'                <h1 class="gh-article-title is-title">{title}{draft_label}</h1>\n'
             f'            </header>\n'
             f'            <section class="gh-content gh-canvas is-body">\n'
-            f'                {content_html}\n'
+            f'                {rebase_paths(content_html, "")}\n'
             f'            </section>\n'
             f'        </article>'
         )

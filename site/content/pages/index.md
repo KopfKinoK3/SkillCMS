@@ -179,13 +179,6 @@ Die folgenden Beispiele zeigen, wie Unternehmen visuelle Vertriebskommunikation 
 </div>
 </div></div>
 
-<div style="text-align:center; padding:1.5rem 0 2rem; border-top:1px solid #eee; margin-top:1rem;">
-<p style="font-size:13px; letter-spacing:0.1em; text-transform:uppercase; color:#bbb; margin-bottom:0.8rem;">Weitere Kunden und Partner</p>
-<p style="font-size:17px; color:#999; letter-spacing:0.03em;">
-EnBW &nbsp;·&nbsp; ESA/ESERO &nbsp;·&nbsp; Evonik &nbsp;·&nbsp; GROHE &nbsp;·&nbsp; K+S &nbsp;·&nbsp; Polaris Spaceplane
-</p>
-</div>
-
 &nbsp;
 
 
