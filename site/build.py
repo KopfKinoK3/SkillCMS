@@ -3303,7 +3303,12 @@ def build_index_html():
 
 
 def build_index(output_dir=None):
-    """Schreibt index.html in den Output-Ordner."""
+    """Schreibt index.html — aber nur wenn keine content/pages/index.md (type:home) existiert.
+    Falls type:home vorhanden ist, wurde index.html bereits durch build_file() generiert."""
+    home_md = os.path.join(CONTENT_DIR, "pages", "index.md")
+    if os.path.exists(home_md):
+        # type:home MD existiert → index.html wurde bereits durch build_file() erzeugt
+        return None
     out = output_dir or OUTPUT_DIR
     html = build_index_html()
     out_path = os.path.join(out, "index.html")
