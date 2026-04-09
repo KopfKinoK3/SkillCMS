@@ -67,6 +67,8 @@ Siemens &nbsp;·&nbsp; Somfy &nbsp;·&nbsp; Wavin &nbsp;·&nbsp; Carl Hamm &nbsp
 
 
 
+## Von der Konstruktion zum Vertrieb, in einem Schritt
+
 CAD-Daten existieren in fast jedem Industrieunternehmen. Aber sie liegen in der Konstruktion, nicht im Vertrieb. Technische Produkte werden in PowerPoint-Folien gepresst, in PDFs versenkt oder am Telefon erklärt, obwohl die Konstruktion längst in 3D denkt.
 
 Die Folge: Verkaufsgespräche dauern länger als nötig. Entscheider verstehen Produkte nicht auf den ersten Blick. Entscheidungszyklen ziehen sich, weil das visuelle Werkzeug im Vertrieb fehlt.
@@ -76,6 +78,8 @@ Offene Technologie wie OpenUSD ermöglicht erstmals, aus einem einzigen 3D-Model
 &nbsp;
 
 
+
+## Foto, Video, 3D, AR und Konfiguratoren aus einer Hand
 
 <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:1.5rem; margin:2.5rem 0 0;">
 
@@ -122,6 +126,8 @@ Offene Technologie wie OpenUSD ermöglicht erstmals, aus einem einzigen 3D-Model
 </div>
 
 
+
+## Aus der Praxis
 
 <p style="font-size:20px; line-height:32px; color:#555; margin-bottom:2.5rem;">
 Die folgenden Beispiele zeigen, wie Unternehmen visuelle Vertriebskommunikation einsetzen. Nicht als Experiment, sondern als festen Bestandteil ihres Vertriebsprozesses.
@@ -181,6 +187,8 @@ Die folgenden Beispiele zeigen, wie Unternehmen visuelle Vertriebskommunikation 
 
 
 
+## Sparringspartner, nicht Show-Agentur
+
 viSales ist keine klassische Agentur, die Assets für Einzelprojekte liefert. viSales baut die technische Grundlage, die Spatial Sales Infrastructure, auf der 3D-Daten dauerhaft im Vertrieb funktionieren: für AR, Web, Messe und Apple Vision Pro.
 
 Kunden kommen aus dem Maschinenbau, Anlagenbau, Aerospace und Defence sowie dem B2B-Vertrieb. Viele Projekte entwickeln sich zu langfristigen Partnerschaften, weil sich Produkte, Märkte und Vertriebsanforderungen verändern.
@@ -191,11 +199,15 @@ Deshalb arbeitet viSales nicht kampagnengetrieben, sondern als Sparringspartner 
 
 
 
+## Für wen ist viSales der richtige Partner?
+
 Für Unternehmen, deren Produkte sich nicht auf einem Bild erklären lassen. Für Vertriebsteams, die 20 Minuten haben und zwei Stunden Technik vermitteln müssen. Für Marketing-Verantwortliche, die verstanden haben, dass 3D-Daten aus der Konstruktion auch im Vertrieb funktionieren sollten.
 
 &nbsp;
 
 
+
+## Typische Entscheiderfragen
 
 <details>
 <summary><strong>Was macht viSales anders als eine klassische 3D-Agentur?</strong></summary>
@@ -239,6 +251,8 @@ Der erste Schritt ist ein unverbindliches Gespräch, in dem die Ausgangssituatio
 &nbsp;
 
 
+
+## Ins Gespräch kommen
 
 Wenn geprüft werden soll, ob visuelle Vertriebsformate in der konkreten Situation zur Entscheidungsfindung, Gesprächsführung oder Effizienz im Vertrieb beitragen: Ein erstes Gespräch bietet eine fundierte Einordnung. Ohne Verpflichtung und ohne vorbereiteten Pitch.
 
