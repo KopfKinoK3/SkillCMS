@@ -1,6 +1,6 @@
 # SkillCMS — Master ToDo
 > Konsolidiert aus: `todo-skill-cms.md`, `KI-ToDo.md`, `TODO-fediverse-push.md`
-> Stand: 2026-04-08
+> Stand: 2026-04-09
 
 ---
 
@@ -20,10 +20,14 @@
 - **Render-Skill Phase 1** (lokaler Build) ✅
 - **Render-Skill Phase 2** (+ Git commit + GitHub Push) ✅
 - FAQ-Konvention Ghost-Exporter: `post-faq`-Wrapper → `faq:` Frontmatter ✅
+- D0.1 Bildergalerie: CSS-Grid + PhotoSwipe-Lightbox in build.py ✅
 - D0.2 Kategorie-Badge über Titelbild ✅
 - D0.3 Titelbild im Post-Header ✅
 - D0.4 Autor-Block (Name, Bild, Bio, Datum) ✅
 - D0.5 Bilder Broken Links via GitHub Pages gelöst ✅
+- D0.6 Homepage `type: home` — `build_index_html()` + `index.html` ✅
+- Ghost → SkillCMS Vollexport: 154 Artikel, 41 Pages, 56 Drafts + Bilder ✅
+- Delta-Sync-Skript `ghost_delta_sync.py` (Ghost → SkillCMS Sync) ✅
 
 ---
 
@@ -96,12 +100,12 @@
 
 | # | Problem | Status |
 |---|---|---|
-| D0.1 | Bildergalerie: CSS-Grid + HTML-Wrapper in build.py | 🔜 offen |
+| D0.1 | Bildergalerie: CSS-Grid + PhotoSwipe-Lightbox in build.py | ✅ erledigt |
 | D0.2 | Kategorie-Badge über Titelbild | ✅ erledigt |
 | D0.3 | Titelbild im Post-Header | ✅ erledigt |
 | D0.4 | Autor-Block (Name, Bild, Bio, Datum) | ✅ erledigt |
 | D0.5 | Bilder Broken Links | ✅ erledigt |
-| D0.6 | Homepage `type: home` Template | 🔜 Chat: Homepage 2.0 |
+| D0.6 | Homepage `build_index_html()` + `index.html` | ✅ erledigt |
 | D0.7 | FAQ-Konvention im Exporter | ✅ erledigt |
 
 **✅ Beantwortet (2026-04-08):**
@@ -112,8 +116,10 @@
 ### D1 · Content-Migration
 > Chat: **Leistungen** + **Ghost-Export**
 
-- [ ] ~51 Ghost-Pages als MD (Leistungen, Fallbeispiele, Über Uns, …)
-- [ ] ~200 Ghost-Posts exportieren + schema-fix (type: post, date als String)
+- [x] Ghost-Vollexport: 154 Posts + 41 Pages + 56 Drafts + alle Bilder ✅
+- [x] Schema-Fix: `type: post`, `published_at` als String, `date:` Feld ✅
+- [x] Delta-Sync-Skript `ghost_delta_sync.py` für laufende Sync ✅
+- [ ] openusd-Artikel: FAQs in Ghost in `post-faq`-Wrapper verschieben
 - [ ] Skeleton-Snapshot: ZIP `SkillCMS-v1.0-skeleton`
 
 ### D2 · Hetzner Deploy

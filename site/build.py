@@ -2654,6 +2654,652 @@ def collect_md_files():
     return files
 
 
+# ---------------------------------------------------------------------------
+# Homepage — index.html
+# ---------------------------------------------------------------------------
+
+def _load_latest_articles(limit=6):
+    """
+    Lädt die `limit` neuesten publizierten Artikel aus content/articles/.
+    Sortiert nach published_at / date, dedupliziert nach Slug.
+    Gibt Liste von meta-Dicts zurück.
+    """
+    articles_dir = os.path.join(CONTENT_DIR, "articles")
+    if not os.path.isdir(articles_dir):
+        return []
+    posts     = []
+    seen_slugs = set()
+    for fname in os.listdir(articles_dir):
+        if not fname.endswith(".md"):
+            continue
+        meta = read_post_meta_yaml(os.path.join(articles_dir, fname))
+        slug = meta.get("slug", "")
+        if not slug or slug in seen_slugs:
+            continue
+        if str(meta.get("status", "published")).lower() != "published":
+            continue
+        # Template-/Platzhalter-Artikel ausschließen
+        title = meta.get("title", "")
+        if not title or "TITEL DES ARTIKELS" in title or slug == "artikel-slug":
+            continue
+        seen_slugs.add(slug)
+        posts.append(meta)
+
+    def _sort_key(m):
+        return str(m.get("published_at", "") or m.get("date", "") or "")
+
+    posts.sort(key=_sort_key, reverse=True)
+    return posts[:limit]
+
+
+def build_index_html():
+    """
+    Generiert index.html — die viSales-Homepage.
+    Struktur:
+      - Hero (Claim + Sub-Claim + zwei CTAs)
+      - USP-Trio (drei Säulen)
+      - Featured Articles (neueste 6 Posts)
+      - Trust-Bar (Kunden)
+      - Newsletter-CTA
+    """
+    site_title  = cfg("site", "title",       default="viSales")
+    site_url    = cfg("site", "url",         default="https://visales.de").rstrip("/")
+    description = cfg("site", "description", default="")
+    claim       = cfg("site", "claim",       default="")
+    logo        = cfg("site", "logo",        default="assets/images/logo-visales.png")
+    accent      = cfg("site", "accent_color",default="#f2902a")
+    trust       = cfg("trust_clients",       default="")
+
+    nav_html = build_nav_html(active_slug="")
+    nav_cta_cfg = cfg("nav_cta", default={})
+    nav_cta_html = ""
+    if isinstance(nav_cta_cfg, dict):
+        cta_label = nav_cta_cfg.get("label", "Kontakt")
+        cta_url   = nav_cta_cfg.get("url",   "/kontakt/")
+        nav_cta_html = f'<a class="vs-nav-cta" href="{cta_url}">{cta_label}</a>'
+
+    footer_html  = build_footer_html()
+    cookie_banner = build_cookie_banner()
+    brevo_head_inject = f"<!-- Brevo Form Styles -->\n{BREVO_HEAD}" if BREVO_HEAD else ""
+    brevo_foot_inject = f"<!-- Brevo Form Scripts -->\n{BREVO_FOOT}" if BREVO_FOOT else ""
+
+    og_image_url = f"{site_url}/assets/images/logo-visales.png"
+
+    # ── Featured Articles ────────────────────────────────────────────────────
+    latest = _load_latest_articles(limit=6)
+
+    def _article_card(meta):
+        slug        = meta.get("slug", "")
+        title       = meta.get("title", "")
+        excerpt     = meta.get("custom_excerpt") or meta.get("excerpt") or meta.get("meta_description", "")
+        primary_tag = meta.get("primary_tag", "")
+        tag_slug    = primary_tag.lower().replace(" ", "-") if primary_tag else ""
+        fi          = meta.get("feature_image", "")
+        # Relative Pfade (beginnen mit /) → ohne führenden /
+        if fi and fi.startswith("/"):
+            fi = fi.lstrip("/")
+        date_raw = meta.get("published_at", "") or meta.get("date", "")
+        if date_raw:
+            import datetime as _dt
+            if isinstance(date_raw, (_dt.datetime, _dt.date)):
+                date_str = date_raw.strftime("%Y-%m-%d")
+            else:
+                date_str = str(date_raw).split("T")[0].split(" ")[0][:10]
+        else:
+            date_str = ""
+        date_display = format_date_de(date_str) if date_str else ""
+
+        badge_html = ""
+        if primary_tag:
+            badge_html = f'<a class="vs-card-tag" href="tag/{tag_slug}/">{primary_tag}</a>'
+
+        img_html = ""
+        if fi:
+            img_html = f'<a href="{slug}/" class="vs-card-img-wrap"><img src="{fi}" alt="{title}" loading="lazy"></a>'
+
+        excerpt_html = f'<p class="vs-card-excerpt">{excerpt}</p>' if excerpt else ""
+        date_html    = f'<time class="vs-card-date" datetime="{date_str}">{date_display}</time>' if date_display else ""
+
+        return f"""        <article class="vs-card">
+            {img_html}
+            <div class="vs-card-body">
+                {badge_html}
+                <h2 class="vs-card-title"><a href="{slug}/">{title}</a></h2>
+                {excerpt_html}
+                {date_html}
+            </div>
+        </article>"""
+
+    cards_html = "\n".join(_article_card(m) for m in latest)
+
+    # ── JSON-LD ──────────────────────────────────────────────────────────────
+    sc_org    = cfg("schema", "organization", default={})
+    sc_person = cfg("schema", "person",       default={})
+    sc_ws     = cfg("schema", "website",      default={})
+    jsonld_home = f"""    <script type="application/ld+json">
+    {{
+        "@context": "https://schema.org",
+        "@graph": [
+            {{
+                "@type": "Organization",
+                "@id": "{sc_org.get('id', site_url + '/#organization')}",
+                "name": "{sc_org.get('name', site_title)}",
+                "url": "{site_url}/",
+                "logo": "{sc_org.get('logo', og_image_url)}"
+            }},
+            {{
+                "@type": "WebSite",
+                "@id": "{site_url}/#website",
+                "url": "{site_url}/",
+                "name": "{sc_ws.get('name', site_title)}",
+                "publisher": {{"@id": "{sc_org.get('id', site_url + '/#organization')}"}}
+            }},
+            {{
+                "@type": "WebPage",
+                "@id": "{site_url}/#webpage",
+                "url": "{site_url}/",
+                "name": "{site_title}",
+                "description": "{description}",
+                "isPartOf": {{"@id": "{site_url}/#website"}}
+            }}
+        ]
+    }}
+    </script>"""
+
+    # ── Trust-Bar ────────────────────────────────────────────────────────────
+    trust_html = ""
+    if trust:
+        trust_html = f"""
+    <section class="vs-home-trust gh-outer">
+        <div class="vs-home-trust-inner gh-inner">
+            <p class="vs-trust-text">{trust}</p>
+        </div>
+    </section>"""
+
+    # ── Newsletter-Teaser ────────────────────────────────────────────────────
+    newsletter_html = """
+    <section class="vs-home-newsletter gh-outer">
+        <div class="vs-home-newsletter-inner gh-inner">
+            <div class="vs-home-newsletter-text">
+                <h2>Visual Sales — einmal im Monat</h2>
+                <p>Praxis, Werkzeuge und Perspektiven für B2B-Vertrieb &amp; Marketing.<br>
+                Kein Lärm. Nur was zählt.</p>
+            </div>
+            <a class="gh-button vs-home-newsletter-cta" href="/newsletter/">Newsletter abonnieren</a>
+        </div>
+    </section>"""
+
+    # ── Inline CSS für Homepage ──────────────────────────────────────────────
+    home_css = f"""
+        /* ── Homepage Hero ─────────────────────── */
+        .vs-hero {{
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #fff;
+            padding: 6rem 0 5rem;
+            position: relative;
+            overflow: hidden;
+        }}
+        .vs-hero::before {{
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 70% 50%, rgba(242,144,42,0.12) 0%, transparent 65%);
+            pointer-events: none;
+        }}
+        .vs-hero-inner {{
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2.4rem;
+        }}
+        .vs-hero-eyebrow {{
+            font-size: 0.85rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: {accent};
+            margin-bottom: 1.2rem;
+            font-weight: 700;
+        }}
+        .vs-hero-title {{
+            font-size: clamp(2rem, 5vw, 3.4rem);
+            font-weight: 700;
+            line-height: 1.15;
+            margin: 0 0 1.6rem;
+            color: #fff;
+        }}
+        .vs-hero-title em {{
+            font-style: normal;
+            color: {accent};
+        }}
+        .vs-hero-sub {{
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: rgba(255,255,255,0.82);
+            max-width: 640px;
+            margin-bottom: 2.8rem;
+        }}
+        .vs-hero-ctas {{
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }}
+        .vs-hero-cta-primary {{
+            background: {accent};
+            color: #fff !important;
+            padding: 0.85rem 2rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: opacity .15s;
+        }}
+        .vs-hero-cta-primary:hover {{ opacity: 0.88; }}
+        .vs-hero-cta-secondary {{
+            background: rgba(255,255,255,0.1);
+            color: #fff !important;
+            padding: 0.85rem 2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            border: 1px solid rgba(255,255,255,0.25);
+            transition: background .15s;
+        }}
+        .vs-hero-cta-secondary:hover {{ background: rgba(255,255,255,0.18); }}
+
+        /* ── USP-Trio ────────────────────────────── */
+        .vs-home-usps {{
+            padding: 3.6rem 0;
+            background: #fff;
+        }}
+        .vs-home-usps-inner {{
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2.4rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }}
+        @media (max-width: 720px) {{
+            .vs-home-usps-inner {{ grid-template-columns: 1fr; }}
+        }}
+        .vs-usp-card {{
+            border: 1px solid #efefef;
+            border-radius: 10px;
+            padding: 1.8rem;
+        }}
+        .vs-usp-icon {{
+            font-size: 2rem;
+            margin-bottom: 0.8rem;
+            line-height: 1;
+        }}
+        .vs-usp-title {{
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }}
+        .vs-usp-desc {{
+            font-size: 0.92rem;
+            color: #555;
+            line-height: 1.55;
+            margin: 0;
+        }}
+
+        /* ── Featured Articles ───────────────────── */
+        .vs-home-articles {{
+            padding: 4rem 0 5rem;
+            background: #f8f8f7;
+        }}
+        .vs-home-articles-inner {{
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2.4rem;
+        }}
+        .vs-section-label {{
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: {accent};
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+        }}
+        .vs-section-title {{
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin: 0 0 2.4rem;
+        }}
+        .vs-card-grid {{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.6rem;
+        }}
+        @media (max-width: 900px) {{
+            .vs-card-grid {{ grid-template-columns: repeat(2, 1fr); }}
+        }}
+        @media (max-width: 600px) {{
+            .vs-card-grid {{ grid-template-columns: 1fr; }}
+        }}
+        .vs-card {{
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #efefef;
+            display: flex;
+            flex-direction: column;
+            transition: box-shadow .2s;
+        }}
+        .vs-card:hover {{ box-shadow: 0 4px 20px rgba(0,0,0,0.08); }}
+        .vs-card-img-wrap {{ display: block; aspect-ratio: 16/9; overflow: hidden; }}
+        .vs-card-img-wrap img {{
+            width: 100%; height: 100%;
+            object-fit: cover;
+            transition: transform .3s;
+        }}
+        .vs-card:hover .vs-card-img-wrap img {{ transform: scale(1.03); }}
+        .vs-card-body {{
+            padding: 1.2rem 1.4rem 1.4rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }}
+        .vs-card-tag {{
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: {accent};
+            text-decoration: none;
+            margin-bottom: 0.4rem;
+        }}
+        .vs-card-tag:hover {{ text-decoration: underline; }}
+        .vs-card-title {{
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.35;
+            margin: 0 0 0.6rem;
+        }}
+        .vs-card-title a {{
+            color: inherit;
+            text-decoration: none;
+        }}
+        .vs-card-title a:hover {{ color: {accent}; }}
+        .vs-card-excerpt {{
+            font-size: 0.87rem;
+            color: #555;
+            line-height: 1.5;
+            margin: 0 0 0.8rem;
+            flex: 1;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }}
+        .vs-card-date {{
+            font-size: 0.78rem;
+            color: #999;
+        }}
+        .vs-home-articles-more {{
+            text-align: center;
+            margin-top: 2.4rem;
+        }}
+        .vs-home-articles-more a {{
+            font-size: 0.95rem;
+            color: {accent};
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid {accent};
+            padding: 0.6rem 1.6rem;
+            border-radius: 6px;
+            transition: background .15s, color .15s;
+        }}
+        .vs-home-articles-more a:hover {{
+            background: {accent};
+            color: #fff;
+        }}
+
+        /* ── Trust-Bar ───────────────────────────── */
+        .vs-home-trust {{
+            padding: 2.4rem 0;
+            background: #fff;
+            border-top: 1px solid #efefef;
+            border-bottom: 1px solid #efefef;
+        }}
+        .vs-home-trust-inner {{
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2.4rem;
+            text-align: center;
+        }}
+        .vs-trust-text {{
+            font-size: 0.85rem;
+            color: #888;
+            line-height: 1.7;
+            margin: 0;
+        }}
+
+        /* ── Newsletter-Teaser ───────────────────── */
+        .vs-home-newsletter {{
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+            color: #fff;
+        }}
+        .vs-home-newsletter-inner {{
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }}
+        .vs-home-newsletter-text h2 {{
+            color: #fff;
+            font-size: 1.4rem;
+            margin: 0 0 0.5rem;
+        }}
+        .vs-home-newsletter-text p {{
+            color: rgba(255,255,255,0.75);
+            font-size: 0.95rem;
+            margin: 0;
+        }}
+        .vs-home-newsletter-cta {{
+            white-space: nowrap;
+            background: {accent};
+            color: #fff !important;
+            padding: 0.85rem 2rem;
+            border-radius: 6px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: opacity .15s;
+        }}
+        .vs-home-newsletter-cta:hover {{ opacity: 0.88; }}
+    """
+
+    return f"""<!DOCTYPE html>
+<html lang="de" class="has-dark-text">
+<head>
+    <title>{site_title} — {cfg("site", "description", default="B2B-Agentur für visuelle Vertriebskommunikation")[:60]}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{description}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{site_url}/">
+    <link rel="alternate" type="application/rss+xml" title="viSales – Artikel &amp; Insights" href="rss.xml">
+
+    <!-- Google tag (gtag.js) — consent-gesteuert -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JEPNB0BL5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){{dataLayer.push(arguments);}}
+        gtag('consent', 'default', {{
+            'ad_storage': 'denied', 'analytics_storage': 'denied', 'wait_for_update': 500
+        }});
+        gtag('js', new Date());
+        gtag('config', 'G-8JEPNB0BL5');
+        gtag('config', 'AW-1024175020');
+    </script>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{site_title}">
+    <meta property="og:description" content="{description}">
+    <meta property="og:url" content="{site_url}/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{og_image_url}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{site_title}">
+    <meta name="twitter:description" content="{description}">
+    <meta name="twitter:image" content="{og_image_url}">
+
+    <!-- Preload -->
+    <link rel="preload" as="style" href="assets/css/screen.css">
+    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/atkinson-regular.woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/atkinson-bold.woff2" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <style>
+        @font-face {{
+            font-family: "Atkinson Hyperlegible";
+            font-style: normal; font-weight: 400; font-display: swap;
+            src: url(assets/fonts/atkinson-regular.woff2) format("woff2");
+        }}
+        @font-face {{
+            font-family: "Atkinson Hyperlegible";
+            font-style: italic; font-weight: 400; font-display: swap;
+            src: url(assets/fonts/atkinson-italic.woff2) format("woff2");
+        }}
+        @font-face {{
+            font-family: "Atkinson Hyperlegible";
+            font-style: normal; font-weight: 700; font-display: swap;
+            src: url(assets/fonts/atkinson-bold.woff2) format("woff2");
+        }}
+        @font-face {{
+            font-family: "Atkinson Hyperlegible";
+            font-style: italic; font-weight: 700; font-display: swap;
+            src: url(assets/fonts/atkinson-bold-italic.woff2) format("woff2");
+        }}
+    </style>
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/screen.css">
+
+    <!-- SkillCMS Custom Styles + Homepage Styles -->
+    <style>{INLINE_CSS}{home_css}
+    </style>
+
+    <!-- Structured Data -->
+{jsonld_home}
+{brevo_head_inject}
+</head>
+<body class="home-template has-sans-title has-sans-body">
+<div class="gh-viewport">
+
+    <!-- NAVIGATION -->
+    <header id="gh-navigation" class="gh-navigation is-left-logo gh-outer">
+        <div class="gh-navigation-inner gh-inner">
+            <div class="gh-navigation-brand">
+                <a class="gh-navigation-logo is-title" href="/">
+                    <img src="{logo}" alt="{site_title}">
+                </a>
+                <button class="gh-burger gh-icon-button" aria-label="Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <nav class="gh-navigation-menu">
+                <ul class="nav">
+                    {nav_html}
+                </ul>
+            </nav>
+            <div class="gh-navigation-actions">{nav_cta_html}</div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="vs-hero">
+        <div class="vs-hero-inner">
+            <p class="vs-hero-eyebrow">3D-Visualisierung · WebAR · OpenUSD</p>
+            <h1 class="vs-hero-title">
+                Gespräche kürzer.<br>
+                Entscheidungen klarer.<br>
+                <em>Abschlüsse planbarer.</em>
+            </h1>
+            <p class="vs-hero-sub">
+                viSales baut visuelle Vertriebskommunikation für Maschinenbau &amp; Industrie —
+                von der 3D-Visualisierung bis zur WebAR-Lösung und OpenUSD-Pipeline.
+                Seit 2010. Für Kunden wie Siemens, Somfy und Wavin.
+            </p>
+            <div class="vs-hero-ctas">
+                <a class="vs-hero-cta-primary" href="/kontakt/">Gespräch anfragen</a>
+                <a class="vs-hero-cta-secondary" href="/leistungen/">Leistungen ansehen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- USP-TRIO -->
+    <section class="vs-home-usps gh-outer">
+        <div class="vs-home-usps-inner">
+            <div class="vs-usp-card">
+                <div class="vs-usp-icon">🎯</div>
+                <h3 class="vs-usp-title">Kürzere Verkaufsgespräche</h3>
+                <p class="vs-usp-desc">Erklärungsintensive Produkte werden mit 3D, AR und Spatial Content sofort verständlich — statt in zwei Stunden.</p>
+            </div>
+            <div class="vs-usp-card">
+                <div class="vs-usp-icon">⚙️</div>
+                <h3 class="vs-usp-title">OpenUSD-first Pipeline</h3>
+                <p class="vs-usp-desc">Wir bauen auf den offenen Standard für 3D — CAD zu USDZ zu WebAR zu Apple Vision Pro. Ein Asset. Alle Kanäle.</p>
+            </div>
+            <div class="vs-usp-card">
+                <div class="vs-usp-icon">🤝</div>
+                <h3 class="vs-usp-title">Langfristiger Sparringspartner</h3>
+                <p class="vs-usp-desc">Kein einmaliger Dienstleister. Wir denken mit — in Strategie, Vertrieb, Technik. Seit 15 Jahren.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST-BAR -->
+    {trust_html}
+
+    <!-- FEATURED ARTICLES -->
+    <section class="vs-home-articles gh-outer">
+        <div class="vs-home-articles-inner">
+            <p class="vs-section-label">Praxis &amp; Insights</p>
+            <h2 class="vs-section-title">Aktuelle Beiträge</h2>
+            <div class="vs-card-grid">
+{cards_html}
+            </div>
+            <div class="vs-home-articles-more">
+                <a href="/praxis/">Alle Beiträge ansehen →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    {newsletter_html}
+
+    {footer_html}
+
+</div>
+
+<script src="assets/js/source.js"></script>
+<script>{INLINE_JS}
+</script>
+{brevo_foot_inject}
+{cookie_banner}
+</body>
+</html>"""
+
+
+def build_index(output_dir=None):
+    """Schreibt index.html in den Output-Ordner."""
+    out = output_dir or OUTPUT_DIR
+    html = build_index_html()
+    out_path = os.path.join(out, "index.html")
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(html)
+    print(f"  ✓ index.html ({len(html):,} Bytes)")
+    return out_path
+
+
 def build_all(include_drafts=False, drafts_only=False):
     """Baut alle Markdown-Dateien in content/ und content/posts/ + sitemap.xml + robots.txt."""
     all_files = collect_md_files()
@@ -2735,6 +3381,7 @@ def build_all(include_drafts=False, drafts_only=False):
                 build_tag_listing(tag)
 
         print()
+        build_index()
         build_sitemap(published_pages)
         build_robots()
         build_rss()
@@ -2882,6 +3529,9 @@ if __name__ == "__main__":
             except KeyboardInterrupt:
                 print("\n  Server gestoppt.")
 
+    elif "--index" in args:
+        # Nur Homepage neu bauen
+        build_index()
     elif slugs:
         for slug in slugs:
             slug = slug.replace(".md", "").replace(".html", "")
