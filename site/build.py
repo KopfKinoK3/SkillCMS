@@ -2002,8 +2002,21 @@ def build_page(meta, content_html, is_draft=False):
     draft_banner = DRAFT_BANNER if is_draft else ""
     jsonld       = build_jsonld(meta, is_draft=is_draft)
 
-    # Article HTML block — post / listing / page template
-    if page_type == "post":
+    # Article HTML block — post / listing / home / page template
+    if page_type == "home":
+        # Homepage: H1 zentriert, Content passthrough (Inline-HTML), kein Article-Wrapper
+        draft_label = ' <span style="color:#f2902a">[DRAFT]</span>' if is_draft else ""
+        article_html = (
+            f'        <article class="gh-article vs-home-article">\n'
+            f'            <header class="gh-article-header gh-canvas" style="text-align:center">\n'
+            f'                <h1 class="gh-article-title is-title">{title}{draft_label}</h1>\n'
+            f'            </header>\n'
+            f'            <section class="gh-content gh-canvas is-body">\n'
+            f'                {content_html}\n'
+            f'            </section>\n'
+            f'        </article>'
+        )
+    elif page_type == "post":
         article_html = build_post_article_html(meta, content_html, is_draft)
     elif page_type == "listing":
         # Kein gh-canvas — Card-Grid steuert Breite selbst via gh-container
@@ -2113,7 +2126,7 @@ def build_page(meta, content_html, is_draft=False):
 {jsonld}
 {brevo_head_inject}
 </head>
-<body class="{'post-template' if page_type == 'post' else 'page-template'} page-{slug} has-sans-title has-sans-body">
+<body class="{'post-template' if page_type == 'post' else 'home-template' if page_type == 'home' else 'page-template'} page-{slug} has-sans-title has-sans-body">
 {draft_banner}
 <div class="gh-viewport">
 

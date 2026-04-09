@@ -1,15 +1,10 @@
 ---
 title: "Ihre Produkte sind erklärungsbedürftig. Ihre Zeit im Vertrieb nicht."
-slug: homepage-entwurf-2026
-status: draft
+slug: index
+status: published
+type: home
 meta_title: "viSales — 3D, WebAR und Konfiguratoren für den B2B-Vertrieb"
 meta_description: "viSales macht erklärungsbedürftige Produkte in 3D sichtbar, anfassbar und entscheidungsreif. Visualisierungen, AR und Konfiguratoren für Maschinenbau und Industrie."
-author: "Gerhard Schröder"
-author_slug: gerhard
-author_image: https://visales.de/content/images/2025/10/1706254155883-1.jpeg
-author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit über 15 Jahren spezialisiert auf visuelle Vertriebskommunikation für Maschinenbau & AeroSpace — mit 3D-Visualisierung & OpenUSD. Mitglied der AOUSD, Speaker zu AR & Spatial Sales."
-type: post
-template: post
 ---
 
 <div style="text-align:center; max-width:860px; margin:0 auto; padding:2rem 0 1rem;">
