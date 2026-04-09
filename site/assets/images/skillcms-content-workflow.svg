@@ -1,0 +1,589 @@
+<svg width="730" height="2500" viewBox="0 0 730 2500"
+     xmlns="http://www.w3.org/2000/svg"
+     font-family="-apple-system, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif">
+
+<defs>
+  <filter id="shadow" x="-4%" y="-4%" width="108%" height="116%">
+    <feDropShadow dx="0" dy="2" stdDeviation="5"
+                  flood-color="#000" flood-opacity="0.07"/>
+  </filter>
+  <filter id="shadow-sm" x="-4%" y="-4%" width="108%" height="114%">
+    <feDropShadow dx="0" dy="1" stdDeviation="3"
+                  flood-color="#000" flood-opacity="0.06"/>
+  </filter>
+  <marker id="arr" markerWidth="8" markerHeight="8" refX="6.5" refY="3.5" orient="auto">
+    <path d="M0,0 L0,7 L8,3.5 z" fill="#f97316"/>
+  </marker>
+  <marker id="arr-c" markerWidth="8" markerHeight="8" refX="6.5" refY="3.5" orient="auto">
+    <path d="M0,0 L0,7 L8,3.5 z" fill="#0891b2"/>
+  </marker>
+  <marker id="arr-g" markerWidth="8" markerHeight="8" refX="6.5" refY="3.5" orient="auto">
+    <path d="M0,0 L0,7 L8,3.5 z" fill="#bbb"/>
+  </marker>
+  <!-- Rückkanal-Pfeil -->
+  <marker id="arr-loop" markerWidth="8" markerHeight="8" refX="6.5" refY="3.5" orient="auto">
+    <path d="M0,0 L0,7 L8,3.5 z" fill="#f97316"/>
+  </marker>
+</defs>
+
+<!-- Canvas -->
+<rect width="730" height="2500" fill="#ffffff"/>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- KOPFZEILE                                   -->
+<!-- ═══════════════════════════════════════════ -->
+<text x="365" y="30" text-anchor="middle"
+      font-size="10" font-weight="700" letter-spacing="0.14em"
+      fill="#bbb">SKILLCMS · CONTENT-WORKFLOW · by viSales</text>
+<rect x="16" y="38" width="698" height="2" rx="1"
+      fill="#f97316" opacity="0.25"/>
+
+<!-- Haupttitel -->
+<text x="365" y="72" text-anchor="middle"
+      font-size="22" font-weight="700" letter-spacing="-0.01em"
+      fill="#1a1a1a">Vom Impuls zur Reichweite</text>
+<text x="365" y="94" text-anchor="middle"
+      font-size="13" fill="#888">Der vollständige Workflow — von der Idee über den Build bis zur Distribution und zurück.</text>
+
+<!-- Phase-A-Label -->
+<rect x="16" y="118" width="698" height="28" rx="6" fill="#fff8f4"/>
+<text x="365" y="137" text-anchor="middle"
+      font-size="10.5" font-weight="700" letter-spacing="0.12em"
+      fill="#f97316">PHASE A — CONTENT-ENTSTEHUNG</text>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- MODUL 1: Idee & Themenfindung               -->
+<!-- ═══════════════════════════════════════════ -->
+<rect x="16" y="160" width="698" height="200" rx="12"
+      fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"/>
+<rect x="16" y="160" width="698" height="4" rx="2" fill="#f97316"/>
+<rect x="16" y="160" width="4" height="200" rx="2" fill="#f97316"/>
+
+<circle cx="44" cy="184" r="14" fill="#f97316"/>
+<text x="44" y="189" text-anchor="middle"
+      font-size="12" font-weight="800" fill="#fff">1</text>
+
+<text x="68" y="178" font-size="10" font-weight="700"
+      letter-spacing="0.1em" fill="#f97316">IDEENFINDUNG</text>
+<text x="68" y="195" font-size="16" font-weight="700"
+      letter-spacing="-0.01em" fill="#1a1a1a">Thema &amp; Format bestimmen</text>
+<text x="68" y="211" font-size="11" fill="#888">Aus drei Quellen entsteht der nächste Beitrag</text>
+
+<line x1="36" y1="224" x2="700" y2="224" stroke="#f0f0f0" stroke-width="1"/>
+
+<!-- Drei Quellen als Sub-Sections -->
+<rect x="36" y="234" width="214" height="64" rx="8"
+      fill="#fff8f4" stroke="#fbd5bc" stroke-width="1"/>
+<text x="143" y="253" text-anchor="middle"
+      font-size="9.5" font-weight="700" letter-spacing="0.07em"
+      fill="#f97316">EIGENE IDEEN</text>
+<text x="143" y="270" text-anchor="middle"
+      font-size="11" fill="#555">Impulse von Gerd aus</text>
+<text x="143" y="284" text-anchor="middle"
+      font-size="11" fill="#555">Berufsalltag &amp; Branche</text>
+
+<rect x="258" y="234" width="214" height="64" rx="8"
+      fill="#fff8f4" stroke="#fbd5bc" stroke-width="1"/>
+<text x="365" y="253" text-anchor="middle"
+      font-size="9.5" font-weight="700" letter-spacing="0.07em"
+      fill="#f97316">SEARCH CONSOLE</text>
+<text x="365" y="270" text-anchor="middle"
+      font-size="11" fill="#555">Keyword-Analyse:</text>
+<text x="365" y="284" text-anchor="middle"
+      font-size="11" fill="#555">Was suchen Kunden?</text>
+
+<rect x="480" y="234" width="214" height="64" rx="8"
+      fill="#fff8f4" stroke="#fbd5bc" stroke-width="1"/>
+<text x="587" y="253" text-anchor="middle"
+      font-size="9.5" font-weight="700" letter-spacing="0.07em"
+      fill="#f97316">STRATEGIE-MD</text>
+<text x="587" y="270" text-anchor="middle"
+      font-size="11" fill="#555">Abgeleitet aus der</text>
+<text x="587" y="284" text-anchor="middle"
+      font-size="11" fill="#555">viSales Content-Strategie</text>
+
+<!-- Format-Entscheidung -->
+<line x1="36" y1="308" x2="700" y2="308" stroke="#f0f0f0" stroke-width="1"/>
+<text x="365" y="326" text-anchor="middle"
+      font-size="10" font-weight="700" letter-spacing="0.07em"
+      fill="#999">ENTSCHEIDUNG DURCH GERD</text>
+<text x="365" y="344" text-anchor="middle"
+      font-size="11.5" font-weight="600" fill="#1a1a1a">Kurzimpuls  ·  Visual Sales Newsletter  ·  Vertriebskommunikationsbeitrag</text>
+
+<!-- Pfeil 1→2 -->
+<line x1="365" y1="360" x2="365" y2="386"
+      stroke="#f97316" stroke-width="1.5" stroke-opacity="0.6"
+      marker-end="url(#arr)"/>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- MODUL 2: Briefing & Diskussion              -->
+<!-- ═══════════════════════════════════════════ -->
+<rect x="16" y="390" width="698" height="170" rx="12"
+      fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"/>
+<rect x="16" y="390" width="698" height="4" rx="2" fill="#f97316"/>
+<rect x="16" y="390" width="4" height="170" rx="2" fill="#f97316"/>
+
+<circle cx="44" cy="414" r="14" fill="#f97316"/>
+<text x="44" y="419" text-anchor="middle"
+      font-size="12" font-weight="800" fill="#fff">2</text>
+
+<text x="68" y="408" font-size="10" font-weight="700"
+      letter-spacing="0.1em" fill="#f97316">BRIEFING &amp; ERSTELLUNG</text>
+<text x="68" y="425" font-size="16" font-weight="700"
+      letter-spacing="-0.01em" fill="#1a1a1a">Rücksprache, Diskussion &amp; Markdown</text>
+<text x="68" y="441" font-size="11" fill="#888">Kopf &amp; KI — Gerd brieft, Claude-CoWork assistiert mit gezielten Nachfragen</text>
+
+<line x1="36" y1="454" x2="700" y2="454" stroke="#f0f0f0" stroke-width="1"/>
+
+<!-- Sub-Sections: Diskussion + Output -->
+<rect x="36" y="464" width="325" height="96" rx="8"
+      fill="#fff8f4" stroke="#fbd5bc" stroke-width="1"/>
+<text x="198" y="483" text-anchor="middle"
+      font-size="9.5" font-weight="700" letter-spacing="0.07em"
+      fill="#f97316">DISKUSSIONSSCHLEIFEN (Kopf &amp; KI)</text>
+<text x="198" y="500" text-anchor="middle"
+      font-size="11" fill="#555">Gezielte Nachfragen aus</text>
+<text x="198" y="514" text-anchor="middle"
+      font-size="11" fill="#555">Gerds Alltag &amp; Erfahrung</text>
+<text x="198" y="532" text-anchor="middle"
+      font-size="10" font-weight="600" fill="#f97316">Newsletter-Skill · Impuls-Skill</text>
+<text x="198" y="548" text-anchor="middle"
+      font-size="10" font-weight="600" fill="#f97316">Vertriebsbeitrag-Skill</text>
+
+<rect x="369" y="464" width="325" height="96" rx="8"
+      fill="#fafafa" stroke="#e8e8e8" stroke-width="1"/>
+<text x="531" y="483" text-anchor="middle"
+      font-size="9.5" font-weight="700" letter-spacing="0.07em"
+      fill="#bbb">MARKDOWN-DATEI</text>
+<text x="531" y="500" text-anchor="middle"
+      font-size="11" fill="#555">YAML-Frontmatter: Titel, Slug,</text>
+<text x="531" y="514" text-anchor="middle"
+      font-size="11" fill="#555">Tags, Meta-SEO, Feature Image</text>
+<text x="531" y="532" text-anchor="middle"
+      font-size="11" fill="#555">Typ: post · page · home · listing</text>
+
+<!-- Pfeil 2→3 -->
+<line x1="365" y1="560" x2="365" y2="586"
+      stroke="#f97316" stroke-width="1.5" stroke-opacity="0.6"
+      marker-end="url(#arr)"/>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- MODUL 3: Freigabe & Skill-Durchlauf         -->
+<!-- ═══════════════════════════════════════════ -->
+<rect x="16" y="590" width="698" height="180" rx="12"
+      fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"/>
+<rect x="16" y="590" width="698" height="4" rx="2" fill="#f97316"/>
+<rect x="16" y="590" width="4" height="180" rx="2" fill="#f97316"/>
+
+<circle cx="44" cy="614" r="14" fill="#f97316"/>
+<text x="44" y="619" text-anchor="middle"
+      font-size="12" font-weight="800" fill="#fff">3</text>
+
+<text x="68" y="608" font-size="10" font-weight="700"
+      letter-spacing="0.1em" fill="#f97316">FREIGABE</text>
+<text x="68" y="625" font-size="16" font-weight="700"
+      letter-spacing="-0.01em" fill="#1a1a1a">Korrekturschleifen &amp; Skill-Automatisierung</text>
+<text x="68" y="641" font-size="11" fill="#888">Freigabe durch Gerd — ggfs. direkter Eingriff in die Markdown-Datei</text>
+
+<line x1="36" y1="654" x2="700" y2="654" stroke="#f0f0f0" stroke-width="1"/>
+
+<rect x="36" y="664" width="214" height="64" rx="8"
+      fill="#fff8f4" stroke="#fbd5bc" stroke-width="1"/>
+<text x="143" y="683" text-anchor="middle"
+      font-size="9.5" font-weight="700" letter-spacing="0.07em"
+      fill="#f97316">KORREKTUR</text>
+<text x="143" y="700" text-anchor="middle"
+      font-size="11" fill="#555">Review &amp; Anpassung</text>
+<text x="143" y="714" text-anchor="middle"
+      font-size="11" fill="#555">durch Gerd</text>
+
+<rect x="258" y="664" width="214" height="64" rx="8"
+      fill="#fff8f4" stroke="#fbd5bc" stroke-width="1"/>
+<text x="365" y="683" text-anchor="middle"
+      font-size="9.5" font-weight="700" letter-spacing="0.07em"
+      fill="#f97316">FAQ-SCHEMA-SKILL</text>
+<text x="365" y="700" text-anchor="middle"
+      font-size="11" fill="#555">Automatische FAQ-Toggles</text>
+<text x="365" y="714" text-anchor="middle"
+      font-size="11" fill="#555">+ JSON-LD Schema</text>
+
+<rect x="480" y="664" width="214" height="64" rx="8"
+      fill="#fff8f4" stroke="#fbd5bc" stroke-width="1"/>
+<text x="587" y="683" text-anchor="middle"
+      font-size="9.5" font-weight="700" letter-spacing="0.07em"
+      fill="#f97316">CTA-SKILL</text>
+<text x="587" y="700" text-anchor="middle"
+      font-size="11" fill="#555">Funnel-basierte CTAs</text>
+<text x="587" y="714" text-anchor="middle"
+      font-size="11" fill="#555">TOFU / MOFU / BOFU</text>
+
+<!-- Ablage-Hinweis -->
+<line x1="36" y1="738" x2="700" y2="738" stroke="#f0f0f0" stroke-width="1"/>
+<text x="365" y="758" text-anchor="middle"
+      font-size="10.5" fill="#999">content/articles/ · content/pages/ · assets/images/ · site.yaml</text>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- PHASE B LABEL                                -->
+<!-- ═══════════════════════════════════════════ -->
+
+<!-- Pfeil Phase A → Phase B -->
+<line x1="365" y1="770" x2="365" y2="806"
+      stroke="#f97316" stroke-width="1.5" stroke-opacity="0.6"
+      marker-end="url(#arr)"/>
+
+<rect x="16" y="810" width="698" height="28" rx="6" fill="#f0fdfe"/>
+<text x="365" y="829" text-anchor="middle"
+      font-size="10.5" font-weight="700" letter-spacing="0.12em"
+      fill="#0891b2">PHASE B — BUILD &amp; PUBLISH</text>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- MODUL 4: Build                              -->
+<!-- ═══════════════════════════════════════════ -->
+<rect x="16" y="852" width="698" height="190" rx="12"
+      fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"/>
+<rect x="16" y="852" width="698" height="4" rx="2" fill="#0891b2"/>
+<rect x="16" y="852" width="4" height="190" rx="2" fill="#0891b2"/>
+
+<circle cx="44" cy="876" r="14" fill="#0891b2"/>
+<text x="44" y="881" text-anchor="middle"
+      font-size="12" font-weight="800" fill="#fff">4</text>
+
+<text x="68" y="870" font-size="10" font-weight="700"
+      letter-spacing="0.1em" fill="#0891b2">BUILD</text>
+<text x="68" y="887" font-size="16" font-weight="700"
+      letter-spacing="-0.01em" fill="#1a1a1a">python3 build-visales.py</text>
+<text x="68" y="903" font-size="11" fill="#888">Markdown → HTML mit viSales-Template — ein Befehl, alles gerendert</text>
+
+<line x1="36" y1="916" x2="700" y2="916" stroke="#f0f0f0" stroke-width="1"/>
+
+<!-- Build-Outputs als Sub-Sections -->
+<rect x="36" y="926" width="325" height="100" rx="8"
+      fill="#f0fdfe" stroke="#a5f0f9" stroke-width="1"/>
+<text x="198" y="945" text-anchor="middle"
+      font-size="9.5" font-weight="700" letter-spacing="0.07em"
+      fill="#0891b2">SEITEN-OUTPUT</text>
+<text x="198" y="962" text-anchor="middle"
+      font-size="11" fill="#555">Navigation · Footer · Newsletter-Form</text>
+<text x="198" y="976" text-anchor="middle"
+      font-size="11" fill="#555">Autorenbox · Tag-Badges · FAQ-Toggles</text>
+<text x="198" y="990" text-anchor="middle"
+      font-size="11" fill="#555">JSON-LD Schema · OpenGraph</text>
+<text x="198" y="1008" text-anchor="middle"
+      font-size="11" fill="#555">viSales-Template &amp; Design</text>
+
+<rect x="369" y="926" width="325" height="100" rx="8"
+      fill="#f0fdfe" stroke="#a5f0f9" stroke-width="1"/>
+<text x="531" y="945" text-anchor="middle"
+      font-size="9.5" font-weight="700" letter-spacing="0.07em"
+      fill="#0891b2">INFRASTRUKTUR</text>
+<text x="531" y="962" text-anchor="middle"
+      font-size="11" fill="#555">Tag-Listing-Seiten</text>
+<text x="531" y="976" text-anchor="middle"
+      font-size="11" fill="#555">sitemap.xml · rss.xml</text>
+<text x="531" y="990" text-anchor="middle"
+      font-size="11" fill="#555">robots.txt · llms.txt</text>
+<text x="531" y="1008" text-anchor="middle"
+      font-size="11" fill="#555">Vollständig statisch</text>
+
+<!-- Pfeil 4→5 -->
+<line x1="365" y1="1042" x2="365" y2="1068"
+      stroke="#0891b2" stroke-width="1.5" stroke-opacity="0.6"
+      marker-end="url(#arr-c)"/>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- MODUL 5: Lokale Prüfung                     -->
+<!-- ═══════════════════════════════════════════ -->
+<rect x="16" y="1072" width="698" height="120" rx="12"
+      fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"/>
+<rect x="16" y="1072" width="698" height="4" rx="2" fill="#0891b2"/>
+<rect x="16" y="1072" width="4" height="120" rx="2" fill="#0891b2"/>
+
+<circle cx="44" cy="1096" r="14" fill="#0891b2"/>
+<text x="44" y="1101" text-anchor="middle"
+      font-size="12" font-weight="800" fill="#fff">5</text>
+
+<text x="68" y="1090" font-size="10" font-weight="700"
+      letter-spacing="0.1em" fill="#0891b2">PRÜFUNG</text>
+<text x="68" y="1107" font-size="16" font-weight="700"
+      letter-spacing="-0.01em" fill="#1a1a1a">Lokale Prüfung im Browser</text>
+<text x="68" y="1123" font-size="11" fill="#888">HTML visuell checken — Drafts mit --include-drafts rendern</text>
+
+<line x1="36" y1="1136" x2="700" y2="1136" stroke="#f0f0f0" stroke-width="1"/>
+
+<text x="365" y="1158" text-anchor="middle"
+      font-size="11" fill="#555">Layout, Bilder, Links, Newsletter-Form, Autorenbox, FAQ-Toggles</text>
+<text x="365" y="1174" text-anchor="middle"
+      font-size="10.5" font-weight="600" fill="#0891b2">Freigabe → weiter zum Deployment</text>
+
+<!-- Pfeil 5→6 -->
+<line x1="365" y1="1192" x2="365" y2="1218"
+      stroke="#0891b2" stroke-width="1.5" stroke-opacity="0.6"
+      marker-end="url(#arr-c)"/>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- MODUL 6: FTP Deploy                         -->
+<!-- ═══════════════════════════════════════════ -->
+<rect x="16" y="1222" width="698" height="130" rx="12"
+      fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"/>
+<rect x="16" y="1222" width="698" height="4" rx="2" fill="#0891b2"/>
+<rect x="16" y="1222" width="4" height="130" rx="2" fill="#0891b2"/>
+
+<circle cx="44" cy="1246" r="14" fill="#0891b2"/>
+<text x="44" y="1251" text-anchor="middle"
+      font-size="12" font-weight="800" fill="#fff">6</text>
+
+<text x="68" y="1240" font-size="10" font-weight="700"
+      letter-spacing="0.1em" fill="#0891b2">DEPLOYMENT</text>
+<text x="68" y="1257" font-size="16" font-weight="700"
+      letter-spacing="-0.01em" fill="#1a1a1a">FTP-Push auf visales.de</text>
+<text x="68" y="1273" font-size="11" fill="#888">Nur neue und geänderte Seiten werden hochgeladen</text>
+
+<line x1="36" y1="1286" x2="700" y2="1286" stroke="#f0f0f0" stroke-width="1"/>
+
+<text x="365" y="1308" text-anchor="middle"
+      font-size="12" font-weight="600" fill="#0891b2">✓ Live auf visales.de — Ready for RSS</text>
+<text x="365" y="1326" text-anchor="middle"
+      font-size="10.5" fill="#999">Statische Seiten · Kein CMS-Backend nötig · Maximale Performance</text>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- PHASE C LABEL                                -->
+<!-- ═══════════════════════════════════════════ -->
+
+<!-- Pfeil Phase B → Phase C -->
+<line x1="365" y1="1352" x2="365" y2="1388"
+      stroke="#0891b2" stroke-width="1.5" stroke-opacity="0.6"
+      marker-end="url(#arr-c)"/>
+
+<rect x="16" y="1392" width="698" height="28" rx="6" fill="#f0fdfe"/>
+<text x="365" y="1411" text-anchor="middle"
+      font-size="10.5" font-weight="700" letter-spacing="0.12em"
+      fill="#0891b2">PHASE C — DISTRIBUTION &amp; REICHWEITE</text>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- MODUL 7: Mastodon                           -->
+<!-- ═══════════════════════════════════════════ -->
+<rect x="16" y="1434" width="698" height="110" rx="12"
+      fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"/>
+<rect x="16" y="1434" width="698" height="4" rx="2" fill="#0891b2"/>
+<rect x="16" y="1434" width="4" height="110" rx="2" fill="#0891b2"/>
+
+<circle cx="44" cy="1458" r="14" fill="#0891b2"/>
+<text x="44" y="1463" text-anchor="middle"
+      font-size="12" font-weight="800" fill="#fff">7</text>
+
+<text x="68" y="1452" font-size="10" font-weight="700"
+      letter-spacing="0.1em" fill="#0891b2">FEDIVERSE</text>
+<text x="68" y="1469" font-size="16" font-weight="700"
+      letter-spacing="-0.01em" fill="#1a1a1a">Mastodon-Post</text>
+<text x="68" y="1485" font-size="11" fill="#888">Automatischer Teaser mit Artikel-URL ins Fediverse</text>
+
+<line x1="36" y1="1498" x2="700" y2="1498" stroke="#f0f0f0" stroke-width="1"/>
+<text x="365" y="1520" text-anchor="middle"
+      font-size="11" fill="#555">Offenes Netzwerk · Chronologischer Feed · Technik-Community</text>
+
+<!-- Pfeil 7→8 -->
+<line x1="365" y1="1544" x2="365" y2="1570"
+      stroke="#0891b2" stroke-width="1.5" stroke-opacity="0.6"
+      marker-end="url(#arr-c)"/>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- MODUL 8: YouTube Community                  -->
+<!-- ═══════════════════════════════════════════ -->
+<rect x="16" y="1574" width="698" height="110" rx="12"
+      fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"/>
+<rect x="16" y="1574" width="698" height="4" rx="2" fill="#0891b2"/>
+<rect x="16" y="1574" width="4" height="110" rx="2" fill="#0891b2"/>
+
+<circle cx="44" cy="1598" r="14" fill="#0891b2"/>
+<text x="44" y="1603" text-anchor="middle"
+      font-size="12" font-weight="800" fill="#fff">8</text>
+
+<text x="68" y="1592" font-size="10" font-weight="700"
+      letter-spacing="0.1em" fill="#0891b2">VIDEO-PLATTFORM</text>
+<text x="68" y="1609" font-size="16" font-weight="700"
+      letter-spacing="-0.01em" fill="#1a1a1a">YouTube Community-Teaser</text>
+<text x="68" y="1625" font-size="11" fill="#888">Kurzteaser als Community-Post — leitet auf den Artikel</text>
+
+<line x1="36" y1="1638" x2="700" y2="1638" stroke="#f0f0f0" stroke-width="1"/>
+<text x="365" y="1660" text-anchor="middle"
+      font-size="11" fill="#555">Bestehende Abonnenten erreichen · Sichtbarkeit im YouTube-Ökosystem</text>
+
+<!-- Pfeil 8→9 -->
+<line x1="365" y1="1684" x2="365" y2="1710"
+      stroke="#0891b2" stroke-width="1.5" stroke-opacity="0.6"
+      marker-end="url(#arr-c)"/>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- MODUL 9: Google Business                    -->
+<!-- ═══════════════════════════════════════════ -->
+<rect x="16" y="1714" width="698" height="110" rx="12"
+      fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"/>
+<rect x="16" y="1714" width="698" height="4" rx="2" fill="#0891b2"/>
+<rect x="16" y="1714" width="4" height="110" rx="2" fill="#0891b2"/>
+
+<circle cx="44" cy="1738" r="14" fill="#0891b2"/>
+<text x="44" y="1743" text-anchor="middle"
+      font-size="12" font-weight="800" fill="#fff">9</text>
+
+<text x="68" y="1732" font-size="10" font-weight="700"
+      letter-spacing="0.1em" fill="#0891b2">LOCAL SEO</text>
+<text x="68" y="1749" font-size="16" font-weight="700"
+      letter-spacing="-0.01em" fill="#1a1a1a">Google Business Teaser</text>
+<text x="68" y="1765" font-size="11" fill="#888">GBP-Post für lokale Sichtbarkeit in Bochum und Umgebung</text>
+
+<line x1="36" y1="1778" x2="700" y2="1778" stroke="#f0f0f0" stroke-width="1"/>
+<text x="365" y="1800" text-anchor="middle"
+      font-size="11" fill="#555">Google Maps · Lokales Ranking · „3D Agentur Bochum" &amp; Co.</text>
+
+<!-- Pfeil 9→10 -->
+<line x1="365" y1="1824" x2="365" y2="1850"
+      stroke="#0891b2" stroke-width="1.5" stroke-opacity="0.6"
+      marker-end="url(#arr-c)"/>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- MODUL 10: LinkedIn                          -->
+<!-- ═══════════════════════════════════════════ -->
+<rect x="16" y="1854" width="698" height="150" rx="12"
+      fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"/>
+<rect x="16" y="1854" width="698" height="4" rx="2" fill="#0891b2"/>
+<rect x="16" y="1854" width="4" height="150" rx="2" fill="#0891b2"/>
+
+<circle cx="44" cy="1878" r="14" fill="#0891b2"/>
+<text x="44" y="1883" text-anchor="middle"
+      font-size="12" font-weight="800" fill="#fff">10</text>
+
+<text x="68" y="1872" font-size="10" font-weight="700"
+      letter-spacing="0.1em" fill="#0891b2">THOUGHT LEADERSHIP</text>
+<text x="68" y="1889" font-size="16" font-weight="700"
+      letter-spacing="-0.01em" fill="#1a1a1a">LinkedIn-Teaser</text>
+<text x="68" y="1905" font-size="11" fill="#888">Entwurf durch KI — Anpassung und Posting durch Gerd persönlich</text>
+
+<line x1="36" y1="1918" x2="700" y2="1918" stroke="#f0f0f0" stroke-width="1"/>
+
+<rect x="36" y="1928" width="325" height="64" rx="8"
+      fill="#f0fdfe" stroke="#a5f0f9" stroke-width="1"/>
+<text x="198" y="1947" text-anchor="middle"
+      font-size="9.5" font-weight="700" letter-spacing="0.07em"
+      fill="#0891b2">ENTWURF</text>
+<text x="198" y="1964" text-anchor="middle"
+      font-size="11" fill="#555">KI-gestützter Post-Entwurf</text>
+<text x="198" y="1978" text-anchor="middle"
+      font-size="11" fill="#555">im Stil von Duke Jera</text>
+
+<rect x="369" y="1928" width="325" height="64" rx="8"
+      fill="#fff8f4" stroke="#fbd5bc" stroke-width="1"/>
+<text x="531" y="1947" text-anchor="middle"
+      font-size="9.5" font-weight="700" letter-spacing="0.07em"
+      fill="#f97316">GERD POSTET</text>
+<text x="531" y="1964" text-anchor="middle"
+      font-size="11" fill="#555">Persönliche Anpassung</text>
+<text x="531" y="1978" text-anchor="middle"
+      font-size="11" fill="#555">&amp; manuelles Posting</text>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- PHASE D LABEL                                -->
+<!-- ═══════════════════════════════════════════ -->
+
+<!-- Pfeil Phase C → Phase D -->
+<line x1="365" y1="2004" x2="365" y2="2040"
+      stroke="#0891b2" stroke-width="1.5" stroke-opacity="0.6"
+      marker-end="url(#arr-c)"/>
+
+<rect x="16" y="2044" width="698" height="28" rx="6" fill="#fff8f4"/>
+<text x="365" y="2063" text-anchor="middle"
+      font-size="10.5" font-weight="700" letter-spacing="0.12em"
+      fill="#f97316">PHASE D — ANALYSE &amp; OPTIMIERUNG</text>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- MODUL 11: SEO-Analyse & Loop                -->
+<!-- ═══════════════════════════════════════════ -->
+<rect x="16" y="2086" width="698" height="210" rx="12"
+      fill="#fff" filter="url(#shadow)" stroke="#f0f0f0" stroke-width="1"/>
+<rect x="16" y="2086" width="698" height="4" rx="2" fill="#f97316"/>
+<rect x="16" y="2086" width="4" height="210" rx="2" fill="#f97316"/>
+
+<circle cx="44" cy="2110" r="14" fill="#f97316"/>
+<text x="44" y="2115" text-anchor="middle"
+      font-size="12" font-weight="800" fill="#fff">11</text>
+
+<text x="68" y="2104" font-size="10" font-weight="700"
+      letter-spacing="0.1em" fill="#f97316">KREISLAUF · CLAUDE-LOOP</text>
+<text x="68" y="2121" font-size="16" font-weight="700"
+      letter-spacing="-0.01em" fill="#1a1a1a">Zyklische SEO-Analyse via Claude-Loop</text>
+<text x="68" y="2137" font-size="11" fill="#888">Google Search Console → KI-Vorschläge (Kopf &amp; KI) → Freigabe durch Gerd</text>
+
+<line x1="36" y1="2150" x2="700" y2="2150" stroke="#f0f0f0" stroke-width="1"/>
+
+<rect x="36" y="2160" width="214" height="76" rx="8"
+      fill="#f0fdfe" stroke="#a5f0f9" stroke-width="1"/>
+<text x="143" y="2179" text-anchor="middle"
+      font-size="9.5" font-weight="700" letter-spacing="0.07em"
+      fill="#0891b2">ANALYSE</text>
+<text x="143" y="2196" text-anchor="middle"
+      font-size="11" fill="#555">Google Search Console</text>
+<text x="143" y="2210" text-anchor="middle"
+      font-size="11" fill="#555">Ranking-Daten &amp; CTR</text>
+<text x="143" y="2224" text-anchor="middle"
+      font-size="11" fill="#555">auswerten</text>
+
+<rect x="258" y="2160" width="214" height="76" rx="8"
+      fill="#fff8f4" stroke="#fbd5bc" stroke-width="1"/>
+<text x="365" y="2179" text-anchor="middle"
+      font-size="9.5" font-weight="700" letter-spacing="0.07em"
+      fill="#f97316">VORSCHLÄGE</text>
+<text x="365" y="2196" text-anchor="middle"
+      font-size="11" fill="#555">Automatische SEO-</text>
+<text x="365" y="2210" text-anchor="middle"
+      font-size="11" fill="#555">Optimierungsvorschläge</text>
+<text x="365" y="2224" text-anchor="middle"
+      font-size="11" fill="#555">für bestehende Artikel</text>
+
+<rect x="480" y="2160" width="214" height="76" rx="8"
+      fill="#fff8f4" stroke="#fbd5bc" stroke-width="1"/>
+<text x="587" y="2179" text-anchor="middle"
+      font-size="9.5" font-weight="700" letter-spacing="0.07em"
+      fill="#f97316">FREIGABE</text>
+<text x="587" y="2196" text-anchor="middle"
+      font-size="11" fill="#555">Gerd entscheidet:</text>
+<text x="587" y="2210" text-anchor="middle"
+      font-size="11" fill="#555">Optimierung umsetzen</text>
+<text x="587" y="2224" text-anchor="middle"
+      font-size="11" fill="#555">oder neues Thema</text>
+
+<!-- Rückkanal-Pfeil: Schritt 11 → Schritt 1 -->
+<text x="365" y="2272" text-anchor="middle"
+      font-size="10.5" font-weight="600" fill="#f97316">↻ Mündet wieder in Schritt 1</text>
+
+<!-- Geschwungener Rückkanal-Pfeil (rechte Seite) -->
+<path d="M714,2260 L714,2310 Q714,2340 690,2340 L40,2340 Q16,2340 16,2370 L16,2390"
+      fill="none" stroke="#f97316" stroke-width="1.8"
+      stroke-dasharray="6,4" stroke-opacity="0.4"/>
+
+<!-- Rückkanal-Label -->
+<rect x="200" y="2322" width="330" height="32" rx="8" fill="#fff8f4" stroke="#fbd5bc" stroke-width="1"/>
+<text x="365" y="2343" text-anchor="middle"
+      font-size="11" font-weight="600" fill="#f97316">Neue Impulse · Keyword-Chancen · Content-Lücken</text>
+
+<!-- Zielpunkt-Indikator -->
+<circle cx="16" cy="2390" r="6" fill="#f97316" opacity="0.3"/>
+<circle cx="16" cy="2390" r="3" fill="#f97316"/>
+<text x="30" y="2395" font-size="10" fill="#f97316" font-weight="600">→ zurück zu Schritt 1</text>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- FUSSZEILE                                    -->
+<!-- ═══════════════════════════════════════════ -->
+<line x1="16" y1="2430" x2="714" y2="2430"
+      stroke="#f0f0f0" stroke-width="1"/>
+<text x="365" y="2452" text-anchor="middle"
+      font-size="10" fill="#bbb" letter-spacing="0.03em">
+  SkillCMS — Statischer Site-Generator für viSales · visales.de
+</text>
+<text x="365" y="2468" text-anchor="middle"
+      font-size="9.5" fill="#bbb" letter-spacing="0.03em">
+  Gespräche kürzer. Entscheidungen klarer. Abschlüsse planbarer.
+</text>
+
+</svg>
