@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html lang="de" class="has-dark-text">
+<head>
+    <title>FAQ: Typische Entscheiderfragen vor einer OpenUSD-Einordnung — viSales</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OpenUSD FAQ für Entscheider: Kosten, ROI, interne Organisation, Vendor Lock-in und Umsetzung — typische Fragen aus der Praxis beantwortet.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://visales.de/openusd-faq/">
+    <link rel="alternate" type="application/rss+xml" title="viSales – Artikel &amp; Insights" href="rss.xml">
+    <link rel="alternate" type="application/rss+xml" title="Visual Com Podcast" href="https://visualcom.podcaster.de/visual-com.rss">
+
+    <!-- Google tag (gtag.js) — consent-gesteuert -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JEPNB0BL5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        // Default: alles verweigern bis Consent
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied',
+            'wait_for_update': 500
+        });
+        gtag('js', new Date());
+        gtag('config', 'G-8JEPNB0BL5');
+        gtag('config', 'AW-1024175020');
+    </script>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="FAQ: Typische Entscheiderfragen vor einer OpenUSD-Einordnung">
+    <meta property="og:description" content="OpenUSD FAQ für Entscheider: Kosten, ROI, interne Organisation, Vendor Lock-in und Umsetzung — typische Fragen aus der Praxis beantwortet.">
+    <meta property="og:url" content="https://visales.de/openusd-faq/">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://visales.de/assets/images/2026/03/OpenUSD-FAQ-viSales-Dienstleister.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FAQ: Typische Entscheiderfragen vor einer OpenUSD-Einordnung">
+    <meta name="twitter:description" content="OpenUSD FAQ für Entscheider: Kosten, ROI, interne Organisation, Vendor Lock-in und Umsetzung — typische Fragen aus der Praxis beantwortet.">
+    <meta name="twitter:image" content="https://visales.de/assets/images/2026/03/OpenUSD-FAQ-viSales-Dienstleister.jpeg">
+
+    <!-- Preload -->
+    <link rel="preload" as="style" href="assets/css/screen.css">
+    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/atkinson-regular.woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/atkinson-bold.woff2" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <style>
+        @font-face {
+            font-family: "Atkinson Hyperlegible";
+            font-style: normal; font-weight: 400; font-display: swap;
+            src: url(assets/fonts/atkinson-regular.woff2) format("woff2");
+        }
+        @font-face {
+            font-family: "Atkinson Hyperlegible";
+            font-style: italic; font-weight: 400; font-display: swap;
+            src: url(assets/fonts/atkinson-italic.woff2) format("woff2");
+        }
+        @font-face {
+            font-family: "Atkinson Hyperlegible";
+            font-style: normal; font-weight: 700; font-display: swap;
+            src: url(assets/fonts/atkinson-bold.woff2) format("woff2");
+        }
+        @font-face {
+            font-family: "Atkinson Hyperlegible";
+            font-style: italic; font-weight: 700; font-display: swap;
+            src: url(assets/fonts/atkinson-bold-italic.woff2) format("woff2");
+        }
+    </style>
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/screen.css">
+
+    <!-- SkillCMS Custom Styles -->
+    <style>
+        :root {
+            --background-color: #ffffff;
+            --ghost-accent-color: #f2902a;
+        }
+
+        /* Spacers */
+        .vs-spacer    { height: 1rem; }
+        .vs-spacer-lg { height: 2rem; }
+        .gh-content .vs-spacer + *,
+        .gh-content .vs-spacer-lg + * { margin-top: 0 !important; }
+
+        /* ===== Grounding Page — Fact Grid <dl> ===== */
+        .grounding-fact-grid {
+            display: grid;
+            grid-template-columns: minmax(140px, 220px) 1fr;
+            gap: 0;
+            margin: 2rem 0 2.4rem;
+            border: 1px solid rgba(124,139,154,.2);
+            border-radius: 6px;
+            overflow: hidden;
+            font-size: 1.5rem;
+        }
+        .grounding-fact-grid dt,
+        .grounding-fact-grid dd {
+            padding: 0.7em 1.1em;
+            margin: 0;
+            border-bottom: 1px solid rgba(124,139,154,.15);
+        }
+        .grounding-fact-grid dt {
+            font-weight: 700;
+            color: #3a4550;
+            background: rgba(124,139,154,.07);
+        }
+        .grounding-fact-grid dd { color: #1a1a1a; }
+        .grounding-fact-grid dt:last-of-type,
+        .grounding-fact-grid dd:last-of-type { border-bottom: none; }
+
+        /* Disambiguierungs-Block */
+        .grounding-disambig {
+            background: rgba(242,144,42,.07);
+            border-left: 3px solid #f2902a;
+            border-radius: 0 6px 6px 0;
+            padding: 1.2em 1.4em;
+            margin: 2rem 0;
+        }
+        .grounding-disambig p { margin: 0 0 0.4em; font-weight: 700; }
+        .grounding-disambig ul { margin: 0.4em 0 0 1.2em; }
+        .grounding-disambig li { margin-bottom: 0.3em; }
+
+        /* Human Notice */
+        .grounding-notice {
+            font-size: 1.3rem;
+            color: #738a94;
+            border-top: 1px solid rgba(124,139,154,.2);
+            padding-top: 1.2rem;
+            margin-top: 3rem;
+        }
+
+        /* ===== Navigation — Desktop: Logo | Links(Mitte) | CTA ===== */
+        .gh-navigation-inner {
+            display: flex !important;
+            flex-wrap: nowrap !important;
+            align-items: center !important;
+            max-width: 920px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            padding-top: 1.2rem !important;
+            padding-bottom: 1.2rem !important;
+            gap: 0 !important;
+        }
+        .gh-navigation-brand { flex: 0 0 auto !important; }
+        .gh-navigation-menu {
+            flex: 1 1 auto !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+        }
+        .gh-navigation-actions { flex: 0 0 auto !important; }
+        .gh-burger { display: none !important; }
+
+        /* ===== Navigation — Mobile: Logo+CTA Zeile 1 | Links Zeile 2 ===== */
+        @media (max-width: 767px) {
+            .gh-navigation-inner {
+                flex-wrap: wrap !important;
+                padding-top: 0.9rem !important;
+                padding-bottom: 0.4rem !important;
+            }
+            .gh-navigation-brand {
+                flex: 1 1 auto !important;
+            }
+            .gh-navigation-actions {
+                flex: 0 0 auto !important;
+            }
+            .gh-navigation-menu {
+                flex: 0 0 100% !important;
+                justify-content: flex-start !important;
+                overflow-x: auto !important;
+                padding-bottom: 0.6rem !important;
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+        .vs-nav-cta {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.55em 1.3em;
+            background: var(--ghost-accent-color);
+            color: #fff !important;
+            font-size: 1.4rem;
+            font-weight: 700;
+            border-radius: 6px;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: background 0.2s ease, opacity 0.2s ease;
+        }
+        .vs-nav-cta:hover { background: #e07f20; opacity: 1; }
+
+        /* Feature Image — max 828px (720px Textlaufbreite + 15%) */
+        .gh-article-image {
+            max-width: 828px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2.4rem;
+        }
+        .gh-article-image img {
+            border-radius: 6px;
+        }
+        /* Mindestabstand Feature Image → erster Content-Block */
+        .gh-article-image + .gh-content > *:first-child {
+            margin-top: 1.6rem;
+        }
+
+        /* CTA Button Fix */
+        .gh-content a.gh-button {
+            color: #fff !important;
+            text-decoration: none !important;
+        }
+        p:has(> .cta-center) { text-align: center; }
+
+        /* ===== 6-Spalten Footer ===== */
+        .gh-footer {
+            background-color: #fff;
+            color: var(--color-secondary-text);
+            padding-top: 4rem;
+            padding-bottom: 2rem;
+            border-top: 1px solid var(--color-border);
+        }
+        .gh-footer a { color: var(--color-primary-text); }
+        .gh-footer a:hover { color: var(--ghost-accent-color); opacity: 1; }
+
+        .vs-footer-trust {
+            text-align: center;
+            font-size: 1.4rem;
+            padding-bottom: 2.5rem;
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid var(--color-border);
+            color: var(--color-secondary-text);
+            line-height: 1.8;
+        }
+        .vs-footer-trust-clients { margin-bottom: 0.4em; }
+        .vs-footer-trust-member { font-size: 1.25rem; opacity: 0.75; }
+        .vs-footer-trust a { color: var(--ghost-accent-color); }
+        .vs-footer-sublabel-link {
+            color: var(--color-primary-text) !important;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .vs-footer-sublabel-link:hover { color: var(--ghost-accent-color) !important; }
+
+        .vs-footer-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 3rem;
+            padding-bottom: 3rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--color-border);
+        }
+        /* ── Inline Newsletter-Block im Artikel ───────────────────────────── */
+        .vs-inline-newsletter {
+            margin: 2.4em 0;
+            padding: 1.6em 2em;
+            background: #f8f5f0;
+            border-left: 4px solid #f2902a;
+            border-radius: 6px;
+        }
+        .vs-nl-headline { font-size: 1.5rem; font-weight: 700; margin: 0 0 1em; }
+        .vs-nl-headline strong { color: var(--ghost-accent-color); }
+        .vs-inline-newsletter .sib-form,
+        .vs-inline-newsletter .sib-form-container { background: transparent !important; padding: 0 !important; text-align: left !important; }
+        #sib-container-inline { background: transparent !important; border: none !important; max-width: 100% !important; padding: 0 !important; }
+        .vs-inline-newsletter .sib-form-block__button { background-color: #f2902a !important; border-radius: 100px !important; width: auto !important; display: inline-flex !important; padding: .8em 1.4em !important; }
+        .vs-inline-newsletter .entry__specification { font-size: 1.1rem !important; color: #888 !important; }
+        .vs-inline-newsletter .sib-form__declaration > div:first-child { display: none; }
+        /* ────────────────────────────────────────────────────────────────── */
+        .vs-footer-prod-more { margin-top: 0.4em; }
+        .vs-footer-prod-more a { color: var(--ghost-accent-color) !important; font-size: 1.3rem; }
+        .vs-footer-prod-item a { color: var(--color-secondary-text) !important; }
+        .vs-footer-prod-item a:hover { color: var(--ghost-accent-color) !important; }
+        .vs-footer-stack-sep {
+            margin-top: 2.4rem;
+        }
+        .vs-footer-col-subtitle {
+            margin-top: 2.2rem !important;
+            margin-bottom: 0.9em !important;
+        }
+        .vs-footer-col > h4.vs-footer-col-subtitle:first-child {
+            margin-top: 0 !important;
+        }
+        .vs-footer-sub-h4-link {
+            color: var(--color-primary-text) !important;
+            text-decoration: none;
+        }
+        .vs-footer-sub-h4-link:hover { color: var(--ghost-accent-color) !important; }
+        .vs-footer-col h4 {
+            color: var(--color-primary-text);
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1.2em;
+        }
+        .vs-footer-col ul { list-style: none; padding: 0; margin: 0; }
+        .vs-footer-col li { margin-bottom: 0.6em; }
+        .vs-footer-col li a { font-size: 1.4rem; color: var(--color-secondary-text); }
+        .vs-footer-col li a:hover { color: var(--ghost-accent-color); }
+        .vs-footer-col ul li a strong { color: var(--ghost-accent-color); }
+
+        .vs-footer-address {
+            font-size: 1.3rem;
+            line-height: 1.7;
+            color: var(--color-secondary-text);
+            margin: 0 0 1.2rem;
+        }
+        .vs-footer-cta {
+            display: inline-block;
+            margin-top: 1.6rem;
+            margin-bottom: 1.8rem;
+            font-size: 1.3rem !important;
+            padding: 0.6em 1.2em !important;
+        }
+        .vs-footer-sublabel {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: rgba(0,0,0,.4);
+            font-weight: 700;
+            margin: 1.4rem 0 0.5rem;
+        }
+        .vs-footer-signup-btn {
+            display: inline-block;
+            margin-bottom: 1rem;
+            font-size: 1.3rem !important;
+            padding: 0.6em 1.2em !important;
+        }
+
+        .vs-footer-newsletter p {
+            font-size: 1.3rem;
+            margin-bottom: 1em;
+            color: var(--color-secondary-text);
+        }
+        .vs-newsletter-form { display: flex; flex-direction: column; gap: 0.6em; }
+        .vs-newsletter-form input {
+            padding: 0.6em 0.8em;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            background: var(--color-lighter-gray);
+            color: var(--color-primary-text);
+            font-size: 1.4rem;
+        }
+        .vs-newsletter-form input::placeholder { color: var(--color-secondary-text); }
+        .vs-newsletter-form .gh-button {
+            font-size: 1.3rem;
+            padding: 0.6em 1em;
+            color: #fff !important;
+        }
+        .vs-form-msg {
+            font-size: 1.3rem;
+            min-height: 1.8em;
+            font-weight: 500;
+        }
+        .vs-input-name {
+            /* Vorname-Feld: dezent optional markiert */
+            opacity: 0.85;
+        }
+        .vs-footer-podcast-link {
+            display: inline-block;
+            margin-top: 0.8em;
+            font-size: 1.3rem;
+            color: var(--ghost-accent-color) !important;
+        }
+
+        /* ── Brevo-Formular viSales-Overrides ─────────────────────────────── */
+        .vs-footer-newsletter .sib-form { text-align:left !important; background:transparent !important; padding:0 !important; }
+        .vs-footer-newsletter .sib-form-container { max-width:100% !important; }
+        .vs-footer-newsletter #sib-container { max-width:100% !important; border:none !important; background:transparent !important; padding:0 !important; margin-top:-0.4em !important; }
+        .vs-footer-newsletter a { color:var(--color-primary-text) !important; text-decoration:underline !important; }
+        .vs-footer-newsletter #sib-container a { color:var(--color-primary-text) !important; }
+        .vs-footer-newsletter .sib-form-block p { margin:0 0 0.4em; font-size:1.3rem; }
+        .vs-footer-newsletter .sib-form-block[style*="font-size:24px"] p,
+        .vs-footer-newsletter .sib-form-block[style*="font-size:32px"] p { display:none; } /* "Visual Sales" Titel — schon im h4 vorhanden */
+        .vs-footer-newsletter .entry__label { font-size:1.2rem !important; color:var(--color-primary-text) !important; }
+        .vs-footer-newsletter .input { font-size:1.3rem !important; border-radius:6px !important; }
+        .vs-footer-newsletter .sib-form-block__button { background-color:#f2902a !important; border-radius:100px !important; font-size:1.3rem !important; padding:.8em 1.4em !important; width:auto !important; display:inline-flex !important; }
+        .vs-footer-newsletter .entry__specification { font-size:1.1rem !important; }
+        .vs-footer-newsletter .sib-form__declaration { margin-top:0.4em; }
+        .vs-footer-newsletter .sib-form__declaration > div:first-child { display:none; } /* Schild-Icon ausblenden */
+        .vs-footer-newsletter .sib-form__declaration p { font-size:1.1rem !important; color:var(--color-secondary-text) !important; }
+        .vs-footer-newsletter .checkbox_tick_positive { flex-shrink:0; }
+        /* ────────────────────────────────────────────────────────────────── */
+
+        .vs-footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.3rem;
+            color: var(--color-secondary-text);
+        }
+        .vs-footer-legal { display: flex; gap: 1.5em; }
+        .vs-footer-legal a { color: var(--color-secondary-text); font-size: 1.3rem; }
+        .vs-footer-copy { max-width: 60%; }
+
+        @media (max-width: 1024px) {
+            .vs-footer-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (max-width: 640px) {
+            .vs-footer-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+            .vs-footer-bottom { flex-direction: column; gap: 1em; text-align: center; }
+            .vs-footer-copy { max-width: 100%; }
+            .vs-footer-trust { font-size: 1.2rem; }
+            .vs-footer-trust-sep { display: block; margin: 0.3em 0; }
+        }
+
+        /* ===== kg-toggle-card — Pfeil links ===== */
+        .kg-toggle-card {
+            background: transparent;
+            border: 1px solid rgba(124, 139, 154, 0.4);
+            border-radius: 4px;
+            padding: 1.2em 1.4em;
+        }
+        .kg-toggle-heading {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.8em;
+            list-style: none;
+            user-select: none;
+        }
+        .kg-toggle-card-icon {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            flex-shrink: 0;
+            color: inherit;
+            transition: transform 0.25s ease;
+            display: flex;
+            align-items: center;
+        }
+        .kg-toggle-card-icon svg { width: 20px; height: 20px; }
+        .kg-toggle-card[data-kg-toggle-state="open"] .kg-toggle-card-icon {
+            transform: rotate(90deg);
+        }
+        .kg-toggle-heading-text {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.3;
+            font-family: var(--font-sans);
+            color: var(--color-primary-text);
+        }
+        .kg-toggle-content {
+            overflow: hidden;
+            height: 0;
+            transition: height 0.25s ease;
+        }
+        .kg-toggle-content > *              { margin-top: 1em; }
+        .kg-toggle-content > *:first-child  { margin-top: 0.8em; }
+        .kg-toggle-content > *:last-child   { margin-bottom: 0.2em; }
+
+        /* ===== Praxis Card Grid ===== */
+        .gh-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        .gh-container.is-grid .gh-feed {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 3rem;
+        }
+        .gh-card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .gh-card-link:hover .gh-card-title {
+            color: var(--ghost-accent-color);
+        }
+        .gh-card-image {
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            border-radius: 6px;
+            margin-bottom: 1.2rem;
+            background: var(--color-lighter-gray);
+        }
+        .gh-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .gh-card-link:hover .gh-card-image img {
+            transform: scale(1.03);
+        }
+        .gh-card-tag {
+            display: block !important;
+            color: var(--ghost-accent-color);
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.5rem;
+        }
+        .gh-card-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0 0 0.8rem;
+            line-height: 1.3;
+            transition: color 0.2s ease;
+        }
+        .gh-card-meta {
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+            font-size: 1.3rem;
+            color: var(--color-secondary-text);
+            margin-top: 0.6rem;
+        }
+        .gh-card-author::after {
+            content: "·";
+            margin-left: 0.5em;
+        }
+        @media (max-width: 640px) {
+            .gh-container.is-grid .gh-feed {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        /* ===== Cookie-Banner ===== */
+        .vs-cookie-banner {
+            display: none;
+            position: fixed;
+            bottom: 0; left: 0; right: 0;
+            z-index: 9999;
+            background: #fff;
+            border-top: 2px solid var(--ghost-accent-color);
+            box-shadow: 0 -4px 24px rgba(0,0,0,.12);
+            font-size: 1.4rem;
+        }
+        .vs-cookie-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.6rem 2rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .vs-cookie-text { flex: 1; min-width: 220px; }
+        .vs-cookie-text strong { display: block; font-size: 1.5rem; margin-bottom: 0.3em; color: var(--color-primary-text); }
+        .vs-cookie-text p { margin: 0; color: var(--color-secondary-text); font-size: 1.3rem; line-height: 1.5; }
+        .vs-cookie-text a { color: var(--ghost-accent-color); text-decoration: underline; }
+        .vs-cookie-actions { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+        .vs-cookie-btn-all { font-size: 1.3rem !important; padding: 0.55em 1.3em !important; }
+        .vs-cookie-btn-settings {
+            background: none; border: 1px solid var(--color-border);
+            border-radius: 6px; padding: 0.55em 1.1em;
+            font-size: 1.3rem; cursor: pointer; color: var(--color-primary-text);
+        }
+        .vs-cookie-btn-settings:hover { border-color: var(--ghost-accent-color); color: var(--ghost-accent-color); }
+        .vs-cookie-btn-deny {
+            background: none; border: none; padding: 0.55em 0.5em;
+            font-size: 1.2rem; cursor: pointer; color: var(--color-secondary-text);
+            text-decoration: underline; text-underline-offset: 2px;
+        }
+        .vs-cookie-btn-deny:hover { color: var(--color-primary-text); }
+
+        .vs-cookie-settings-panel {
+            border-top: 1px solid var(--color-border);
+            padding: 1.4rem 2rem 1.8rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .vs-cookie-cats {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 0.8rem 2rem;
+            margin-bottom: 1.4rem;
+        }
+        .vs-cookie-cat {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 0.8rem 1rem;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .vs-cookie-cat-info strong { display: block; font-size: 1.3rem; color: var(--color-primary-text); }
+        .vs-cookie-cat-info small { font-size: 1.1rem; color: var(--color-secondary-text); }
+        .vs-cookie-toggle {
+            flex-shrink: 0;
+            width: 40px; height: 22px;
+            background: #d1d5db;
+            border-radius: 99px;
+            position: relative;
+            cursor: pointer;
+            transition: background .2s;
+        }
+        .vs-cookie-toggle span {
+            position: absolute;
+            top: 3px; left: 3px;
+            width: 16px; height: 16px;
+            background: #fff;
+            border-radius: 50%;
+            transition: transform .2s;
+            box-shadow: 0 1px 3px rgba(0,0,0,.2);
+        }
+        .vs-cookie-toggle.is-on { background: var(--ghost-accent-color); }
+        .vs-cookie-toggle.is-on span { transform: translateX(18px); }
+        .vs-cookie-toggle--disabled { opacity: 0.45; cursor: not-allowed; }
+        .vs-cookie-toggle--disabled.is-on { background: var(--ghost-accent-color); }
+        .vs-cookie-settings-actions { display: flex; justify-content: flex-end; }
+        .vs-cookie-btn-save { font-size: 1.3rem !important; padding: 0.55em 1.3em !important; }
+
+        @media (max-width: 640px) {
+            .vs-cookie-inner { flex-direction: column; align-items: flex-start; gap: 1.2rem; }
+            .vs-cookie-cats { grid-template-columns: 1fr 1fr; }
+        }
+
+        /* ===== D0.2 — Kategorie-Badge (über Titel) — 1:1 Ghost-Stil ===== */
+        .vs-post-category-badge {
+            display: inline-block;
+            color: var(--ghost-accent-color) !important;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            text-decoration: none;
+            margin-bottom: 1rem;
+        }
+        .vs-post-category-badge:hover { opacity: 0.8; }
+
+        /* ===== D0.3 — Feature Image ===== */
+        .vs-feature-image-wrap {
+            display: block;
+            max-width: 920px;
+            margin: 0 auto 3rem;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .vs-feature-image-wrap img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ===== D0.3 — Artikel-Meta (Ghost-Stil) ===== */
+        .vs-article-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 3.2rem;
+        }
+        .vs-meta-avatar {
+            width: 48px; height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .vs-meta-text {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15em;
+        }
+        .vs-meta-author {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primary-text);
+        }
+        .vs-meta-author a { color: inherit; text-decoration: none; }
+        .vs-meta-author a:hover { color: var(--ghost-accent-color); }
+        .vs-meta-sub {
+            font-size: 1.35rem;
+            color: var(--color-secondary-text);
+            display: flex;
+            align-items: center;
+            gap: 0.4em;
+        }
+        .vs-meta-sep { opacity: 0.5; }
+
+        /* ===== KI-Badges ===== */
+        .vs-badge-ki {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25em;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--ghost-accent-color);
+            background: rgba(230,126,34,0.08);
+            border: 1px solid rgba(230,126,34,0.25);
+            border-radius: 4px;
+            padding: 0.1em 0.45em;
+            white-space: nowrap;
+            vertical-align: middle;
+            margin-left: 0.5em;
+        }
+        .vs-feature-image-wrap { position: relative; }
+        .vs-image-badge {
+            position: absolute;
+            bottom: 0.6rem;
+            right: 0.6rem;
+        }
+        .vs-badge-bild-ki {
+            display: inline-flex;
+            align-items: center;
+            font-size: 1.0rem;
+            font-weight: 600;
+            color: rgba(255,255,255,0.85);
+            background: rgba(0,0,0,0.45);
+            border-radius: 4px;
+            padding: 0.15em 0.5em;
+            white-space: nowrap;
+            backdrop-filter: blur(4px);
+        }
+
+        /* ===== D0.4 — Autor-Block unter Content ===== */
+        .gh-main { padding-bottom: 0 !important; }
+        .gh-footer { margin-top: 0 !important; }
+
+        /* ===== FAQ-Block unter Autor-Box ===== */
+        .vs-faq-block {
+            padding-top: 6rem;
+            padding-bottom: 4rem;
+        }
+        .vs-faq-heading {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--color-primary-text);
+            margin-bottom: 2.4rem;
+        }
+        .vs-author-block {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.6rem;
+            max-width: 720px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 3rem 0 4rem;
+            margin-top: 3rem;
+            border-top: 1px solid var(--color-border);
+        }
+        .vs-author-block-avatar {
+            width: 64px; height: 64px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .vs-author-block-text { display: flex; flex-direction: column; gap: 0.3rem; }
+        .vs-author-block-label {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            color: var(--color-secondary-text);
+            font-weight: 700;
+        }
+        .vs-author-block-name {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--color-primary-text);
+            text-decoration: none;
+        }
+        .vs-author-block-name:hover { color: var(--ghost-accent-color); }
+        .vs-author-bio {
+            font-size: 1.35rem;
+            color: var(--color-secondary-text);
+            margin: 0.3rem 0 0;
+            line-height: 1.6;
+        }
+
+        /* ===== D0.1 — Galerie-Grid (kg-gallery-card) ===== */
+        .kg-gallery-card {
+            width: 100%;
+            margin: 2rem 0;
+        }
+        .kg-gallery-container {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .kg-gallery-row {
+            display: flex;
+            gap: 6px;
+        }
+        .kg-gallery-image {
+            flex: 1;
+            overflow: hidden;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .kg-gallery-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .kg-gallery-image img:hover { transform: scale(1.02); }
+
+        /* PhotoSwipe lightbox trigger */
+        .kg-gallery-image a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 640px) {
+            .vs-feature-image-wrap { border-radius: 0; }
+            .kg-gallery-row { flex-direction: column; }
+        }
+
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://visales.de/#organization",
+  "name": "viSales GmbH",
+  "url": "https://visales.de",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://visales.de/content/images/2025/11/RGB_Logo_viSales_schwarz.png"
+  },
+  "foundingDate": "2010",
+  "description": "viSales GmbH ist eine 2010 in Essen gegründete, seit 2024 in Bochum ansässige B2B-Agentur für visuelle Vertriebskommunikation. Spezialisiert auf 3D-Visualisierung, Foto- und Videoproduktion, Websites, OpenUSD-basierte Workflows, Augmented Reality, interaktive Präsentationen und Spatial Content für erklärungsbedürftige Produkte im Maschinenbau und der Industrie.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Wittener Straße 87",
+    "postalCode": "44789",
+    "addressLocality": "Bochum",
+    "addressRegion": "Nordrhein-Westfalen",
+    "addressCountry": "DE"
+  },
+  "areaServed": "DE",
+  "knowsAbout": [
+    "OpenUSD",
+    "USDZ",
+    "Augmented Reality B2B",
+    "Spatial Computing",
+    "3D Visualisierung B2B",
+    "WebAR",
+    "Digitaler Zwilling",
+    "Produktkonfigurator",
+    "Visual Sales",
+    "Spatial Website",
+    "Apple Vision Pro B2B"
+  ],
+  "memberOf": [
+    {
+      "@type": "Organization",
+      "name": "Alliance for OpenUSD",
+      "url": "https://aousd.org/"
+    },
+    {
+      "@type": "Organization",
+      "name": "Metaverse Standards Forum",
+      "url": "https://metaverse-standards.org/"
+    }
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/visales/",
+    "https://www.youtube.com/@Gerhard_Schroeder",
+    "https://mastodon.social/@visales"
+  ],
+  "email": "sales@visales.de",
+  "telephone": "+49 160 806 0361"
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://visales.de/#gerhard-schroeder",
+  "name": "Gerhard Schröder",
+  "alternateName": "Gerd Schröder",
+  "givenName": "Gerhard",
+  "familyName": "Schröder",
+  "birthDate": "1969",
+  "birthPlace": {
+    "@type": "Place",
+    "name": "Bad Oeynhausen"
+  },
+  "jobTitle": "Gründer & Geschäftsführer",
+  "worksFor": {
+    "@id": "https://visales.de/#organization"
+  },
+  "url": "https://visales.de/gerhard-schroeder-grounding/",
+  "image": "https://visales.de/content/images/2025/10/1706254155883-1.jpeg",
+  "description": "Gerhard Schröder ist Gründer und Geschäftsführer der viSales GmbH, einer B2B-Agentur für visuelle Vertriebskommunikation mit Sitz in Bochum. Er gründete viSales 2010, beschäftigt sich seit 2017 intensiv mit OpenUSD als strategischem Masterdatei-Format für Vertrieb und Marketing und ist Mitglied der Alliance for OpenUSD (AOUSD). Als Konferenzsprecher tritt er auf der XR Expo, dem NextReality Festival und dem XR Symposium auf.",
+  "knowsAbout": [
+    "OpenUSD",
+    "USDZ",
+    "Augmented Reality im B2B-Vertrieb",
+    "Spatial Computing",
+    "Visual Sales",
+    "3D Visualisierung B2B",
+    "WebAR",
+    "Digitaler Zwilling",
+    "Produktkonfigurator",
+    "Spatial Sales Infrastructure",
+    "B2B-Vertriebskommunikation",
+    "Foto- und Videoproduktion B2B",
+    "Website-Entwicklung B2B"
+  ],
+  "memberOf": [
+    {
+      "@type": "Organization",
+      "name": "Alliance for OpenUSD",
+      "url": "https://aousd.org/"
+    },
+    {
+      "@type": "Organization",
+      "name": "Metaverse Standards Forum",
+      "url": "https://metaverse-standards.org/"
+    }
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/gerhardschroeder-visales/",
+    "https://www.youtube.com/@Gerhard_Schroeder",
+    "https://mastodon.social/@visales"
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "viSales GmbH",
+  "description": "B2B-Agentur für visuelle Vertriebskommunikation – 3D-Visualisierung, WebAR und Produktkonfiguratoren für Maschinenbau & Industrie. Standort Bochum, bundesweit tätig.",
+  "url": "https://visales.de",
+  "telephone": "+49 160 806 0361",
+  "image": "https://visales.de/content/images/2025/11/RGB_Logo_viSales_schwarz.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Wittener Straße 87",
+    "postalCode": "44789",
+    "addressLocality": "Bochum",
+    "addressRegion": "Nordrhein-Westfalen",
+    "addressCountry": "DE"
+  },
+  "priceRange": "€€€",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "51.4811",
+    "longitude": "7.2162"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "viSales",
+  "url": "https://visales.de"
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "FAQ: Typische Entscheiderfragen vor einer OpenUSD-Einordnung",
+  "description": "OpenUSD FAQ für Entscheider: Kosten, ROI, interne Organisation, Vendor Lock-in und Umsetzung — typische Fragen aus der Praxis beantwortet.",
+  "url": "https://visales.de/openusd-faq/",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "viSales",
+    "url": "https://visales.de"
+  }
+}
+    </script>
+<!-- Brevo Form Styles -->
+<style>
+  @font-face {
+    font-display: block;
+    font-family: Roboto;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+  }
+  @font-face {
+    font-display: fallback;
+    font-family: Roboto;
+    font-weight: 600;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+  }
+  @font-face {
+    font-display: fallback;
+    font-family: Roboto;
+    font-weight: 700;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+  }
+  #sib-container input:-ms-input-placeholder { text-align:left; font-family:Helvetica,sans-serif; color:#c0ccda; }
+  #sib-container input::placeholder         { text-align:left; font-family:Helvetica,sans-serif; color:#c0ccda; }
+  #sib-container textarea::placeholder      { text-align:left; font-family:Helvetica,sans-serif; color:#c0ccda; }
+  #sib-container a { text-decoration:underline; color:inherit; }
+</style>
+<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+</head>
+<body class="post-template page-openusd-faq has-sans-title has-sans-body">
+
+<div class="gh-viewport">
+
+    <!-- NAVIGATION -->
+    <header id="gh-navigation" class="gh-navigation is-left-logo gh-outer">
+        <div class="gh-navigation-inner gh-inner">
+            <div class="gh-navigation-brand">
+                <a class="gh-navigation-logo is-title" href="/">
+                    <img src="assets/images/logo-visales.png" alt="viSales">
+                </a>
+                <button class="gh-burger gh-icon-button" aria-label="Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <nav class="gh-navigation-menu">
+                <ul class="nav">
+                    <li class="nav-leistungen"><a href="/leistungen/">Leistungen</a></li>
+                    <li class="nav-fallbeispiele"><a href="/fallbeispiele/">Fallbeispiele</a></li>
+                    <li class="nav-praxis"><a href="/praxis/">Praxis</a></li>
+                    <li class="nav-ueber-uns"><a href="/ueber-uns/">Über Uns</a></li>
+                </ul>
+            </nav>
+            <div class="gh-navigation-actions"><a class="vs-nav-cta" href="/kontakt/">Kontakt</a></div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="gh-main">
+        <article class="gh-article post tag-openusd">
+            <header class="gh-article-header gh-canvas">
+                <a class="vs-post-category-badge" href="tag/openusd/">openusd</a>
+<h1 class="gh-article-title is-title">FAQ: Typische Entscheiderfragen vor einer OpenUSD-Einordnung</h1>
+                
+            <div class="gh-article-meta vs-article-meta">
+                <img class="vs-meta-avatar" src="assets/images/2025/10/1706254155883-1.jpeg" alt="Gerhard Schröder">
+                <div class="vs-meta-text">
+                    <span class="vs-meta-author"><a href="https://visales.de/author/gerhard/">Gerhard Schröder</a> <span class="vs-badge-ki">&#10022; Text: Kopf & KI</span></span>
+                    <div class="vs-meta-sub">
+                        <time datetime="2026-03-08">08 Mär. 2026</time>
+                        <span class="vs-meta-sep">&middot;</span>
+                        <span>23 min read</span>
+                    </div>
+                </div>
+            </div>
+            </header>
+            
+    <figure class="gh-article-image vs-feature-image-wrap">
+        <img src="assets/images/2026/03/OpenUSD-FAQ-viSales-Dienstleister.jpeg" alt="FAQ: Typische Entscheiderfragen vor einer OpenUSD-Einordnung" loading="eager">
+        <span class="vs-image-badge vs-badge-bild-ki">Bild: KI</span>
+    </figure>
+            <section class="gh-content gh-canvas is-body">
+                <p>Bevor über konkrete Vorteile, Tools oder Formate gesprochen wird, stellen sich in Unternehmen meist grundlegendere Fragen. Nicht technischer Natur, sondern mit Blick auf Kosten, Organisation, Abhängigkeiten und Zukunftsfähigkeit. Die folgenden Fragen bündeln typische Überlegungen von Geschäftsführung, Marketing und Vertrieb.</p>
+<p><em>Dieser Text ist die FAQ-Ergänzung zu &ldquo;OpenUSD für Entscheider&rdquo;. (Folgt)</em></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3><strong>Einstieg in OpenUSD — mit Unterstützung.</strong></h3>
+<p>Wir begleiten Unternehmen vom ersten OpenUSD-Modell bis zum eingebetteten AR-Erlebnis im Vertrieb. Das erste Gespräch dauert 30 Minuten. Ohne Pitch, ohne Vorbereitungspflicht. <strong>Rheingas, Somfy und Carl Hamm haben mit einem Produkt begonnen.</strong></p>
+<p><a class="gh-button cta-center" href="https://visales.de/kontakt/">Einordnungsgespräch buchen</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>Diese Fragen sind in 5 Cluster unterteilt:</h3>
+<ol>
+<li><strong>Kosten, Aufwand und versteckte Mehrarbeit</strong></li>
+<li><strong>Organisation, Schnittstellen und interne Reibung</strong></li>
+<li><strong>Abhängigkeiten, Plattformen und Datensouveränität</strong></li>
+<li><strong>Zukunftsfähigkeit und Skalierung</strong></li>
+<li><strong>Umsetzung, Vertrieb und Erfolgsmessung</strong></li>
+</ol>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>1. Kosten, Aufwand und versteckte Mehrarbeit</h2>
+<h3>Wo entstehen bei uns doppelte oder dreifache Aufwände in der 3D-Datenaufbereitung, ohne dass wir sie klar beziffern können?</h3>
+<p>In vielen mittelständischen Maschinenbauunternehmen entstehen parallele 3D-Datenwege, ohne dass dies bewusst so geplant ist. Ein interner Mitarbeiter erstellt aus CAD-Daten punktuell Animationsvideos in Unreal – zeitlich begrenzt und abhängig vom vorhandenen Know-how. Parallel nutzt ein externer Dienstleister dieselben CAD-Daten, um sie für eine Unity-Anwendung aufzubereiten, etwa für eine simulationsnahe SPS-Steuerung. Ein weiterer Dienstleister bereitet die gleichen Ausgangsdaten erneut für Apple-AR auf, beispielsweise für Messe- oder Vertriebszwecke.</p>
+<p>Jeder dieser Wege ist fachlich sinnvoll und für seinen Zweck optimiert. Strukturell entstehen jedoch mehrere, voneinander getrennte Konvertierungen und Aufbereitungen derselben Datenbasis. In der Praxis summieren sich so oft drei, vier oder sogar fünf parallele Datenstrecken – ohne dass zusätzlich notwendige CAD-zu-CAD-Anpassungen für unterschiedliche Abteilungen oder Partner bereits berücksichtigt sind.</p>
+<p>Die entstehenden Mehrarbeiten verteilen sich über Zeit, Personen, Budgets und Dienstleister hinweg. Dadurch bleiben sie meist unsichtbar – bis Aufwand, Kosten oder externe Vergleiche das zugrunde liegende Muster sichtbar machen.</p>
+<blockquote>
+<strong>An dieser Stelle sind, wenn man nicht jedes Mal erneut die CAD-Daten für verschiedene Anwendungsfälle aufbereiten lässt, leicht 20-30 Prozent Einsparung möglich.</strong>
+</blockquote>
+<h3>Welche Kosten entstehen nicht bei der Erstellung, sondern bei der wiederholten Anpassung und Neuinterpretation von 3D-Daten?</h3>
+<p>Wenn sich ein Bauteil im Rahmen einer Produktänderung ändert, müssen in der Regel mehrere getrennte 3D-Datenbestände angepasst werden: Renderings, Animationen, Simulationen oder AR-Inhalte. Da diese Daten in unterschiedlichen Systemen und bei verschiedenen Dienstleistern liegen, erfolgt jede Anpassung separat – zeitversetzt und mit erneutem Aufwand.</p>
+<p>In der Praxis führt das häufig dazu, dass Visualisierungen aus Kostengründen nicht mehr aktualisiert werden. Produktbilder oder Messeinhalte zeigen dann ältere Varianten, obwohl intern bereits neue Versionen existieren. Nicht aus Nachlässigkeit, sondern weil jede Änderung neue Abstimmung, Beauftragung und Kosten auslöst.</p>
+<p>Die eigentlichen Kosten entstehen dabei weniger im einzelnen Arbeitsschritt als <strong>durch wiederholte Pflege, Koordination und Verzögerung</strong>. Jede Produktänderung vervielfacht den Aufwand über alle nachgelagerten Datenbestände hinweg – mit direkten Auswirkungen auf Zeit, Budget und Aktualität.</p>
+<h3>Warum ist es für Marketing und Vertrieb oft einfacher, neue Inhalte zu beauftragen, statt bestehende Daten weiterzuverwenden?</h3>
+<p>Für Marketing und Vertrieb sind vorhandene 3D-Daten häufig schwer zugänglich oder nicht unmittelbar nutzbar. Aufbereitete 3D-Daten liegen zudem oft bei externen Dienstleistern. Nutzungs- und Weiterverwendungsrechte sind eingeschränkt oder nicht eindeutig geregelt, sodass selbst kleinere Anpassungen erneut beauftragt werden müssen.</p>
+<p>Da die Kostenstruktur dieser Aufbereitungen für das Unternehmen meist nicht transparent ist, wirken einzelne Änderungen zunächst günstig. In der Summe über Projekte und Zeiträume hinweg entstehen jedoch erhebliche Zusatzkosten.</p>
+<p>So entsteht eine Situation, in der Neuproduktion operativ einfacher erscheint – obwohl sie strukturell teurer ist.</p>
+<h3>Wann rechnet sich eine OpenUSD-Einführung konkret? Welcher ROI-Horizont ist realistisch?</h3>
+<p>Der Return on Investment zeigt sich typischerweise in zwei Wellen: Die erste Welle beginnt nach dem ersten abgeschlossenen Pilotprojekt, also nach 2 bis 6 Monaten. Hier entstehen messbare Einsparungen, weil 3D-Inhalte erstmals mehrfach genutzt werden statt neu produziert zu werden.</p>
+<p>Die zweite Welle — <em>der eigentliche Break-even</em> — liegt für die meisten Mittelständler zwischen 8 und 24 Monaten nach Projektstart. Ausschlaggebend sind drei Faktoren: Wie viele Produkte werden visualisiert? Wie oft ändert sich das Portfolio? Über wie viele Kanäle (Messe, Web, Vertrieb, Schulung) wird dieselbe Visualisierung ausgespielt?</p>
+<p>Ein Unternehmen mit 20 konfigurierbaren Produkten, das bisher für jeden Kanal separate Grafiken beauftragt hat, amortisiert die Einführung deutlich schneller als ein Unternehmen mit 3 Standardprodukten und stabiler Kommunikation.</p>
+<p>Zur Größenordnung: Das Initialinvestment für einen typischen Mittelständler (Pilotprojekt mit 1–3 Produkten, externe Begleitung) liegt im Bereich 5-10.000 Euro<strong> </strong><em>je nach CAD-Ausgangsqualität</em>. </p>
+<h3>Ab welchem Punkt lohnt es sich, den Ursprung unserer 3D-Daten zu hinterfragen, statt immer neue Folgeprozesse zu optimieren?</h3>
+<p>Dieser Punkt ist erreicht, wenn nicht mehr einzelne Projekte, <strong>sondern wiederkehrende Muster</strong> sichtbar werden. Wenn Marketing, Vertrieb, Simulation und externe Partner regelmäßig neue 3D-Aufbereitungen beauftragen, obwohl die Ausgangsdaten bereits existieren. Wenn Anpassungen an Produkten nicht automatisch in allen Visualisierungen ankommen, sondern manuell nachgezogen werden müssen – oder aus Kostengründen unterbleiben.</p>
+<p>Spätestens dann, wenn Neuproduktion operativ einfacher erscheint als Wiederverwendung, ist das kein Effizienzproblem einzelner Teams mehr, sondern ein strukturelles Thema. Weitere Optimierung in nachgelagerten Prozessen senkt dann zwar punktuell Aufwand, ändert aber nichts am Grundmuster: <strong>Jede Änderung erzeugt erneut Koordination, Kosten und Abhängigkeiten.</strong></p>
+<p>An diesem Punkt lohnt es sich, nicht den nächsten Prozess zu verbessern, sondern den Ursprung zu betrachten: Wie 3D-Daten entstehen, wem sie gehören, wie sie strukturiert sind – und ob sie als einmalige Projektdateien oder als dauerhaft nutzbare Unternehmensressource behandelt werden.</p>
+<h3>Was kostet es uns, NICHT zu handeln? (Opportunitätskosten)</h3>
+<p>Diese Frage ist schwerer zu beantworten als die ROI-Frage — aber die ehrlichere.</p>
+<p>Direkt sichtbare Kosten des Nicht-Handelns: Jedes Produkt, das für Messe, Webseite, Vertriebspräsentation und Schulungsunterlagen separat visualisiert wird, erzeugt Mehrkosten von 20-30 % Mehrkosten durch die Beauftragung von verschiedenen Dienstleistern statt einer Masterdatei für alle Zwecke.</p>
+<p>Schwerer messbar, aber real: Verpasste Abschlüsse, weil Vertriebsunterlagen veraltet waren. Messen, bei denen Produkte nicht gezeigt werden konnten, weil die 3D-Aufbereitung zu lange dauerte. Angebote, die ohne visuelle Unterstützung weniger überzeugend waren.</p>
+<blockquote>
+<strong>Der Klassiker: Alte 3D-Renderings werden weiterverwendet weil eine neue Grafik ja so hoch Kosten verursacht.</strong>
+</blockquote>
+<p>Der häufig unterschätzte Kostenfaktor: Je länger gewartet wird, desto größer wird der Schuldenberg an unstrukturierten 3D-Daten. Eine Einführung in zwei Jahren kostet mehr als eine Einführung heute — nicht wegen steigender Tool-Preise, sondern wegen der wachsenden Datenmenge, die dann bereinigt werden muss.</p>
+<p>&nbsp;</p>
+<h2>2. Organisation, Schnittstellen und interne Reibung</h2>
+<h3>Was genau ist heute unser strukturelles Problem mit 3D-Daten – jenseits einzelner Projekte oder Tools?</h3>
+<p>Das strukturelle Problem zeigt sich meist nicht in einzelnen Projekten, sondern im Gesamtbild: Dieselben CAD-Daten durchlaufen mehrere, voneinander unabhängige Aufbereitungsprozesse. Konstruktion liefert an Marketing, Marketing beauftragt externe Dienstleister, Vertrieb benötigt andere Formate, Simulation arbeitet mit eigenen Konvertierungen.</p>
+<p>Jeder Weg ist für sich betrachtet logisch. Strukturell entsteht jedoch ein Muster, bei dem dieselben Ausgangsdaten immer wieder neu interpretiert, vereinfacht oder angereichert werden müssen – ohne dass die Ergebnisse für andere nutzbar bleiben.</p>
+<h3>Wie oft werden dieselben CAD-Daten bei uns für unterschiedliche Zwecke unabhängig voneinander vereinfacht, ergänzt oder angepasst?</h3>
+<p>In der Praxis oft drei- bis fünfmal:</p>
+<ol>
+<li><strong>Konstruktion → Marketing</strong>: Vereinfachung für Renderings</li>
+<li><strong>Konstruktion → Simulation</strong>: Anpassung für FEM/CFD</li>
+<li><strong>Konstruktion → AR-Dienstleister</strong>: Optimierung für mobile Darstellung</li>
+<li><strong>Konstruktion → Messestand-Agentur</strong>: Export für interaktive Displays</li>
+<li><strong>Konstruktion → Vertrieb</strong>: Einzelne Screenshots oder vereinfachte Modelle</li>
+</ol>
+<p>Jede dieser Aufbereitungen erfolgt separat, wird projektbezogen beauftragt und bleibt in der Regel nicht über das Projekt hinaus nutzbar.</p>
+<h3>Wo verlieren wir Zeit zwischen Konstruktion, Simulation, Marketing und Vertrieb, ohne dass es jemandem klar zugeordnet ist?</h3>
+<p>→ <strong>Klärungsschleifen</strong>: &ldquo;Welche Datei ist die aktuelle?&rdquo;, &ldquo;In welchem Format braucht ihr das?&rdquo;<br>
+→ <strong>Manuelle Datentransfers</strong>: E-Mail-Anhänge, FTP-Server, USB-Sticks zwischen Abteilungen<br>
+→ <strong>Wiederholte Erklärungen</strong>: Jeder Dienstleister muss erneut eingewiesen werden, was das Produkt tut<br>
+→ <strong>Versionskonflikte</strong>: Marketing arbeitet mit Stand v2.3, Vertrieb präsentiert v2.1, Konstruktion ist bei v3.0<br>
+→ <strong>Nachbearbeitung</strong>: &ldquo;Können Sie das noch mal in einer anderen Ansicht rendern?&rdquo;</p>
+<p>Diese Zeit wird selten erfasst, weil sie sich über viele kleine Aufgaben verteilt. Sie ist aber real und bindet Kapazität.</p>
+<h3>Warum landen Marketing und Vertrieb regelmäßig bei externen Dienstleistern, obwohl die Daten intern bereits existieren?</h3>
+<p><strong>1. Fehlende Zugänglichkeit</strong><br>
+CAD-Daten liegen in Formaten vor, die Marketing/Vertrieb nicht öffnen können. Die Software ist zu teuer, zu komplex oder nicht verfügbar.</p>
+<p><strong>2. Fehlende Nutzbarkeit</strong><br>
+Selbst wenn die Daten zugänglich wären: CAD-Modelle sind für Konstruktion optimiert, nicht für Präsentation. Sie enthalten technische Details, die für Vertriebszwecke irrelevant sind, und es fehlen visuelle Aufbereitungen (Materialien, Beleuchtung, Umgebung).</p>
+<p><strong>3. Fehlende Kapazität</strong><br>
+Konstruktion hat keine Zeit, Marketinganfragen zu bedienen. Ihre Priorität liegt auf Produktentwicklung, nicht auf visueller Aufbereitung für externe Kommunikation.</p>
+<p><strong>Ergebnis</strong>: Marketing beauftragt externe Dienstleister, die dieselben CAD-Daten erneut aufbereiten – weil der direkte Weg intern nicht funktioniert.</p>
+<h3>Wer macht das intern – haben wir überhaupt die Kapazität?</h3>
+<p>Die Frage nach der Kapazität ist berechtigt, wird aber oft falsch gestellt. OpenUSD erfordert keine Vollzeitstelle — zumindest nicht am Anfang.</p>
+<p>Das typische Profil für eine interne OpenUSD-Verantwortlichkeit: jemand mit <strong>3D-Grundverständnis und Interesse an Kommunikation</strong>. Das kann ein Konstrukteur sein, der verstehen will, wie seine CAD-Daten im Vertrieb ankommen. Oder ein Marketing-Mitarbeiter mit Affinität zu 3D-Software. Wichtiger als der Ausgangspunkt ist die Bereitschaft, den Prozess zwischen Konstruktion und Marketing zu moderieren.</p>
+<p>Eine eigene Stelle ist in den seltensten Fällen von Beginn an nötig. In der Pilotphase reichen <strong>2 bis 4 Stunden pro Woche</strong> für einen bestehenden Mitarbeiter — begleitet durch externe Unterstützung. Nach dem Pilot, wenn Workflows etabliert sind, sinkt der Aufwand auf 2-4 Stunden pro Monat für Pflege und kleinere Updates — <em>solange das Produktportfolio stabil bleibt.</em></p>
+<h3>Brauchen wir neue Leute oder reichen Schulungen bestehender Mitarbeiter?</h3>
+<p>In der Regel reichen Schulungen bestehender Mitarbeiter. Eine Neueinstellung ist erst dann sinnvoll, wenn OpenUSD systematisch über das gesamte Portfolio ausgerollt wird und die interne Datenpflege einen messbaren wöchentlichen Aufwand erzeugt.</p>
+<p>Typischer Schulungsrahmen: <strong>2 bis 3 Tage</strong> für die Grundworkflows (CAD-Export, Dateistruktur, Ausgabe für verschiedene Kanäle). Danach: begleitetes Learning-by-doing im ersten eigenen Projekt. Die meisten Mitarbeiter arbeiten nach 2 bis 3 begleiteten Projekten selbstständig.</p>
+<blockquote>
+<strong>viSales bietet eigene </strong><a href="https://visales.de/beratung/"><strong>OpenUSD-Schlungsformate</strong></a><strong> an.</strong>
+</blockquote>
+<p>Wichtiger als Schulungsdauer ist die Begleitung beim ersten echten Projekt: Hier entscheidet sich, ob der Workflow wirklich in den Arbeitsalltag integriert wird oder als &ldquo;Ausnahmeprozess&rdquo; wahrgenommen wird.</p>
+<h3>Kann OpenUSD schrittweise eingeführt werden oder ist das ein Big Bang?</h3>
+<p>Schrittweise — immer. Ein Big Bang ist weder nötig noch empfehlenswert. Ein bewährter Stufenplan:</p>
+<p><strong>Phase 1 — Pilot (Monat 1–3):</strong> Ein einzelnes Produkt oder eine überschaubare Produktvariante wird als OpenUSD-Masterdatei aufgebaut. Ziel: Den Workflow einmal vollständig durchlaufen. Ergebnis: Eine AR-fähige USDZ-Datei, die für mindestens zwei verschiedene Kanäle genutzt wird.</p>
+<p><strong>Phase 2 — Produktfamilie (Monat 4–9):</strong> Der Workflow wird auf eine ganze Produktfamilie übertragen. Variantenkonfiguration und Versionierung werden erstmals systematisch gelöst. Interne Abläufe zwischen CAD und Marketing werden dokumentiert.</p>
+<p><strong>Phase 3 — Portfolio (ab Monat 10):</strong> Systematischer Aufbau des gesamten relevanten Produktportfolios. Entscheidung über Automatisierungsgrad und Tool-Integration.</p>
+<h3>Was passiert mit laufenden Projekten während der Einführung?</h3>
+<p>Parallelführung. Eine harte Umstellung mitten in laufenden Projekten ist in den meisten Fällen nicht praktikabel und erzeugt unnötigen Stress.</p>
+<p>Die pragmatische Empfehlung: Laufende Projekte werden mit den bisherigen Prozessen abgeschlossen. Neue Projekte — oder die nächste Produktgeneration — starten nach dem OpenUSD-Workflow. So entsteht kein Bruch, und das Team kann den neuen Prozess an einem echten, aber zeitlich entzerrten Projekt lernen.</p>
+<p>Typische Parallelführung: <strong>3 bis 6 Monate</strong>, danach ist der alte Workflow für Neuprojekte abgelöst.</p>
+<h3>Wer &ldquo;besitzt&rdquo; die OpenUSD-Dateien im Unternehmen? Konstruktion? Marketing? IT?</h3>
+<p>Klare Empfehlung: <strong>Konstruktion hält den Schlüssel, Marketing definiert die Anforderungen.</strong></p>
+<p>Die OpenUSD-Masterdatei ist geometrisch präzise — das ist die Domäne der Konstruktion. Gleichzeitig muss sie in verschiedene Ausgabeformate und Kontexte (AR, Web, Print, Messe) überführt werden — das ist die Domäne des Marketings. Beide Seiten müssen eingebunden sein, aber einer muss letztverantwortlich sein.</p>
+<p>In der Praxis funktioniert folgendes Modell gut: <strong>Konstruktion = Datenhoheit und Freigabeverantwortung. Marketing = Ausgabe-Anforderungen und Nutzungsverantwortung.</strong> IT stellt die Infrastruktur (Ablagesysteme, Zugriffsrechte) bereit.</p>
+<p>Was nicht funktioniert: Zuständigkeit bleibt &ldquo;irgendwie bei allen&rdquo; oder liegt ausschließlich bei einer externen Agentur. In beiden Fällen entstehen Pflegelücken.</p>
+<h3>Wie wird Versionierung organisiert? Wie funktioniert die Freigabe-Kette?</h3>
+<p>Für den Einstieg reicht eine strukturierte Ordnerlogik mit klaren Namenskonventionen: <code>[Produktname]_v[Versionsnummer]_[Datum]_[Status]</code>. Einfach, ohne Tool-Abhängigkeit, sofort umsetzbar.</p>
+<p>Für größere Portfolios oder Teams empfiehlt sich eine PLM-Integration (Product Lifecycle Management), wenn ein solches System bereits existiert. So werden CAD-Änderungen automatisch als Trigger für USD-Updates sichtbar.</p>
+<p>Git-ähnliche Systeme (z.B. DVC für große Binärdateien) sind technisch möglich, aber für die meisten Mittelständler in der Einstiegsphase überdimensioniert. Wir haben da eine pragmatische Alternative in Vorbereitung.</p>
+<p>Die Freigabe-Kette sollte explizit definiert sein: Wer darf eine neue Version für die Produktion freigeben? Typisch: <strong>CAD-Verantwortlicher gibt Geometrie frei → Marketing-Verantwortlicher gibt Ausgabe frei → beide Freigaben sind Voraussetzung für eine neue &ldquo;aktive&rdquo; Version.</strong></p>
+<h3>Wie vermeiden wir, dass OpenUSD zum nächsten ungepflegten Datengrab wird?</h3>
+<p>Die häufigsten Governance-Fehler, die aus Projekten bekannt sind:</p>
+<ul>
+<li>Kein benannter Verantwortlicher — die Datei &ldquo;gehört allen&rdquo; und wird von niemandem gepflegt</li>
+<li>Kein definierter Update-Trigger — Produktänderungen in CAD landen nicht automatisch auf dem Radar des OpenUSD-Verantwortlichen</li>
+<li>Zu ambitionierter Start — zu viele Produkte auf einmal, zu wenig Prozessdisziplin, dann Überforderung</li>
+<li>Abhängigkeit von externem Dienstleister für Routinepflege — sobald der Dienstleister wechselt, ist der Workflow tot</li>
+</ul>
+<p>Gegenmaßnahmen: Einen namentlich benannten internen Owner definieren. Einen expliziten Update-Prozess einrichten (z.B. &ldquo;Bei jeder CAD-Freigabe wird geprüft, ob die OpenUSD-Masterdatei aktualisiert werden muss&rdquo;). Quartalsweise Review einplanen: Welche Dateien sind veraltet? Welche werden aktiv genutzt?</p>
+<p>&nbsp;</p>
+<h2>3. Abhängigkeiten, Plattformen und Datensouveränität</h2>
+<h3>Welche Abhängigkeiten gehen wir ein, wenn wir die komplette 3D-Pipeline eines einzelnen Softwareanbieters nutzen?</h3>
+<p>Wer sich ausschließlich auf einen Anbieter verlässt – sei es Apple, NVIDIA oder ein proprietäres System – bindet sich an dessen Roadmap, Preismodell und technologische Entscheidungen.</p>
+<p><strong>Konkrete Risiken:</strong></p>
+<p>→ <strong>Preisänderungen</strong>: Lizenzmodelle können sich ändern, Kosten steigen<br>
+→ <strong>Feature-Entscheidungen</strong>: Der Anbieter entscheidet, welche Funktionen weiterentwickelt werden<br>
+→ <strong>Plattform-Verfügbarkeit</strong>: Was passiert, wenn ein Dienst eingestellt wird?<br>
+→ <strong>Datenformat-Lock-in</strong>: Export in andere Systeme kann eingeschränkt oder verlustbehaftet sein</p>
+<p>OpenUSD reduziert diese Abhängigkeit, weil es als offener Standard nicht an einen Anbieter gebunden ist. Inhalte bleiben nutzbar, auch wenn einzelne Tools oder Plattformen sich ändern.</p>
+<h3>Was passiert mit unseren 3D-Inhalten, wenn sich Anforderungen ändern – neue Kanäle, neue Geräte, neue Kundenvorgaben?</h3>
+<p>Bei klassischen Workflows bedeutet jede neue Anforderung: <strong>Neuproduktion</strong>.</p>
+<p>→ Neuer Ausgabekanal (z.B. Web statt Print) → Daten müssen neu aufbereitet werden<br>
+→ Neues Gerät (z.B. Vision Pro statt iPad) → Andere Formate, andere Optimierung<br>
+→ Neue Kundenvorgabe (z.B. interaktive Konfiguration statt statische Bilder) → Komplett neuer Workflow</p>
+<p>Mit OpenUSD als Masterdatei reduziert sich dieser Aufwand erheblich. Die strukturierten Ausgangsdaten bleiben bestehen, nur die finale Aufbereitung für den jeweiligen Kanal variiert.</p>
+<h3>Wie stellen wir sicher, dass Investitionen in 3D-Inhalte nicht an einzelne Tools oder Dienstleister gebunden bleiben?</h3>
+<p><strong>1. Datenhoheit behalten</strong><br>
+Die OpenUSD-Masterdatei sollte beim Unternehmen liegen, nicht beim Dienstleister. Externe Partner arbeiten mit der Datei, aber das Eigentum und die Kontrolle bleiben intern.</p>
+<p><strong>2. Offene Formate nutzen</strong><br>
+OpenUSD ist ein offener Standard. Inhalte lassen sich von verschiedenen Tools lesen und bearbeiten. Damit entsteht keine Abhängigkeit von einzelnen Softwareanbietern.</p>
+<p><strong>3. Dokumentation und Nachvollziehbarkeit</strong><br>
+Aufbau, Struktur und Entscheidungen sollten dokumentiert sein. Wenn ein Dienstleister ausfällt, muss ein anderer die Arbeit übernehmen können.</p>
+<h3>Welche Rolle spielt Datensouveränität für uns: Wollen wir die Struktur unserer Inhalte selbst kontrollieren oder auslagern?</h3>
+<p>Das ist eine strategische Entscheidung, die jedes Unternehmen selbst treffen muss.</p>
+<p><strong>Option A: Kontrolle behalten (empfohlen)</strong><br>
+Das Unternehmen verwaltet die OpenUSD-Masterdatei intern. Dienstleister arbeiten auf Basis dieser Datei, liefern aber ihre Ergebnisse zurück in die zentrale Struktur.</p>
+<p><strong>Vorteil</strong>: Volle Kontrolle, keine Abhängigkeit, langfristige Nutzbarkeit<br>
+<strong>Nachteil</strong>: Erfordert interne Kapazität und Know-how</p>
+<p><strong>Option B: Auslagern</strong><br>
+Ein externer Partner verwaltet die Datenstruktur. Das Unternehmen bezieht Outputs (Bilder, Videos, AR-Inhalte), hat aber keinen direkten Zugriff auf die Masterdatei.</p>
+<p><strong>Vorteil</strong>: Keine interne Kapazität nötig<br>
+<strong>Nachteil</strong>: Hohe Abhängigkeit, eingeschränkte Flexibilität, höhere langfristige Kosten</p>
+<p>Für die meisten mittelständischen Unternehmen ist <strong>Option A langfristig wirtschaftlicher</strong> – auch wenn der Einstieg mehr Aufwand erfordert.</p>
+<h3>Ist man bei Apple/NVIDIA dann nicht trotzdem gefangen? (Vendor Lock-in)</h3>
+<p><strong>Wichtige Differenzierung:</strong> Apple und NVIDIA nutzen <strong>denselben Standard</strong> (OpenUSD), setzen ihn aber unterschiedlich ein:</p>
+<p>→ <strong>Apple</strong>: Fokus auf Endgeräte und Distribution (AR Quick Look, USDZ)<br>
+→ <strong>NVIDIA</strong>: Fokus auf Systeme und Pipelines (Omniverse, Simulation)</p>
+<p>Da beide auf OpenUSD basieren, sind die Daten <strong>zwischen beiden nutzbar</strong>. Ein USDZ, das für Apple erstellt wurde, kann in Omniverse geöffnet werden. Ein in Omniverse strukturiertes Modell kann als USDZ exportiert werden.</p>
+<p><strong>Kein Lock-in, sondern Wahlfreiheit</strong>: Unternehmen können sogar Apple-AR für Vertrieb nutzen UND gleichzeitig NVIDIA für Simulation – mit derselben Datenbasis wenn Sie das Tool <a href="https://visales.de/usdbridge/">USDbridge</a> nutzen.</p>
+<h3>Was passiert, wenn ein Dienstleister ausfällt?</h3>
+<p>Wenn die OpenUSD-Masterdatei beim Unternehmen liegt (siehe Datensouveränität), ist der Ausfall eines Dienstleisters weniger kritisch.</p>
+<p><strong>Szenario 1: Dienstleister hat die Daten</strong><br>
+→ Problem: Masterdatei ist weg oder nicht zugänglich<br>
+→ Lösung: Neuaufbau, hoher Aufwand</p>
+<p><strong>Szenario 2: Unternehmen hat die Daten</strong><br>
+→ Problem: Dienstleister fällt aus<br>
+→ Lösung: Anderer Dienstleister kann auf derselben Datenbasis weiterarbeiten</p>
+<p><strong>Empfehlung</strong>: OpenUSD-Dateien sollten als <strong>Unternehmensressource</strong> behandelt werden, nicht als Dienstleister-Output.</p>
+<h3>Was, wenn OpenUSD sich nicht durchsetzt?</h3>
+<p>OpenUSD ist kein Startup-Experiment, sondern ein Standard, der von Pixar entwickelt und von Apple, NVIDIA, Disney, Autodesk, Adobe, SIEMENS, BMW und vielen anderen getragen wird.</p>
+<p>Die <strong>Alliance for OpenUSD (AOUSD)</strong> stellt sicher, dass der Standard nicht von Einzelinteressen abhängt. Mitglieder sind u.a.:</p>
+<p>→ Pixar, Apple, NVIDIA, Adobe, Autodesk<br>
+→ SIEMENS, BMW, Mercedes-Benz<br>
+→ Disney, Sony, Epic Games</p>
+<p><strong>Realistische Einschätzung</strong>: OpenUSD ist bereits Industriestandard. Die Frage ist nicht, ob er sich durchsetzt, sondern <strong>wie schnell die Adoption im Mittelstand erfolgt</strong>.</p>
+<p>Selbst im unwahrscheinlichen Fall, dass OpenUSD ersetzt wird: Die Daten sind <strong>offen und standardisiert</strong>, eine Migration in andere Formate ist deutlich einfacher als bei proprietären Systemen.</p>
+<h3>Was sind typische Stolpersteine in den ersten 6 Monaten?</h3>
+<p>Aus der Projekterfahrung sind dies die häufigsten:</p>
+<p><strong>Unterschätzte CAD-Datenqualität:</strong> Die meisten CAD-Modelle sind für die Konstruktion optimiert, nicht für Visualisierung. Fehlende Materialdefinitionen, inkonsistente Benennungen, nicht zusammengeführte Baugruppen — das kostet Zeit, die im Projektplan nicht eingeplant war.</p>
+<p><strong>Fehlende interne Abstimmung:</strong> Konstruktion und Marketing sprechen unterschiedliche Sprachen. Ohne einen definierten Abstimmungsprozess entstehen Missverständnisse darüber, was die Masterdatei leisten soll.</p>
+<p><strong>Unrealistische Erwartungen an &ldquo;eine Datei für alles&rdquo;:</strong> OpenUSD standardisiert die Datenstruktur — aber nicht jeden Output. Für einen hochwertigen Messeeinsatz braucht eine AR-Datei mehr Aufbereitung als für eine schnelle Vertriebsdemonstration. Das ist keine Schwäche des Standards, sondern eine Frage des Ausgabeziels.</p>
+<p><strong>Kein definierter Updateprozess:</strong> Das Pilotprodukt ändert sich — und niemand weiß, dass die OpenUSD-Datei aktualisiert werden muss.</p>
+<p>&nbsp;</p>
+<h2>4. Zukunftsfähigkeit und Skalierung</h2>
+<h3>Warum sind 3D-Daten bei uns heute projektbezogen organisiert, aber nicht als dauerhaft nutzbare Unternehmensressource?</h3>
+<p>Das liegt meist an historisch gewachsenen Strukturen:</p>
+<p>→ <strong>Projekt-Logik</strong>: Jedes Projekt beauftragt eigene Visualisierungen<br>
+→ <strong>Budget-Logik</strong>: Kosten werden pro Projekt abgerechnet, nicht als Investment betrachtet<br>
+→ <strong>Tool-Logik</strong>: Verschiedene Tools erzeugen verschiedene Formate, die nicht kompatibel sind<br>
+→ <strong>Dienstleister-Logik</strong>: Externe Partner liefern projektbezogen, behalten oft die Masterdaten</p>
+<p><strong>OpenUSD ändert das Grundprinzip</strong>: Statt projektbezogener Outputs entsteht eine <strong>zentrale, wiederverwendbare Datenbasis</strong>.</p>
+<h3>Was passiert, wenn wir in zwei oder drei Jahren zusätzliche Ausgabekanäle bedienen müssen – bauen wir dann wieder neue Pipelines auf?</h3>
+<p>Ohne OpenUSD: <strong>Ja</strong>.<br>
+Mit OpenUSD: <strong>Nein</strong>.</p>
+<p>Neue Ausgabekanäle erfordern neue Exporte oder Anpassungen, aber nicht den kompletten Neuaufbau der 3D-Daten. Die Masterdatei bleibt stabil, nur die finale Aufbereitung variiert.</p>
+<p><strong>Beispiel:</strong></p>
+<p>→ <strong>Heute</strong>: Website mit 3D-Konfigurator, Messestand mit AR<br>
+→ <strong>In 2 Jahren</strong>: Zusätzlich VR-Showroom, Spatial Presentation für Vision Pro<br>
+→ <strong>Ohne OpenUSD</strong>: Vier separate Datenbestände, alle neu aufbereitet<br>
+→ <strong>Mit OpenUSD</strong>: Eine Masterdatei, vier verschiedene Exporte</p>
+<h3>Wie können wir sicherstellen, dass heutige Investitionen auch für zukünftige Anwendungsfälle nutzbar bleiben?</h3>
+<p><strong>1. Offene Standards nutzen</strong><br>
+OpenUSD ist ein offener, von der Industrie getragener Standard. Keine Abhängigkeit von einzelnen Anbietern.</p>
+<p><strong>2. Strukturierte Daten statt finale Outputs</strong><br>
+Nicht nur Renderings oder Videos speichern, sondern die strukturierte OpenUSD-Datei. Sie bleibt flexibel anpassbar.</p>
+<p><strong>3. Dokumentation und Wissenssicherung</strong><br>
+Aufbau, Struktur und Entscheidungen sollten nachvollziehbar sein. So bleibt die Datei auch bei Personalwechseln nutzbar.</p>
+<p>&nbsp;</p>
+<h2>5. Umsetzung, Vertrieb und Erfolgsmessung</h2>
+<h3>Welche CAD-Systeme funktionieren gut/schlecht mit OpenUSD?</h3>
+<p>Der Export selbst ist bei den meisten modernen CAD-Systemen lösbar — die eigentliche Herausforderung liegt in der Qualität der Ausgangsdaten.</p>
+<p><strong>Gut unterstützt:</strong> SolidWorks (über SOLIDWORKS Visualize oder Drittanbieter-Plugins), Rhino 3D (native USD-Unterstützung), Blender, Cinema 4D.</p>
+<p><strong>Machbar mit Aufwand:</strong> PTC Creo, Autodesk Inventor (neuere Versionen), Fusion 360.</p>
+<p><strong>Komplex, spezialisierte Werkzeuge nötig:</strong> CATIA, Siemens NX — beide weit verbreitet im Maschinenbau und in der Aerospace-Industrie, beide erfordern entweder Middleware oder spezialisierte Export-Pipelines.</p>
+<blockquote>
+<strong>viSales hat schon diverse Exporter / Konverter entwickelt, darunter die USDbridge Omniverse &lt;&gt; Apple.</strong>
+</blockquote>
+<p>Wichtige Ergänzung: Der Exportprozess ist in den meisten Fällen lösbar. <em>Was unterschätzt wird, ist die Nachbereitung — Materialien definieren, Level-of-Detail anpassen, Dateigröße optimieren. Das ist unabhängig vom CAD-System und erfordert 3D-Kompetenz.</em></p>
+<h3>Was bedeutet OpenUSD für unsere bestehende CAD-Lizenzstruktur?</h3>
+<p>In den meisten Fällen: keine neuen Lizenzen nötig. Der USD/USDZ-Export kann häufig über bestehende Tools oder kostenlose Plugins realisiert werden.</p>
+<p>Ausnahmen gibt es bei sehr spezifischen Anforderungen (automatisierte Batch-Exporte für große Portfolios, direkte PLM-Integration) — hier können kostenpflichtige Middleware-Lösungen sinnvoll sein.</p>
+<p>Die größere Investition liegt nicht in Lizenzen, sondern in der einmaligen Einrichtung des Export-Workflows und der Schulung des CAD-Teams.</p>
+<h3>Export-Workflow: Wie komplex ist der wirklich? Kann das unser CAD-Team ohne Schulung?</h3>
+<p>Nach einmaliger Einrichtung und Schulung: <strong>überschaubar.</strong></p>
+<p>Für ein gut strukturiertes CAD-Modell liegt der Aufwand für einen Export bei <strong>15 bis 45 Minuten</strong> — inklusive Qualitätsprüfung der Ausgabedatei. Bei wiederkehrenden Updates (kleinere Änderungen am bestehenden Modell) oft deutlich weniger.</p>
+<p>Die einmalige Ersteinrichtung — Export-Pipeline konfigurieren, Materialien definieren, Ausgabequalität abstimmen — dauert je nach CAD-System und Modellkomplexität <strong>einen halben bis fünf Tage.</strong></p>
+<p>Automatisierung ist für größere Portfolios möglich und sinnvoll: Skriptbasierte Batch-Exporte können den manuellen Aufwand auf nahezu null reduzieren, erfordern aber technische Kompetenz bei der Einrichtung: <em>Eine der Expertisen von viSales.</em></p>
+<h3>Wer pflegt die OpenUSD-Masterdatei langfristig? Konstruktion oder Marketing?</h3>
+<p>Empfehlung: <strong>Die Konstruktion exportiert und pflegt die Masterdatei. Das Marketing definiert, was die Datei leisten muss.</strong></p>
+<p>Dieses Modell funktioniert deshalb, weil die Geometrie im CAD-System ohnehin gepflegt wird — der USD-Export ist dann ein zusätzlicher Schritt im bestehenden Freigabeprozess, kein separater Workflow. Marketing hält keinen eigenen 3D-Datensatz vor, sondern nutzt die freigegebene Masterdatei als Ausgangspunkt für alle Ausgabeformate.</p>
+<h3>Wie ändert sich das Verkaufsgespräch konkret durch OpenUSD/AR?</h3>
+<p><strong>Vorher:</strong></p>
+<p>→ Vertrieb zeigt PowerPoint mit statischen Produktbildern<br>
+→ Kunde stellt Fragen zu Varianten: &ldquo;Gibt es das auch in größer?&rdquo;<br>
+→ Vertrieb muss zurück ins Büro, neue Bilder anfordern, Folgetermin vereinbaren<br>
+→ Entscheidung verzögert sich</p>
+<p><strong>Nachher:</strong></p>
+<p>→ Vertrieb zeigt AR-Modell direkt beim Kunden (iPad/iPhone)<br>
+→ Kunde sieht das Produkt im Raum, in Originalgröße<br>
+→ Varianten können direkt gewechselt werden (Farbe, Größe, Ausstattung)<br>
+→ Entscheidung fällt im ersten Gespräch</p>
+<h3>Was kann der Vertrieb jetzt, was vorher nicht ging?</h3>
+<p>→ <strong>Produktvarianten live zeigen</strong> (ohne Rückfragen ans Büro)<br>
+→ <strong>Größenvergleiche vor Ort</strong> (AR zeigt Maschine in Originalgröße beim Kunden)<br>
+→ <strong>Komplexe Funktionen erklären</strong> (animierte Abläufe statt statische Bilder)<br>
+→ <strong>Dokumentation im Gespräch</strong> (Screenshots/Videos der AR-Ansicht als Gesprächsprotokoll)<br>
+→ <strong>Schnellere Angebotserstellung</strong> (Kunde wählt Konfiguration, Vertrieb übernimmt direkt ins Angebot)</p>
+<h3>Mobile-Nutzung: Funktioniert das wirklich beim Kunden vor Ort?</h3>
+<p><strong>Ja – mit klaren Rahmenbedingungen:</strong></p>
+<p>→ <strong>Apple-Ökosystem</strong>: iPhone/iPad sind im B2B weit verbreitet, <a href="https://visales.de/wozu-braucht-man-ar-quick-look-von-apple/">AR Quick Look</a> funktioniert out-of-the-box<br>
+→ <strong>Keine App nötig</strong>: QR-Code scannen, AR-Inhalt öffnet sich direkt<br>
+→ <strong>Offline-fähig</strong>: USDZ-Dateien können vorab heruntergeladen werden, kein Internet beim Kunden nötig</p>
+<p><strong>Einschränkungen:</strong></p>
+<p>→ <strong>Android-Geräte</strong>: Eingeschränkte Unterstützung (siehe <a href="https://visales.de/tag/openusd-usdz/">USDZ-Seite</a>)<br>
+→ <strong>Lichtverhältnisse</strong>: AR funktioniert besser bei guter Beleuchtung<br>
+→ <strong>Raumgröße</strong>: Sehr große Maschinen brauchen entsprechend Platz für AR-Darstellung</p>
+<h3>Wer in unserer Branche macht das schon? Wo ist der First-Mover-Vorteil?</h3>
+<p>Die frühen Anwender kommen aus Branchen mit hohem Visualisierungsbedarf und komplexen Produkten: Aerospace, Automotive, Hightech-Electronics. Dort ist OpenUSD seit 2022/2023 systematisch im Einsatz.</p>
+<p>Im deutschen Mittelstand — Maschinenbau, Anlagenbau, Medizintechnik, Möbel/Interior — sind es derzeit die Unternehmen, die AR aktiv im Vertrieb einsetzen wollen und gemerkt haben, dass der bisherige Weg (separate Visualisierung pro Kanal) nicht skaliert.</p>
+<p>First-Mover-Vorteil: Wer OpenUSD heute einführt, hat in 8 bis 24 Monaten einen Datenbestand, den Wettbewerber erst aufbauen müssen. Das gilt besonders für Branchen, in denen Konfigurierbarkeit und Produktvarianz hoch sind.</p>
+<h3>Können wir damit echte Differenzierung schaffen oder macht das bald jeder?</h3>
+<p><strong>Aktuelle Situation (2026):</strong></p>
+<p>→ <strong>AR wird viel beworben</strong> (Hype-Phase)<br>
+→ <strong>Wenige setzen es wirklich ein</strong> (Umsetzungslücke)<br>
+→ <strong>Noch weniger machen es gut</strong> (Qualitätslücke)</p>
+<p><strong>First-Mover-Vorteil existiert noch</strong> – aber das Zeitfenster schließt sich. In 2-3 Jahren wird AR im B2B-Vertrieb Standard sein.</p>
+<p><strong>Differenzierung entsteht nicht durch &ldquo;wir haben AR&rdquo;</strong>, sondern durch:</p>
+<p>→ <strong>Wie gut ist die Qualität?</strong> (realistische Darstellung, flüssige Performance)<br>
+→ <strong>Wie sinnvoll ist der Einsatz?</strong> (AR wo es hilft, nicht als Selbstzweck)<br>
+→ <strong>Wie integriert ist es?</strong> (Teil des Vertriebsprozesses, nicht isoliertes Feature)</p>
+<h3>Welche Dienstleister können OpenUSD wirklich? Red Flags bei Agentur-Auswahl?</h3>
+<p>OpenUSD ist ein 10 Jahre alter Standard. Viele Agenturen bieten heute immer noch &ldquo;AR&rdquo; und &ldquo;3D&rdquo; an — aber nicht alle verstehen die zugrunde liegende Datenstruktur. Der Unterschied ist entscheidend für die langfristige Nutzbarkeit der erstellten Inhalte.</p>
+<p><strong>Red Flags:</strong></p>
+<ul>
+<li>Die Agentur spricht nur von &ldquo;AR-Erlebnissen&rdquo;, nicht von Datenstrukturen oder Masterdateien</li>
+<li>Jeder Ausgabekanal wird als separates Projekt verkauft, ohne gemeinsame Datenbasis</li>
+<li>Keine nachweisbare Erfahrung mit CAD-Daten-Import und -Aufbereitung</li>
+<li>Die Masterdatei bleibt nach Projektabschluss bei der Agentur, nicht beim Kunden</li>
+<li>Kein Verständnis für Vertriebsprozesse — rein marketinggetriebenes Denken ohne Einblick in B2B-Verkaufsprozesse</li>
+</ul>
+<p><strong>Was eine gute Agentur/ein guter Dienstleister mitbringen sollte:</strong> Nachweisliche Erfahrung mit CAD-Quellmaterial. Klares Konzept, wie die Masterdatei beim Kunden bleibt und intern gepflegt werden kann. Verständnis dafür, dass der erste Ausgabekanal nicht der letzte sein wird.</p>
+<h3>In-house vs. Agentur vs. Hybrid – was sollte man auf jeden Fall intern behalten?</h3>
+<p><strong>Intern behalten:</strong></p>
+<ul>
+<li>Datenhoheit und Entscheidung über die Masterdatei-Struktur</li>
+<li>CAD-Export (oder zumindest die Freigabe der Ausgangsdaten)</li>
+<li>Strategische Entscheidungen: Welche Produkte werden wie visualisiert?</li>
+</ul>
+<p><strong>Extern einkaufen:</strong></p>
+<ul>
+<li>Spezialisierte 3D-Aufbereitung für komplexe Geometrien oder besondere Ausgabequalität</li>
+<li>Animation, Konfigurationslogik, programmiertechnisch komplexe AR-Anwendungen</li>
+<li>Initiale Einrichtung der Export-Pipeline</li>
+</ul>
+<p><strong>Hybrid:</strong></p>
+<ul>
+<li>Erste Masterdatei gemeinsam mit einem Dienstleister entwickeln — als Lernprojekt</li>
+<li>Danach interne Pflege und Updates, externer Dienstleister für außerordentliche Anforderungen</li>
+</ul>
+<p>Das Ziel sollte immer sein: Nach dem ersten Projekt ist das interne Team in der Lage, Standardupdates selbstständig durchzuführen. Dauerhafte vollständige Abhängigkeit von einem Dienstleister ist kein gutes Zeichen — weder für die Agentur noch für den Kunden.</p>
+<h3>Woran messen wir Erfolg nach 6/12 Monaten?</h3>
+<p><strong>Harte KPIs:</strong></p>
+<ul>
+<li><strong>Kostenreduktion:</strong> Wie viel wurde bei 3D-Aufbereitungen eingespart gegenüber dem Vorjahr? (Vergleich: Anzahl Aufträge an externe Visualisierer × durchschnittlicher Auftragswert)</li>
+<li><strong>Zeitersparnis:</strong> Wie lange dauert heute eine Produktvisualisierung für einen neuen Kanal im Vergleich zum bisherigen Prozess?</li>
+<li><strong>Wiederverwendungsrate:</strong> Wie oft wird dieselbe OpenUSD-Datei für verschiedene Ausgabezwecke genutzt? (Ziel: mindestens 3 verschiedene Ausgabeformate aus einer Masterdatei)</li>
+<li><strong>Aktualitätsgrad:</strong> Wie groß ist die Zeitdifferenz zwischen CAD-Freigabe und aktualisierter Visualisierung? (Ziel: unter 2 Wochen)</li>
+</ul>
+<p><strong>Weiche KPIs:</strong></p>
+<ul>
+<li><strong>Vertriebsnutzung:</strong> Wie oft setzen Vertriebsmitarbeiter AR aktiv im Kundengespräch ein? Empfehlung: monatliche Abfrage per kurzer Umfrage.</li>
+<li><strong>Kundenfeedback:</strong> Werden AR-Präsentationen aktiv kommentiert? Stellen Kunden Folgefragen zum Produkt (statt zur Visualisierung)?</li>
+<li><strong>Interne Nachfrage:</strong> Fordern Abteilungen selbst 3D-Inhalte an — oder muss Marketing immer anschieben?</li>
+<li><strong>Weniger Rückfragen:</strong> Anzahl der &ldquo;Können Sie das noch mal anders zeigen?&rdquo;-Anfragen nach Angeboten.</li>
+</ul>
+<p><strong>Ansätze zur Messung weicher KPIs:</strong></p>
+<ul>
+<li>Vorher/Nachher-Befragung im Vertriebsteam (3 Fragen, anonym, quartalsweise)</li>
+<li>Anzahl Folgetermine nach Erstgespräch — weniger kann bedeuten: Entscheidung fällt schneller</li>
+<li>Anzahl Änderungswünsche nach Angebotserstellung — weniger bedeutet: Kunde hatte bereits ein klares Bild</li>
+<li>Optionaler NPS beim Kunden nach Präsentation</li>
+</ul>
+<h3>Typische Projektdauer für einen Piloten?</h3>
+<p>Von Kick-off bis zur ersten einsatzfähigen AR-Darstellung: <strong>4 bis 8 Wochen</strong> für ein einzelnes, gut dokumentiertes Produkt.</p>
+<p>Von Kick-off bis zur Vertriebsintegration (Workflow steht, Mitarbeiter sind geschult, Datei ist im Einsatz): <strong>2 bis 4 Monate.</strong></p>
+<p>Portfolio-Ausbau auf 10+ Produkte: <strong>6 bis 12 Monate</strong>, abhängig von CAD-Datenqualität und internen Kapazitäten.</p>
+<blockquote>
+<strong>Die häufigste Ursache für Verzögerungen ist nicht die Technik, sondern die Klärung interner Zuständigkeiten und die Qualität der Ausgangsdaten.</strong>
+</blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><em>Dieser Text entstand im Rahmen meiner Vorbereitungen für eine Seite zum Thema &ldquo;OpenUSD für Entscheider&rdquo; und wird in Zukunft auf der neuen Seite unter &ldquo;Weitere Infos&rdquo; als Longread angeboten werden.</em></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>Wie es weitergehen kann</h2>
+<p>Wenn unsere Arbeitsweise zu eurer Fragestellung passt, gibt es verschiedene Möglichkeiten, weiterzugehen. Nicht jede Anfrage muss sofort ein Projekt sein – oft reicht ein erstes gemeinsames Einordnen.</p>
+<p>Alle Leistungen rund um OpenUSD und was das für deinen Vertrieb bedeutet: <a href="https://visales.de/openusd-dienstleister/">OpenUSD Dienstleister viSales</a></p>
+<h3><strong>Ins Gespräch kommen</strong></h3>
+<p>Wenn du prüfen möchtest, ob ein überschaubarer Einstieg sinnvoll ist, sprechen wir darüber in Ruhe. <strong>Ohne Pitch, bei einer Tasse Tee oder Kaffee.</strong></p>
+<p><a class="gh-button cta-center" href="https://visales.de/kontakt/">Kontakt aufnehmen</a></p>
+<hr>
+<p>Diese FAQ beantwortet typische Entscheiderfragen rund um OpenUSD. Die vollständige Einordnung mit Praxisbeispielen und Video gibt es hier: <a href="https://visales.de/openusd/"><strong>OpenUSD für Entscheider</strong></a></p>
+            </section>
+            
+            <aside class="vs-author-block gh-canvas">
+                <img class="vs-author-block-avatar" src="assets/images/2025/10/1706254155883-1.jpeg" alt="Gerhard Schröder">
+                <div class="vs-author-block-text">
+                    <span class="vs-author-block-label">Über den Autor</span>
+                    <a href="https://visales.de/author/gerhard/" class="vs-author-block-name">Gerhard Schröder</a>
+                    <p class="vs-author-bio">Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit über 15 Jahren spezialisiert auf visuelle Vertriebskommunikation für Maschinenbau & AeroSpace — mit 3D-Visualisierung & OpenUSD. Mitglied der AOUSD, Speaker zu AR & Spatial Sales.</p>
+                </div>
+            </aside>
+            
+        </article>
+    </main>
+
+    
+        <footer class="gh-footer gh-outer">
+            <div class="gh-footer-inner gh-inner">
+                
+            <div class="vs-footer-trust">
+                <div class="vs-footer-trust-clients">Ausgewählte Kunden und Partner: Astrofein · Carl Hamm · EnBW · ESA/ESERO · Evonik · GROHE · igus · K+S · Krupp Stiftung · Polaris Spaceplane · Rheingas · Röchling · Ruhrmuseum · Siemens · Somfy · Stifterverband · TURCK · VEMAG · Wavin · WMF · zgoll u.a.</div>
+                <div class="vs-footer-trust-member">Mitglied der <a href="https://aousd.org/" target="_blank" rel="noopener">Alliance for OpenUSD</a> &amp; <a href="https://metaverse-standards.org/" target="_blank" rel="noopener">Metaverse Standards Forum</a></div>
+            </div>
+                <div class="vs-footer-grid">
+                    <div class="vs-footer-col"><h4>Kontakt</h4><p class="vs-footer-address">viSales GmbH<br>Wittener Str. 87<br>44789 Bochum</p><a href="/kontakt/" class="gh-button vs-footer-cta">Termin buchen</a><ul><li><a href="mailto:sales@visales.de">sales@visales.de</a></li><li><a href="tel:+491608060361">+49-160-8060361</a></li></ul><h4 class="vs-footer-col-subtitle">KI & Daten</h4><ul><li><a href="/ki/">Grounding-Pages</a></li><li><a href="/llms.txt">LLMs.txt</a></li><li><a href="https://notebooklm.google.com/notebook/8214e4ca-dd3d-4420-9cc5-be74370ea3ed?authuser=1&ref=visales.de" target="_blank" rel="noopener">Notebook LLM</a></li></ul></div>
+                <div class="vs-footer-col"><h4>Visual Sales</h4><ul><li><a href="/grafik-2d-3d/">Grafik & Visualisierung</a></li><li><a href="/interaktive-prasentationen/">Interaktive Präsentationen</a></li><li><a href="/video/">Video- & Fotoproduktion</a></li><li><a href="/produktkonfigurator/">Produktkonfiguratoren (Web)</a></li><li><a href="/website/">Website</a></li></ul><h4 class="vs-footer-col-subtitle">Strategie</h4><ul><li><a href="/beratung/">Beratung & Workshops</a></li><li><a href="/vortraege-gerhard-schroeder/">Vorträge & Impulse</a></li></ul></div>
+                <div class="vs-footer-col"><h4>Immersive Sales</h4><ul><li><a href="/ar-konfigurator/">Produktkonfiguratoren (AR/VR)</a></li><li><a href="/augmented-reality/">Augmented Reality</a></li><li><a href="/messen/">Messe-Lösungen</a></li><li><a href="/virtuelle-rundgange/">Virtuelle Rundgänge</a></li><li><a href="/immersive-video/">Immersive Video</a></li><li><a href="/spatial-website/">Spatial Websites</a></li><li><a href="/spatial-presentation/">Spatial Presentations</a></li><li><a href="/tag/openusd/">OpenUSD / NVIDIA Omniverse</a></li></ul></div>
+                <div class="vs-footer-col"><h4 class="vs-footer-col-subtitle"><a href="/produkte/" class="vs-footer-sub-h4-link">Produkte</a></h4><ul><li class="vs-footer-prod-item"><a href="/usdconfig/">→ USDconfig</a></li><li class="vs-footer-prod-item"><a href="/usdbridge/">→ USDbridge</a></li><li class="vs-footer-prod-item"><a href="/skillcms/">→ SkillCMS</a></li><li class="vs-footer-prod-more vs-footer-prod-item"><a href="/produkte/">→ Weitere Produkte</a></li></ul><h4 class="vs-footer-col-subtitle">Feeds & Social</h4><ul><li><a href="/rss/">RSS Website</a></li><li><a href="https://visualcom.podcaster.de/visual-com.rss" target="_blank" rel="noopener">RSS Visual Com-Podcast</a></li><li><a href="https://mastodon.social/@visales" target="_blank" rel="noopener">@visales@mastodon.social</a></li><li><a href="https://www.linkedin.com/in/gerhardschroeder-visales/" target="_blank" rel="noopener">LinkedIn · Gerhard Schröder</a></li><li><a href="https://www.youtube.com/@Gerhard_Schroeder" target="_blank" rel="noopener">YouTube · Gerhard Schröder</a></li><li><a href="https://github.com/KopfKinoK3" target="_blank" rel="noopener">GitHub · Gerhard Schröder</a></li></ul></div>
+                <div class="vs-footer-col vs-footer-newsletter">
+                    <h4>VISUAL SALES: 1x IM MONAT</h4>
+                    <div class="sib-form" style="text-align:center; background-color:transparent;">
+  <div id="sib-form-container" class="sib-form-container">
+    <div id="error-message" class="sib-form-message-panel" style="font-size:14px; text-align:left; font-family:Helvetica,sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949; max-width:540px;">
+      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+          <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z"/>
+        </svg>
+        <span class="sib-form-message-panel__inner-text">Deine Anmeldung konnte nicht gespeichert werden. Bitte versuche es erneut.</span>
+      </div>
+    </div>
+    <div></div>
+    <div id="success-message" class="sib-form-message-panel" style="font-size:14px; text-align:left; font-family:Helvetica,sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66; max-width:540px;">
+      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+          <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z"/>
+        </svg>
+        <span class="sib-form-message-panel__inner-text">Deine Anmeldung war erfolgreich.</span>
+      </div>
+    </div>
+    <div></div>
+    <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid; direction:ltr">
+      <form id="sib-form" method="POST" action="https://ed37356f.sibforms.com/serve/MUIFAMKItFwOePtKt38bwlHC4cSspkcZ6pYPevEr8AsnvWWeQFNE7OwvJmKfM3kijjStDcWfD4qPqdoiSfLeklbVddQaI5piWBPdGpytEMKWqI3DdHpEAIbcRz96IrL9NR13acGaIgGhvWvoYnHPrUoJa9M4Z0Glk2syAIhLy_96x5C0ClF4jYfI0fKKioLK2g1uHjXS3uvTH6Cw" data-type="subscription">
+        <div style="padding: 8px 0;">
+          <div class="sib-input sib-form-block">
+            <div class="form__entry entry_block">
+              <div class="form__label-row">
+                <label class="entry__label" style="display:none;" for="EMAIL"></label>
+                <div class="entry__field">
+                  <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="deine@email.de" data-required="true" required />
+                </div>
+              </div>
+              <label class="entry__error entry__error--primary" style="font-size:14px; font-family:Helvetica,sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;"></label>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 8px 0;">
+          <div class="sib-optin sib-form-block" data-required="true">
+            <div class="form__entry entry_mcq">
+              <div class="form__label-row">
+                <div class="entry__choice">
+                  <label>
+                    <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" required />
+                    <span class="checkbox checkbox_tick_positive"></span>
+                    <span style="font-size:13px; font-family:Helvetica,sans-serif; color:#3C4858;"><p>Ich möchte den Visual Sales Newsletter erhalten und akzeptiere die <a href="/datenschutz/">Datenschutzerklärung</a>.</p></span>
+                  </label>
+                </div>
+              </div>
+              <label class="entry__error entry__error--primary" style="font-size:14px; font-family:Helvetica,sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;"></label>
+              <label class="entry__specification" style="font-size:12px; font-family:Helvetica,sans-serif; color:#8390A4;">
+                Du kannst den Newsletter jederzeit über den Link im Newsletter abbestellen.
+              </label>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 8px 0;">
+          <div class="sib-form-block" style="text-align:left">
+            <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:15px; font-weight:700; font-family:Helvetica,sans-serif; color:#FFFFFF; background-color:#f2902a; border-radius:6px; border-width:0px;" form="sib-form" type="submit">
+              <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"/>
+              </svg>
+              ANMELDEN
+            </button>
+          </div>
+        </div>
+        <div style="padding: 6px 0;">
+          <div style="font-size:11px; text-align:left; font-family:Helvetica,sans-serif; color:#8390A4;">
+            <p>Wir nutzen Brevo als Marketing-Plattform. Mit dem Absenden stimmst du zu, dass deine Daten zur Bearbeitung an Brevo übertragen werden — gemäß der <a href="https://www.brevo.com/de/legal/privacypolicy/" target="_blank" rel="noopener">Datenschutzerklärung von Brevo</a>.</p>
+          </div>
+        </div>
+        <input type="text" name="email_address_check" value="" class="input--hidden">
+        <input type="hidden" name="locale" value="de">
+      </form>
+    </div>
+  </div>
+</div>
+                </div>
+                </div>
+                <div class="vs-footer-bottom">
+                    <div class="vs-footer-copy">
+                        &copy; 2026 viSales GmbH &middot; Bochum &middot; Gespräche kürzer, Entscheidungen klarer, Abschlüsse planbarer.
+                    </div>
+                    <div class="vs-footer-legal">
+                        <a href="/impressum/">Impressum</a><a href="/datenschutz/">Datenschutz</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+</div>
+
+<script src="assets/js/source.js"></script>
+<script>
+    // kg-toggle-card interaktiv
+    document.querySelectorAll('.kg-toggle-card').forEach(function(card) {
+        var heading = card.querySelector('.kg-toggle-heading');
+        var content = card.querySelector('.kg-toggle-content');
+        if (!heading || !content) return;
+
+        function openToggle() {
+            card.setAttribute('data-kg-toggle-state', 'open');
+            content.style.height = content.scrollHeight + 'px';
+        }
+        function closeToggle() {
+            card.setAttribute('data-kg-toggle-state', 'close');
+            content.style.height = '0';
+        }
+
+        heading.addEventListener('click', function() {
+            card.getAttribute('data-kg-toggle-state') === 'open'
+                ? closeToggle()
+                : openToggle();
+        });
+
+        heading.setAttribute('tabindex', '0');
+        heading.setAttribute('role', 'button');
+        heading.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                heading.click();
+            }
+        });
+    });
+
+    // D0.1 — Galerie Lightbox via PhotoSwipe 5
+    (function() {
+        var galleries = document.querySelectorAll('.kg-gallery-card');
+        if (!galleries.length) return;
+
+        // Lade PhotoSwipe dynamisch
+        var cssLink = document.createElement('link');
+        cssLink.rel = 'stylesheet';
+        cssLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.min.css';
+        document.head.appendChild(cssLink);
+
+        var script = document.createElement('script');
+        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/umd/photoswipe.umd.min.js';
+        script.onload = function() {
+            galleries.forEach(function(gallery) {
+                var images = gallery.querySelectorAll('.kg-gallery-image img');
+                var items = [];
+                images.forEach(function(img) {
+                    var w = img.naturalWidth  || img.getAttribute('width')  || 1200;
+                    var h = img.naturalHeight || img.getAttribute('height') || 800;
+                    items.push({ src: img.src, width: parseInt(w), height: parseInt(h) });
+                });
+
+                images.forEach(function(img, idx) {
+                    // Wrap in <a> falls noch nicht vorhanden
+                    if (img.parentElement.tagName !== 'A') {
+                        var a = document.createElement('a');
+                        a.href = img.src;
+                        img.parentNode.insertBefore(a, img);
+                        a.appendChild(img);
+                    }
+                    img.parentElement.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        var pswp = new PhotoSwipe({
+                            dataSource: items,
+                            index: idx,
+                            bgOpacity: 0.92,
+                            showHideAnimationType: 'fade',
+                        });
+                        pswp.init();
+                    });
+                });
+            });
+        };
+        document.body.appendChild(script);
+    })();
+
+</script>
+<!-- Brevo Form Scripts -->
+<script>
+  window.REQUIRED_CODE_ERROR_MESSAGE = 'Wähle bitte einen Ländervorwahl aus.';
+  window.LOCALE = 'de';
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfe das Feldformat und versuche es erneut.";
+  window.REQUIRED_ERROR_MESSAGE = "Dieses Feld darf nicht leer sein.";
+  window.GENERIC_INVALID_MESSAGE = "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfe das Feldformat und versuche es erneut.";
+  window.translation = {
+    common: {
+      selectedList: '{quantity} Liste ausgewählt',
+      selectedLists: '{quantity} Listen ausgewählt',
+      selectedOption: '{quantity} ausgewählt',
+      selectedOptions: '{quantity} ausgewählt',
+    }
+  };
+  var AUTOHIDE = Boolean(0);
+</script>
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+
+<div id="vs-cookie-banner" class="vs-cookie-banner" aria-live="polite" role="dialog" aria-label="Cookie-Einstellungen">
+  <div class="vs-cookie-inner">
+    <div class="vs-cookie-text">
+      <strong>Cookies &amp; Datenschutz</strong>
+      <p>Wir nutzen Cookies für Newsletter, Analysen, Werbung und eingebettete Medien (YouTube, Podcast).
+        <a href="/datenschutz/">Datenschutz&shy;erklärung</a>
+      </p>
+    </div>
+    <div class="vs-cookie-actions">
+      <button class="gh-button vs-cookie-btn-all" id="vs-cookie-accept-all">Alle akzeptieren</button>
+      <button class="vs-cookie-btn-settings" id="vs-cookie-toggle-settings">Einstellungen</button>
+      <button class="vs-cookie-btn-deny" id="vs-cookie-deny">Nur notwendige</button>
+    </div>
+  </div>
+  <div id="vs-cookie-settings-panel" class="vs-cookie-settings-panel" hidden>
+    <div class="vs-cookie-cats">
+      <label class="vs-cookie-cat">
+        <span class="vs-cookie-cat-info">
+          <strong>Notwendig</strong>
+          <small>Technisch erforderlich, immer aktiv</small>
+        </span>
+        <span class="vs-cookie-toggle vs-cookie-toggle--disabled is-on"><span></span></span>
+      </label>
+      <label class="vs-cookie-cat">
+        <span class="vs-cookie-cat-info">
+          <strong>Funktional</strong>
+          <small>Newsletter-Anmeldung via Brevo</small>
+        </span>
+        <span class="vs-cookie-toggle" data-cat="funktional"><span></span></span>
+      </label>
+      <label class="vs-cookie-cat">
+        <span class="vs-cookie-cat-info">
+          <strong>Analyse</strong>
+          <small>Google Analytics &amp; Search Console</small>
+        </span>
+        <span class="vs-cookie-toggle" data-cat="analyse"><span></span></span>
+      </label>
+      <label class="vs-cookie-cat">
+        <span class="vs-cookie-cat-info">
+          <strong>Marketing</strong>
+          <small>Google Ads</small>
+        </span>
+        <span class="vs-cookie-toggle" data-cat="marketing"><span></span></span>
+      </label>
+      <label class="vs-cookie-cat">
+        <span class="vs-cookie-cat-info">
+          <strong>Medien</strong>
+          <small>YouTube-Videos, Podcast-Player</small>
+        </span>
+        <span class="vs-cookie-toggle" data-cat="medien"><span></span></span>
+      </label>
+    </div>
+    <div class="vs-cookie-settings-actions">
+      <button class="gh-button vs-cookie-btn-save" id="vs-cookie-save">Auswahl speichern</button>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var STORE_KEY = 'vsConsent';
+  var banner    = document.getElementById('vs-cookie-banner');
+  var panel     = document.getElementById('vs-cookie-settings-panel');
+  var toggles   = banner ? banner.querySelectorAll('.vs-cookie-toggle[data-cat]') : [];
+
+  function getConsent(){ try{ return JSON.parse(localStorage.getItem(STORE_KEY)||'null'); }catch(e){ return null; } }
+  function setConsent(obj){
+    localStorage.setItem(STORE_KEY, JSON.stringify(obj));
+    document.dispatchEvent(new CustomEvent('vsCookieConsent', {detail: obj}));
+    if(typeof gtag === 'function'){
+      gtag('consent', 'update', {
+        'analytics_storage': obj.analyse ? 'granted' : 'denied',
+        'ad_storage':        obj.marketing ? 'granted' : 'denied'
+      });
+    }
+  }
+  function hideBanner(){ if(banner) banner.style.display='none'; }
+
+  function applyToggles(obj){
+    toggles.forEach(function(t){
+      if(obj && obj[t.dataset.cat]) t.classList.add('is-on');
+      else t.classList.remove('is-on');
+    });
+  }
+
+  var existing = getConsent();
+  if(existing){
+    hideBanner();
+    if(typeof gtag === 'function'){
+      gtag('consent', 'update', {
+        'analytics_storage': existing.analyse ? 'granted' : 'denied',
+        'ad_storage':        existing.marketing ? 'granted' : 'denied'
+      });
+    }
+    return;
+  }
+
+  if(!banner) return;
+  banner.style.display = 'block';
+
+  document.getElementById('vs-cookie-accept-all').addEventListener('click', function(){
+    var obj = {funktional:true, analyse:true, marketing:true, medien:true};
+    setConsent(obj); hideBanner();
+  });
+
+  document.getElementById('vs-cookie-deny').addEventListener('click', function(){
+    setConsent({funktional:false, analyse:false, marketing:false, medien:false}); hideBanner();
+  });
+
+  document.getElementById('vs-cookie-toggle-settings').addEventListener('click', function(){
+    var hidden = panel.hidden;
+    panel.hidden = !hidden;
+    this.textContent = hidden ? 'Einstellungen schließen' : 'Einstellungen';
+  });
+
+  toggles.forEach(function(t){
+    t.addEventListener('click', function(){ this.classList.toggle('is-on'); });
+  });
+
+  document.getElementById('vs-cookie-save').addEventListener('click', function(){
+    var obj = {};
+    toggles.forEach(function(t){ obj[t.dataset.cat] = t.classList.contains('is-on'); });
+    setConsent(obj); hideBanner();
+  });
+})();
+</script>
+</body>
+</html>
