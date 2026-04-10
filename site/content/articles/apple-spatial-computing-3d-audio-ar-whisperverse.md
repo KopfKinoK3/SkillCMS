@@ -14,6 +14,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2025-07-06T21:46:00.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 Kopfhörer mit Kamera und Siri-Anbindung an mein iPhone. Was wäre wenn es so ein Produkt gäbe?* Eine kleine Geschichte dazu: 
