@@ -26,6 +26,8 @@ faq:
     a: "AR Quick Look Banner funktioniert auf allen Apple-Geräten mit Safari ab iOS 13.3: iPhone und iPad. macOS Safari zeigt USDZ als 3D-Viewer, aber ohne AR-Funktion. Android-Geräte nutzen Google Scene Viewer – dort ist keine Banner-Funktion verfügbar."
   - q: "Wie aufwendig ist die technische Umsetzung von AR Quick Look Banner?"
     a: "Minimal. Ein einziges HTML-Attribut am Link-Tag genügt für Custom Action. Für Custom HTML Banner wird eine kleine HTML-Datei als Parameter übergeben. Wer bereits USDZ-Dateien und einen Webserver hat, kann das Feature in unter einer Stunde umsetzen – ohne App-Entwicklung, ohne Backend."
+ki_text: true
+ki_bild: true
 ---
 
 Letzte Woche habe ich einem Kunden gezeigt, wie sein Produkt in Augmented Reality aussieht. Auf dem iPhone, direkt im Safari. Kein App-Download, kein QR-Code-Scan mit Drittanbieter-App. Einfach ein Link, tippen, fertig. Das kennt er schon. Dann habe ich ihm gezeigt, was passiert, wenn man unten im AR-Viewer auf den Button tippt. 
