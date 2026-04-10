@@ -12,6 +12,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2025-10-14T06:00:00.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 Ein internationaler Konzern bat uns, wieder ein Pitch-Video für seinen internen Innovationswettbewerb zu produzieren. Wir hatten das schon in den letzten Jahren übernommen, immer im vorgegebenen 2D-Animationsstil.
