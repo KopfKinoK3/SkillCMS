@@ -14,6 +14,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-03-01T10:03:25.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 [Augmented Reality](https://visales.de/augmented-reality/) wird seit Jahren als Zukunftstechnologie diskutiert. In der Praxis hat sich jedoch gezeigt:
