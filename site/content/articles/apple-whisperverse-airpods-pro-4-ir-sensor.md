@@ -24,6 +24,8 @@ faq:
     a: "Audio-AR öffnet Einsatzfelder, in denen visuelles AR nicht praktikabel ist: Montage und Wartung mit freihändiger Audio-Anleitung, Messen mit kontextsensitiven Produkt-Informationen per Sprache, Schulungen ohne Bildschirm. Erste B2B-Piloten sind für die AirPods-Pro-Plattform bereits denkbar."
   - q: "Wann wird das Whisperverse verfügbar sein?"
     a: "Apple hat das Whisperverse nicht offiziell als Produktkategorie angekündigt – es ist eine strategische Einschätzung basierend auf der Hardware-Entwicklung der AirPods Pro 4. Die technische Grundlage (IR-Sensor, Spatial Audio, On-Device-Processing) ist bereits vorhanden; konkrete AR-Audio-APIs werden für kommende iOS-Versionen erwartet."
+ki_text: true
+ki_bild: true
 ---
 
 - **Eine Infrarotkamera in AirPods könnte AR mit dem iPhone von der Touch-Interaktion lösen und damit alltagstauglicher machen.**
