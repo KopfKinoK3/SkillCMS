@@ -12,6 +12,7 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-03-05T23:26:21.000Z"
 type: post
 template: post
+ki_text: true
 ---
 
 Xanadu, klar, das ist der wunderbare [Musikfilm mit der Olivia Newton John und Gene Kelly](https://de.wikipedia.org/wiki/Xanadu_(Film)), doch mir geht es um eigentlich um das "andere Xanadu" von Ted Nelson...
