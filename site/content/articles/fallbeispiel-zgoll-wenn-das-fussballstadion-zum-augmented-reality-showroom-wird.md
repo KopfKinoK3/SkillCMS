@@ -23,6 +23,7 @@ faq:
     a: "AR-Präsentationen machen Produkte erlebbar statt nur erklärbar: Maßstab, Varianten und Raumsituationen werden direkt sichtbar. Im Fallbeispiel Zgoll konnten Teilnehmende vier verschiedene Videokonferenz-Setups live im 1:1-Maßstab vergleichen – ein Erlebnis, das jede Folie ersetzt. Entscheidungen werden dadurch beschleunigt und Missverständnisse reduziert."
   - q: "Was bedeutet ProduktNUTZENvisualisierung?"
     a: "ProduktNUTZENvisualisierung zeigt nicht nur, was ein Produkt ist, sondern welchen konkreten Nutzen es für den Kunden hat. Mit Formaten wie AR, VR und OpenUSD werden erklärungsbedürftige Produkte greifbar und verständlich. Ziel ist es, aus einem interessierten Lead einen informierten Entscheider zu machen – und damit den Verkaufsprozess im B2B-Vertrieb zu beschleunigen."
+ki_text: true
 ---
 
 **Heute geht es um die praktische Anwendung der neuen *****Virtual-Reality-Teamcall-Funktionen***** einer Apple Vision Pro (AVP). Wir von viSales GmbH** **setzen ja schon seit einigen Monaten mehrere Projekte für das neue (Beta-)Betriebssystem visionOS26 von **Apple **um. Nun, *****nach der gestrigen Keynote*****: Bereit für ein Fallbeispiel dazu? **
