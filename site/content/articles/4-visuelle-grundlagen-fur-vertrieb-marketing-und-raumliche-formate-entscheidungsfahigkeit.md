@@ -12,6 +12,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-02-08T12:13:41.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 Grafik ist für uns kein dekoratives Element, sondern ein zentrales Werkzeug zur Verständlichmachung. Gute Grafik ordnet ein, reduziert Komplexität und schafft Orientierung – bevor Video, Animation oder räumliche Formate überhaupt sinnvoll eingesetzt werden können.
