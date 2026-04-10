@@ -14,6 +14,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-03-08T14:50:40.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 Bevor über konkrete Vorteile, Tools oder Formate gesprochen wird, stellen sich in Unternehmen meist grundlegendere Fragen. Nicht technischer Natur, sondern mit Blick auf Kosten, Organisation, Abhängigkeiten und Zukunftsfähigkeit. Die folgenden Fragen bündeln typische Überlegungen von Geschäftsführung, Marketing und Vertrieb.
