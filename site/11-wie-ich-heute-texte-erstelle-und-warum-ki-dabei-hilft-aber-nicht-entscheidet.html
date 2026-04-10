@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<html lang="de" class="has-dark-text">
+<head>
+    <title>11. Wie ich heute Texte erstelle und warum KI dabei hilft, aber nicht entscheidet — viSales</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="B2B-Agentur für visuelle Vertriebskommunikation – spezialisiert auf 3D-Visualisierung, WebAR und OpenUSD für Maschinenbau & Industrie.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://visales.de/11-wie-ich-heute-texte-erstelle-und-warum-ki-dabei-hilft-aber-nicht-entscheidet/">
+    <link rel="alternate" type="application/rss+xml" title="viSales – Artikel &amp; Insights" href="rss.xml">
+    <link rel="alternate" type="application/rss+xml" title="Visual Com Podcast" href="https://visualcom.podcaster.de/visual-com.rss">
+
+    <!-- Google tag (gtag.js) — consent-gesteuert -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JEPNB0BL5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        // Default: alles verweigern bis Consent
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied',
+            'wait_for_update': 500
+        });
+        gtag('js', new Date());
+        gtag('config', 'G-8JEPNB0BL5');
+        gtag('config', 'AW-1024175020');
+    </script>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="11. Wie ich heute Texte erstelle und warum KI dabei hilft, aber nicht entscheidet">
+    <meta property="og:description" content="B2B-Agentur für visuelle Vertriebskommunikation – spezialisiert auf 3D-Visualisierung, WebAR und OpenUSD für Maschinenbau & Industrie.">
+    <meta property="og:url" content="https://visales.de/11-wie-ich-heute-texte-erstelle-und-warum-ki-dabei-hilft-aber-nicht-entscheidet/">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://visales.de/assets/images/2026/03/Texten-und-Tee.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="11. Wie ich heute Texte erstelle und warum KI dabei hilft, aber nicht entscheidet">
+    <meta name="twitter:description" content="B2B-Agentur für visuelle Vertriebskommunikation – spezialisiert auf 3D-Visualisierung, WebAR und OpenUSD für Maschinenbau & Industrie.">
+    <meta name="twitter:image" content="https://visales.de/assets/images/2026/03/Texten-und-Tee.jpg">
+
+    <!-- Preload -->
+    <link rel="preload" as="style" href="assets/css/screen.css">
+    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/atkinson-regular.woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/atkinson-bold.woff2" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <style>
+        @font-face {
+            font-family: "Atkinson Hyperlegible";
+            font-style: normal; font-weight: 400; font-display: swap;
+            src: url(assets/fonts/atkinson-regular.woff2) format("woff2");
+        }
+        @font-face {
+            font-family: "Atkinson Hyperlegible";
+            font-style: italic; font-weight: 400; font-display: swap;
+            src: url(assets/fonts/atkinson-italic.woff2) format("woff2");
+        }
+        @font-face {
+            font-family: "Atkinson Hyperlegible";
+            font-style: normal; font-weight: 700; font-display: swap;
+            src: url(assets/fonts/atkinson-bold.woff2) format("woff2");
+        }
+        @font-face {
+            font-family: "Atkinson Hyperlegible";
+            font-style: italic; font-weight: 700; font-display: swap;
+            src: url(assets/fonts/atkinson-bold-italic.woff2) format("woff2");
+        }
+    </style>
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/screen.css">
+
+    <!-- SkillCMS Custom Styles -->
+    <style>
+        :root {
+            --background-color: #ffffff;
+            --ghost-accent-color: #f2902a;
+        }
+
+        /* Spacers */
+        .vs-spacer    { height: 1rem; }
+        .vs-spacer-lg { height: 2rem; }
+        .gh-content .vs-spacer + *,
+        .gh-content .vs-spacer-lg + * { margin-top: 0 !important; }
+
+        /* ===== Grounding Page — Fact Grid <dl> ===== */
+        .grounding-fact-grid {
+            display: grid;
+            grid-template-columns: minmax(140px, 220px) 1fr;
+            gap: 0;
+            margin: 2rem 0 2.4rem;
+            border: 1px solid rgba(124,139,154,.2);
+            border-radius: 6px;
+            overflow: hidden;
+            font-size: 1.5rem;
+        }
+        .grounding-fact-grid dt,
+        .grounding-fact-grid dd {
+            padding: 0.7em 1.1em;
+            margin: 0;
+            border-bottom: 1px solid rgba(124,139,154,.15);
+        }
+        .grounding-fact-grid dt {
+            font-weight: 700;
+            color: #3a4550;
+            background: rgba(124,139,154,.07);
+        }
+        .grounding-fact-grid dd { color: #1a1a1a; }
+        .grounding-fact-grid dt:last-of-type,
+        .grounding-fact-grid dd:last-of-type { border-bottom: none; }
+
+        /* Disambiguierungs-Block */
+        .grounding-disambig {
+            background: rgba(242,144,42,.07);
+            border-left: 3px solid #f2902a;
+            border-radius: 0 6px 6px 0;
+            padding: 1.2em 1.4em;
+            margin: 2rem 0;
+        }
+        .grounding-disambig p { margin: 0 0 0.4em; font-weight: 700; }
+        .grounding-disambig ul { margin: 0.4em 0 0 1.2em; }
+        .grounding-disambig li { margin-bottom: 0.3em; }
+
+        /* Human Notice */
+        .grounding-notice {
+            font-size: 1.3rem;
+            color: #738a94;
+            border-top: 1px solid rgba(124,139,154,.2);
+            padding-top: 1.2rem;
+            margin-top: 3rem;
+        }
+
+        /* ===== Navigation — Desktop: Logo | Links(Mitte) | CTA ===== */
+        .gh-navigation-inner {
+            display: flex !important;
+            flex-wrap: nowrap !important;
+            align-items: center !important;
+            max-width: 920px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            padding-top: 1.2rem !important;
+            padding-bottom: 1.2rem !important;
+            gap: 0 !important;
+        }
+        .gh-navigation-brand { flex: 0 0 auto !important; }
+        .gh-navigation-menu {
+            flex: 1 1 auto !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+        }
+        .gh-navigation-actions { flex: 0 0 auto !important; }
+        .gh-burger { display: none !important; }
+
+        /* ===== Navigation — Mobile: Logo+CTA Zeile 1 | Links Zeile 2 ===== */
+        @media (max-width: 767px) {
+            .gh-navigation-inner {
+                flex-wrap: wrap !important;
+                padding-top: 0.9rem !important;
+                padding-bottom: 0.4rem !important;
+            }
+            .gh-navigation-brand {
+                flex: 1 1 auto !important;
+            }
+            .gh-navigation-actions {
+                flex: 0 0 auto !important;
+            }
+            .gh-navigation-menu {
+                flex: 0 0 100% !important;
+                justify-content: flex-start !important;
+                overflow-x: auto !important;
+                padding-bottom: 0.6rem !important;
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+        .vs-nav-cta {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.55em 1.3em;
+            background: var(--ghost-accent-color);
+            color: #fff !important;
+            font-size: 1.4rem;
+            font-weight: 700;
+            border-radius: 6px;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: background 0.2s ease, opacity 0.2s ease;
+        }
+        .vs-nav-cta:hover { background: #e07f20; opacity: 1; }
+
+        /* Feature Image — max 828px (720px Textlaufbreite + 15%) */
+        .gh-article-image {
+            max-width: 828px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2.4rem;
+        }
+        .gh-article-image img {
+            border-radius: 6px;
+        }
+        /* Mindestabstand Feature Image → erster Content-Block */
+        .gh-article-image + .gh-content > *:first-child {
+            margin-top: 1.6rem;
+        }
+
+        /* CTA Button Fix */
+        .gh-content a.gh-button {
+            color: #fff !important;
+            text-decoration: none !important;
+        }
+        p:has(> .cta-center) { text-align: center; }
+
+        /* ===== 6-Spalten Footer ===== */
+        .gh-footer {
+            background-color: #fff;
+            color: var(--color-secondary-text);
+            padding-top: 4rem;
+            padding-bottom: 2rem;
+            border-top: 1px solid var(--color-border);
+        }
+        .gh-footer a { color: var(--color-primary-text); }
+        .gh-footer a:hover { color: var(--ghost-accent-color); opacity: 1; }
+
+        .vs-footer-trust {
+            text-align: center;
+            font-size: 1.4rem;
+            padding-bottom: 2.5rem;
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid var(--color-border);
+            color: var(--color-secondary-text);
+            line-height: 1.8;
+        }
+        .vs-footer-trust-clients { margin-bottom: 0.4em; }
+        .vs-footer-trust-member { font-size: 1.25rem; opacity: 0.75; }
+        .vs-footer-trust a { color: var(--ghost-accent-color); }
+        .vs-footer-sublabel-link {
+            color: var(--color-primary-text) !important;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .vs-footer-sublabel-link:hover { color: var(--ghost-accent-color) !important; }
+
+        .vs-footer-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 3rem;
+            padding-bottom: 3rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--color-border);
+        }
+        /* ── Inline Newsletter-Block im Artikel ───────────────────────────── */
+        .vs-inline-newsletter {
+            margin: 2.4em 0;
+            padding: 1.6em 2em;
+            background: #f8f5f0;
+            border-left: 4px solid #f2902a;
+            border-radius: 6px;
+        }
+        .vs-nl-headline { font-size: 1.5rem; font-weight: 700; margin: 0 0 1em; }
+        .vs-nl-headline strong { color: var(--ghost-accent-color); }
+        .vs-inline-newsletter .sib-form,
+        .vs-inline-newsletter .sib-form-container { background: transparent !important; padding: 0 !important; text-align: left !important; }
+        #sib-container-inline { background: transparent !important; border: none !important; max-width: 100% !important; padding: 0 !important; }
+        .vs-inline-newsletter .sib-form-block__button { background-color: #f2902a !important; border-radius: 100px !important; width: auto !important; display: inline-flex !important; padding: .8em 1.4em !important; }
+        .vs-inline-newsletter .entry__specification { font-size: 1.1rem !important; color: #888 !important; }
+        .vs-inline-newsletter .sib-form__declaration > div:first-child { display: none; }
+        /* ────────────────────────────────────────────────────────────────── */
+        .vs-footer-prod-more { margin-top: 0.4em; }
+        .vs-footer-prod-more a { color: var(--ghost-accent-color) !important; font-size: 1.3rem; }
+        .vs-footer-prod-item a { color: var(--color-secondary-text) !important; }
+        .vs-footer-prod-item a:hover { color: var(--ghost-accent-color) !important; }
+        .vs-footer-stack-sep {
+            margin-top: 2.4rem;
+        }
+        .vs-footer-col-subtitle {
+            margin-top: 2.2rem !important;
+            margin-bottom: 0.9em !important;
+        }
+        .vs-footer-col > h4.vs-footer-col-subtitle:first-child {
+            margin-top: 0 !important;
+        }
+        .vs-footer-sub-h4-link {
+            color: var(--color-primary-text) !important;
+            text-decoration: none;
+        }
+        .vs-footer-sub-h4-link:hover { color: var(--ghost-accent-color) !important; }
+        .vs-footer-col h4 {
+            color: var(--color-primary-text);
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1.2em;
+        }
+        .vs-footer-col ul { list-style: none; padding: 0; margin: 0; }
+        .vs-footer-col li { margin-bottom: 0.6em; }
+        .vs-footer-col li a { font-size: 1.4rem; color: var(--color-secondary-text); }
+        .vs-footer-col li a:hover { color: var(--ghost-accent-color); }
+        .vs-footer-col ul li a strong { color: var(--ghost-accent-color); }
+
+        .vs-footer-address {
+            font-size: 1.3rem;
+            line-height: 1.7;
+            color: var(--color-secondary-text);
+            margin: 0 0 1.2rem;
+        }
+        .vs-footer-cta {
+            display: inline-block;
+            margin-top: 1.6rem;
+            margin-bottom: 1.8rem;
+            font-size: 1.3rem !important;
+            padding: 0.6em 1.2em !important;
+        }
+        .vs-footer-sublabel {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: rgba(0,0,0,.4);
+            font-weight: 700;
+            margin: 1.4rem 0 0.5rem;
+        }
+        .vs-footer-signup-btn {
+            display: inline-block;
+            margin-bottom: 1rem;
+            font-size: 1.3rem !important;
+            padding: 0.6em 1.2em !important;
+        }
+
+        .vs-footer-newsletter p {
+            font-size: 1.3rem;
+            margin-bottom: 1em;
+            color: var(--color-secondary-text);
+        }
+        .vs-newsletter-form { display: flex; flex-direction: column; gap: 0.6em; }
+        .vs-newsletter-form input {
+            padding: 0.6em 0.8em;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            background: var(--color-lighter-gray);
+            color: var(--color-primary-text);
+            font-size: 1.4rem;
+        }
+        .vs-newsletter-form input::placeholder { color: var(--color-secondary-text); }
+        .vs-newsletter-form .gh-button {
+            font-size: 1.3rem;
+            padding: 0.6em 1em;
+            color: #fff !important;
+        }
+        .vs-form-msg {
+            font-size: 1.3rem;
+            min-height: 1.8em;
+            font-weight: 500;
+        }
+        .vs-input-name {
+            /* Vorname-Feld: dezent optional markiert */
+            opacity: 0.85;
+        }
+        .vs-footer-podcast-link {
+            display: inline-block;
+            margin-top: 0.8em;
+            font-size: 1.3rem;
+            color: var(--ghost-accent-color) !important;
+        }
+
+        /* ── Brevo-Formular viSales-Overrides ─────────────────────────────── */
+        .vs-footer-newsletter .sib-form { text-align:left !important; background:transparent !important; padding:0 !important; }
+        .vs-footer-newsletter .sib-form-container { max-width:100% !important; }
+        .vs-footer-newsletter #sib-container { max-width:100% !important; border:none !important; background:transparent !important; padding:0 !important; margin-top:-0.4em !important; }
+        .vs-footer-newsletter a { color:var(--color-primary-text) !important; text-decoration:underline !important; }
+        .vs-footer-newsletter #sib-container a { color:var(--color-primary-text) !important; }
+        .vs-footer-newsletter .sib-form-block p { margin:0 0 0.4em; font-size:1.3rem; }
+        .vs-footer-newsletter .sib-form-block[style*="font-size:24px"] p,
+        .vs-footer-newsletter .sib-form-block[style*="font-size:32px"] p { display:none; } /* "Visual Sales" Titel — schon im h4 vorhanden */
+        .vs-footer-newsletter .entry__label { font-size:1.2rem !important; color:var(--color-primary-text) !important; }
+        .vs-footer-newsletter .input { font-size:1.3rem !important; border-radius:6px !important; }
+        .vs-footer-newsletter .sib-form-block__button { background-color:#f2902a !important; border-radius:100px !important; font-size:1.3rem !important; padding:.8em 1.4em !important; width:auto !important; display:inline-flex !important; }
+        .vs-footer-newsletter .entry__specification { font-size:1.1rem !important; }
+        .vs-footer-newsletter .sib-form__declaration { margin-top:0.4em; }
+        .vs-footer-newsletter .sib-form__declaration > div:first-child { display:none; } /* Schild-Icon ausblenden */
+        .vs-footer-newsletter .sib-form__declaration p { font-size:1.1rem !important; color:var(--color-secondary-text) !important; }
+        .vs-footer-newsletter .checkbox_tick_positive { flex-shrink:0; }
+        /* ────────────────────────────────────────────────────────────────── */
+
+        .vs-footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.3rem;
+            color: var(--color-secondary-text);
+        }
+        .vs-footer-legal { display: flex; gap: 1.5em; }
+        .vs-footer-legal a { color: var(--color-secondary-text); font-size: 1.3rem; }
+        .vs-footer-copy { max-width: 60%; }
+
+        @media (max-width: 1024px) {
+            .vs-footer-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (max-width: 640px) {
+            .vs-footer-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+            .vs-footer-bottom { flex-direction: column; gap: 1em; text-align: center; }
+            .vs-footer-copy { max-width: 100%; }
+            .vs-footer-trust { font-size: 1.2rem; }
+            .vs-footer-trust-sep { display: block; margin: 0.3em 0; }
+        }
+
+        /* ===== kg-toggle-card — Pfeil links ===== */
+        .kg-toggle-card {
+            background: transparent;
+            border: 1px solid rgba(124, 139, 154, 0.4);
+            border-radius: 4px;
+            padding: 1.2em 1.4em;
+        }
+        .kg-toggle-heading {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.8em;
+            list-style: none;
+            user-select: none;
+        }
+        .kg-toggle-card-icon {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            flex-shrink: 0;
+            color: inherit;
+            transition: transform 0.25s ease;
+            display: flex;
+            align-items: center;
+        }
+        .kg-toggle-card-icon svg { width: 20px; height: 20px; }
+        .kg-toggle-card[data-kg-toggle-state="open"] .kg-toggle-card-icon {
+            transform: rotate(90deg);
+        }
+        .kg-toggle-heading-text {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.3;
+            font-family: var(--font-sans);
+            color: var(--color-primary-text);
+        }
+        .kg-toggle-content {
+            overflow: hidden;
+            height: 0;
+            transition: height 0.25s ease;
+        }
+        .kg-toggle-content > *              { margin-top: 1em; }
+        .kg-toggle-content > *:first-child  { margin-top: 0.8em; }
+        .kg-toggle-content > *:last-child   { margin-bottom: 0.2em; }
+
+        /* ===== Praxis Card Grid ===== */
+        .gh-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        .gh-container.is-grid .gh-feed {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 3rem;
+        }
+        .gh-card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .gh-card-link:hover .gh-card-title {
+            color: var(--ghost-accent-color);
+        }
+        .gh-card-image {
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            border-radius: 6px;
+            margin-bottom: 1.2rem;
+            background: var(--color-lighter-gray);
+        }
+        .gh-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .gh-card-link:hover .gh-card-image img {
+            transform: scale(1.03);
+        }
+        .gh-card-tag {
+            display: block !important;
+            color: var(--ghost-accent-color);
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.5rem;
+        }
+        .gh-card-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0 0 0.8rem;
+            line-height: 1.3;
+            transition: color 0.2s ease;
+        }
+        .gh-card-meta {
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+            font-size: 1.3rem;
+            color: var(--color-secondary-text);
+            margin-top: 0.6rem;
+        }
+        .gh-card-author::after {
+            content: "·";
+            margin-left: 0.5em;
+        }
+        @media (max-width: 640px) {
+            .gh-container.is-grid .gh-feed {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        /* ===== Cookie-Banner ===== */
+        .vs-cookie-banner {
+            display: none;
+            position: fixed;
+            bottom: 0; left: 0; right: 0;
+            z-index: 9999;
+            background: #fff;
+            border-top: 2px solid var(--ghost-accent-color);
+            box-shadow: 0 -4px 24px rgba(0,0,0,.12);
+            font-size: 1.4rem;
+        }
+        .vs-cookie-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.6rem 2rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .vs-cookie-text { flex: 1; min-width: 220px; }
+        .vs-cookie-text strong { display: block; font-size: 1.5rem; margin-bottom: 0.3em; color: var(--color-primary-text); }
+        .vs-cookie-text p { margin: 0; color: var(--color-secondary-text); font-size: 1.3rem; line-height: 1.5; }
+        .vs-cookie-text a { color: var(--ghost-accent-color); text-decoration: underline; }
+        .vs-cookie-actions { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+        .vs-cookie-btn-all { font-size: 1.3rem !important; padding: 0.55em 1.3em !important; }
+        .vs-cookie-btn-settings {
+            background: none; border: 1px solid var(--color-border);
+            border-radius: 6px; padding: 0.55em 1.1em;
+            font-size: 1.3rem; cursor: pointer; color: var(--color-primary-text);
+        }
+        .vs-cookie-btn-settings:hover { border-color: var(--ghost-accent-color); color: var(--ghost-accent-color); }
+        .vs-cookie-btn-deny {
+            background: none; border: none; padding: 0.55em 0.5em;
+            font-size: 1.2rem; cursor: pointer; color: var(--color-secondary-text);
+            text-decoration: underline; text-underline-offset: 2px;
+        }
+        .vs-cookie-btn-deny:hover { color: var(--color-primary-text); }
+
+        .vs-cookie-settings-panel {
+            border-top: 1px solid var(--color-border);
+            padding: 1.4rem 2rem 1.8rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .vs-cookie-cats {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 0.8rem 2rem;
+            margin-bottom: 1.4rem;
+        }
+        .vs-cookie-cat {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 0.8rem 1rem;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .vs-cookie-cat-info strong { display: block; font-size: 1.3rem; color: var(--color-primary-text); }
+        .vs-cookie-cat-info small { font-size: 1.1rem; color: var(--color-secondary-text); }
+        .vs-cookie-toggle {
+            flex-shrink: 0;
+            width: 40px; height: 22px;
+            background: #d1d5db;
+            border-radius: 99px;
+            position: relative;
+            cursor: pointer;
+            transition: background .2s;
+        }
+        .vs-cookie-toggle span {
+            position: absolute;
+            top: 3px; left: 3px;
+            width: 16px; height: 16px;
+            background: #fff;
+            border-radius: 50%;
+            transition: transform .2s;
+            box-shadow: 0 1px 3px rgba(0,0,0,.2);
+        }
+        .vs-cookie-toggle.is-on { background: var(--ghost-accent-color); }
+        .vs-cookie-toggle.is-on span { transform: translateX(18px); }
+        .vs-cookie-toggle--disabled { opacity: 0.45; cursor: not-allowed; }
+        .vs-cookie-toggle--disabled.is-on { background: var(--ghost-accent-color); }
+        .vs-cookie-settings-actions { display: flex; justify-content: flex-end; }
+        .vs-cookie-btn-save { font-size: 1.3rem !important; padding: 0.55em 1.3em !important; }
+
+        @media (max-width: 640px) {
+            .vs-cookie-inner { flex-direction: column; align-items: flex-start; gap: 1.2rem; }
+            .vs-cookie-cats { grid-template-columns: 1fr 1fr; }
+        }
+
+        /* ===== D0.2 — Kategorie-Badge (über Titel) — 1:1 Ghost-Stil ===== */
+        .vs-post-category-badge {
+            display: inline-block;
+            color: var(--ghost-accent-color) !important;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            text-decoration: none;
+            margin-bottom: 1rem;
+        }
+        .vs-post-category-badge:hover { opacity: 0.8; }
+
+        /* ===== D0.3 — Feature Image ===== */
+        .vs-feature-image-wrap {
+            display: block;
+            max-width: 920px;
+            margin: 0 auto 3rem;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .vs-feature-image-wrap img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ===== D0.3 — Artikel-Meta (Ghost-Stil) ===== */
+        .vs-article-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 3.2rem;
+        }
+        .vs-meta-avatar {
+            width: 48px; height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .vs-meta-text {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15em;
+        }
+        .vs-meta-author {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primary-text);
+        }
+        .vs-meta-author a { color: inherit; text-decoration: none; }
+        .vs-meta-author a:hover { color: var(--ghost-accent-color); }
+        .vs-meta-sub {
+            font-size: 1.35rem;
+            color: var(--color-secondary-text);
+            display: flex;
+            align-items: center;
+            gap: 0.4em;
+        }
+        .vs-meta-sep { opacity: 0.5; }
+
+        /* ===== KI-Badges ===== */
+        .vs-badge-ki {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25em;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--ghost-accent-color);
+            background: rgba(230,126,34,0.08);
+            border: 1px solid rgba(230,126,34,0.25);
+            border-radius: 4px;
+            padding: 0.1em 0.45em;
+            white-space: nowrap;
+            vertical-align: middle;
+            margin-left: 0.5em;
+        }
+        .vs-feature-image-wrap { position: relative; }
+        .vs-image-badge {
+            position: absolute;
+            bottom: 0.6rem;
+            right: 0.6rem;
+        }
+        .vs-badge-bild-ki {
+            display: inline-flex;
+            align-items: center;
+            font-size: 1.0rem;
+            font-weight: 600;
+            color: rgba(255,255,255,0.85);
+            background: rgba(0,0,0,0.45);
+            border-radius: 4px;
+            padding: 0.15em 0.5em;
+            white-space: nowrap;
+            backdrop-filter: blur(4px);
+        }
+
+        /* ===== D0.4 — Autor-Block unter Content ===== */
+        .gh-main { padding-bottom: 0 !important; }
+        .gh-footer { margin-top: 0 !important; }
+
+        /* ===== FAQ-Block unter Autor-Box ===== */
+        .vs-faq-block {
+            padding-top: 6rem;
+            padding-bottom: 4rem;
+        }
+        .vs-faq-heading {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--color-primary-text);
+            margin-bottom: 2.4rem;
+        }
+        .vs-author-block {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.6rem;
+            max-width: 720px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 3rem 0 4rem;
+            margin-top: 3rem;
+            border-top: 1px solid var(--color-border);
+        }
+        .vs-author-block-avatar {
+            width: 64px; height: 64px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .vs-author-block-text { display: flex; flex-direction: column; gap: 0.3rem; }
+        .vs-author-block-label {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            color: var(--color-secondary-text);
+            font-weight: 700;
+        }
+        .vs-author-block-name {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--color-primary-text);
+            text-decoration: none;
+        }
+        .vs-author-block-name:hover { color: var(--ghost-accent-color); }
+        .vs-author-bio {
+            font-size: 1.35rem;
+            color: var(--color-secondary-text);
+            margin: 0.3rem 0 0;
+            line-height: 1.6;
+        }
+
+        /* ===== D0.1 — Galerie-Grid (kg-gallery-card) ===== */
+        .kg-gallery-card {
+            width: 100%;
+            margin: 2rem 0;
+        }
+        .kg-gallery-container {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .kg-gallery-row {
+            display: flex;
+            gap: 6px;
+        }
+        .kg-gallery-image {
+            flex: 1;
+            overflow: hidden;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .kg-gallery-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .kg-gallery-image img:hover { transform: scale(1.02); }
+
+        /* PhotoSwipe lightbox trigger */
+        .kg-gallery-image a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 640px) {
+            .vs-feature-image-wrap { border-radius: 0; }
+            .kg-gallery-row { flex-direction: column; }
+        }
+
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://visales.de/#organization",
+  "name": "viSales GmbH",
+  "url": "https://visales.de",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://visales.de/content/images/2025/11/RGB_Logo_viSales_schwarz.png"
+  },
+  "foundingDate": "2010",
+  "description": "viSales GmbH ist eine 2010 in Essen gegründete, seit 2024 in Bochum ansässige B2B-Agentur für visuelle Vertriebskommunikation. Spezialisiert auf 3D-Visualisierung, Foto- und Videoproduktion, Websites, OpenUSD-basierte Workflows, Augmented Reality, interaktive Präsentationen und Spatial Content für erklärungsbedürftige Produkte im Maschinenbau und der Industrie.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Wittener Straße 87",
+    "postalCode": "44789",
+    "addressLocality": "Bochum",
+    "addressRegion": "Nordrhein-Westfalen",
+    "addressCountry": "DE"
+  },
+  "areaServed": "DE",
+  "knowsAbout": [
+    "OpenUSD",
+    "USDZ",
+    "Augmented Reality B2B",
+    "Spatial Computing",
+    "3D Visualisierung B2B",
+    "WebAR",
+    "Digitaler Zwilling",
+    "Produktkonfigurator",
+    "Visual Sales",
+    "Spatial Website",
+    "Apple Vision Pro B2B"
+  ],
+  "memberOf": [
+    {
+      "@type": "Organization",
+      "name": "Alliance for OpenUSD",
+      "url": "https://aousd.org/"
+    },
+    {
+      "@type": "Organization",
+      "name": "Metaverse Standards Forum",
+      "url": "https://metaverse-standards.org/"
+    }
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/visales/",
+    "https://www.youtube.com/@Gerhard_Schroeder",
+    "https://mastodon.social/@visales"
+  ],
+  "email": "sales@visales.de",
+  "telephone": "+49 160 806 0361"
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://visales.de/#gerhard-schroeder",
+  "name": "Gerhard Schröder",
+  "alternateName": "Gerd Schröder",
+  "givenName": "Gerhard",
+  "familyName": "Schröder",
+  "birthDate": "1969",
+  "birthPlace": {
+    "@type": "Place",
+    "name": "Bad Oeynhausen"
+  },
+  "jobTitle": "Gründer & Geschäftsführer",
+  "worksFor": {
+    "@id": "https://visales.de/#organization"
+  },
+  "url": "https://visales.de/gerhard-schroeder-grounding/",
+  "image": "https://visales.de/content/images/2025/10/1706254155883-1.jpeg",
+  "description": "Gerhard Schröder ist Gründer und Geschäftsführer der viSales GmbH, einer B2B-Agentur für visuelle Vertriebskommunikation mit Sitz in Bochum. Er gründete viSales 2010, beschäftigt sich seit 2017 intensiv mit OpenUSD als strategischem Masterdatei-Format für Vertrieb und Marketing und ist Mitglied der Alliance for OpenUSD (AOUSD). Als Konferenzsprecher tritt er auf der XR Expo, dem NextReality Festival und dem XR Symposium auf.",
+  "knowsAbout": [
+    "OpenUSD",
+    "USDZ",
+    "Augmented Reality im B2B-Vertrieb",
+    "Spatial Computing",
+    "Visual Sales",
+    "3D Visualisierung B2B",
+    "WebAR",
+    "Digitaler Zwilling",
+    "Produktkonfigurator",
+    "Spatial Sales Infrastructure",
+    "B2B-Vertriebskommunikation",
+    "Foto- und Videoproduktion B2B",
+    "Website-Entwicklung B2B"
+  ],
+  "memberOf": [
+    {
+      "@type": "Organization",
+      "name": "Alliance for OpenUSD",
+      "url": "https://aousd.org/"
+    },
+    {
+      "@type": "Organization",
+      "name": "Metaverse Standards Forum",
+      "url": "https://metaverse-standards.org/"
+    }
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/gerhardschroeder-visales/",
+    "https://www.youtube.com/@Gerhard_Schroeder",
+    "https://mastodon.social/@visales"
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "viSales GmbH",
+  "description": "B2B-Agentur für visuelle Vertriebskommunikation – 3D-Visualisierung, WebAR und Produktkonfiguratoren für Maschinenbau & Industrie. Standort Bochum, bundesweit tätig.",
+  "url": "https://visales.de",
+  "telephone": "+49 160 806 0361",
+  "image": "https://visales.de/content/images/2025/11/RGB_Logo_viSales_schwarz.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Wittener Straße 87",
+    "postalCode": "44789",
+    "addressLocality": "Bochum",
+    "addressRegion": "Nordrhein-Westfalen",
+    "addressCountry": "DE"
+  },
+  "priceRange": "€€€",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "51.4811",
+    "longitude": "7.2162"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "viSales",
+  "url": "https://visales.de"
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "11. Wie ich heute Texte erstelle und warum KI dabei hilft, aber nicht entscheidet",
+  "description": "B2B-Agentur für visuelle Vertriebskommunikation – spezialisiert auf 3D-Visualisierung, WebAR und OpenUSD für Maschinenbau & Industrie.",
+  "url": "https://visales.de/11-wie-ich-heute-texte-erstelle-und-warum-ki-dabei-hilft-aber-nicht-entscheidet/",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "viSales",
+    "url": "https://visales.de"
+  }
+}
+    </script>
+<!-- Brevo Form Styles -->
+<style>
+  @font-face {
+    font-display: block;
+    font-family: Roboto;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+  }
+  @font-face {
+    font-display: fallback;
+    font-family: Roboto;
+    font-weight: 600;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+  }
+  @font-face {
+    font-display: fallback;
+    font-family: Roboto;
+    font-weight: 700;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+  }
+  #sib-container input:-ms-input-placeholder { text-align:left; font-family:Helvetica,sans-serif; color:#c0ccda; }
+  #sib-container input::placeholder         { text-align:left; font-family:Helvetica,sans-serif; color:#c0ccda; }
+  #sib-container textarea::placeholder      { text-align:left; font-family:Helvetica,sans-serif; color:#c0ccda; }
+  #sib-container a { text-decoration:underline; color:inherit; }
+</style>
+<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+</head>
+<body class="post-template page-11-wie-ich-heute-texte-erstelle-und-warum-ki-dabei-hilft-aber-nicht-entscheidet has-sans-title has-sans-body">
+
+<div class="gh-viewport">
+
+    <!-- NAVIGATION -->
+    <header id="gh-navigation" class="gh-navigation is-left-logo gh-outer">
+        <div class="gh-navigation-inner gh-inner">
+            <div class="gh-navigation-brand">
+                <a class="gh-navigation-logo is-title" href="/">
+                    <img src="assets/images/logo-visales.png" alt="viSales">
+                </a>
+                <button class="gh-burger gh-icon-button" aria-label="Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <nav class="gh-navigation-menu">
+                <ul class="nav">
+                    <li class="nav-leistungen"><a href="/leistungen/">Leistungen</a></li>
+                    <li class="nav-fallbeispiele"><a href="/fallbeispiele/">Fallbeispiele</a></li>
+                    <li class="nav-praxis"><a href="/praxis/">Praxis</a></li>
+                    <li class="nav-ueber-uns"><a href="/ueber-uns/">Über Uns</a></li>
+                </ul>
+            </nav>
+            <div class="gh-navigation-actions"><a class="vs-nav-cta" href="/kontakt/">Kontakt</a></div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="gh-main">
+        <article class="gh-article post tag-schroders-notizen">
+            <header class="gh-article-header gh-canvas">
+                <a class="vs-post-category-badge" href="tag/schroders-notizen/">schroders-notizen</a>
+<h1 class="gh-article-title is-title">11. Wie ich heute Texte erstelle und warum KI dabei hilft, aber nicht entscheidet</h1>
+                
+            <div class="gh-article-meta vs-article-meta">
+                <img class="vs-meta-avatar" src="assets/images/2025/10/1706254155883-1.jpeg" alt="Gerhard Schröder">
+                <div class="vs-meta-text">
+                    <span class="vs-meta-author"><a href="https://visales.de/author/gerhard/">Gerhard Schröder</a> <span class="vs-badge-ki">&#10022; Text: Kopf & KI</span></span>
+                    <div class="vs-meta-sub">
+                        <time datetime="2026-03-29">29 Mär. 2026</time>
+                        <span class="vs-meta-sep">&middot;</span>
+                        <span>14 min read</span>
+                    </div>
+                </div>
+            </div>
+            </header>
+            
+    <figure class="gh-article-image vs-feature-image-wrap">
+        <img src="assets/images/2026/03/Texten-und-Tee.jpg" alt="11. Wie ich heute Texte erstelle und warum KI dabei hilft, aber nicht entscheidet" loading="eager">
+        <span class="vs-image-badge vs-badge-bild-ki">Bild: KI</span>
+    </figure>
+            <section class="gh-content gh-canvas is-body">
+                <h2>A: Schreiben beginnt bei mir nicht mit Stil, sondern mit Klärung</h2>
+<p>Als ich mir vorgenommen habe, die neue Website für die Agentur allein zu texten, ohne Kollegen Thomas Schupp - unserem echt guten Teamredakteur - war mir eines von Anfang an klar: <a href="https://visales.de/1-warum-unsere-neue-website-bewusst-viele-texte-enthalt-und-was-ki-damit-zu-tun-hat/">Diese Texte müssen erklärungsfähig sein – für Menschen und für KI</a>.</p>
+<blockquote>
+<strong>Dieser Text ist kein Leitfaden.</strong><br><br>
+<strong>Er ist ein Werkstattbericht.</strong>
+</blockquote>
+<p>Ich habe Ende Dezember angefangen zu schreiben. Über die Feiertage sind dabei rund dreißig Seiten Rohtext entstanden. Ungefiltert. Teilweise sperrig. So, wie Gedanken eben aussehen, wenn man sie noch nicht sortiert hat. Der Box-Text hier ist ein Beispiel dafür.</p>
+<div class="kg-card kg-toggle-card" data-kg-toggle-state="close">
+  <div class="kg-toggle-heading">
+    <button class="kg-toggle-card-icon" aria-label="Inhalt einblenden"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+    <h4 class="kg-toggle-heading-text">Wie ich heute Texte erstelle (Rohtext aus dem Arbeitsprozess – unredigiert)</h4>
+  </div>
+  <div class="kg-toggle-content">
+    <p>&ldquo;Als ich mir vornahm eine neue Website für die Agentur ganz allein zu texten war mir ja schon die Notwendigkeit von Texten zur Erklärung für KI &amp; Menschen klar. Ich fing Ende Dezember an und schrieb über die Feiertage circa 30 Seiten Text. Roh, so wie dieser Entwurf. Trank Earl Grey dazu. Einige Tassen.  </p>
+<p>All diese Texte gingen dann in meinen Sparringspartner ChatGPT ins Projekt viSales. Dort hatte ich im Projekt ein Briefing hinterlegt. Zum einen ein Prompt zur Kritischen Einordnung meiner Gedanken und… ich hatte mir die sehr zu empfehlende Mühe gemacht die Personal Branding Canvas von Kerstin Hoffmann durchzuarbeiten. Ich hatte das mal vor ein paar Jahren „von Hand gemacht“ und habe nun diese Aufgabe mit ChatGPT neu gelöst. Link von Kerstins Website zu dem Thema rein in ChatGPT und schon wurden mir viele Fragen gestellt. Habe ich dann ausdiskutiert mit ChatGPT. Das Ergebnis, ca 1 Seite, wanderte dann ebenfalls als Leitplanke ins ChatGPT-Projekt. Damit konnte ich in die Content-Produktion gehen.</p>
+<p>Ich wollte eine sehr reduzierte Website, wenig Farben. Eher wie Gutenberg die Bibel gestaltet hat, Weißraum, Flächen, Texte als Anker und wenige Bilder. Viele Bilder würde eine KI sowieso nicht erkennen können. So umging ich die Idee einer KI-Zweitversion der Website. Muss sehen ob das auf Dauer eine gute Idee ist. Immerhin bietet Ghost die Ausklappbaren und damit habe ich einige Seiten „optisch gekürzt“ und nur wenn ein Leser mehr Infos möchte kann er diese anklicken. Die KI / Suchmaschinen lesen sowieso alle Infos.  </p>
+<p>Zuerst legte ich dann die Titel der Seiten fest, ließ mir dann H2- und Boxentitel vorschlagen. Danach feinjustage. Immer wieder die Frage an ChatGPT: „Wie bewertet ein gestresster Verkaufsleiter eines mittelständischen Unternehmens diese Seite in 10 Sekunden?“ Dazu Fragen nach SEO-Keywords und… Zitierfähigkeit via ChatGPT und anderen KI-Modellen. (Dazu geht es weniger um „Keyword-Dichte“ sondern eher um „Zitierfähige Muster beschreiben“, ein Sache die mir in den letzten Wochen, seitdem ich mich damit beschäftige auch in einigen LinkedIn-Postings von anderen Kommunikatoren sehe.)  </p>
+<p>Am Ende hatte ich neben den 20 Seiten zur Website auch eine 10-Teilige Reihe „Schröders Notizen“, drei Newsletter-Beiträge erstellt und einige weitere Social Media-Postings fertig die eine Adaption dieser Muster / Beiträge darstellen.  </p>
+<p>Diesen Original-Text möchte ich in einer Box auf der Seite einbinden damit sich ein Leser ein Bild vom Briefing machen kann. Inklsuive Rechtschreibfehler ;)  </p>
+<p>Stell mir dazu nun Fragen.&rdquo;</p>
+  </div>
+</div>
+
+<div class="kg-card kg-toggle-card" data-kg-toggle-state="close">
+  <div class="kg-toggle-heading">
+    <button class="kg-toggle-card-icon" aria-label="Inhalt einblenden"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+    <h4 class="kg-toggle-heading-text">Die Fragen und meine Antworten</h4>
+  </div>
+  <div class="kg-toggle-content">
+    <p><strong>1. Ziel &amp; Leser (entscheidend)</strong></p>
+<ol>
+<li><strong>Für wen ist dieser Text</strong> <strong><em>nicht</em></strong> <strong>geschrieben?</strong><br>
+   (Agenturen? Content-Marketer? KI-Evangelisten? Bewerber?)</li>
+</ol>
+<p>Antwort: &ldquo;Menschen die die ersten 10 Texte gelesen haben. In Ausgabe 1 schrieb ich ja das diese Website mehr Texte umfasst als vorher&rdquo;</p>
+<ol>
+<li><strong>Was soll ein Leser nach Text 11 besser verstehen als nach Text 10?</strong><br>
+   Deinen Denkprozess?<br>
+   Deine Arbeitsdisziplin?<br>
+   Deine Haltung zu KI?<br>
+   Oder warum eure Texte „anders“ sind?</li>
+</ol>
+<p>Antwort: &ldquo;Arbeitsweise&rdquo;</p>
+<ol>
+<li><strong>Was wäre ein Missverständnis, das du mit diesem Text unbedingt vermeiden willst?</strong><br>
+   (z. B. „Gerhard lässt ChatGPT für sich schreiben“)</li>
+</ol>
+<p>Antwort: &ldquo;Haltung: Ich sehe ChatGPT in dieser Arbeitsweise als Rechtschreib- &amp; Formulierugshelfer. Nicht als „Denk Dir was aus und schreib was…“&rdquo;</p>
+<p><strong>2. Rolle von ChatGPT (heikler Punkt)</strong></p>
+<ol>
+<li>Du beschreibst ChatGPT als <strong>Sparringspartner</strong>.<br>
+<strong>Worin widerspricht es dir konkret – und worin nicht?</strong></li>
+</ol>
+<p>Antwort: &ldquo;Ich gebe Textideen ein und lasse diese aufs Canvas Prüfen und Diskutieren, Könnte ich ja auch alleine drüber nachdenken aber so macht es mehr… Spaß?&rdquo;</p>
+<ol>
+<li><strong>Was kommt</strong> <strong><em>nicht</em></strong> <strong>aus ChatGPT?</strong><br>
+   (Beispiele: Themenwahl, Haltung, Erfahrungswissen, Prioritäten)</li>
+</ol>
+<p>Antwort: &ldquo;Themenwahl sind meine Vorschläge. Zusammen (via Canvas) diskutieren wir OB eine Idee passt oder wie die Ansprache / Formulierung sein muss.&rdquo;</p>
+<ol>
+<li>Würdest du sagen, dass ChatGPT bei dir eher:
+7.<em> strukturiert
+</em>zuspitzt
+<em>widerspricht
+</em>ordnet
+<em>oder filtert?<br>
+     → </em><em>Eine dieser Rollen solltest du explizit benennen.</em>*</li>
+</ol>
+<p>Antwort: &ldquo;Rohtexte definitiv Filtern. Durch die Frage / Antwort-Runden werden die Konzepte Runder. Manche Ansätze waren jedoch so „Kopflastig“ das ich den Rechner zuklappte und dann aus dem Fenster schaute… oder spazieren ging. Schneeschippen war auch eine Sache in den Tagen. Jedenfalls hatte ich z.B. nach einem Schneeschippen wie ich die Projektbeispiele auf der Messe-Seite sortierte: Nach den kostbaren Quadratmeterbedarf für die Beispiele.&rdquo;</p>
+<p><strong>3. Canvas &amp; Methode</strong></p>
+<ol>
+<li>Warum war es wichtig, die Personal Branding Canvas <strong>noch einmal neu</strong> zu machen – und nicht einfach zu übernehmen?</li>
+</ol>
+<p>Antwort: &ldquo;Durch meine neue Ausrichtung / Positionierung als Unternehmen. Weg von „Kreative KommunikationsKonzepte“ was sich nach Kreativagentur anhört, wir aber bis auf die ersten 2-3 Jahre nie waren.&rdquo;</p>
+<ol>
+<li><strong>Was hat sich durch die Arbeit mit der Canvas konkret verändert?</strong><br>
+   Themen?<br>
+   Ton?<br>
+   Auswahl dessen, was du <strong>nicht</strong> schreibst?</li>
+</ol>
+<p>Antwort: &ldquo;Genau: Themen fallen raus. Auch wenn ich dazu gern.. Aber dann halt nur via Fediverse, nicht via Website oder LinkedIn. WhatsApp-Status ist mein Ding geworden.&rdquo;</p>
+<ol>
+<li>Ist die Canvas für dich:
+10.<em> Orientierung
+</em>Filter
+<em>Korrektiv
+</em>Entscheidungsgrundlage<br>
+      oder alles zusammen?</li>
+</ol>
+<p>Antwort: &ldquo;Alles zusammen.&rdquo;</p>
+<p><strong>4. Website-Entscheidungen (bewusst kontra Mainstream)</strong></p>
+<ol>
+<li>Du vergleichst die Website mit Gutenbergs Bibel.<br>
+<strong>Was ist die Parallele – Reproduzierbarkeit oder Autorität?</strong></li>
+</ol>
+<p>Antwort: &ldquo;Nein, nur das Layoutthema. In meinen Augen war nicht die Herstellung der ersten 100 Bibeln der wichtige Schritt, auch nicht die Buchlettern, sondern Typografie so zu verankern - Layout.&rdquo;</p>
+<ol>
+<li>Du schreibst: „Viele Bilder würde eine KI sowieso nicht erkennen können.“<br>
+<strong>Ist das ein bewusster Trade-off gegen Emotionalisierung?</strong></li>
+</ol>
+<p>Antwort: &ldquo;Auch. Wir sind im Social Web nur noch „in Bildern unterwegs“. Inklusive mir. Um da Aufzufallen kann ich NOCH LAUTER WERDEN oder leiser. Ich bin für Leise. Gezielt. Weißraum.&rdquo;</p>
+<ol>
+<li>Was wäre aus deiner Sicht heute gefährlicher:
+13.<em> zu wenig Text
+</em>oder zu viel visuelle Ablenkung?</li>
+</ol>
+<p>Antwort: &ldquo;Zu viel visuelle Ablenkung.&rdquo;</p>
+<p><strong>5. KI, Zitierfähigkeit, SEO (sensibler Teil)</strong></p>
+<ol>
+<li>Wenn du von „zitierfähigen Mustern“ sprichst:<br>
+<strong>Meinst du Sätze, Denkmodelle oder Begriffe?</strong></li>
+</ol>
+<p>Antwort: &ldquo;Denkmodelle&rdquo;</p>
+<ol>
+<li>Schreibst du Texte heute eher für:
+15.<em> Menschen
+</em>Suchmaschinen
+<em>KI-Modelle<br>
+      oder für </em><em>alle drei gleichzeitig</em>* – mit klarer Priorität?</li>
+</ol>
+<p>Antwort: &ldquo;Reihenfolge: Menschen, KI-Modelle, Suchmaschinen.&rdquo;</p>
+<ol>
+<li>Würdest du sagen, dass sich deine Texte <strong>verlangsamen</strong>, damit sie besser verstanden werden?</li>
+</ol>
+<p>Antwort: &ldquo;Besser strukturieren, Zwischenüberschriften…&rdquo;</p>
+<p><strong>6. Der Box-Gedanke (sehr gut, aber prüfenswert)</strong></p>
+<ol>
+<li><strong>Warum willst du den Rohtext inkl. Fehler zeigen?</strong><br>
+    Transparenz?<br>
+    Haltung?<br>
+    Abgrenzung?</li>
+</ol>
+<p>Antwort: &ldquo;Transparenz&rdquo;</p>
+<ol>
+<li>Was soll ein Leser fühlen, wenn er diese Box liest?
+18.<em> Vertrauen
+</em>Nähe
+<em>Respekt
+</em>Irritation?</li>
+</ol>
+<p>Antwort: &ldquo;Vertrauen&rdquo;</p>
+<p><strong>7. Abschluss &amp; Einordnung</strong></p>
+<ol>
+<li>Soll Text 11 eher sagen:
+19.<em> „So arbeite ich“<br>
+      oder
+</em>„So entsteht Klarheit“?</li>
+</ol>
+<p>Antwort: &ldquo;So arbeite ich.&rdquo;</p>
+<ol>
+<li><strong>Ist Text 11 ein Abschluss oder ein Übergang?</strong><br>
+    (z. B. zu Gesprächen, Projekten, Zusammenarbeit)</li>
+</ol>
+<p>Antwort: &ldquo;Abschluß. So wie der 20-Min-Ende-Part vom Herrn der Ringe Teil 3 (Nerdhinweis)&rdquo;</p>
+<ol>
+<li>Welche <strong>eine</strong> Aussage dürfte jemand nach dem Lesen zitieren?</li>
+</ol>
+<p>Antwort: &ldquo;Nutz KI angemessen. &rdquo;</p>
+  </div>
+</div>
+
+<p>Schreiben ist für mich kein kreativer Akt im Sinne von „jetzt formuliere ich etwas Schönes“. <strong>Schreiben ist ein Klärungsprozess.</strong> Ich schreibe, um zu verstehen, was ich eigentlich meine. Erst danach geht es um Stil, Lesbarkeit oder Struktur.</p>
+<p>Diese Rohtexte sind <em>sonst</em> keine Entwürfe für eine Veröffentlichung. Sie sind Arbeitsmaterial. Notizen. Denkbewegungen. Manche Absätze sind zu lang, manche Gedanken doppeln sich, manche Sätze führen in eine Richtung, die sich später als Sackgasse herausstellt. Das ist Teil des Prozesses.</p>
+<blockquote>
+<strong>Bevor ein Text gut formuliert ist, muss er erst unsortiert sein dürfen.</strong>
+</blockquote>
+<p>Mir war früh klar, dass ich diesen Weg nicht abkürzen will. Keine leere Seite mit der Aufforderung, „jetzt mal einen guten Text zu schreiben“. Sondern erst denken, dann schreiben, dann verdichten.</p>
+<p>Dass am Ende strukturierte Texte entstehen, liegt nicht daran, dass ich am Anfang strukturiert schreibe. Sondern daran, dass ich mir erlaube, zunächst unsortiert zu sein.</p>
+<p>Genau hier beginnt für mich Textarbeit.</p>
+<h2>B: ChatGPT ist mein Sparringspartner – nicht mein Autor</h2>
+<p>Alle Rohtexte, die für diese Website entstanden sind, habe ich in ein Projekt mit ChatGPT überführt. Dort lag kein leerer Prompt, sondern ein klares Briefing. Vor allem zwei Dinge: eine kritische Haltung gegenüber meinen eigenen Gedanken – und die Leitplanken aus der <a href="https://www.kerstin-hoffmann.de/pr-doktor/personal-branding-canvas/">Personal Branding Canvas von Dr. Kerstin Hoffmann</a>. Danke Kerstin - Diese Arbeit sollten sich alle Kommunikatoren machen, die eigene Leinwand (Canvas) aufziehen vor dem Losmalen mit Fingerfarben&hellip;</p>
+<p>ChatGPT nutze ich in diesem Prozess nicht, um Texte „schreiben zu lassen“. Ich nutze es, um Gedanken zu prüfen, zu sortieren und zu schärfen. Ich gebe Textideen ein und stelle Fragen wie: Passt das zu meiner Haltung? Ist das anschlussfähig für Vertriebsleiter? Ist das klar genug formuliert – oder zu kopflastig?</p>
+<blockquote>
+<strong>KI hilft mir beim Strukturieren und Schärfen – nicht beim Denken.</strong>
+</blockquote>
+<p>Diese Rückfragen könnte ich mir theoretisch auch selbst stellen. In der Praxis hilft mir der Dialog. Er zwingt mich, Dinge auszuformulieren, Widersprüche auszuhalten und Gedanken weiterzudenken. Und ja: Es macht mir auch mehr Spaß, als allein vor einem Text zu sitzen.</p>
+<p>Was nicht aus ChatGPT kommt, sind Themenwahl, Haltung und Erfahrung. Die Themen bringe ich ein. Die Beispiele stammen aus Projekten, Gesprächen und Beobachtungen der letzten Jahre. ChatGPT hilft mir dabei, diese Gedanken zu filtern, zu ordnen und sprachlich sauberer zu machen.</p>
+<p>Manche ChatGPT-Ansätze waren so kopflastig, dass ich den Rechner zugeklappt habe. Dann entsteht <strong>Klarheit nicht</strong> mehr <strong>am Bildschirm</strong>. Sie entsteht beim aus dem Fenster schauen, beim Spazierengehen oder – in diesen Tagen – beim Schneeschippen. Interessanterweise sind mir genau dort oft die besseren Strukturen eingefallen. Zum Beispiel die Idee, Projektbeispiele auf der <a href="https://visales.de/messen/">Messeseite</a> nicht nach Branchen oder Formaten zu sortieren, sondern nach dem benötigten Quadratmeterbedarf.</p>
+<p>ChatGPT ersetzt in diesem Prozess kein Denken. Es verstärkt es. Es ist Filter, Korrektiv und Sparringspartner – aber nicht der Ursprung der Inhalte.</p>
+<h2>C: Die Personal Branding Canvas ist kein Marketing-Tool, sondern mein Filter</h2>
+<p>Bevor ich mit der eigentlichen Ausarbeitung der Texte begonnen habe, habe ich meine Personal Branding Canvas noch einmal komplett neu erarbeitet. Nicht, weil sich die Methode geändert hätte, sondern weil sich meine Positionierung verändert hat.</p>
+<p>Vor einigen Jahren hatte ich die Canvas schon einmal „von Hand“ ausgefüllt. Damals stand stärker im Vordergrund, was wir als Agentur leisten können. Heute ging es mir um etwas anderes: Klarheit darüber, wofür wir stehen – und wofür bewusst nicht.</p>
+<p><strong>Die Canvas ist für mich</strong> kein Kreativwerkzeug. Sie ist <strong>ein Filter</strong>. Ein Korrektiv. Und am Ende eine Entscheidungsgrundlage. Sie hilft mir nicht dabei, neue Themen zu finden, sondern dabei, Themen konsequent wegzulassen: Stichwort <a href="https://www.kerstin-hoffmann.de/pr-doktor/content-ampel-qualitaetscheck-infografik/">Content-Ampel,</a> ebenfalls von K. Hoffmann entwickelt.</p>
+<p>Genau das ist in diesem Prozess auch passiert. Einige Gedanken, über die ich SEHR gern schreiben würde, sind bewusst nicht auf der Website gelandet. Nicht, weil sie falsch wären, sondern weil sie nicht zur Rolle passen, die wir heute einnehmen wollen. Manche dieser Themen finden vielleicht noch Platz an anderer Stelle – im Fediverse, im WhatsApp-Status oder in Gesprächen. Aber nicht hier.</p>
+<p>Durch die Canvas wurde der Ton klarer. Ruhiger. Weniger erklärend, <strong>weniger werbend</strong>. Statt alles mitzudenken, was technisch möglich wäre, habe ich mich stärker darauf konzentriert, was für Vertriebs- und Marketingverantwortliche tatsächlich relevant ist. Und was ihnen hilft, schneller zu einer Entscheidung zu kommen.</p>
+<p>In diesem Sinne ist die Canvas für mich kein einmal ausgefülltes Dokument, sondern ein laufender Abgleich. Sie zwingt mich, Texte nicht danach zu bewerten, ob sie gut formuliert sind, sondern ob sie zur Haltung passen. Und ob sie etwas zur Klärung beitragen.</p>
+<p>Erst mit dieser Klarheit konnte die eigentliche Content-Arbeit beginnen.</p>
+<h2>D: Warum diese Website bewusst leise ist</h2>
+<p>Parallel zur Textarbeit habe ich mir früh Gedanken über die Gestaltung der Website gemacht. Nicht im Sinne von Farben, Effekten oder visuellen Trends, sondern über die Rolle von Layout im Verhältnis zum Inhalt.</p>
+<p>Mich interessiert an der Erfindung des Buchdrucks mit Lettern weniger die technische Leistung - Kaufmännisch war es ja ein Desaster für Herrn Gutenberg - als das, was sich dadurch etabliert hat: Typografie, Weißraum, Struktur. Text als Träger von Bedeutung. Nicht dekorativ, sondern ordnend. Diese Haltung habe ich auf die Website übertragen.</p>
+<p>Ich wollte eine reduzierte Seite. Wenig Farben. Viel Weißraum. Texte als Anker. Bilder nur dort, wo sie wirklich etwas beitragen. Nicht, um Aufmerksamkeit zu erzeugen, sondern um Zusammenhänge zu unterstützen.</p>
+<p>Ein Grund dafür ist ganz pragmatisch: Wir bewegen uns im Social Web ohnehin fast ausschließlich über Bilder. Auch ich. Dort wird Lautstärke belohnt. <strong>Für diese Website habe ich mich bewusst für das Gegenteil entschieden. Leiser zu werden. </strong>Raum zu lassen. Dem Leser die Möglichkeit zu geben, in seinem eigenen Tempo zu lesen.</p>
+<p>Ein weiterer Aspekt ist die Lesbarkeit durch KI-Modelle. Viele Bilder, starke visuelle Überlagerungen oder rein grafische Navigation helfen dabei wenig. Texte hingegen lassen sich erfassen, einordnen und zitieren. Deshalb habe ich mich gegen eine separate „KI-Version“ der Website entschieden und stattdessen dafür gesorgt, dass alle relevanten Inhalte im Text selbst enthalten sind.</p>
+<p>Die ausklappbaren Boxen sind Teil dieser Entscheidung. Sie erlauben es, Seiten optisch zu verkürzen, ohne Inhalte zu entfernen. Wer nur einen Überblick möchte, bekommt ihn schnell. Wer tiefer einsteigen will, kann das tun. Für Suchmaschinen und KI-Modelle sind diese Informationen ohnehin vollständig lesbar.</p>
+<div class="kg-card kg-toggle-card" data-kg-toggle-state="close">
+  <div class="kg-toggle-heading">
+    <button class="kg-toggle-card-icon" aria-label="Inhalt einblenden"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+    <h4 class="kg-toggle-heading-text">So sind die Fallbeispiel-Newsletter-Beiträge aufgebaut</h4>
+  </div>
+  <div class="kg-toggle-content">
+    <p>Der &ldquo;Visual Sales&rdquo;-Newsletter ist in der Regel als <strong>Fallbeispiel aus der Praxis</strong> aufgebaut. Seit Herbst 2025 folgen diese Texte einer festen Struktur, die sich im Alltag bewährt hat, für Leser ebenso wie für KI-basierte Systeme.</p>
+<p>Am Anfang steht ein <strong>klarer Titel</strong>, der suchlogisch (SEO) funktioniert und den Kontext eindeutig setzt. Ein <strong>Titelbild</strong> dient als visueller Anker und erleichtert die Verbreitung, etwa auf LinkedIn.</p>
+<p>Darauf folgen <strong>drei Bulletpoints als TLDR</strong>. Sie fassen die Kernaussagen zusammen, bewusst sachlich formuliert, ohne werbliche Sprache. Diese Punkte sind so geschrieben, dass sie sowohl von Menschen schnell erfasst als auch von KI-Systemen eindeutig interpretiert werden können.</p>
+<p>Anschließend folgt ein <strong>kurzer Story-Abschnitt</strong>. Er beschreibt eine konkrete Anwendungssituation im Vertriebsalltag: ein Gespräch, eine Nutzung, eine Beobachtung aus der Praxis. Nicht abstrakt, sondern erlebbar – mit Fokus darauf, wie sich die Situation / AR / 3D-Grafik für den Nutzer oder Kunden anfühlt.</p>
+<p>Erst danach werden die <strong>Zusammenhänge erklärt</strong>. Warum etwas so funktioniert. Welche Wirkung beobachtet wurde. Welche Überlegungen dahinterstehen.</p>
+<p>Der <strong>technische Teil</strong> folgt bewusst später. Technik wird nicht vorangestellt, sondern eingeordnet – als Mittel zum Zweck, nicht als Ausgangspunkt.</p>
+<p>Vertiefende Aspekte sind in <strong>ausklappbaren Boxen</strong> ergänzt. Sie bieten zusätzliche Tiefe für Leser, die mehr Kontext möchten, ohne den Haupttext zu überladen.</p>
+<p>Am Ende steht ein <strong>Call-to-Action</strong>. Kein Verkaufsdruck, sondern eine Einladung zum Weiterdenken oder zum Gespräch.</p>
+  </div>
+</div>
+
+<p>Diese Website ist nicht darauf ausgelegt, zu beeindrucken. Sie soll entlasten. Orientierung geben. Und ermöglichen, sich ein eigenes Bild zu machen – ohne Ablenkung.</p>
+<h2>E: Einordnung</h2>
+<p>Dieser Text ist kein Leitfaden und keine Empfehlung, es genauso zu machen. Er ist auch kein Beitrag über künstliche Intelligenz. Er ist eine Einordnung meiner Arbeitsweise – und der Entscheidungen, die in den letzten Wochen rund um diese Website getroffen wurden.</p>
+<p><strong>Texte entstehen bei mir nicht, weil etwas gesagt werden muss, sondern weil etwas geklärt werden soll.</strong> KI hilft mir dabei, Gedanken zu strukturieren, zu prüfen und zu schärfen. Sie ersetzt weder Erfahrung noch Haltung. Und sie entscheidet nicht, was am Ende stehen bleibt.</p>
+<p>Was diesen Prozess geprägt hat, ist weniger Geschwindigkeit als Reduktion. Weniger Themen. Weniger Effekte. Weniger Ablenkung. Dafür mehr Struktur, mehr Klarheit und mehr Verantwortung für das, was gesagt wird – und für das, was bewusst nicht gesagt wird.</p>
+<p>Diese Website ist das Ergebnis dieses Arbeitsprozesses. Kein finales Statement, sondern eine Momentaufnahme. Ein Stand der Dinge, der sich aus Gesprächen, Projekten und Beobachtungen entwickelt hat.</p>
+<p>Wenn aus diesem Text ein Satz bleiben darf, dann dieser:</p>
+<blockquote>
+<strong>KI ist für mich ein Werkzeug zum Strukturieren und Schärfen – nicht zum Denken oder Ersetzen von Haltung.</strong>
+</blockquote>
+<p>Nach der Nullnummer auf der Website und zehn Ausgaben dieser Reihe ziehe ich hier bewusst einen Schlussstrich. Nicht, weil es keine weiteren Gedanken gäbe, sondern weil auch Klärung einen Abschluss braucht. </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>(stellt die Tasse Tee weg)</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Wer noch etwas bleiben möchte: <a href="https://visales.de/tag/schroders-notizen/">Die Texte dieser Reihe habe ich hier gesammelt</a>.</p>
+<p><em>Update: Diese Textreihe habe ich im Dezember 2025 verfasst. Seitdem hat sich durch meinen Wechsel von ChatGPT zu Claude CoWork nochmal einiges Verändert. Aber das ist ein Thema für die Zukunft.</em></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+            </section>
+            
+            <aside class="vs-author-block gh-canvas">
+                <img class="vs-author-block-avatar" src="assets/images/2025/10/1706254155883-1.jpeg" alt="Gerhard Schröder">
+                <div class="vs-author-block-text">
+                    <span class="vs-author-block-label">Über den Autor</span>
+                    <a href="https://visales.de/author/gerhard/" class="vs-author-block-name">Gerhard Schröder</a>
+                    <p class="vs-author-bio">Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit über 15 Jahren spezialisiert auf visuelle Vertriebskommunikation für Maschinenbau & AeroSpace — mit 3D-Visualisierung & OpenUSD. Mitglied der AOUSD, Speaker zu AR & Spatial Sales.</p>
+                </div>
+            </aside>
+            
+        </article>
+    </main>
+
+    
+        <footer class="gh-footer gh-outer">
+            <div class="gh-footer-inner gh-inner">
+                
+            <div class="vs-footer-trust">
+                <div class="vs-footer-trust-clients">Ausgewählte Kunden und Partner: Astrofein · Carl Hamm · EnBW · ESA/ESERO · Evonik · GROHE · igus · K+S · Krupp Stiftung · Polaris Spaceplane · Rheingas · Röchling · Ruhrmuseum · Siemens · Somfy · Stifterverband · TURCK · VEMAG · Wavin · WMF · zgoll u.a.</div>
+                <div class="vs-footer-trust-member">Mitglied der <a href="https://aousd.org/" target="_blank" rel="noopener">Alliance for OpenUSD</a> &amp; <a href="https://metaverse-standards.org/" target="_blank" rel="noopener">Metaverse Standards Forum</a></div>
+            </div>
+                <div class="vs-footer-grid">
+                    <div class="vs-footer-col"><h4>Kontakt</h4><p class="vs-footer-address">viSales GmbH<br>Wittener Str. 87<br>44789 Bochum</p><a href="/kontakt/" class="gh-button vs-footer-cta">Termin buchen</a><ul><li><a href="mailto:sales@visales.de">sales@visales.de</a></li><li><a href="tel:+491608060361">+49-160-8060361</a></li></ul><h4 class="vs-footer-col-subtitle">KI & Daten</h4><ul><li><a href="/ki/">Grounding-Pages</a></li><li><a href="/llms.txt">LLMs.txt</a></li><li><a href="https://notebooklm.google.com/notebook/8214e4ca-dd3d-4420-9cc5-be74370ea3ed?authuser=1&ref=visales.de" target="_blank" rel="noopener">Notebook LLM</a></li></ul></div>
+                <div class="vs-footer-col"><h4>Visual Sales</h4><ul><li><a href="/grafik-2d-3d/">Grafik & Visualisierung</a></li><li><a href="/interaktive-prasentationen/">Interaktive Präsentationen</a></li><li><a href="/video/">Video- & Fotoproduktion</a></li><li><a href="/produktkonfigurator/">Produktkonfiguratoren (Web)</a></li><li><a href="/website/">Website</a></li></ul><h4 class="vs-footer-col-subtitle">Strategie</h4><ul><li><a href="/beratung/">Beratung & Workshops</a></li><li><a href="/vortraege-gerhard-schroeder/">Vorträge & Impulse</a></li></ul></div>
+                <div class="vs-footer-col"><h4>Immersive Sales</h4><ul><li><a href="/ar-konfigurator/">Produktkonfiguratoren (AR/VR)</a></li><li><a href="/augmented-reality/">Augmented Reality</a></li><li><a href="/messen/">Messe-Lösungen</a></li><li><a href="/virtuelle-rundgange/">Virtuelle Rundgänge</a></li><li><a href="/immersive-video/">Immersive Video</a></li><li><a href="/spatial-website/">Spatial Websites</a></li><li><a href="/spatial-presentation/">Spatial Presentations</a></li><li><a href="/tag/openusd/">OpenUSD / NVIDIA Omniverse</a></li></ul></div>
+                <div class="vs-footer-col"><h4 class="vs-footer-col-subtitle"><a href="/produkte/" class="vs-footer-sub-h4-link">Produkte</a></h4><ul><li class="vs-footer-prod-item"><a href="/usdconfig/">→ USDconfig</a></li><li class="vs-footer-prod-item"><a href="/usdbridge/">→ USDbridge</a></li><li class="vs-footer-prod-item"><a href="/skillcms/">→ SkillCMS</a></li><li class="vs-footer-prod-more vs-footer-prod-item"><a href="/produkte/">→ Weitere Produkte</a></li></ul><h4 class="vs-footer-col-subtitle">Feeds & Social</h4><ul><li><a href="/rss/">RSS Website</a></li><li><a href="https://visualcom.podcaster.de/visual-com.rss" target="_blank" rel="noopener">RSS Visual Com-Podcast</a></li><li><a href="https://mastodon.social/@visales" target="_blank" rel="noopener">@visales@mastodon.social</a></li><li><a href="https://www.linkedin.com/in/gerhardschroeder-visales/" target="_blank" rel="noopener">LinkedIn · Gerhard Schröder</a></li><li><a href="https://www.youtube.com/@Gerhard_Schroeder" target="_blank" rel="noopener">YouTube · Gerhard Schröder</a></li><li><a href="https://github.com/KopfKinoK3" target="_blank" rel="noopener">GitHub · Gerhard Schröder</a></li></ul></div>
+                <div class="vs-footer-col vs-footer-newsletter">
+                    <h4>VISUAL SALES: 1x IM MONAT</h4>
+                    <div class="sib-form" style="text-align:center; background-color:transparent;">
+  <div id="sib-form-container" class="sib-form-container">
+    <div id="error-message" class="sib-form-message-panel" style="font-size:14px; text-align:left; font-family:Helvetica,sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949; max-width:540px;">
+      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+          <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z"/>
+        </svg>
+        <span class="sib-form-message-panel__inner-text">Deine Anmeldung konnte nicht gespeichert werden. Bitte versuche es erneut.</span>
+      </div>
+    </div>
+    <div></div>
+    <div id="success-message" class="sib-form-message-panel" style="font-size:14px; text-align:left; font-family:Helvetica,sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66; max-width:540px;">
+      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+          <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z"/>
+        </svg>
+        <span class="sib-form-message-panel__inner-text">Deine Anmeldung war erfolgreich.</span>
+      </div>
+    </div>
+    <div></div>
+    <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid; direction:ltr">
+      <form id="sib-form" method="POST" action="https://ed37356f.sibforms.com/serve/MUIFAMKItFwOePtKt38bwlHC4cSspkcZ6pYPevEr8AsnvWWeQFNE7OwvJmKfM3kijjStDcWfD4qPqdoiSfLeklbVddQaI5piWBPdGpytEMKWqI3DdHpEAIbcRz96IrL9NR13acGaIgGhvWvoYnHPrUoJa9M4Z0Glk2syAIhLy_96x5C0ClF4jYfI0fKKioLK2g1uHjXS3uvTH6Cw" data-type="subscription">
+        <div style="padding: 8px 0;">
+          <div class="sib-input sib-form-block">
+            <div class="form__entry entry_block">
+              <div class="form__label-row">
+                <label class="entry__label" style="display:none;" for="EMAIL"></label>
+                <div class="entry__field">
+                  <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="deine@email.de" data-required="true" required />
+                </div>
+              </div>
+              <label class="entry__error entry__error--primary" style="font-size:14px; font-family:Helvetica,sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;"></label>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 8px 0;">
+          <div class="sib-optin sib-form-block" data-required="true">
+            <div class="form__entry entry_mcq">
+              <div class="form__label-row">
+                <div class="entry__choice">
+                  <label>
+                    <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" required />
+                    <span class="checkbox checkbox_tick_positive"></span>
+                    <span style="font-size:13px; font-family:Helvetica,sans-serif; color:#3C4858;"><p>Ich möchte den Visual Sales Newsletter erhalten und akzeptiere die <a href="/datenschutz/">Datenschutzerklärung</a>.</p></span>
+                  </label>
+                </div>
+              </div>
+              <label class="entry__error entry__error--primary" style="font-size:14px; font-family:Helvetica,sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;"></label>
+              <label class="entry__specification" style="font-size:12px; font-family:Helvetica,sans-serif; color:#8390A4;">
+                Du kannst den Newsletter jederzeit über den Link im Newsletter abbestellen.
+              </label>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 8px 0;">
+          <div class="sib-form-block" style="text-align:left">
+            <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:15px; font-weight:700; font-family:Helvetica,sans-serif; color:#FFFFFF; background-color:#f2902a; border-radius:6px; border-width:0px;" form="sib-form" type="submit">
+              <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"/>
+              </svg>
+              ANMELDEN
+            </button>
+          </div>
+        </div>
+        <div style="padding: 6px 0;">
+          <div style="font-size:11px; text-align:left; font-family:Helvetica,sans-serif; color:#8390A4;">
+            <p>Wir nutzen Brevo als Marketing-Plattform. Mit dem Absenden stimmst du zu, dass deine Daten zur Bearbeitung an Brevo übertragen werden — gemäß der <a href="https://www.brevo.com/de/legal/privacypolicy/" target="_blank" rel="noopener">Datenschutzerklärung von Brevo</a>.</p>
+          </div>
+        </div>
+        <input type="text" name="email_address_check" value="" class="input--hidden">
+        <input type="hidden" name="locale" value="de">
+      </form>
+    </div>
+  </div>
+</div>
+                </div>
+                </div>
+                <div class="vs-footer-bottom">
+                    <div class="vs-footer-copy">
+                        &copy; 2026 viSales GmbH &middot; Bochum &middot; Gespräche kürzer, Entscheidungen klarer, Abschlüsse planbarer.
+                    </div>
+                    <div class="vs-footer-legal">
+                        <a href="/impressum/">Impressum</a><a href="/datenschutz/">Datenschutz</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+</div>
+
+<script src="assets/js/source.js"></script>
+<script>
+    // kg-toggle-card interaktiv
+    document.querySelectorAll('.kg-toggle-card').forEach(function(card) {
+        var heading = card.querySelector('.kg-toggle-heading');
+        var content = card.querySelector('.kg-toggle-content');
+        if (!heading || !content) return;
+
+        function openToggle() {
+            card.setAttribute('data-kg-toggle-state', 'open');
+            content.style.height = content.scrollHeight + 'px';
+        }
+        function closeToggle() {
+            card.setAttribute('data-kg-toggle-state', 'close');
+            content.style.height = '0';
+        }
+
+        heading.addEventListener('click', function() {
+            card.getAttribute('data-kg-toggle-state') === 'open'
+                ? closeToggle()
+                : openToggle();
+        });
+
+        heading.setAttribute('tabindex', '0');
+        heading.setAttribute('role', 'button');
+        heading.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                heading.click();
+            }
+        });
+    });
+
+    // D0.1 — Galerie Lightbox via PhotoSwipe 5
+    (function() {
+        var galleries = document.querySelectorAll('.kg-gallery-card');
+        if (!galleries.length) return;
+
+        // Lade PhotoSwipe dynamisch
+        var cssLink = document.createElement('link');
+        cssLink.rel = 'stylesheet';
+        cssLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.min.css';
+        document.head.appendChild(cssLink);
+
+        var script = document.createElement('script');
+        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/umd/photoswipe.umd.min.js';
+        script.onload = function() {
+            galleries.forEach(function(gallery) {
+                var images = gallery.querySelectorAll('.kg-gallery-image img');
+                var items = [];
+                images.forEach(function(img) {
+                    var w = img.naturalWidth  || img.getAttribute('width')  || 1200;
+                    var h = img.naturalHeight || img.getAttribute('height') || 800;
+                    items.push({ src: img.src, width: parseInt(w), height: parseInt(h) });
+                });
+
+                images.forEach(function(img, idx) {
+                    // Wrap in <a> falls noch nicht vorhanden
+                    if (img.parentElement.tagName !== 'A') {
+                        var a = document.createElement('a');
+                        a.href = img.src;
+                        img.parentNode.insertBefore(a, img);
+                        a.appendChild(img);
+                    }
+                    img.parentElement.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        var pswp = new PhotoSwipe({
+                            dataSource: items,
+                            index: idx,
+                            bgOpacity: 0.92,
+                            showHideAnimationType: 'fade',
+                        });
+                        pswp.init();
+                    });
+                });
+            });
+        };
+        document.body.appendChild(script);
+    })();
+
+</script>
+<!-- Brevo Form Scripts -->
+<script>
+  window.REQUIRED_CODE_ERROR_MESSAGE = 'Wähle bitte einen Ländervorwahl aus.';
+  window.LOCALE = 'de';
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfe das Feldformat und versuche es erneut.";
+  window.REQUIRED_ERROR_MESSAGE = "Dieses Feld darf nicht leer sein.";
+  window.GENERIC_INVALID_MESSAGE = "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfe das Feldformat und versuche es erneut.";
+  window.translation = {
+    common: {
+      selectedList: '{quantity} Liste ausgewählt',
+      selectedLists: '{quantity} Listen ausgewählt',
+      selectedOption: '{quantity} ausgewählt',
+      selectedOptions: '{quantity} ausgewählt',
+    }
+  };
+  var AUTOHIDE = Boolean(0);
+</script>
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+
+<div id="vs-cookie-banner" class="vs-cookie-banner" aria-live="polite" role="dialog" aria-label="Cookie-Einstellungen">
+  <div class="vs-cookie-inner">
+    <div class="vs-cookie-text">
+      <strong>Cookies &amp; Datenschutz</strong>
+      <p>Wir nutzen Cookies für Newsletter, Analysen, Werbung und eingebettete Medien (YouTube, Podcast).
+        <a href="/datenschutz/">Datenschutz&shy;erklärung</a>
+      </p>
+    </div>
+    <div class="vs-cookie-actions">
+      <button class="gh-button vs-cookie-btn-all" id="vs-cookie-accept-all">Alle akzeptieren</button>
+      <button class="vs-cookie-btn-settings" id="vs-cookie-toggle-settings">Einstellungen</button>
+      <button class="vs-cookie-btn-deny" id="vs-cookie-deny">Nur notwendige</button>
+    </div>
+  </div>
+  <div id="vs-cookie-settings-panel" class="vs-cookie-settings-panel" hidden>
+    <div class="vs-cookie-cats">
+      <label class="vs-cookie-cat">
+        <span class="vs-cookie-cat-info">
+          <strong>Notwendig</strong>
+          <small>Technisch erforderlich, immer aktiv</small>
+        </span>
+        <span class="vs-cookie-toggle vs-cookie-toggle--disabled is-on"><span></span></span>
+      </label>
+      <label class="vs-cookie-cat">
+        <span class="vs-cookie-cat-info">
+          <strong>Funktional</strong>
+          <small>Newsletter-Anmeldung via Brevo</small>
+        </span>
+        <span class="vs-cookie-toggle" data-cat="funktional"><span></span></span>
+      </label>
+      <label class="vs-cookie-cat">
+        <span class="vs-cookie-cat-info">
+          <strong>Analyse</strong>
+          <small>Google Analytics &amp; Search Console</small>
+        </span>
+        <span class="vs-cookie-toggle" data-cat="analyse"><span></span></span>
+      </label>
+      <label class="vs-cookie-cat">
+        <span class="vs-cookie-cat-info">
+          <strong>Marketing</strong>
+          <small>Google Ads</small>
+        </span>
+        <span class="vs-cookie-toggle" data-cat="marketing"><span></span></span>
+      </label>
+      <label class="vs-cookie-cat">
+        <span class="vs-cookie-cat-info">
+          <strong>Medien</strong>
+          <small>YouTube-Videos, Podcast-Player</small>
+        </span>
+        <span class="vs-cookie-toggle" data-cat="medien"><span></span></span>
+      </label>
+    </div>
+    <div class="vs-cookie-settings-actions">
+      <button class="gh-button vs-cookie-btn-save" id="vs-cookie-save">Auswahl speichern</button>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var STORE_KEY = 'vsConsent';
+  var banner    = document.getElementById('vs-cookie-banner');
+  var panel     = document.getElementById('vs-cookie-settings-panel');
+  var toggles   = banner ? banner.querySelectorAll('.vs-cookie-toggle[data-cat]') : [];
+
+  function getConsent(){ try{ return JSON.parse(localStorage.getItem(STORE_KEY)||'null'); }catch(e){ return null; } }
+  function setConsent(obj){
+    localStorage.setItem(STORE_KEY, JSON.stringify(obj));
+    document.dispatchEvent(new CustomEvent('vsCookieConsent', {detail: obj}));
+    if(typeof gtag === 'function'){
+      gtag('consent', 'update', {
+        'analytics_storage': obj.analyse ? 'granted' : 'denied',
+        'ad_storage':        obj.marketing ? 'granted' : 'denied'
+      });
+    }
+  }
+  function hideBanner(){ if(banner) banner.style.display='none'; }
+
+  function applyToggles(obj){
+    toggles.forEach(function(t){
+      if(obj && obj[t.dataset.cat]) t.classList.add('is-on');
+      else t.classList.remove('is-on');
+    });
+  }
+
+  var existing = getConsent();
+  if(existing){
+    hideBanner();
+    if(typeof gtag === 'function'){
+      gtag('consent', 'update', {
+        'analytics_storage': existing.analyse ? 'granted' : 'denied',
+        'ad_storage':        existing.marketing ? 'granted' : 'denied'
+      });
+    }
+    return;
+  }
+
+  if(!banner) return;
+  banner.style.display = 'block';
+
+  document.getElementById('vs-cookie-accept-all').addEventListener('click', function(){
+    var obj = {funktional:true, analyse:true, marketing:true, medien:true};
+    setConsent(obj); hideBanner();
+  });
+
+  document.getElementById('vs-cookie-deny').addEventListener('click', function(){
+    setConsent({funktional:false, analyse:false, marketing:false, medien:false}); hideBanner();
+  });
+
+  document.getElementById('vs-cookie-toggle-settings').addEventListener('click', function(){
+    var hidden = panel.hidden;
+    panel.hidden = !hidden;
+    this.textContent = hidden ? 'Einstellungen schließen' : 'Einstellungen';
+  });
+
+  toggles.forEach(function(t){
+    t.addEventListener('click', function(){ this.classList.toggle('is-on'); });
+  });
+
+  document.getElementById('vs-cookie-save').addEventListener('click', function(){
+    var obj = {};
+    toggles.forEach(function(t){ obj[t.dataset.cat] = t.classList.contains('is-on'); });
+    setConsent(obj); hideBanner();
+  });
+})();
+</script>
+</body>
+</html>
