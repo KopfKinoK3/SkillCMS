@@ -24,6 +24,7 @@ faq:
     a: "Im OpenUSD-Kontext beschreibt ein Avatar die geometrische und animierbare 3D-Darstellung einer Figur. Eine Persona umfasst zusätzlich Verhaltensdaten, Mimik-Parameter und Identitätsmerkmale. Die AOUSD-Norm zielt darauf ab, beide Ebenen interoperabel zu definieren."
   - q: "Wann ist der OpenUSD-Avatar-Standard einsatzbereit?"
     a: "Die AOUSD-Arbeitsgruppen sind aktiv, ein finaler Standard ist noch nicht veröffentlicht. Für Unternehmen lohnt es sich aber bereits jetzt, 3D-Assets in OpenUSD/USDZ zu pflegen – diese Basis ist kompatibel mit jedem kommenden Avatar-Standard auf OpenUSD-Grundlage."
+ki_text: true
 ---
 
 - **Meta und Apple arbeiten gemeinsam an einem Avatar-Standard für OpenUSD: Die AOUSD entwickelt eine einheitliche Spezifikation für digitale Personas – ein Meilenstein für Interoperabilität im 3D-Web.**
