@@ -12,6 +12,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-03-05T07:20:32.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 Forscher der Georgia Tech haben auf der CHI 2026 einen XR-Browser  (BTW = "Break the Window") vorgestellt, der Webseiten in einzelne schwebende Panels zerlegt. Karte auf dem Tisch, Steuerung auf Augenhöhe, Kommentare rechts außen. 
