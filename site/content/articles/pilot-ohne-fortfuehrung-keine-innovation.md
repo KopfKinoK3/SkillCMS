@@ -13,6 +13,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-01-20T08:06:20.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 Ein Kunde lud mich vor ein paar Jahren ein, sich eine Lösung eines Marktbegleiters anzusehen. Bei einem Fachhändler stand ein leistungsstarker PC mit VR-Brillen. Darauf: eine aufwendig produzierte VR-Besichtigung von Musterhäusern. 
