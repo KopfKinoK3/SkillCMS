@@ -1375,41 +1375,6 @@ INLINE_CSS = """
         }
         .vs-meta-sep { opacity: 0.5; }
 
-        /* ===== KI-Badges ===== */
-        .vs-badge-ki {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.25em;
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--ghost-accent-color);
-            background: rgba(230,126,34,0.08);
-            border: 1px solid rgba(230,126,34,0.25);
-            border-radius: 4px;
-            padding: 0.1em 0.45em;
-            white-space: nowrap;
-            vertical-align: middle;
-            margin-left: 0.5em;
-        }
-        .vs-feature-image-wrap { position: relative; }
-        .vs-image-badge {
-            position: absolute;
-            bottom: 0.6rem;
-            right: 0.6rem;
-        }
-        .vs-badge-bild-ki {
-            display: inline-flex;
-            align-items: center;
-            font-size: 1.0rem;
-            font-weight: 600;
-            color: rgba(255,255,255,0.85);
-            background: rgba(0,0,0,0.45);
-            border-radius: 4px;
-            padding: 0.15em 0.5em;
-            white-space: nowrap;
-            backdrop-filter: blur(4px);
-        }
-
         /* ===== D0.4 — Autor-Block unter Content ===== */
         .gh-main { padding-bottom: 0 !important; }
         .gh-footer { margin-top: 0 !important; }
@@ -1934,33 +1899,32 @@ def build_post_article_html(meta, content_html, is_draft=False):
     if author_avatar:
         avatar_html = f'<img class="vs-meta-avatar" src="{author_avatar}" alt="{author_name}">'
 
-    # KI-Badge in Autorenzeile (Text: Kopf & KI)
-    ki_text_badge = ""
+    # KI-Credits als plain Text in der Meta-Sub-Zeile
+    ki_credits_html = ""
     if text_credit:
-        ki_text_badge = f' <span class="vs-badge-ki">&#10022; Text: {text_credit}</span>'
+        ki_credits_html += f'\n                        <span class="vs-meta-sep">&middot;</span>\n                        <span>Text: {text_credit}</span>'
+    if image_credit:
+        ki_credits_html += f'\n                        <span class="vs-meta-sep">&middot;</span>\n                        <span>Bild: {image_credit}</span>'
 
     meta_html = f"""
             <div class="gh-article-meta vs-article-meta">
                 {avatar_html}
                 <div class="vs-meta-text">
-                    <span class="vs-meta-author"><a href="{author_url}">{author_name}</a>{ki_text_badge}</span>
+                    <span class="vs-meta-author"><a href="{author_url}">{author_name}</a></span>
                     <div class="vs-meta-sub">
                         <time datetime="{date_str}">{date_display}</time>
                         <span class="vs-meta-sep">&middot;</span>
-                        <span>{reading_time} min read</span>
+                        <span>{reading_time} min read</span>{ki_credits_html}
                     </div>
                 </div>
             </div>"""
 
-    # D0.3 — Feature Image, optional mit Bild: KI Badge
+    # D0.3 — Feature Image (kein Badge)
     feature_html = ""
     if feature_image:
-        bild_badge = ""
-        if image_credit:
-            bild_badge = f'\n        <span class="vs-image-badge vs-badge-bild-ki">Bild: {image_credit}</span>'
         feature_html = f"""
     <figure class="gh-article-image vs-feature-image-wrap">
-        <img src="{feature_image}" alt="{title}" loading="eager">{bild_badge}
+        <img src="{feature_image}" alt="{title}" loading="eager">
     </figure>"""
 
     # Autor-Block unter Content
