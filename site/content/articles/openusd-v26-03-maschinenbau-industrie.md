@@ -23,6 +23,7 @@ faq:
     a: "OpenUSD ermöglicht einen durchgängigen Workflow, in dem CAD-Daten, photorealistische Umgebungsscans und interaktive Produktkonfiguration in einem einzigen Format koexistieren. Die Konstruktionsdatei wird zur Vertriebsdatei — ohne Konvertierungsschritte, ohne Qualitätsverlust, ohne separate Konfigurations-Layer."
   - q: "Realitätscheck"
     a: "WebAssembly-Support heißt nicht, dass morgen jeder USD-Viewer im Browser läuft. Die Laufzeitumgebung existiert jetzt — aber performante Player, die komplexe Szenen mit VariantSets und Materialien flüssig rendern, müssen erst gebaut werden. Gaussian Splatting als Schema ist ein Standard-Vorschlag, kein fertiges Ökosystem. Die Capture-Tools sind teuer, die Datenmengen groß, und die meisten Maschinenbau-Unternehmen haben aktuell weder die Pipeline noch das Know-how dafür.Was v26.03 liefert, ist eine Architekturentscheidung, kein fertiges Produkt. Zwischen ‘technisch möglich’ und ‘im Vertrieb einsetzbar’ liegen erfahrungsgemäß zwei bis drei Jahre. Wer jetzt investiert, investiert in eine Wette — eine gut begründete, aber eben eine Wette."
+ki_text: true
 ---
 
 Nun hat die Alliance for OpenUSD die Version 26.03 veröffentlicht. Normalerweise sind Versionsnummern nichts, worüber man einen Beitrag schreibt. Diesmal schon, denn zwei Features sind drin, die das verändern, was wir in der B2B-Produktkommunikation technisch für möglich halten.
