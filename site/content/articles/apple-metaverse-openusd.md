@@ -26,6 +26,8 @@ faq:
     a: "Apple spricht bewusst nicht von Avataren, sondern von Personas. Während Avatare für comichafte Stellvertreterfiguren stehen, repräsentiert die Persona eine abstrahierte, aber erkennbare Darstellung der realen Person. Technisch basieren Personas auf OpenUSD-Strukturen, ergänzt durch Gaussian Splatting für realitätsnahe Mimik und Blickrichtungen."
   - q: "Was fehlt Apple noch auf dem Weg zum offenen Metaverse?"
     a: "Drei Punkte fehlen noch: erstens echte Multi-User-Fähigkeit im Browser (aktuell nur App-gebunden), zweitens direkte Interaktion innerhalb von Web-Environments (derzeit nur über begleitende Web-Interfaces), und drittens dynamisches Nachladen von Inhalten. Keiner dieser Punkte betrifft die Architektur – alle könnten vergleichsweise schnell gelöst werden."
+ki_text: true
+ki_bild: true
 ---
 
 - **Apple nähert sich dem ursprünglichen Metaverse-Gedanken nicht über geschlossene virtuelle Welten, sondern über den Aufbau einer strukturellen Grundlage für vernetzte räumliche Inhalte.**
