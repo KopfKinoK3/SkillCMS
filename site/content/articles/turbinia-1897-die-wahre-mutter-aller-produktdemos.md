@@ -14,6 +14,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-02-17T23:09:05.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 - **Produktdemos müssen Entscheidungen auslösen, nicht erklären. Sobald eine Demo Argumente liefern muss, ist sie zu spät im Prozess.**
