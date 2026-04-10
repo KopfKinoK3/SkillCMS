@@ -26,6 +26,8 @@ faq:
     a: "Ein fokussiertes Einstiegsprojekt mit einem Produkt und definierten Varianten ist in der Regel in vier bis acht Wochen einsatzbereit. Der größte Zeitfaktor ist meistens die Bereitstellung und Aufbereitung der Ausgangsdaten, nicht die technische Umsetzung."
   - q: "Lässt sich der Konfigurator auch direkt in unsere Website einbinden?"
     a: "Ja, das ist einer der häufigsten Einsatzfälle: Der Konfigurator wird als einbettbares Element geliefert, das sich in bestehende Webauftritte integrieren lässt, ohne dass die gesamte Website neu gebaut werden muss. Auf der Website hilft er bei der Variantenauswahl und erhöht die Verweildauer qualifizierter Besucher."
+ki_text: true
+ki_bild: true
 ---
 
 - **3D-Konfiguratoren im B2B-Vertrieb reduzieren Rückfragen, weil Entscheider Produktvarianten selbst konfigurieren statt sie erklärt zu bekommen.**
