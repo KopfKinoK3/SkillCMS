@@ -14,6 +14,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-02-16T23:06:04.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 - **RSS ist offene Infrastruktur: chronologisch und abonnierbar – ohne algorithmische Priorisierung.**
