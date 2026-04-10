@@ -23,6 +23,7 @@ faq:
     a: "Nicht unbedingt. Ein Snippet für einen sehr spezifischen Suchbegriff kann Sichtbarkeit und Vertrauen steigern. Das Problem entsteht bei generischen Begriffen mit hohem Suchvolumen: Dort saugt Google den Traffic ab. Bei nischigen, markenbildenden Queries ist ein Snippet eher Vorteil als Nachteil."
   - q: "Wie wurden die Toggle-Boxen in diesem Artikel erstellt?"
     a: "Diese Fragen und Antworten wurden von Claude (Anthropic AI) analysiert und automatisch über die Ghost Admin API in diesen Artikel eingefügt – als Teil einer laufenden SEO-Optimierung auf visales.de. Das ist kein Widerspruch zum Thema dieses Artikels: Generische KI-Texte sind die Snippet-Falle. Spezifische Inhalte mit echter Erfahrung – wie der Rest dieses Artikels – sind es nicht."
+ki_text: true
 ---
 
 - **Google zeigt generisches Wissen direkt im Suchergebnis an – ohne Klick: Wer Standarddefinitionen liefert, verliert Traffic an Googles eigene KI-Übersichten.**
