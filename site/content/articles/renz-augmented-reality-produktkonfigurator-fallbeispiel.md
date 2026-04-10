@@ -12,6 +12,7 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2025-07-09T08:00:00.000Z"
 type: post
 template: post
+ki_text: true
 ---
 
 **Oder: Warum Produktkonfiguratoren in Augmented Reality heute mehr bewirken als noch jedes Erklärvideo**
