@@ -12,6 +12,7 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2025-08-03T06:16:00.000Z"
 type: post
 template: post
+ki_bild: true
 ---
 
 Beim [Münstercamp 2025](https://muenstercamp.de) trafen sich Kai Heddergott und Gerhard Schröder mit Arne Klempert, einem der [Wikimedia Deutschland eV](https://www.wikimedia.de)-Mitgründer und heutigem GF der [WikiRADAR GmbH](https://wikiradr.com) zum Gespräch über freies Wissen und Wikipedia.  
