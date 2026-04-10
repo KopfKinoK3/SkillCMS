@@ -12,6 +12,7 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-03-17T08:43:43.000Z"
 type: post
 template: post
+ki_bild: true
 ---
 
 Am 4. März, einem Mittwoch Abend, haben sich Thomas Riedel, Kai Heddergott und Gerhard Schröder zusammengesetzt. Nachdem Kai & Gerd zuletzt einen [Re-Start des Podcasts im Februar](https://visales.de/state-of-26-ki-clawbot-news-metaverse-apple-news-ep-96/) durchgeführt haben und einen neuen Termin bekannt gegeben haben für den nächsten Livetalk, 4.3. um 13 Uhr, kündigte Apple für den Nachmittag eine Präsentation an. Also verschoben die zwei die Uhrzeit auf 19 Uhr und konnten so Thomas einladen. Der zusätzlich eingeplante Mark Zimmermann musste leider kurzfristig Absagen. 
