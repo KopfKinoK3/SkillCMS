@@ -12,6 +12,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-03-07T09:00:33.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 Auf der [Hannover Messe](https://www.hannovermesse.de/de/) verläuft man sich. Das ist kein Vorwurf — es ist Physik. Gefühlt 120+ Hallen, vielleicht kein GPS-Signal, und die Wegweiser hängen so hoch, dass man sie erst sieht, wenn man schon vorbeigelaufen ist.
