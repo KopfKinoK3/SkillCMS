@@ -12,6 +12,7 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-03-17T23:09:32.000Z"
 type: post
 template: post
+ki_text: true
 ---
 
 1990 wollte [Collin Croome](https://de.wikipedia.org/wiki/Collin_Croome) so sehr für Apple arbeiten, dass er seine Bewerbung auf einer [HyperCard](https://HyperCard.org)-Diskette einschickte. Er bekam den Auftrag. Später stand er auf der CeBIT und hielt Vorträge für Apple – über genau dieses Tool.
