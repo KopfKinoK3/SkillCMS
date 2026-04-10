@@ -1,7 +1,7 @@
 ---
 title: "SkillCMS: KI-gestütztes Content-System für Industrieunternehmen"
 slug: skillcms
-status: draft
+status: published
 primary_tag: produkte
 tags: [produkte, ki-workflow, content-automation, openusd, vertriebskommunikation]
 meta_title: "SkillCMS: KI-gestütztes Content-System für Industrieunternehmen | viSales"
