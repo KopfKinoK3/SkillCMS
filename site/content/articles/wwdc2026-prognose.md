@@ -22,6 +22,7 @@ faq:
     a: "iOS&nbsp;27 (Mitte 2026) bringt OpenPBR &amp; MaterialX für industriekonforme Materialien, Gaussian Splats als native USD-Assets, SubD Patch Geometry für effiziente 3D-Assets sowie PCM-Kompression mit 42&nbsp;% kleineren Dateien gegenüber DRACO. Entscheidend für große Produktkataloge."
   - q: "Kann ich AR Quick Look ohne App-Download nutzen?"
     a: "Ja. AR Quick Look läuft direkt in der nativen Kamera-App auf jedem iPhone seit dem 6S (iOS&nbsp;12). Kein Download, kein Account, kein Login. Ein QR-Code reicht – das Produkt erscheint direkt im Raum des Kunden."
+ki_text: true
 ---
 
 - **Apple **[**AR Quick Look**](https://visales.de/wozu-braucht-man-ar-quick-look-von-apple/)** ist heute die leistungsfähigste Plattform für interaktive Produkterlebnisse und die einzige, die ohne App-Download funktioniert.**
