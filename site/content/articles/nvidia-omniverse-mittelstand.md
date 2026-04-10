@@ -25,6 +25,8 @@ faq:
     a: "OpenUSD ist das offene Dateiformat und die Datenstruktur, auf der Omniverse aufbaut. Omniverse ist die Plattform und Toolbox, die dieses Format nutzt. Für den Mittelstand ist OpenUSD oft der entscheidendere Schritt: Es ist die gemeinsame, zukunftsfähige Datenbasis für Engineering, Vertrieb und externe Partner – unabhängig davon, ob Omniverse selbst jemals eingesetzt wird."
   - q: "Kann ich bestehende CAD-Daten direkt in NVIDIA Omniverse verwenden?"
     a: "Nicht ohne Aufbereitung. Zwischen CAD-Daten und einem nutzbaren Digital Twin liegen Strukturarbeit, Datenlogik und Versionierung. Das Marketing-Versprechen „CAD rein, Digital Twin raus“ greift in der Praxis zu kurz. Sinnvoller ist oft eine einmalige Konvertierung von CAD nach OpenUSD als neutrale, zukunftsfähige Masterdatei – diese lässt sich später sowohl in Omniverse als auch auf der Apple Vision Pro nutzen."
+ki_text: true
+ki_bild: true
 ---
 
 - **NVIDIA Omniverse ist eine Plattform, um bestehende 3D-Daten, zum Beispiel aus dem CAD-Bereich, im Unternehmen gemeinsam zu nutzen – gedacht als zentrale 3D-Masterdatei – statt sie für jede Abteilung, Software oder externe Dienstleister neu aufzubereiten.**
