@@ -14,6 +14,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-03-23T23:55:15.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 In bisher vier Beiträgen habe ich Studien zu Augmented Reality analysiert, die belastbaren Zahlen kommen dabei ausschließlich aus dem B2C: Conversion rauf, Retouren runter – gut belegt. Doch im B2B-Investitionsgütervertrieb fehlt genau diese Grundlage.
