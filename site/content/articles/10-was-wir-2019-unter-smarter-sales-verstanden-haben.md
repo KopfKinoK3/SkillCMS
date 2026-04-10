@@ -12,6 +12,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-03-22T07:25:52.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 ## Rückblick: Smarter Sales, EyeCandy und „weniger reden, mehr zeigen“  
