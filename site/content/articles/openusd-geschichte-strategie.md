@@ -25,6 +25,8 @@ faq:
     a: "Beide Unternehmen traten 2025 der AOUSD bei. glTF adressiert den Browser-AR-Use-Case gut, lässt aber strukturierte Weiterverarbeitung, Versionierung und paralleles Arbeiten offen. OpenUSD ermöglicht die Integration von 3D-Inhalten in Produktivitätswerkzeuge wie Präsentationen und Dokumente – ein Anwendungsbereich, der mit glTF nur eingeschränkt umsetzbar war."
   - q: "Warum ist OpenUSD strategisch und nicht nur technisch relevant?"
     a: "OpenUSD löst das eigentliche Problem moderner 3D-Workflows: Dieselben CAD-Daten werden für Website, Video, AR und Simulation immer wieder neu aufbereitet – mit steigenden Kosten und inkonsistenten Ergebnissen. Als gemeinsame Datenstruktur macht OpenUSD diesen permanenten Neubau überflüssig. Sein Wert liegt nicht im Export, sondern darin, 3D als strategisches Medium mit einer gemeinsamen Masterdatei zu behandeln."
+ki_text: true
+ki_bild: true
 ---
 
 OpenUSD wird häufig als weiteres 3D-Format eingeordnet. Genau das ist der Denkfehler. Das eigentliche Problem heutiger 3D-Workflows liegt nicht in Rendering, Performance oder Tools, sondern in der fragmentierten Nutzung derselben CAD-Daten. Für Website, Video, AR, Präsentation oder Simulation werden Inhalte immer wieder neu aufbereitet – mit steigenden Kosten und inkonsistenten Ergebnissen. **OpenUSD ist deshalb nicht primär technologisch interessant, sondern strategisch: als gemeinsame Datenstruktur, die diesen permanenten Neubau erstmals überflüssig macht. **
