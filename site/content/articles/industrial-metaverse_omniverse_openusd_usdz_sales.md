@@ -21,6 +21,7 @@ faq:
     a: "NVIDIA Omniverse ist eine Kollaborationsplattform für 3D-Workflows, die auf OpenUSD basiert. Sie ermöglicht es, 3D-Assets aus verschiedenen Programmen zusammenzuführen, zu simulieren und in Echtzeit darzustellen – die technische Grundlage für das Industrial Metaverse."
   - q: "Was kostet der Einstieg ins Industrial Metaverse für ein mittelständisches Unternehmen?"
     a: "Der praktischste Einstieg ist ein konkretes AR-Pilotprojekt: ein Produkt als USDZ-Modell, eingebettet in eine Spatial Website oder AR-Präsentation. Das schafft sofort nutzbaren Vertriebsmehrwert und legt gleichzeitig die Grundlage für spätere Metaverse-Anwendungen."
+ki_bild: true
 ---
 
 *Dieser Beitrag erschien ursprünglich 2023 als Newsletter-Beitrag. Er richtet sich an Leserinnen und Leser, die einen Einstieg in das Thema suchen. Neuere Seiten und Artikel bauen inhaltlich darauf auf und gehen bewusst weiter in die Tiefe.*
