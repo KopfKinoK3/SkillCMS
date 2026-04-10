@@ -14,6 +14,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-02-28T06:45:25.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 > **„Just as HTML ignited a major computing revolution of the 2D internet, **[**OpenUSD**](https://visales.de/openusd/)** will spark the era of collaborative 3D and industrial digitalization."**   
