@@ -12,6 +12,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-01-22T21:50:46.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 Das sagte vor ein paar Tagen ein Start-up-Gründer hier in [Velbert](https://www.velbert.de/) zu mir. Bei einer Tasse Tee, mit der Gewissheit, gerade eine Wahrheit ausgesprochen zu haben. 
