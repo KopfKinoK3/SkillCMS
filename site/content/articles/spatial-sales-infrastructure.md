@@ -22,6 +22,8 @@ faq:
     a: "In den meisten Fällen nicht. Die großen CAD-Systeme — Siemens NX, CATIA, SolidWorks — bauen USD-Export aktiv aus. Was fehlt ist meist der Workflow: wie werden Daten exportiert, optimiert und aufbereitet. Genau dort setzen wir an."
   - q: "Was ist der erste sinnvolle Schritt?"
     a: "Ein Pilotprojekt mit einem konkreten Produkt: von der CAD-Datei zur einsatzfähigen USDZ-Datei, nutzbar in AR, Präsentation und Web. Das gibt eine realistische Einschätzung des Aufwands — ohne große Vorleistung."
+ki_text: true
+ki_bild: true
 ---
 
 - **Der 3D-Markt ist heute in drei getrennte Ökosysteme aufgeteilt — und zwischen Industrial Digital Twins und Spatial Commerce klafft eine Marktlücke, die kaum jemand bearbeitet.**
