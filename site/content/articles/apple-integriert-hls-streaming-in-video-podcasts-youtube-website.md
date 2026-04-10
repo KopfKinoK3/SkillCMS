@@ -21,6 +21,8 @@ faq:
     a: "HLS (HTTP Live Streaming) teilt Videos in kleine Segmente auf und liefert immer nur die Qualität, die zur aktuellen Internetverbindung passt – automatisch zwischen 1080p und 240p. Das Ergebnis: sofortiger Start, kein Puffern, weniger Traffic. Im Gegensatz zu MP4 lässt sich ein HLS-Stream nicht per Rechtsklick herunterladen. Dieselbe Technologie nutzen Netflix, Disney+ und YouTube."
   - q: "Welche DSGVO-konforme Alternative zu YouTube gibt es?"
     a: "EU-basierte HLS-Provider wie Ignite Video bieten denselben Standard wie YouTube – adaptives Streaming, einfacher Embed-Code – jedoch mit Servern in Deutschland, ohne Cookies und ohne Datenübertragung in die USA. Der Workflow ist identisch: Video hochladen, Embed-Code kopieren, einbinden. Kein Consent-Banner nötig."
+ki_text: true
+ki_bild: true
 ---
 
 - **HLS-Streaming ermöglicht adaptive Videoqualität ohne US-Plattformen: YouTube lässt sich (vermutlich) durch EU-Provider wie Ignite ersetzen, ohne technische Nachteile**
