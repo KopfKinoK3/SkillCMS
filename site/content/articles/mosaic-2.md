@@ -23,6 +23,8 @@ faq:
     a: "Ja. Den spatial-backdrop-Tag in den HTML-Head deiner Seite einfügen, USDZ-Datei auf einem HTTPS-Server hosten – und Mosaic 2 erkennt sie automatisch."
   - q: "Ist das relevant für B2B-Produktpräsentationen?"
     a: "Sehr: Stell dir eine Produktseite vor, deren 3D-Modell sich direkt auf dem Vision Pro als räumliche Umgebung öffnet – kein App Store, kein QR-Code, kein Setup. Das ist die Richtung, in die wir arbeiten."
+ki_text: true
+ki_bild: true
 ---
 
 - **spatial-backdrop (=Website-Environments) ist ein neuer HTML-Standard in visionOS 26: Websites liefern damit eine USDZ-Datei mit, die als immersive Umgebung direkt im Browser erscheint, ohne App-Download, ohne App Store. **
