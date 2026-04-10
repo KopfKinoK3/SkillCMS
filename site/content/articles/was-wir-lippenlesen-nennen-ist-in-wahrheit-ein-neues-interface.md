@@ -12,6 +12,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-01-31T09:32:13.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 [Apple kauft ein Startup für "lautloses Sprechen"](https://www.heise.de/news/Apple-kauft-KI-Start-up-Q-AI-fuer-Milliarden-11160150.html) und viele lesen das als KI-News.
