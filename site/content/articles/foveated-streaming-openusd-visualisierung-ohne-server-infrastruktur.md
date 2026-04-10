@@ -21,6 +21,8 @@ faq:
     a: "Foveated Rendering ist eine Render-Technik auf der GPU einer VR-Brille: Der Blickbereich wird lokal mit hoher Auflösung berechnet, die Peripherie mit weniger Aufwand – das entlastet die GPU. Foveated Streaming hingegen ist eine Übertragungstechnik: Das Bild wird vollständig auf einem externen Gerät gerendert und erst bei der Übertragung wird priorisiert, welcher Bildbereich in hoher Qualität ankommt. Kurz: Foveated Rendering spart Rechenleistung, Foveated Streaming spart Bandbreite."
   - q: "Warum braucht der Mittelstand keine Cloud-Server für OpenUSD-Visualisierungen?"
     a: "Mit Apples Foveated Streaming entsteht eine dritte Option neben lokalem Rendering und Cloud-Servern: Ein vorhandenes MacBook oder MacStudio rendert die OpenUSD-Visualisierung und streamt sie zur Apple Vision Pro – ohne dedizierte NVIDIA-Server-Infrastruktur, ohne Cloud-Abo und ohne dass sensible CAD-Daten das Unternehmen verlassen. Gerade auf Messen oder beim Kunden, wo Netzwerkverbindungen unzuverlässig sind, ist das ein entscheidender Vorteil."
+ki_text: true
+ki_bild: true
 ---
 
 - **Mit der Apple Vision können lokale 3D-Objekte direkt gerendert und mit extern gestreamten Inhalten kombiniert werden, zum Beispiel ein direktes Maschinenmodell lokal, die größere Anlage in der Produktionshalle vom daneben stehenden Mac.**
