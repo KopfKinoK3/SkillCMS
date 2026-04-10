@@ -22,6 +22,8 @@ faq:
     a: "Für die meisten No-Code-Tools ja — Reality Composer Pro läuft nur auf macOS. Einen gebrauchten Mac Mini mit M1-Chip gibt es ab ca. 300 Euro. Auf Windows bleibt aktuell der Weg über NVIDIA Omniverse oder Blender mit USDZ-Export-Plugin."
   - q: "Was ist der Unterschied zwischen USD und USDZ?"
     a: "USD (Universal Scene Description) ist das offene 3D-Austauschformat von Pixar. USDZ ist die gepackte Variante: Alle Texturen, Materialien und Geometrien in einer einzigen Datei — optimiert für AR-Anwendungen auf iPhone und iPad. USDZ ist also das Endprodukt, USD das Arbeitsformat."
+ki_text: true
+ki_bild: true
 ---
 
 Du interessiert Dich für OpenUSD und dem Dateiformat USDZ? Du bist kein Programmierer, vielleicht eher ein Grafiker oder einfach ein interessierter Mensch, der selbst mal solche AR-Inhalte erstellen will? Da gibt es No-Code / Low-Code-Tools zum ausprobieren.
