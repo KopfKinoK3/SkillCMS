@@ -12,6 +12,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2025-06-28T08:00:00.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 *Zunächst möchte ich mich für die Fehlsendung am Mittwoch entschuldigen. Der Beitrag *[Von 2D zu 3D: Wie das Web spatial wird und was Unternehmen davon haben](https://visales.de/spatial-website_enviroments_apple_vision_pro_model_tag/) *war als LinkedIn-Artikel geplant und... ich habe mich verklickt, so wurde ein Newsletter draus. *
