@@ -23,6 +23,7 @@ faq:
     a: "Besonders stark profitieren Maschinenbau, Automatisierungstechnik, Medizintechnik und Chemie – überall dort, wo Produkte groß, teuer oder komplex sind und nicht zum Kunden mitgebracht werden können."
   - q: "Wie läuft ein CAD-zu-AR-Projekt bei viSales ab?"
     a: "Der Ablauf ist standardisiert: CAD-Daten übergeben → Analyse & Optimierung → USDZ-Konvertierung → AR-Integration (WebAR oder Quick Look) → Test auf iOS/Android → Übergabe mit Nutzungsanleitung. Ein erstes Pilotprojekt dauert typischerweise 2–4 Wochen."
+ki_text: true
 ---
 
 &nbsp;
