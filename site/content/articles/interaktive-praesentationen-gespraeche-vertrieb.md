@@ -14,6 +14,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-02-22T10:41:25.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 - **Interaktive Präsentationen reduzieren Erklärschleifen, verkürzen Gespräche und erhöhen die Qualität von Entscheidungen**
