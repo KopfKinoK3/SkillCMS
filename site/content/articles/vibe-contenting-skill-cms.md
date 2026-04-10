@@ -14,6 +14,7 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-03-09T23:27:04.000Z"
 type: post
 template: post
+ki_text: true
 ---
 
 Seit ein paar Wochen arbeite ich mit [Claude](https://claude.ai) Code und Claude Cowork – KI-Assistenten, die einen echten Browser bedienen können. Auch das Ghost-Backend und die SEO-Metadaten-Felder. Theoretisch.
