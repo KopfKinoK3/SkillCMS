@@ -678,41 +678,6 @@
         }
         .vs-meta-sep { opacity: 0.5; }
 
-        /* ===== KI-Badges ===== */
-        .vs-badge-ki {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.25em;
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--ghost-accent-color);
-            background: rgba(230,126,34,0.08);
-            border: 1px solid rgba(230,126,34,0.25);
-            border-radius: 4px;
-            padding: 0.1em 0.45em;
-            white-space: nowrap;
-            vertical-align: middle;
-            margin-left: 0.5em;
-        }
-        .vs-feature-image-wrap { position: relative; }
-        .vs-image-badge {
-            position: absolute;
-            bottom: 0.6rem;
-            right: 0.6rem;
-        }
-        .vs-badge-bild-ki {
-            display: inline-flex;
-            align-items: center;
-            font-size: 1.0rem;
-            font-weight: 600;
-            color: rgba(255,255,255,0.85);
-            background: rgba(0,0,0,0.45);
-            border-radius: 4px;
-            padding: 0.15em 0.5em;
-            white-space: nowrap;
-            backdrop-filter: blur(4px);
-        }
-
         /* ===== D0.4 — Autor-Block unter Content ===== */
         .gh-main { padding-bottom: 0 !important; }
         .gh-footer { margin-top: 0 !important; }
@@ -1032,11 +997,15 @@
             <div class="gh-article-meta vs-article-meta">
                 <img class="vs-meta-avatar" src="assets/images/2025/10/1706254155883-1.jpeg" alt="Gerhard Schröder">
                 <div class="vs-meta-text">
-                    <span class="vs-meta-author"><a href="https://visales.de/author/gerhard/">Gerhard Schröder</a> <span class="vs-badge-ki">&#10022; Text: Kopf & KI</span></span>
+                    <span class="vs-meta-author"><a href="https://visales.de/author/gerhard/">Gerhard Schröder</a></span>
                     <div class="vs-meta-sub">
                         <time datetime="2026-02-07">07 Feb. 2026</time>
                         <span class="vs-meta-sep">&middot;</span>
                         <span>2 min read</span>
+                        <span class="vs-meta-sep">&middot;</span>
+                        <span>Text: Kopf & KI</span>
+                        <span class="vs-meta-sep">&middot;</span>
+                        <span>Bild: KI</span>
                     </div>
                 </div>
             </div>
@@ -1044,7 +1013,6 @@
             
     <figure class="gh-article-image vs-feature-image-wrap">
         <img src="assets/images/2026/02/Newsletter-Visual-Sales.jpg" alt="Newsletter & Inhalte von viSales: Lesen, wie es für dich passt..." loading="eager">
-        <span class="vs-image-badge vs-badge-bild-ki">Bild: KI</span>
     </figure>
             <section class="gh-content gh-canvas is-body">
                 <h3><strong>&hellip;und nicht, wie es Plattformen gern hätten</strong></h3>
