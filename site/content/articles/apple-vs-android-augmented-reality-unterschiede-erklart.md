@@ -22,6 +22,8 @@ faq:
     a: "Ja, mit den richtigen Formaten. USDZ läuft nativ auf iOS (Quick Look), GLB/GLTF auf Android (Scene Viewer). Für plattformübergreifende WebAR-Lösungen werden oft beide Formate parallel bereitgestellt – das Framework erkennt automatisch das Betriebssystem und liefert die passende Datei."
   - q: "Muss ich für iOS und Android separate AR-Inhalte erstellen?"
     a: "In der Regel nein. Aus einer CAD- oder 3D-Quelldatei werden beide Formate (USDZ für iOS, GLB für Android) in einem Schritt konvertiert. Eine gute WebAR-Lösung liefert automatisch das richtige Format je nach Gerät – ein Link, zwei Plattformen."
+ki_text: true
+ki_bild: true
 ---
 
 - **Apple und Android setzen Augmented Reality unterschiedlich um:**  
