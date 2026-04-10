@@ -28,6 +28,8 @@ faq:
     a: "Google model-viewer rendert GLB-Dateien über WebGL in allen Browsern — solide, aber ohne nativen OpenUSD-Support. USDconfig ergänzt einen Safari-Pfad über den HTML-&lt;model&gt;-Tag, der USDZ mit vollem OpenUSD-Fidelity direkt in WebKit rendert — inklusive Variant Sets aus dem USD-Schema, ohne Konvertierungsverluste. Beide Pfade werden vom selben Web-Player automatisch erkannt und genutzt."
   - q: "Warum nicht einfach three.js oder Babylon.js?"
     a: "three.js und Babylon.js sind leistungsstarke 3D-Engines für das Web — aber sie rendern über WebGL und kennen kein OpenUSD nativ. Das bedeutet: Alle USD-spezifischen Konzepte wie Variant Sets, Layering, Stage-Composition müssen entweder weggelassen oder manuell nachgebaut werden. Der Konvertierungsweg von USDZ → glTF → WebGL kostet Fidelity &amp; Qualität, vor allem bei Materialien und Texturauflösung.USDconfig nutzt model-viewer als WebGL-Fallback für Chrome, Firefox und Edge — und legt für Safari bewusst den nativen &lt;model&gt;-Pfad oben drauf. So bleibt OpenUSD-Fidelity erhalten, wo der Browser es unterstützt, ohne für alle anderen Geräte auf Kompatibilität zu verzichten."
+ki_text: true
+ki_bild: true
 ---
 
 - **USDconfig liest OpenUSD-Variantensets direkt aus USDZ-Masterdateien, d.h. kein manuelles Setup, keine kombinatorische Datei-Explosion.**
