@@ -14,6 +14,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-03-27T22:25:47.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 - **Claude Cowork Skills lassen sich als Open Source auf GitHub, ClawHub und LobstrHunt teilen — der erste Skill-Marktplatz für KI-Agenten ist live.**
