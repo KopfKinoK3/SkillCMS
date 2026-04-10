@@ -14,6 +14,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-02-24T06:00:23.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 - **3D-Produktvisualisierung steigert im E-Commerce nachweislich Conversion Rate und senkt Retouren (BVDW-Studie 2025); im B2B erhöht sie Entscheidungssicherheit bei komplexen Investitionen.**
