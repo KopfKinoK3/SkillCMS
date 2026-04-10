@@ -23,6 +23,8 @@ faq:
     a: "OpenUSD liefert das gemeinsame Datenmodell für Object Tracking: Das 3D-Modell eines Produkts dient gleichzeitig als Erkennungsreferenz für die AR-Kamera und als visuelle Darstellung. Wer seine CAD-Daten in USDZ hat, hat damit automatisch die Grundlage für Object-Tracking-fähige AR-Anwendungen."
   - q: "Welche B2B-Anwendungen profitieren von AR Object Tracking?"
     a: "Object Tracking ist besonders wertvoll für Wartung und Service (Techniker erkennt Bauteil, AR zeigt Anleitung), Schulung (reales Gerät wird mit Lerninhalt überlagert), Vertrieb (Produkt auf Messestand erkennen, digitale Konfigurations-Demo starten) und Qualitätssicherung (Soll-Ist-Vergleich in AR)."
+ki_text: true
+ki_bild: true
 ---
 
 - **Apple macht Object Tracking zu einem nativen AR-Feature ohne App: Mit OpenUSD können reale Objekte direkt in AR erkannt und mit digitalen Inhalten überlagert werden.**
