@@ -12,6 +12,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-01-01T18:42:35.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 **Nach 13+ Jahren Wordpress, einer Runde **[**Elmpages**](https://visales.de/2023-adieu-wordpress-hallo-elm-pages/)** & **[**Mastodon**](https://visales.de/kopfkino-social-wir-unterstutzen-mastodon/)**, gefolgt von **[**Nuxt**](https://nuxt.com/)** sind wir mit der Hilfe der **[**internethelden.io**](https://internethelden.io)**, deren **[**rootli.app**](https://rootli.app)** und Hetzner nun beim CMS-Newsletter-Fediverse-Tool **[**Ghost**](https://ghost.org)** gelandet. #WorkInProgress**
