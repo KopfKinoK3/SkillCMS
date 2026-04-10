@@ -12,6 +12,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-02-26T23:15:11.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 Sommer 2025: An einem Mittwoch, 20 Minuten vor meinem KI-Vortrag bei der Agentur [40komma6 GmbH](https://www.40komma6.de) in meiner Geburtsstadt [Bad Oeynhausen](https://de.wikipedia.org/wiki/Bad_Oeynhausen). Das iPhone klingelt: Ein Unternehmer sucht eine Agentur für ein VR-Projekt. Der Anrufer sagt: „Ich hab ChatGPT gefragt, wer sowas in Bochum macht. Ihre Website kam – also hab ich angerufen.“
