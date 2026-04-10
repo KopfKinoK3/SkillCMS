@@ -12,6 +12,7 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-03-12T23:07:01.000Z"
 type: post
 template: post
+ki_text: true
 ---
 
 **Es gibt einen Moment in der Internetgeschichte, der selten erzählt wird, weil er zu früh passiert ist, um bemerkt zu werden.**
