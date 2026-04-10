@@ -12,6 +12,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-03-14T23:01:12.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 Die Anfrage kam aus dem Marketing: 
