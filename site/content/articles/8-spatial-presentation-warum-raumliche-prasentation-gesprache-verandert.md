@@ -12,6 +12,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-03-07T23:12:46.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 Vor einer Keynote von Thomas Riedel hatte ich in der Uni Düsseldorf etwas Zeit. Im Raum standen Architekturmodelle auf Tischen — Gebäude aus Karton und Holz, klein und präzise. Niemand hat sie erklärt. Trotzdem haben sich Menschen darum versammelt, auf Details gezeigt, Varianten diskutiert. Das Gespräch hat sich von selbst organisiert. Dieser Moment blieb mir in Erinnerung.
