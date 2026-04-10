@@ -21,6 +21,8 @@ faq:
     a: "Im Mittelstand werden Digital Twins vor allem für Vertrieb (Maschinen zeigen ohne Muster), Wartung (Fehlerdiagnose remote), Schulung (Einweisung ohne Originalteil) und Produktkonfiguration (Varianten visualisieren) eingesetzt."
   - q: "Was kostet ein Digital Twin für ein mittelständisches Unternehmen?"
     a: "Die Kosten hängen stark von der Ausgangslage ab. Liegen CAD-Daten vor, sind einfache interaktive Twins deutlich günstiger als Projekte ohne 3D-Basis. viSales empfiehlt einen Piloten mit einem Referenzprodukt – das schafft Klarheit über Aufwand und ROI."
+ki_text: true
+ki_bild: true
 ---
 
 - **Ein Digital Twin ist ein interaktives 3D-Abbild einer realen Maschine oder Anlage — abrufbar auf Smartphone, Tablet oder AR-Brille ohne Vor-Ort-Termin.**
