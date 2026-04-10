@@ -12,6 +12,7 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-02-27T06:21:20.000Z"
 type: post
 template: post
+ki_bild: true
 ---
 
 Es war die Nacht, in der das Ahrtal weggespült wurde: [Auch in Velbert-Langenberg, wo wir unser Büro hatten, trat der kleine Bach über die Ufer](https://www.youtube.com/watch?v=BEOGrtxORbQ&list=PLL6HI-N4UMbrNOc2YNToDFrT3kgPg0p9J&index=1). Kein spektakuläres Fernsehen vor Ort, aber genug, um die halbe Siedlung in Bewegung zu setzen. [Während wir den Keller voll und einen Stromausfall hatten - die Stadtwerke haben zur Sicherheit den Strom abgestellt, lief im Ahrtal NIX mehr. Auch das Mobilfunknetz war tot](https://www.youtube.com/watch?v=BEOGrtxORbQ&list=PLL6HI-N4UMbrNOc2YNToDFrT3kgPg0p9J&index=1).
