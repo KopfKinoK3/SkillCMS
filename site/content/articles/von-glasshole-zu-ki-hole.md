@@ -12,6 +12,7 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2025-10-05T12:49:00.000Z"
 type: post
 template: post
+ki_bild: true
 ---
 
 Die Geschichte wiederholt sich: Akzeptanz scheitert nicht an Technik, sondern an Vertrauen.
