@@ -10,6 +10,7 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-03-20T09:07:53.000Z"
 type: post
 template: post
+ki_bild: true
 ---
 
 Mein erster Fachvortrag liegt fast 30 Jahre zurück. Damals sollte ich bei der heutigen Firma [BURY](https://www.linkedin.com/company/bury/) "einspringen", mein Verkaufsleiter war kurzfristig ausgefallen. Ich hatte drei Tage Zeit, um vier Stunden Redezeit zu füllen.
