@@ -23,6 +23,7 @@ faq:
     a: "Zunehmend mehr Programme unterstützen OpenUSD nativ – darunter CATIA (via Plugin), Blender, Cinema 4D und Autodesk-Produkte. Für Programme ohne direkten Export gibt es spezialisierte Konverter-Tools oder Dienstleister wie viSales."
   - q: "Kann man USDZ auch ohne CAD-Daten erstellen?"
     a: "Ja, aber der Aufwand steigt erheblich. Ohne CAD-Daten muss das 3D-Modell aus Fotos (Photogrammetrie) oder per Hand modelliert werden. Mit vorhandenen CAD-Daten ist die Konvertierung nach USDZ dagegen ein gut planbarer Schritt."
+ki_bild: true
 ---
 
 - **Eine USDZ-Datei lässt sich auf vier Wegen erstellen: aus CAD-Daten (Plan A), aus Animations-Software wie Blender (Plan B), durch Neuerstellung oder 3D-Scan (Plan C) oder per KI-Generierung (Plan D).**
