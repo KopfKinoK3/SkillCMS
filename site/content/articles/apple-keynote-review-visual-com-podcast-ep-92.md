@@ -12,6 +12,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2025-09-10T13:19:00.000Z"
 type: post
 template: post
+ki_text: true
+ki_bild: true
 ---
 
 Thomas Riedel, Kai Heddergott und Gerhard Schröder sprechen über die AR/VR-News nach der Apple Keynote am 9. September. Mit Absicht mit ein paar Tagen Abstand, wenn die echten Analysen vorliegen.  
