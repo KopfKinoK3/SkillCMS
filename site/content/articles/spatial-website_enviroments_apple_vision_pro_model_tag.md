@@ -23,6 +23,8 @@ faq:
     a: "Nein. Spatial Websites nutzen native Browser-Funktionen – kein App-Download, kein App Store. Der Nutzer öffnet einen Link oder scannt einen QR-Code, und das 3D-Modell startet direkt in der Kamera."
   - q: "Was ist das HTML Model-Tag?"
     a: "Das HTML Model-Tag ist ein neues Web-Element, das 3D-Objekte direkt in eine Webseite einbettet – ähnlich wie img für Bilder. Unterstützte Formate sind USDZ (Apple) und GLB (Android/Web)."
+ki_text: true
+ki_bild: true
 ---
 
 *Dieser Beitrag erschien ursprünglich 2024 als LinkedIn-Beitrag. Er richtet sich an Leserinnen und Leser, die einen Einstieg in das Thema suchen. Neuere Seiten und Artikel bauen inhaltlich darauf auf und gehen bewusst weiter in die Tiefe.*
