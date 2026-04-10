@@ -25,6 +25,8 @@ faq:
     a: "CAD-Formate wie STEP oder CATIA sind auf technische Präzision und Konstruktion ausgelegt – sie enthalten alle Detailgeometrien, sind aber für Echtzeit-Darstellungen, AR oder Web-Anwendungen zu schwer. OpenUSD ist auf Weiterverwendung ausgelegt: Es verbindet Geometrie, Materialien, Varianten und Animationen in einer Struktur, die für viele Ausgabekanäle optimiert werden kann."
   - q: "Lohnt sich OpenUSD als Masterdatei für mittelständische Maschinenbauer?"
     a: "Der Aufwand rechnet sich vor allem dann, wenn 3D-Daten für mehr als einen Zweck eingesetzt werden sollen – Messen, Website, Vertrieb, Simulation. Statt mehrerer paralleler Konvertierungsstrecken entsteht eine gemeinsame Datenbasis. Erste Einsparungen entstehen durch Wiederverwendung: Was einmal aufbereitet ist, steht auch dem nächsten Anwendungsfall zur Verfügung."
+ki_text: true
+ki_bild: true
 ---
 
 - **Der größte Kostenfaktor in 3D-Projekten ist nicht die Visualisierung, sondern die wiederholte Aufbereitung derselben CAD-Daten. **
