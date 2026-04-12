@@ -11,7 +11,7 @@ meta_description: "Wie entsteht ein viSales-Artikel — von der Idee über KI-as
 feature_image: "/assets/images/2026/SkillCMS-gerhard-schroeder-claude-KI-CMS.jpg"
 author: "Gerhard Schröder"
 text_credit: "Kopf & KI"
-image_credit: "KI"
+image_credit: "Kopf & KI"
 ---
 
 - **SkillCMS ersetzt unser aktuelles CMS Ghost:** Rein statisch, kein Backend, maximale Performance und volle Kontrolle über jeden Baustein.

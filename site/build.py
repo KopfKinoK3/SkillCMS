@@ -1880,9 +1880,11 @@ def build_post_article_html(meta, content_html, is_draft=False):
     else:
         text_credit = meta.get("text_credit", "")
     if meta.get("ki_bild"):
-        image_credit = "KI"
+        image_credit = "Kopf & KI"
     else:
-        image_credit = meta.get("image_credit", "")
+        raw_image_credit = meta.get("image_credit", "")
+        # "KI" allein → immer zu "Kopf & KI" normalisieren
+        image_credit = "Kopf & KI" if raw_image_credit == "KI" else raw_image_credit
 
     date_display  = format_date_de(date_str) if date_str else ""
     reading_time  = calc_reading_time(content_html)
