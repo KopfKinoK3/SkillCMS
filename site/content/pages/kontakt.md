@@ -17,9 +17,7 @@ template: post
 >
 > Gemeinsam klären wir, **ob und wo visuelle Vertriebsformate konkret zur Gesprächsführung, Entscheidungsfindung oder Effizienz beitragen können – und wo nicht**.
 >
-> Kein Pitch.  
-> Kein Verkaufsdruck.  
-> **Eine ehrliche Einordnung auf Augenhöhe.**
+> <span style="line-height:1.4; display:block;">Kein Pitch.<br>Kein Verkaufsdruck.<br><strong>Eine ehrliche Einordnung auf Augenhöhe.</strong></span>
 
 &nbsp;
 
