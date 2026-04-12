@@ -6,20 +6,22 @@ author: "Gerhard Schröder"
 author_slug: gerhard
 author_image: /assets/images/2025/10/1706254155883-1.jpeg
 author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit über 15 Jahren spezialisiert auf visuelle Vertriebskommunikation für Maschinenbau & AeroSpace — mit 3D-Visualisierung & OpenUSD. Mitglied der AOUSD, Speaker zu AR & Spatial Sales."
-published_at: "2025-12-30T19:12:59.000Z"
+published_at: "2026-04-12T10:00:00.000Z"
 type: page
 template: post
 ---
 
 ## Auf einen Blick
 
-> Das erste Gespräch führst du direkt mit [Gerhard Schröder](https://www.linkedin.com/in/gerhardschroeder/), Geschäftsführer von viSales. Er verfügt über **35+ Jahre Erfahrung in Vertrieb und Marketing**, darunter **fünf Jahre als Verkaufsleiter** und **15 Jahre als Unternehmensleiter**. Sein Fokus liegt auf der Einordnung erklärungsbedürftiger Produkte im Vertriebsalltag.  
->   
-> Gemeinsam klären wir, **ob und wo visuelle Vertriebsformate konkret zur Gesprächsführung, Entscheidungsfindung oder Effizienz beitragen können – und wo nicht**.  
->   
+> Das erste Gespräch führst du direkt mit [Gerhard Schröder](https://www.linkedin.com/in/gerhardschroeder/), Geschäftsführer von viSales. Er verfügt über **35+ Jahre Erfahrung in Vertrieb und Marketing**, darunter **fünf Jahre als Verkaufsleiter** und **15 Jahre als Unternehmensleiter**. Sein Fokus liegt auf der Einordnung erklärungsbedürftiger Produkte im Vertriebsalltag.
+>
+> Gemeinsam klären wir, **ob und wo visuelle Vertriebsformate konkret zur Gesprächsführung, Entscheidungsfindung oder Effizienz beitragen können – und wo nicht**.
+>
 > Kein Pitch.  
 > Kein Verkaufsdruck.  
 > **Eine ehrliche Einordnung auf Augenhöhe.**
+
+&nbsp;
 
 &nbsp;
 
@@ -44,12 +46,12 @@ Wenn nichts davon passt, ist das ebenfalls eine wertvolle Erkenntnis. Dann kanns
 <summary><strong>Damit klar ist, was euch erwartet</strong></summary>
 
 **Gesprächspartner**  
-Das erste Gespräch führst du direkt mit [Gerhard Schröder](https://www.linkedin.com/in/gerhardschroeder/), Geschäftsführer von viSales (35 Jahre Vertriebserfahrung, 15 Jahre Agenturführung). Er begleitet viele Projekte persönlich von der Einordnung bis zur Umsetzung.
+Das erste Gespräch führst du direkt mit [Gerhard Schröder](https://www.linkedin.com/in/gerhardschroeder/), Geschäftsführer von viSales (35 Jahre Vertriebserfahrung, 15 Jahre Agenturführung). Er begleitet viele Projekte persönlich von der Einordnung bis zur Umsetzung.
 
 **Rahmen**
 
-* **Dauer:** ca. 30 Minuten
-* **Teilnehmer:** Marketing, Vertrieb oder Geschäftsführung
+* **Dauer:** ca. 30 Minuten
+* **Teilnehmer:** Marketing, Vertrieb oder Geschäftsführung
 * **Technik:** Das Gespräch findet standardmäßig per Zoom statt. Wenn ihr lieber Microsoft Teams oder ein anderes System nutzt, schickt mir einfach euren Link – das passt ebenso.
 
 **Inhalt**
@@ -64,8 +66,8 @@ Das erste Gespräch führst du direkt mit [Gerhard Schröder](https://www.linke
 * **kein Angebot**
 * **keine Verpflichtung**
 
-Oft reicht dieses Gespräch bereits aus, um intern klarer weiterzudenken.  
-  
+Oft reicht dieses Gespräch bereits aus, um intern klarer weiterzudenken.
+
 **Du weißt danach, ob unsere visuelle Lösungen oder systemische 3D-/OpenUSD-Ansätze für euren Vertrieb sinnvoll sind – und ob viSales dafür der richtige Partner ist.**
 
 </details>
@@ -100,105 +102,115 @@ Das Gespräch dient genau dieser Klärung.
 
 &nbsp;
 
-*Unsere Projekte sind so unterschiedlich wie die Produkte unserer Kunden. Trotzdem geben wir bewusst Ab-Preise an – als Orientierung für Entscheider, nicht als starre Pakete. Entscheidend ist nicht die Menge an Content, sondern wie nachhaltig visuelle Inhalte im Marketing und im Vertrieb genutzt werden können.*
-
-<details>
-<summary><strong>Vor dem Gespräch einordnen (Kostenrahmen)</strong></summary>
-
-**Paket 1 – Einstieg in visuelle Produktkommunikation**  
-**ab ca. 2.000 €**
-
-Sichtbar machen. Verstehen ermöglichen: Dieses Paket richtet sich an Unternehmen, die ein Produkt oder einen Aspekt davon erstmals visuell klar erklären möchten – ohne direkt ein umfassendes 3D- oder AR-System aufzubauen.
-
-Im Fokus steht ein **konkreter Anwendungsfall**, nicht eine Sammlung einzelner Grafiken.
-
-**Typische Inhalte**
-
-* 2D- oder 3D-Visualisierungen mit klarer Funktion
-* erste USDZ-Modelle für Augmented Reality
-* Visuals für Website, Präsentation oder Vertrieb
-* gezielte Aufbereitung statt rein dekorativer Darstellung
-
-**Geeignet, wenn**
-
-* ein einzelnes Produkt oder Detail erklärt werden soll
-* bestehende Inhalte funktional aufgewertet werden sollen
-* erste Erfahrungen mit 3D oder AR gesammelt werden
-* ein überschaubarer Einstieg gewünscht ist
-
-Dieses Paket ist bewusst niedrigschwellig angesetzt. Es eignet sich für klar umrissene Aufgaben – **ohne Systemaufbau, aber mit konkretem Nutzen**.
-
-→ [Einstieg besprechen](https://visales.de/kontakt/)
-
-**Paket 2 – Visuelle Struktur für Marketing & Vertrieb**  
-**ab ca. 4.500 € (OpenUSD-basierte Systemlogik)**
-
-Struktur schaffen. Wiederverwendbarkeit aufbauen: Dieses Paket bildet die Grundlage für Unternehmen, die visuelle Inhalte **nicht jedes Mal neu erzeugen**, sondern strukturiert weiterentwickeln möchten. Hier entsteht keine einzelne Visualisierung, sondern eine **belastbare visuelle Basis**, die Marketing und Vertrieb gemeinsam nutzen.
-
-**Typische Leistungen**
-
-* Analyse vorhandener CAD- und 3D-Daten
-* Reduktion und Aufbereitung für Marketing und Vertrieb
-* Aufbau einer [OpenUSD](https://visales.de/openusd/)-basierten Struktur
-* Nutzung über Web, Präsentationen, AR und weitere Formate
-* Alternativ: [Videoprojekt](https://visales.de/video/) mit/ohne [2D/3D-Content](https://visales.de/grafik-2d-3d/)
-
-**Geeignet, wenn**
-
-* mehrere Produkte oder Varianten existieren
-* Inhalte regelmäßig angepasst oder erweitert werden
-* Marketing und Vertrieb dieselbe visuelle Grundlage nutzen sollen
-* langfristig Zeit und Kosten eingespart werden sollen
-
-Dieses Paket schafft Ordnung, Konsistenz und Wiederverwendbarkeit – und verhindert, dass visuelle Inhalte bei jeder neuen Anforderung neu entstehen müssen.
-
-**Paket 3 – Vertriebs- & AR-Lösungen mit Wirkung**  
-**ab ca. 15.000 €**
-
-Erklären. Überzeugen. Entscheidungen beschleunigen: Dieses Paket richtet sich an Unternehmen mit erklärungsbedürftigen Produkten, bei denen gute Gespräche **entscheidend für den Verkaufserfolg** sind. 
-
-Der Fokus liegt nicht auf Aufmerksamkeit, sondern auf **besseren Gesprächen**, klareren Entscheidungsgrundlagen und messbarer Entlastung im Vertrieb.
-
-**Typische Leistungen**
-
-* interaktive Vertriebs- und Präsentationsformate
-* AR-Lösungen für Produktdarstellung und Konfiguration
-* Digital-Twin-Ansätze für komplexe Systeme
-* Einsatz auf Messen, im Kundentermin oder im Remote-Sales
-
-**Geeignet, wenn**
-
-* Produkte mehrere Gesprächsrunden benötigen
-* Entscheidungen komplex oder international getroffen werden
-* visuelle Inhalte langfristig im Vertrieb eingesetzt werden sollen
-* Konsistenz und Skalierbarkeit wichtig sind
-
-Dieses Paket ist nicht als Kampagnenprojekt gedacht. Es zielt darauf ab, **Vertriebsprozesse dauerhaft zu verbessern**, nicht kurzfristig zu beeindrucken. 
-
-**Wobei: Beeindrucken können wir auch. Es ist nur nicht das eigentliche Ziel.**
-
-**Wichtiger Hinweis zur Einordnung**
-
-Die genannten Ab-Preise beziehen sich auf klar definierte Einstiegsprojekte. Produktkomplexität, Datenqualität, Zielsetzung und Umfang können den tatsächlichen Aufwand beeinflussen.
-
-Die Preise dienen der Orientierung – **nicht als pauschales Angebot**.
-
-</details>
-
-### 
+Unsere Projekte sind so unterschiedlich wie die Produkte unserer Kunden. Trotzdem geben wir bewusst Ab-Preise an – als Orientierung für Entscheider, nicht als starre Pakete. Entscheidend ist nicht die Menge an Content, sondern wie nachhaltig visuelle Inhalte im Marketing und im Vertrieb genutzt werden können.
 
 &nbsp;
 
-Weitere Wege zur Orientierung
------------------------------
+<div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:1.5rem; margin:1.5rem 0;">
+<div style="border-left:3px solid #e8891c; padding:1.2rem 1.4rem; background:#fefcfa;">
+<p style="font-size:12px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#e8891c; margin:0 0 0.5rem;">Paket 1</p>
+<p style="font-size:16px; font-weight:700; color:#1a1a1a; margin:0 0 0.3rem; line-height:1.3;">Einstieg in visuelle Produktkommunikation</p>
+<p style="font-size:18px; font-weight:700; color:#e8891c; margin:0.4rem 0 0.6rem;">ab ca. 2.000 €</p>
+<p style="font-size:15px; color:#555; line-height:1.5; margin:0;">Sichtbar machen. Verstehen ermöglichen — für Unternehmen, die ein Produkt erstmals visuell klar erklären möchten.</p>
+</div>
+<div style="border-left:3px solid #e8891c; padding:1.2rem 1.4rem; background:#fff7ed;">
+<p style="font-size:12px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#e8891c; margin:0 0 0.5rem;">Paket 2</p>
+<p style="font-size:16px; font-weight:700; color:#1a1a1a; margin:0 0 0.3rem; line-height:1.3;">Visuelle Struktur für Marketing & Vertrieb</p>
+<p style="font-size:18px; font-weight:700; color:#e8891c; margin:0.4rem 0 0.6rem;">ab ca. 4.500 €</p>
+<p style="font-size:15px; color:#555; line-height:1.5; margin:0;">Struktur schaffen. Wiederverwendbarkeit aufbauen — eine belastbare visuelle Basis, die Marketing und Vertrieb gemeinsam nutzen.</p>
+</div>
+<div style="border-left:3px solid #e8891c; padding:1.2rem 1.4rem; background:#fefcfa;">
+<p style="font-size:12px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#e8891c; margin:0 0 0.5rem;">Paket 3</p>
+<p style="font-size:16px; font-weight:700; color:#1a1a1a; margin:0 0 0.3rem; line-height:1.3;">Vertriebs- & AR-Lösungen mit Wirkung</p>
+<p style="font-size:18px; font-weight:700; color:#e8891c; margin:0.4rem 0 0.6rem;">ab ca. 15.000 €</p>
+<p style="font-size:15px; color:#555; line-height:1.5; margin:0;">Erklären. Überzeugen. Entscheidungen beschleunigen — für Unternehmen, bei denen gute Gespräche entscheidend für den Verkaufserfolg sind.</p>
+</div>
+</div>
 
-> **Dranbleiben und mitdenken**: Im Visual-Sales-Newsletter ([LinkedIn](https://www.linkedin.com/newsletters/6964950674841157632/) & E-Mail) und auf YouTube teile ich Gedanken, Beispiele und Erfahrungen aus dem visuellen Vertrieb. Der Newsletter: Einmal im Monat, ohne Marketing-Rhetorik – dafür nah an echten Projekten und echten Entscheidungen.  
->   
-> → [Newsletter](https://visales.de/#/portal/signup) & [YouTube](https://www.youtube.com/@Gerhard_Schroeder)  
->   
-> **Lieber fragen als lesen**: Wenn du wenig Zeit hast oder schnell Orientierung suchst, kannst du meinem Notebook.LLM Fragen stellen. Es basiert auf Google-KI, greift jedoch ausschließlich auf meine Inhalte, Vorträge und Projekterfahrungen zurück. Ziel ist es, Zusammenhänge zu erklären – nicht, etwas zu verkaufen.   
->   
-> → [Fragen stellen](https://notebooklm.google.com/notebook/8214e4ca-dd3d-4420-9cc5-be74370ea3ed?authuser=1):  Einfach die Frage in den Chat schreiben.
+<details>
+<summary><strong>Details zu den drei Paketen</strong></summary>
+
+### Paket 1 — Einstieg in visuelle Produktkommunikation
+
+Im Fokus steht ein **konkreter Anwendungsfall**, nicht eine Sammlung einzelner Grafiken.
+
+**Typische Inhalte**
+
+- 2D- oder 3D-Visualisierungen mit klarer Funktion
+- Erste USDZ-Modelle für Augmented Reality
+- Visuals für Website, Präsentation oder Vertrieb
+- Gezielte Aufbereitung statt rein dekorativer Darstellung
+
+**Geeignet, wenn**
+
+- Ein einzelnes Produkt oder Detail erklärt werden soll
+- Bestehende Inhalte funktional aufgewertet werden sollen
+- Erste Erfahrungen mit 3D oder AR gesammelt werden
+- Ein überschaubarer Einstieg gewünscht ist
+
+Bewusst niedrigschwellig — für klar umrissene Aufgaben, **ohne Systemaufbau, aber mit konkretem Nutzen**.
+
+---
+
+### Paket 2 — Visuelle Struktur für Marketing & Vertrieb
+
+Hier entsteht keine einzelne Visualisierung, sondern eine **belastbare visuelle Basis**, die Marketing und Vertrieb gemeinsam nutzen. Auf Basis von [OpenUSD](https://visales.de/openusd/).
+
+**Typische Leistungen**
+
+- Analyse vorhandener CAD- und 3D-Daten
+- Reduktion und Aufbereitung für Marketing und Vertrieb
+- Aufbau einer OpenUSD-basierten Struktur
+- Nutzung über Web, Präsentationen, AR und weitere Formate
+- Alternativ: [Videoprojekt](https://visales.de/video/) mit/ohne [2D/3D-Content](https://visales.de/grafik-2d-3d/)
+
+**Geeignet, wenn**
+
+- Mehrere Produkte oder Varianten existieren
+- Inhalte regelmäßig angepasst oder erweitert werden
+- Marketing und Vertrieb dieselbe visuelle Grundlage nutzen sollen
+- Langfristig Zeit und Kosten eingespart werden sollen
+
+Schafft Ordnung, Konsistenz und Wiederverwendbarkeit — visuelle Inhalte müssen nicht bei jeder Anforderung neu entstehen.
+
+---
+
+### Paket 3 — Vertriebs- & AR-Lösungen mit Wirkung
+
+Der Fokus liegt nicht auf Aufmerksamkeit, sondern auf **besseren Gesprächen**, klareren Entscheidungsgrundlagen und messbarer Entlastung im Vertrieb.
+
+**Typische Leistungen**
+
+- Interaktive Vertriebs- und Präsentationsformate
+- AR-Lösungen für Produktdarstellung und Konfiguration
+- Digital-Twin-Ansätze für komplexe Systeme
+- Einsatz auf Messen, im Kundentermin oder im Remote-Sales
+
+**Geeignet, wenn**
+
+- Produkte mehrere Gesprächsrunden benötigen
+- Entscheidungen komplex oder international getroffen werden
+- Visuelle Inhalte langfristig im Vertrieb eingesetzt werden sollen
+- Konsistenz und Skalierbarkeit wichtig sind
+
+Nicht als Kampagnenprojekt gedacht — **Vertriebsprozesse dauerhaft verbessern**, nicht kurzfristig beeindrucken.  
+**Wobei: Beeindrucken können wir auch. Es ist nur nicht das eigentliche Ziel.**
+
+</details>
+
+&nbsp;
+
+<a name="Alternativ"></a>
+
+## Weitere Wege zur Orientierung
+
+> **Dranbleiben und mitdenken**: Im Visual-Sales-Newsletter ([LinkedIn](https://www.linkedin.com/newsletters/6964950674841157632/) & E-Mail) und auf YouTube teile ich Gedanken, Beispiele und Erfahrungen aus dem visuellen Vertrieb. Der Newsletter: Einmal im Monat, ohne Marketing-Rhetorik – dafür nah an echten Projekten und echten Entscheidungen.
+>
+> → [Newsletter](https://visales.de/#/portal/signup) & [YouTube](https://www.youtube.com/@Gerhard_Schroeder)
+>
+> **Lieber fragen als lesen**: Wenn du wenig Zeit hast oder schnell Orientierung suchst, kannst du meinem Notebook.LLM Fragen stellen. Es basiert auf Google-KI, greift jedoch ausschließlich auf meine Inhalte, Vorträge und Projekterfahrungen zurück. Ziel ist es, Zusammenhänge zu erklären – nicht, etwas zu verkaufen.
+>
+> → [Fragen stellen](https://notebooklm.google.com/notebook/8214e4ca-dd3d-4420-9cc5-be74370ea3ed?authuser=1): Einfach die Frage in den Chat schreiben.
 
 &nbsp;
 
@@ -206,7 +218,7 @@ Weitere Wege zur Orientierung
 
 ## Direkter Kontakt
 
-→ Nachricht via [[LinkedIn](https://www.linkedin.com/in/gerhardschroeder/?ref=blog.visales.de)](mailto:sales@visales.de) oder [E-Mail](mailto:sales@visales.de)  
-→ Telefonisch:  GF Gerhard Schröder [+49-160-8060361](tel:+49-160-8060361)
+→ Nachricht via [LinkedIn](https://www.linkedin.com/in/gerhardschroeder/?ref=blog.visales.de) oder [E-Mail](mailto:sales@visales.de)  
+→ Telefonisch: GF Gerhard Schröder [+49-160-8060361](tel:+49-160-8060361)
 
-In der Regel melden wir uns innerhalb von **einem Werktag** zurück.
+In der Regel melden wir uns innerhalb von **einem Werktag** zurück.
