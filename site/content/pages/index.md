@@ -134,7 +134,7 @@ Die folgenden Beispiele zeigen, wie Unternehmen visuelle Vertriebskommunikation 
 <div style="padding:1.5rem 2rem 2rem;">
 <p style="font-size:15px; text-transform:uppercase; letter-spacing:0.08em; color:#999; margin-bottom:0.5rem;">zgoll</p>
 <p style="font-size:20px; font-weight:700; color:#1a1a1a; margin-bottom:0.8rem;">Ein Termin. Hunderte Räume.</p>
-<p style="font-size:18px; color:#555; line-height:1.6;">Zgoll präsentierte Videokonferenzsysteme in AR auf der Apple Vision Pro — und verwandelte einen Ersttermin in einen Großauftrag. Mehrere hundert Besprechungsräume in Deutschland beauftragt.</p>
+<p style="font-size:18px; color:#555; line-height:1.6;">Zgoll präsentierte Videokonferenzsysteme in AR auf der Apple Vision Pro — und verwandelte einen Ersttermin in einen Großauftrag. Fünf Entscheider, darunter bisherige Skeptiker, erlebten die Produkte in 1:1-Größe im eigenen zukünftigen Besprechungsraum. Vier Wochen später: Folgetermin beim Kunden. Mehrere hundert Besprechungsräume in Deutschland beauftragt.</p>
 <p style="margin-top:1rem;"><a href="https://visales.de/tag/zgoll/" style="color:#e8891c; text-decoration:none; font-size:18px;">→ Fallbeispiel ansehen</a></p>
 </div>
 </div><div style="background:#f9f6f2; border-radius:8px; overflow:hidden; min-height:220px;">
@@ -150,7 +150,7 @@ Die folgenden Beispiele zeigen, wie Unternehmen visuelle Vertriebskommunikation 
 <div style="padding:1.5rem 2rem 2rem;">
 <p style="font-size:15px; text-transform:uppercase; letter-spacing:0.08em; color:#999; margin-bottom:0.5rem;">Carl Hamm</p>
 <p style="font-size:20px; font-weight:700; color:#1a1a1a; margin-bottom:0.8rem;">Der Werksbesuch. Im Koffer.</p>
-<p style="font-size:18px; color:#555; line-height:1.6;">Carl Hamm bringt Werksräume und Spezialmaschinen auf die VR-Brille — und ersetzt teure Besichtigungsreisen aus Südafrika bereits beim Messekontakt. Modern, überzeugend, und für eine konservative Branche ein klares Signal.</p>
+<p style="font-size:18px; color:#555; line-height:1.6;">Carl Hamm bringt Werksräume und Spezialmaschinen auf die VR-Brille — und ersetzt teure Besichtigungsreisen aus Südafrika bereits beim Messekontakt. Röntgenraum, Spezialanlagen, Produktionshallen: alles dabei, ohne Flug, ohne Termin vor Ort. Modern, überzeugend, und für eine konservative Branche ein klares Signal.</p>
 <p style="margin-top:1rem;"><a href="https://visales.de/tag/carl-hamm/" style="color:#e8891c; text-decoration:none; font-size:18px;">→ Fallbeispiel ansehen</a></p>
 </div>
 </div><div style="background:#f9f6f2; border-radius:8px; overflow:hidden; min-height:220px;">
@@ -158,7 +158,7 @@ Die folgenden Beispiele zeigen, wie Unternehmen visuelle Vertriebskommunikation 
 <div style="padding:1.5rem 2rem 2rem;">
 <p style="font-size:15px; text-transform:uppercase; letter-spacing:0.08em; color:#999; margin-bottom:0.5rem;">Somfy</p>
 <p style="font-size:20px; font-weight:700; color:#1a1a1a; margin-bottom:0.8rem;">50 Außendienstler. Kein Büro. Kein Problem.</p>
-<p style="font-size:18px; color:#555; line-height:1.6;">Als Corona den Außendienst ins Homeoffice schickte, ging Somfys digitales Musterhaus live — interaktiv, mit 15 Animationsvideos, direkt in MS Teams nutzbar. Der Fachhandelskontakt blieb. Die Konkurrenz wartete.</p>
+<p style="font-size:18px; color:#555; line-height:1.6;">Als Corona den Außendienst ins Homeoffice schickte, ging Somfys digitales Musterhaus live — interaktiv, mit 15 Animationsvideos, direkt in MS Teams nutzbar. Aus einem geplanten VR-Projekt wurde ein digitaler Vertriebskanal, der den Fachhandelskontakt aufrechthielt. Der Außendienst blieb handlungsfähig. Die Konkurrenz wartete.</p>
 <p style="margin-top:1rem;"><a href="https://visales.de/tag/somfy/" style="color:#e8891c; text-decoration:none; font-size:18px;">→ Fallbeispiel ansehen</a></p>
 </div>
 </div><div style="background:#f9f6f2; border-radius:8px; overflow:hidden; min-height:220px;">
@@ -166,7 +166,7 @@ Die folgenden Beispiele zeigen, wie Unternehmen visuelle Vertriebskommunikation 
 <div style="padding:1.5rem 2rem 2rem;">
 <p style="font-size:15px; text-transform:uppercase; letter-spacing:0.08em; color:#999; margin-bottom:0.5rem;">Wavin</p>
 <p style="font-size:20px; font-weight:700; color:#1a1a1a; margin-bottom:0.8rem;">Eine Präsentation. Sechs Jahre im Einsatz.</p>
-<p style="font-size:18px; color:#555; line-height:1.6;">Wavin sah das digitale Musterhaus von Somfy — und wollte das Gleiche. Nur größer: eine digitale Musterstadt, weil ihre Produkte überall in der Stadt stecken. Die interaktive Präsentation läuft bis heute.</p>
+<p style="font-size:18px; color:#555; line-height:1.6;">Wavin sah das digitale Musterhaus von Somfy — und wollte das Gleiche. Nur größer: eine digitale Musterstadt, weil ihre Produkte überall in der Stadt stecken. Was als Inspiration begann, wurde zur langfristigen Vertriebsgrundlage. Die interaktive Präsentation läuft bis heute — fast sechs Jahre später.</p>
 <p style="margin-top:1rem;"><a href="https://visales.de/tag/wavin/" style="color:#e8891c; text-decoration:none; font-size:18px;">→ Fallbeispiel ansehen</a></p>
 </div>
 </div><div style="background:#f9f6f2; border-radius:8px; overflow:hidden; min-height:220px;">
