@@ -15,14 +15,14 @@ Die Technikerklärung bräuchte zwei Stunden.
 <p style="font-size:20px; line-height:32px; color:#555; margin-top:1.5rem;">
 viSales macht erklärungsbedürftige Produkte in 3D sichtbar, anfassbar und entscheidungsreif. Mit Visualisierungen, interaktiven Präsentationen, Konfiguratoren und Augmented Reality, die direkt im Verkaufsgespräch funktionieren.
 </p>
-<p style="font-size:20px; line-height:32px; color:#333; margin-top:1.5rem; border-left:4px solid #e8891c; background:#fff7ed; padding:0.8rem 1.2rem; text-align:left; display:inline-block;">
+<p style="font-size:28px; line-height:1.3; font-weight:800; color:#1a1a1a; margin-top:1.5rem; text-align:center;">
 Nicht als Show.<br>
-<em style="font-style:normal; color:#e8891c; font-weight:800;">Als Werkzeug.</em>
+<span style="color:#e8891c;">Als Werkzeug.</span>
 </p>
-<p style="font-size:20px; line-height:32px; color:#333; margin-top:1rem;">
-<strong>Gespräche kürzer.<br>
+<p style="font-size:16px; line-height:2; color:#999; margin-top:1.2rem; text-align:center; text-transform:uppercase; letter-spacing:0.1em;">
+Gespräche kürzer.<br>
 Entscheidungen klarer.<br>
-Abschlüsse planbarer.</strong>
+Abschlüsse planbarer.
 </p>
 </div>
 
