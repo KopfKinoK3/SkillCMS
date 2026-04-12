@@ -19,7 +19,7 @@ viSales macht erklärungsbedürftige Produkte in 3D sichtbar, anfassbar und ents
 Nicht als Show.<br>
 <span style="color:#e8891c;">Als Werkzeug.</span>
 </p>
-<p style="font-size:16px; line-height:2; color:#999; margin-top:1.2rem; text-align:center; text-transform:uppercase; letter-spacing:0.1em;">
+<p style="font-size:16px; line-height:2; color:#999; margin-top:1.2rem; text-align:center;">
 Gespräche kürzer.<br>
 Entscheidungen klarer.<br>
 Abschlüsse planbarer.
