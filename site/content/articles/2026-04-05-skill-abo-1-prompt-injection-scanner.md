@@ -13,6 +13,8 @@ tags:
   - prompt-injection
   - ki-sicherheit
   - claude-skills
+ki_text: true
+ki_bild: true
 ---
 
 - **Prompt Injection ist der häufigste Angriffsvektor auf KI-Agenten und die meisten merken es nicht, weil der Angriff im Dokument steckt, nicht im Prompt.**

@@ -15,9 +15,9 @@ Die Technikerklärung bräuchte zwei Stunden.
 <p style="font-size:20px; line-height:32px; color:#555; margin-top:1.5rem;">
 viSales macht erklärungsbedürftige Produkte in 3D sichtbar, anfassbar und entscheidungsreif. Mit Visualisierungen, interaktiven Präsentationen, Konfiguratoren und Augmented Reality, die direkt im Verkaufsgespräch funktionieren.
 </p>
-<p style="font-size:20px; line-height:32px; color:#333; margin-top:1.5rem;">
+<p style="font-size:20px; line-height:32px; color:#333; margin-top:1.5rem; border-left:4px solid #e8891c; background:#fff7ed; padding:0.8rem 1.2rem; text-align:left; display:inline-block;">
 Nicht als Show.<br>
-Als Werkzeug.
+<em style="font-style:normal; color:#e8891c; font-weight:800;">Als Werkzeug.</em>
 </p>
 <p style="font-size:20px; line-height:32px; color:#333; margin-top:1rem;">
 <strong>Gespräche kürzer.<br>
@@ -133,48 +133,48 @@ Die folgenden Beispiele zeigen, wie Unternehmen visuelle Vertriebskommunikation 
 <img src="/assets/images/zgoll-augmented-reality-praesentaton.webp" alt="zgoll Fallbeispiel" style="width:100%; height:180px; object-fit:cover; display:block;">
 <div style="padding:1.5rem 2rem 2rem;">
 <p style="font-size:15px; text-transform:uppercase; letter-spacing:0.08em; color:#999; margin-bottom:0.5rem;">zgoll</p>
-<p style="font-size:20px; font-weight:700; color:#1a1a1a; margin-bottom:0.8rem;">Räumliche Präsentationen für strukturierte Vertriebsgespräche</p>
-<p style="font-size:18px; color:#555; line-height:1.6;">Produkte werden so visualisiert, dass Kunden Zusammenhänge schneller erfassen. Gespräche werden klarer, Entscheidungen früher möglich.</p>
+<p style="font-size:20px; font-weight:700; color:#1a1a1a; margin-bottom:0.8rem;">Ein Termin. Hunderte Räume.</p>
+<p style="font-size:18px; color:#555; line-height:1.6;">Zgoll präsentierte Videokonferenzsysteme in AR auf der Apple Vision Pro — und verwandelte einen Ersttermin in einen Großauftrag. Mehrere hundert Besprechungsräume in Deutschland beauftragt.</p>
 <p style="margin-top:1rem;"><a href="https://visales.de/tag/zgoll/" style="color:#e8891c; text-decoration:none; font-size:18px;">→ Fallbeispiel ansehen</a></p>
 </div>
 </div><div style="background:#f9f6f2; border-radius:8px; overflow:hidden; min-height:220px;">
 <img src="/assets/images/siemens-ddx-3d-visualisierung.webp" alt="Siemens Fallbeispiel" style="width:100%; height:180px; object-fit:cover; display:block;">
 <div style="padding:1.5rem 2rem 2rem;">
 <p style="font-size:15px; text-transform:uppercase; letter-spacing:0.08em; color:#999; margin-bottom:0.5rem;">Siemens</p>
-<p style="font-size:20px; font-weight:700; color:#1a1a1a; margin-bottom:0.8rem;">Systemische Visualisierung komplexer Industrieanlagen</p>
-<p style="font-size:18px; color:#555; line-height:1.6;">Große technische Systeme werden so visualisiert, dass Zusammenhänge schnell erfassbar bleiben. Flexibel für Präsentation, Vertrieb und Kommunikation.</p>
+<p style="font-size:20px; font-weight:700; color:#1a1a1a; margin-bottom:0.8rem;">Eine Dienstleistung. Auf der Bühne sichtbar gemacht.</p>
+<p style="font-size:18px; color:#555; line-height:1.6;">DDX by Siemens verkauft eine Cloud-Plattform — nichts Anfassbares. Mit AR auf dem iPad, live per Screenshare auf die große Leinwand, konnte der GF komplexe Zusammenhänge in Sekunden zeigen statt erklären. Vor Großkunden. Überzeugend.</p>
 <p style="margin-top:1rem;"><a href="https://visales.de/tag/siemens/" style="color:#e8891c; text-decoration:none; font-size:18px;">→ Fallbeispiel ansehen</a></p>
 </div>
 </div><div style="background:#f9f6f2; border-radius:8px; overflow:hidden; min-height:220px;">
 <img src="/assets/images/carl-hamm-vr180-immersive-video.webp" alt="Carl Hamm Fallbeispiel" style="width:100%; height:180px; object-fit:cover; display:block;">
 <div style="padding:1.5rem 2rem 2rem;">
 <p style="font-size:15px; text-transform:uppercase; letter-spacing:0.08em; color:#999; margin-bottom:0.5rem;">Carl Hamm</p>
-<p style="font-size:20px; font-weight:700; color:#1a1a1a; margin-bottom:0.8rem;">Fokus schaffen bei erklärungsbedürftiger Technik</p>
-<p style="font-size:18px; color:#555; line-height:1.6;">VR-Videoinhalte machen Werksräume erlebbar und lenken den Blick gezielt auf relevante Anlagen und Prozesse, auch ohne Vor-Ort-Termin.</p>
+<p style="font-size:20px; font-weight:700; color:#1a1a1a; margin-bottom:0.8rem;">Der Werksbesuch. Im Koffer.</p>
+<p style="font-size:18px; color:#555; line-height:1.6;">Carl Hamm bringt Werksräume und Spezialmaschinen auf die VR-Brille — und ersetzt teure Besichtigungsreisen aus Südafrika bereits beim Messekontakt. Modern, überzeugend, und für eine konservative Branche ein klares Signal.</p>
 <p style="margin-top:1rem;"><a href="https://visales.de/tag/carl-hamm/" style="color:#e8891c; text-decoration:none; font-size:18px;">→ Fallbeispiel ansehen</a></p>
 </div>
 </div><div style="background:#f9f6f2; border-radius:8px; overflow:hidden; min-height:220px;">
 <img src="/assets/images/somfy-interaktive-praesentation.webp" alt="Somfy Fallbeispiel" style="width:100%; height:180px; object-fit:cover; display:block;">
 <div style="padding:1.5rem 2rem 2rem;">
 <p style="font-size:15px; text-transform:uppercase; letter-spacing:0.08em; color:#999; margin-bottom:0.5rem;">Somfy</p>
-<p style="font-size:20px; font-weight:700; color:#1a1a1a; margin-bottom:0.8rem;">Strukturierte Produktkommunikation über Ländergrenzen</p>
-<p style="font-size:18px; color:#555; line-height:1.6;">Produktinhalte werden so aufgebaut, dass sie im Vertrieb und in Schulungen konsistent einsetzbar sind. Eine gemeinsame Grundlage für internationale Nutzung.</p>
+<p style="font-size:20px; font-weight:700; color:#1a1a1a; margin-bottom:0.8rem;">50 Außendienstler. Kein Büro. Kein Problem.</p>
+<p style="font-size:18px; color:#555; line-height:1.6;">Als Corona den Außendienst ins Homeoffice schickte, ging Somfys digitales Musterhaus live — interaktiv, mit 15 Animationsvideos, direkt in MS Teams nutzbar. Der Fachhandelskontakt blieb. Die Konkurrenz wartete.</p>
 <p style="margin-top:1rem;"><a href="https://visales.de/tag/somfy/" style="color:#e8891c; text-decoration:none; font-size:18px;">→ Fallbeispiel ansehen</a></p>
 </div>
 </div><div style="background:#f9f6f2; border-radius:8px; overflow:hidden; min-height:220px;">
 <img src="/assets/images/wavin-digitaler-zwilling-openusd.webp" alt="Wavin Fallbeispiel" style="width:100%; height:180px; object-fit:cover; display:block;">
 <div style="padding:1.5rem 2rem 2rem;">
 <p style="font-size:15px; text-transform:uppercase; letter-spacing:0.08em; color:#999; margin-bottom:0.5rem;">Wavin</p>
-<p style="font-size:20px; font-weight:700; color:#1a1a1a; margin-bottom:0.8rem;">Ein digitaler Zwilling als langfristige Grundlage</p>
-<p style="font-size:18px; color:#555; line-height:1.6;">Der digitale Zwilling bildet eine belastbare Basis für unterschiedliche Formate über viele Jahre. Marketing, Vertrieb und Präsentation greifen auf dieselbe Struktur zurück.</p>
+<p style="font-size:20px; font-weight:700; color:#1a1a1a; margin-bottom:0.8rem;">Eine Präsentation. Sechs Jahre im Einsatz.</p>
+<p style="font-size:18px; color:#555; line-height:1.6;">Wavin sah das digitale Musterhaus von Somfy — und wollte das Gleiche. Nur größer: eine digitale Musterstadt, weil ihre Produkte überall in der Stadt stecken. Die interaktive Präsentation läuft bis heute.</p>
 <p style="margin-top:1rem;"><a href="https://visales.de/tag/wavin/" style="color:#e8891c; text-decoration:none; font-size:18px;">→ Fallbeispiel ansehen</a></p>
 </div>
 </div><div style="background:#f9f6f2; border-radius:8px; overflow:hidden; min-height:220px;">
 <img src="/assets/images/astrofein-3d-visualisierung-raumfahrt.webp" alt="Astrofein Fallbeispiel" style="width:100%; height:180px; object-fit:cover; display:block;">
 <div style="padding:1.5rem 2rem 2rem;">
 <p style="font-size:15px; text-transform:uppercase; letter-spacing:0.08em; color:#999; margin-bottom:0.5rem;">Astrofein</p>
-<p style="font-size:20px; font-weight:700; color:#1a1a1a; margin-bottom:0.8rem;">Erklärungsintensive Systeme verständlich vermitteln</p>
-<p style="font-size:18px; color:#555; line-height:1.6;">Technisch anspruchsvolle Satellitenprototypen werden visuell so aufbereitet, dass Vertriebsgespräche gezielt vorbereitet sind.</p>
+<p style="font-size:20px; font-weight:700; color:#1a1a1a; margin-bottom:0.8rem;">Ein Satellit, den es noch nicht gab. Die Förderung kam trotzdem.</p>
+<p style="font-size:18px; color:#555; line-height:1.6;">Astrofein brauchte für den DLR-Termin mit Ministerpräsident Wüst mehr als eine technische Zeichnung. Wir visualisierten einen Forschungssatelliten, der noch nicht existierte. Die Fördergelder wurden bewilligt — das Projekt ist heute in Phase 2.</p>
 <p style="margin-top:1rem;"><a href="https://visales.de/tag/astrofein/" style="color:#e8891c; text-decoration:none; font-size:18px;">→ Fallbeispiel ansehen</a></p>
 </div>
 </div></div>
@@ -221,6 +221,8 @@ Maschinenbau, Anlagenbau, Aerospace und Defence sowie B2B-Vertriebsorganisatione
 
 <details>
 <summary><strong>Was bedeutet Spatial Sales Infrastructure?</strong></summary>
+
+Einzelne Bilder und Videos veralten. Eine [Spatial Sales Infrastructure](https://visales.de/spatial-sales-infrastructure/) sorgt dafür, dass 3D-Daten dauerhaft im Vertrieb arbeiten — über alle Formate, Kanäle und Jahre hinweg.
 
 Spatial Sales Infrastructure beschreibt die technische Grundlage, auf der 3D-Daten dauerhaft im Vertrieb funktionieren: für AR, Web, Messe und Apple Vision Pro. Statt isolierter Einzelprojekte entsteht ein System, das mit jedem neuen Produkt und jeder neuen Anforderung wächst. Die Basis bildet OpenUSD als offener 3D-Standard, aus dem alle Formate abgeleitet werden.
 
