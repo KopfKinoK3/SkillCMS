@@ -14,6 +14,18 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-04-13T00:00:00.000Z"
 type: post
 template: post
+faq_heading: "Typische Entscheiderfragen"
+faq:
+  - q: "Muss ich STEP aufgeben, um OpenUSD zu nutzen?"
+    a: "Nein. STEP und OpenUSD schließen sich nicht aus. STEP bleibt der Standard in der Konstruktion und im Datenaustausch zwischen Ingenieuren. OpenUSD ist eine zusätzliche Schicht – speziell für Vertrieb, Visualisierung und interaktive Anwendungen."
+  - q: "Kann mein CAD-Tool OpenUSD exportieren?"
+    a: "Sehr wahrscheinlich. Siemens NX, Autodesk-Produkte und viele andere CAD-Tools haben OpenUSD-Export bereits integriert. Einfach in den Exporteinstellungen nachschauen – der Export ist oft schon vorhanden."
+  - q: "Was ist der Unterschied zwischen OpenUSD und USDZ?"
+    a: "USDZ ist eine gepackte, schreibgeschützte Version von OpenUSD – optimiert für mobile Geräte und WebAR. OpenUSD ist das offene Basis-Format, USDZ ist das Auslieferungsformat für den Endnutzer auf iPhone und iPad."
+  - q: "Was kostet der Einstieg in OpenUSD für den Vertrieb?"
+    a: "Der Export aus dem CAD-Tool ist in der Regel kostenlos. Die Investition liegt in der Aufbereitung: Materialdefinition, Variantenlogik, Integration in Konfigurator oder WebAR. Das hängt stark vom Produkt und den gewünschten Anwendungsfällen ab."
+  - q: "Warum nicht einfach glTF nutzen?"
+    a: "glTF ist eine gute Wahl für einfache Web-Darstellungen. Sobald Varianten, Szenenkomposition oder Materialkonfiguration ins Spiel kommen, stößt glTF an Grenzen. OpenUSD wurde genau für diese Komplexität entwickelt – und ist mittlerweile von Apple, NVIDIA und Autodesk als Standard gesetzt."
 ---
 
 - **STEP bleibt Standard in der Konstruktion, aber im Vertrieb ist es blind: keine Interaktivität, keine Varianten, kein WebAR.**
@@ -100,45 +112,3 @@ Der Export aus Siemens NX oder Autocad klingt einfach – ist es auch, aber nur 
 
 &nbsp;
 
-
-<details>
-<summary><strong>Muss ich STEP aufgeben, um OpenUSD zu nutzen?</strong></summary>
-
-Nein. STEP und OpenUSD schließen sich nicht aus. STEP bleibt der Standard in der Konstruktion und im Datenaustausch zwischen Ingenieuren. OpenUSD ist eine zusätzliche Schicht – speziell für Vertrieb, Visualisierung und interaktive Anwendungen.
-
-</details>
-
-<details>
-<summary><strong>Kann mein CAD-Tool OpenUSD exportieren?</strong></summary>
-
-Sehr wahrscheinlich. Siemens NX, Autodesk-Produkte und viele andere CAD-Tools haben OpenUSD-Export bereits integriert. Einfach in den Exporteinstellungen nachschauen – der Export ist oft schon vorhanden.
-
-</details>
-
-<details>
-<summary><strong>Was ist der Unterschied zwischen OpenUSD und USDZ?</strong></summary>
-
-USDZ ist eine gepackte, schreibgeschützte Version von OpenUSD – optimiert für mobile Geräte und WebAR. OpenUSD ist das offene Basis-Format, USDZ ist das Auslieferungsformat für den Endnutzer auf iPhone und iPad.
-
-</details>
-
-<details>
-<summary><strong>Was kostet der Einstieg in OpenUSD für den Vertrieb?</strong></summary>
-
-Der Export aus dem CAD-Tool ist in der Regel kostenlos. Die Investition liegt in der Aufbereitung: Materialdefinition, Variantenlogik, Integration in Konfigurator oder WebAR. Das hängt stark vom Produkt und den gewünschten Anwendungsfällen ab.
-
-</details>
-
-<details>
-<summary><strong>Warum nicht einfach glTF nutzen?</strong></summary>
-
-glTF ist eine gute Wahl für einfache Web-Darstellungen. Sobald Varianten, Szenenkomposition oder Materialkonfiguration ins Spiel kommen, stoßt glTF an Grenzen. OpenUSD wurde genau für diese Komplexität entwickelt – und ist mittlerweile von Apple, NVIDIA und Autodesk als Standard gesetzt.
-
-</details>
-
-<details>
-<summary><strong>Realitätscheck</strong></summary>
-
-OpenUSD ist kein Allheilmittel – und STEP wird nicht von heute auf morgen verschwinden. Die Marktkräfte sind träge: ERP-Systeme, PDM-Workflows und Einkaufsabteilungen hängen seit Jahrzehnten an STEP. Wer OpenUSD als Vertriebsformat einführt, kämpft intern oft gegen IT-Abteilungen, die keine neuen Formate wollen. Der Export aus Siemens NX oder Autocad klingt einfach – ist es auch, aber nur für statische Dateien. Wer dann Varianten, Materialien oder Interaktivität will, steht wieder vor einer Integrationsaufgabe. Die Frage ist also nicht ob OpenUSD kommt, sondern wer intern den ersten Schritt macht – und wer dabei begleitet.
-
-</details>
