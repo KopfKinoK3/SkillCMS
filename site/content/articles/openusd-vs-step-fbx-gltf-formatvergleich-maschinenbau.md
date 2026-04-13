@@ -14,6 +14,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2026-04-13T00:00:00.000Z"
 type: post
 template: post
+text_credit: "Kopf & KI"
+image_credit: "Kopf & KI"
 faq_heading: "Typische Entscheiderfragen"
 faq:
   - q: "Muss ich STEP aufgeben, um OpenUSD zu nutzen?"
