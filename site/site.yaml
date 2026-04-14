@@ -94,9 +94,11 @@ schema:
       - name: "Metaverse Standards Forum"
         url: "https://metaverse-standards.org/"
     same_as:
-      - "https://www.linkedin.com/in/gerhardschroeder-visales/"
+      - "https://www.linkedin.com/in/gerhardschroeder/"
       - "https://www.youtube.com/@Gerhard_Schroeder"
       - "https://mastodon.social/@visales"
+      - "https://visales.de/gerhard-schroeder"
+      - "https://github.com/KopfKinoK3"
 
   professional_service:
     name: "viSales GmbH"
@@ -129,7 +131,7 @@ nav_cta:
   url: "/kontakt/"
 
 social:
-  linkedin: "https://www.linkedin.com/in/gerhardschroeder-visales/"
+  linkedin: "https://www.linkedin.com/in/gerhardschroeder/"
   youtube: "https://www.youtube.com/@Gerhard_Schroeder"
   mastodon: "https://mastodon.social/@visales"   # <-- echte URL einsetzen
   mastodon_rel: "me"
@@ -223,7 +225,7 @@ footer:
           url: "https://mastodon.social/@visales"
           external: true
         - label: "LinkedIn · Gerhard Schröder"
-          url: "https://www.linkedin.com/in/gerhardschroeder-visales/"
+          url: "https://www.linkedin.com/in/gerhardschroeder/"
           external: true
         - label: "YouTube · Gerhard Schröder"
           url: "https://www.youtube.com/@Gerhard_Schroeder"
