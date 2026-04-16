@@ -1,7 +1,10 @@
 ---
 title: "AR-Walk im Frühjahr?"
 slug: ar-walk-im-fruhjahr
-status: draft
+status: published
+date: "2026-04-16"
+primary_tag: impuls
+tags: [impuls, augmented-reality, spatial-computing]
 feature_image: /assets/images/2026/01/AR-Walk.jpeg
 author: "Gerhard Schröder"
 author_slug: gerhard
@@ -9,6 +12,7 @@ author_image: /assets/images/2025/10/1706254155883-1.jpeg
 author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit über 15 Jahren spezialisiert auf visuelle Vertriebskommunikation für Maschinenbau & AeroSpace — mit 3D-Visualisierung & OpenUSD. Mitglied der AOUSD, Speaker zu AR & Spatial Sales."
 type: post
 template: post
+image_credit: "Kopf & KI"
 ---
 
 Früher haben wir im Park Enten gefüttert.   
