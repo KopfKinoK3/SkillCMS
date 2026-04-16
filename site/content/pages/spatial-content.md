@@ -9,6 +9,8 @@ author_bio: "Gerhard Schröder ist Gründer & GF der viSales GmbH, Bochum. Seit 
 published_at: "2025-11-16T16:12:22.000Z"
 type: page
 template: post
+meta_title: "Spatial Content: Denkrahmen für räumliche B2B-Kommunikation | viSales"
+meta_description: "Spatial Content ist kein Format – es ist das Strukturprinzip, das 3D-Modelle, 360°-Videos und räumliche Medien im Vertrieb entscheidbar macht. Hardware-agnostisch, OpenUSD-basiert."
 ---
 
 ## Auf einem Blick
