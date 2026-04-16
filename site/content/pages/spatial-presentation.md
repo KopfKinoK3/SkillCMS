@@ -14,10 +14,6 @@ type: page
 template: post
 ---
 
-- **Spatial Presentation macht 3D-Modelle im realen Raum sichtbar – Produkte erscheinen in Originalgröße direkt beim Kunden auf dem Tisch.**
-- **Keine App, keine VR-Brille: Spatial Presentations funktionieren auf jedem iPhone und iPad via AR Quick Look.**
-- **Ideal für erklärungsbedürftige Produkte im B2B-Vertrieb – von der Einzelkomponente bis zur Großanlage.**
-
 ## Auf einem Blick
 
 > Spatial Presentation macht 3D-Modelle im realen Raum sichtbar, sodass Inhalte **gemeinsam betrachtet, diskutiert und entschieden** werden können. Statt Präsentationen auf Bildschirmen entsteht ein räumlicher Bezug, der Zusammenhänge schneller verständlich macht – im Meeting, im Vertrieb oder auf der Messe.** Nicht eintauchen, sondern gemeinsam sehen und erklären.**
