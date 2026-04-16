@@ -376,6 +376,48 @@ def md_to_html(md_text):
         html
     )
 
+    # YouTube-Embeds: [Embed: URL](URL) → responsiver iframe
+    def youtube_video_id(url):
+        """Extrahiert YouTube-Video-ID aus allen gängigen URL-Formaten."""
+        import urllib.parse as up
+        # youtube-nocookie.com/embed/ID
+        m = re.search(r'youtube(?:-nocookie)?\.com/embed/([^?&"]+)', url)
+        if m: return m.group(1)
+        # youtube.com/watch?v=ID
+        m = re.search(r'[?&]v=([^&"]+)', url)
+        if m: return m.group(1)
+        # youtube.com/shorts/ID
+        m = re.search(r'/shorts/([^?&"]+)', url)
+        if m: return m.group(1)
+        # youtu.be/ID
+        m = re.search(r'youtu\.be/([^?&"]+)', url)
+        if m: return m.group(1)
+        return None
+
+    def replace_embed(m):
+        url = m.group(1)
+        vid = youtube_video_id(url)
+        if not vid:
+            return m.group(0)  # unbekanntes Format → unverändert lassen
+        embed_url = f"https://www.youtube-nocookie.com/embed/{vid}"
+        return (
+            '<figure class="kg-card kg-embed-card">'
+            '<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">'
+            f'<iframe src="{embed_url}" style="position:absolute;top:0;left:0;width:100%;height:100%;" '
+            'frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; '
+            'gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>'
+            '</div></figure>'
+        )
+
+    # Rendert als <p><a href="URL">Embed: URL</a></p> nach md_lib.markdown()
+    html = re.sub(
+        r'<p><a href="(https?://(?:www\.)?(?:youtube(?:-nocookie)?\.com|youtu\.be)/[^"]+)">'
+        r'Embed:.*?</a></p>',
+        replace_embed,
+        html,
+        flags=re.IGNORECASE
+    )
+
     return html
 
 
