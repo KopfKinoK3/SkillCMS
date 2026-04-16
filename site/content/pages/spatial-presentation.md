@@ -2,8 +2,8 @@
 title: "Spatial Presentation"
 slug: spatial-presentation
 status: published
-meta_title: "Spatial Presentation: 3D-Modelle im Raum präsentieren | viSales"
-meta_description: "Spatial Presentation: 3D-Modelle gemeinsam im Raum sehen und besprechen — vor Ort, auf der Bühne oder remote via Teams. Für B2B-Entscheidungen ohne Immersion."
+meta_title: "Spatial Presentation: 3D-Modelle gemeinsam zeigen – auf der Bühne, vor Ort und remote | viSales"
+meta_description: "Alle Gesprächspartner sehen dasselbe 3D-Modell gleichzeitig – live auf der Bühne, beim Kundenbesuch oder remote via Teams. Kein App-Download, kein Headset nötig. AR Quick Look auf iPhone & iPad."
 og_image: /assets/images/2025/12/Spatial_Presentation.png
 author: "Gerhard Schröder"
 author_slug: gerhard
