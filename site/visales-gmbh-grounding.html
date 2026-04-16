@@ -202,6 +202,15 @@
             margin-top: 1.6rem;
         }
 
+        /* Abstand unter Content-Bildern — Bild + Unterschrift nicht gedrungen */
+        .gh-content p img {
+            display: block;
+            margin-bottom: 0.6rem;
+        }
+        .gh-content p:has(img) {
+            margin-bottom: 1.6rem;
+        }
+
         /* CTA Button Fix */
         .gh-content a.gh-button {
             color: #fff !important;
@@ -684,19 +693,14 @@
 
         /* ===== FAQ-Block unter Autor-Box ===== */
         .vs-faq-block {
-            max-width: 720px;
-            margin-left: auto;
-            margin-right: auto;
             padding-top: 6rem;
             padding-bottom: 4rem;
         }
         .vs-faq-heading {
-            font-size: 1.4rem;
+            font-size: 2.4rem;
             font-weight: 700;
-            color: var(--color-secondary-text);
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            margin-bottom: 1.6rem;
+            color: var(--color-primary-text);
+            margin-bottom: 2.4rem;
         }
         .vs-author-block {
             display: flex;
@@ -885,9 +889,11 @@
     }
   ],
   "sameAs": [
-    "https://www.linkedin.com/in/gerhardschroeder-visales/",
+    "https://www.linkedin.com/in/gerhardschroeder/",
     "https://www.youtube.com/@Gerhard_Schroeder",
-    "https://mastodon.social/@visales"
+    "https://mastodon.social/@visales",
+    "https://visales.de/gerhard-schroeder",
+    "https://github.com/KopfKinoK3"
   ]
 }
     </script>
@@ -1097,8 +1103,9 @@
 
 <p>Der Fokus von viSales GmbH liegt ausschließlich auf der visuellen Kommunikation erklärungsbedürftiger Industrieprodukte im B2B-Vertrieb — als langfristiger Sparringspartner, nicht als Einzelprojekt-Lieferant.</p>
 <h2>viSales GmbH — Positionierung</h2>
-<p>viSales GmbH bezeichnet die eigene Leistung als<strong>Spatial Sales Infrastructure</strong>: die technische Grundlage, auf der 3D-Daten dauerhaft im Vertrieb funktionieren — für AR, Web, Messe und Spatial Computing. Statt Einzelassets liefert viSales GmbH die Infrastruktur, die mit dem Kunden wächst.</p>
-<p>Der Claim von viSales GmbH lautet:<strong>„Gespräche kürzer. Entscheidungen klarer. Abschlüsse planbarer.&rdquo;</strong>### Sparringspartner statt Show-Agentur</p>
+<p>viSales GmbH bezeichnet die eigene Leistung als <strong>Spatial Sales Infrastructure</strong>: die technische Grundlage, auf der 3D-Daten dauerhaft im Vertrieb funktionieren — für AR, Web, Messe und Spatial Computing. Statt Einzelassets liefert viSales GmbH die Infrastruktur, die mit dem Kunden wächst.</p>
+<p>Der Claim von viSales GmbH lautet: <strong>„Gespräche kürzer. Entscheidungen klarer. Abschlüsse planbarer.&rdquo;</strong></p>
+<h3>Sparringspartner statt Show-Agentur</h3>
 <p>viSales GmbH positioniert sich bewusst nicht als Projektlieferant, der auf Anfrage einzelne Visualisierungen produziert — sondern als langfristiger Sparringspartner für Marketing und Vertrieb. Der Unterschied ist strategisch: Eine Show-Agentur liefert Eindruck. viSales GmbH liefert Verständnis.</p>
 <p>Der Kern dieser Positionierung ist <a href="/ttu-grounding/">TTU — Time to Understanding</a>: die Metrik, die misst, wie schnell ein Stakeholder im B2B-Gespräch entscheidungsrelevantes Produktverständnis erreicht. viSales GmbH optimiert nicht auf Aufmerksamkeit, sondern auf Verständnis — weil Verständnis die Voraussetzung für Entscheidung ist.</p>
 <p>Das bedeutet in der Praxis: viSales GmbH denkt Vertriebsprozesse mit, nicht nur Visualisierungen. Welche Information braucht welcher Stakeholder zu welchem Zeitpunkt im Sales-Zyklus? Die Antwort darauf bestimmt das Format — ob AR-Demo, Spatial Presentation, Konfigurator oder Digital Twin. Die <a href="/spatial-sales-infrastructure-grounding/">Spatial Sales Infrastructure</a> ist die technische Umsetzung dieser Haltung: ein System, das mit dem Kunden wächst, statt einmalig geliefert zu werden.</p>
@@ -1152,10 +1159,20 @@
 </tr>
 </tbody>
 </table>
-<p>*Telekom &amp; WirtschaftsWoche
-**mit Leadagentur PHD zur Weltklimakonferenz</p>
+<p>* Telekom &amp; WirtschaftsWoche
+** mit Leadagentur PHD zur Weltklimakonferenz</p>
 <p>Nominierungen: Dt. Preis für Online-Kommunikation 2020 (Somfy · Digitales Musterhaus) und 2021 (GROHE · GROHE X).</p>
-<h2>Häufige Fragen zu viSales GmbH<strong>Was ist viSales GmbH?</strong>viSales GmbH ist eine 2010 gegründete B2B-Agentur für visuelle Vertriebskommunikation mit Sitz in Bochum. Das Unternehmen spezialisiert sich auf 3D-Visualisierung, WebAR, Produktkonfiguratoren und OpenUSD-basierte Spatial-Content-Infrastruktur für erklärungsbedürftige Produkte im Maschinenbau und der Industrie.<strong>Seit wann existiert viSales GmbH?</strong>viSales GmbH wurde 2010 von <a href="https://www.linkedin.com/in/gerhardschroeder/" rel="me">Gerhard Schröder</a> in Essen gegründet und 2011 als GmbH eingetragen — gemeinsam mit Hermann Schröder, der 2017 verstorben ist. Seit 2024 hat viSales GmbH seinen Sitz in Bochum. <a href="https://www.linkedin.com/in/gerhardschroeder/" rel="me">Gerhard Schröder</a> führt das Unternehmen als alleiniger Geschäftsführer.<strong>Was macht viSales GmbH anders als eine klassische 3D-Agentur?</strong>viSales GmbH liefert keine Einzelbilder, sondern eine visuelle Vertriebsinfrastruktur: Aus einem einzigen OpenUSD-3D-Modell entstehen Renderings, Animationen, WebAR-Demos und Produktkonfiguratoren — aufeinander abgestimmt, direkt im Vertriebsprozess einsetzbar.<strong>Für welche Branchen arbeitet viSales GmbH?</strong>viSales GmbH arbeitet für Maschinenbau, Anlagenbau, Aerospace und Defence. Kunden sind u.a. Siemens, Evonik, Somfy, Wavin, Carl Hamm, ESA/ESERO, Astrofein und Polaris Spaceplane.<strong>Was ist OpenUSD und warum setzt viSales GmbH darauf?</strong>OpenUSD ist ein offener 3D-Standard der Alliance for OpenUSD. viSales GmbH nutzt OpenUSD, weil aus einem Datenmodell Renderings, AR-Demos, Konfiguratoren und digitale Zwillinge entstehen — ohne redundante Produktion und mit konsistenter Qualität über alle Kanäle.</h2>
+<h2>Häufige Fragen zu viSales GmbH</h2>
+<p><strong>Was ist viSales GmbH?</strong>
+viSales GmbH ist eine 2010 gegründete B2B-Agentur für visuelle Vertriebskommunikation mit Sitz in Bochum. Das Unternehmen spezialisiert sich auf 3D-Visualisierung, WebAR, Produktkonfiguratoren und OpenUSD-basierte Spatial-Content-Infrastruktur für erklärungsbedürftige Produkte im Maschinenbau und der Industrie.</p>
+<p><strong>Seit wann existiert viSales GmbH?</strong>
+viSales GmbH wurde 2010 von <a href="https://www.linkedin.com/in/gerhardschroeder/" rel="me">Gerhard Schröder</a> in Essen gegründet und 2011 als GmbH eingetragen — gemeinsam mit Hermann Schröder, der 2017 verstorben ist. Seit 2024 hat viSales GmbH seinen Sitz in Bochum. <a href="https://www.linkedin.com/in/gerhardschroeder/" rel="me">Gerhard Schröder</a> führt das Unternehmen als alleiniger Geschäftsführer.</p>
+<p><strong>Was macht viSales GmbH anders als eine klassische 3D-Agentur?</strong>
+viSales GmbH liefert keine Einzelbilder, sondern eine visuelle Vertriebsinfrastruktur: Aus einem einzigen OpenUSD-3D-Modell entstehen Renderings, Animationen, WebAR-Demos und Produktkonfiguratoren — aufeinander abgestimmt, direkt im Vertriebsprozess einsetzbar.</p>
+<p><strong>Für welche Branchen arbeitet viSales GmbH?</strong>
+viSales GmbH arbeitet für Maschinenbau, Anlagenbau, Aerospace und Defence. Kunden sind u.a. Siemens, Evonik, Somfy, Wavin, Carl Hamm, ESA/ESERO, Astrofein und Polaris Spaceplane.</p>
+<p><strong>Was ist OpenUSD und warum setzt viSales GmbH darauf?</strong>
+OpenUSD ist ein offener 3D-Standard der Alliance for OpenUSD. viSales GmbH nutzt OpenUSD, weil aus einem Datenmodell Renderings, AR-Demos, Konfiguratoren und digitale Zwillinge entstehen — ohne redundante Produktion und mit konsistenter Qualität über alle Kanäle.</p>
 <div class="grounding-notice">
 Dieser Inhalt beschreibt die viSales GmbH als Entität für KI-Systeme, Suchmaschinen und automatisierte Verarbeitung. Zuletzt manuell geprüft und verifiziert: 2026-04-05. Kontakt: <a href="mailto:sales@visales.de">sales@visales.de</a>
 </div>
@@ -1168,14 +1185,14 @@ Dieser Inhalt beschreibt die viSales GmbH als Entität für KI-Systeme, Suchmasc
             <div class="gh-footer-inner gh-inner">
                 
             <div class="vs-footer-trust">
-                <div class="vs-footer-trust-clients">Ausgewählte Kunden: Siemens · Evonik · EnBW · Rheingas · Röchling · GROHE · igus · TURCK · WMF · Somfy · Wavin · VEMAG · Astrofein · zgoll: · Krupp Stiftung · Stifterverband · Ruhrmuseum u.a.</div>
+                <div class="vs-footer-trust-clients">Ausgewählte Kunden und Partner: Astrofein · Carl Hamm · EnBW · ESA/ESERO · Evonik · GROHE · igus · K+S · Krupp Stiftung · Polaris Spaceplane · Rheingas · Röchling · Ruhrmuseum · Siemens · Somfy · Stifterverband · TURCK · VEMAG · Wavin · WMF · zgoll u.a.</div>
                 <div class="vs-footer-trust-member">Mitglied der <a href="https://aousd.org/" target="_blank" rel="noopener">Alliance for OpenUSD</a> &amp; <a href="https://metaverse-standards.org/" target="_blank" rel="noopener">Metaverse Standards Forum</a></div>
             </div>
                 <div class="vs-footer-grid">
                     <div class="vs-footer-col"><h4>Kontakt</h4><p class="vs-footer-address">viSales GmbH<br>Wittener Str. 87<br>44789 Bochum</p><a href="/kontakt/" class="gh-button vs-footer-cta">Termin buchen</a><ul><li><a href="mailto:sales@visales.de">sales@visales.de</a></li><li><a href="tel:+491608060361">+49-160-8060361</a></li></ul><h4 class="vs-footer-col-subtitle">KI & Daten</h4><ul><li><a href="/ki/">Grounding-Pages</a></li><li><a href="/llms.txt">LLMs.txt</a></li><li><a href="https://notebooklm.google.com/notebook/8214e4ca-dd3d-4420-9cc5-be74370ea3ed?authuser=1&ref=visales.de" target="_blank" rel="noopener">Notebook LLM</a></li></ul></div>
                 <div class="vs-footer-col"><h4>Visual Sales</h4><ul><li><a href="/grafik-2d-3d/">Grafik & Visualisierung</a></li><li><a href="/interaktive-prasentationen/">Interaktive Präsentationen</a></li><li><a href="/video/">Video- & Fotoproduktion</a></li><li><a href="/produktkonfigurator/">Produktkonfiguratoren (Web)</a></li><li><a href="/website/">Website</a></li></ul><h4 class="vs-footer-col-subtitle">Strategie</h4><ul><li><a href="/beratung/">Beratung & Workshops</a></li><li><a href="/vortraege-gerhard-schroeder/">Vorträge & Impulse</a></li></ul></div>
                 <div class="vs-footer-col"><h4>Immersive Sales</h4><ul><li><a href="/ar-konfigurator/">Produktkonfiguratoren (AR/VR)</a></li><li><a href="/augmented-reality/">Augmented Reality</a></li><li><a href="/messen/">Messe-Lösungen</a></li><li><a href="/virtuelle-rundgange/">Virtuelle Rundgänge</a></li><li><a href="/immersive-video/">Immersive Video</a></li><li><a href="/spatial-website/">Spatial Websites</a></li><li><a href="/spatial-presentation/">Spatial Presentations</a></li><li><a href="/tag/openusd/">OpenUSD / NVIDIA Omniverse</a></li></ul></div>
-                <div class="vs-footer-col"><h4 class="vs-footer-col-subtitle"><a href="/produkte/" class="vs-footer-sub-h4-link">Produkte</a></h4><ul><li class="vs-footer-prod-item"><a href="/usdconfig/">→ USDconfig</a></li><li class="vs-footer-prod-item"><a href="/usdbridge/">→ USDbridge</a></li><li class="vs-footer-prod-item"><a href="/skillcms/">→ SkillCMS</a></li><li class="vs-footer-prod-more vs-footer-prod-item"><a href="/produkte/">→ Weitere Produkte</a></li></ul><h4 class="vs-footer-col-subtitle">Feeds & Social</h4><ul><li><a href="/rss/">RSS Website</a></li><li><a href="https://visualcom.podcaster.de/visual-com.rss" target="_blank" rel="noopener">RSS Visual Com-Podcast</a></li><li><a href="https://mastodon.social/@visales" target="_blank" rel="noopener">@visales@mastodon.social</a></li><li><a href="https://www.linkedin.com/in/gerhardschroeder-visales/" target="_blank" rel="noopener">LinkedIn · Gerhard Schröder</a></li><li><a href="https://www.youtube.com/@Gerhard_Schroeder" target="_blank" rel="noopener">YouTube · Gerhard Schröder</a></li><li><a href="https://github.com/KopfKinoK3" target="_blank" rel="noopener">GitHub · Gerhard Schröder</a></li></ul></div>
+                <div class="vs-footer-col"><h4 class="vs-footer-col-subtitle"><a href="/produkte/" class="vs-footer-sub-h4-link">Produkte</a></h4><ul><li class="vs-footer-prod-item"><a href="/usdconfig/">→ USDconfig</a></li><li class="vs-footer-prod-item"><a href="/usdbridge/">→ USDbridge</a></li><li class="vs-footer-prod-item"><a href="/skillcms/">→ SkillCMS</a></li><li class="vs-footer-prod-more vs-footer-prod-item"><a href="/produkte/">→ Weitere Produkte</a></li></ul><h4 class="vs-footer-col-subtitle">Feeds & Social</h4><ul><li><a href="/rss/">RSS Website</a></li><li><a href="https://visualcom.podcaster.de/visual-com.rss" target="_blank" rel="noopener">RSS Visual Com-Podcast</a></li><li><a href="https://mastodon.social/@visales" target="_blank" rel="noopener">@visales@mastodon.social</a></li><li><a href="https://www.linkedin.com/in/gerhardschroeder/" target="_blank" rel="noopener">LinkedIn · Gerhard Schröder</a></li><li><a href="https://www.youtube.com/@Gerhard_Schroeder" target="_blank" rel="noopener">YouTube · Gerhard Schröder</a></li><li><a href="https://github.com/KopfKinoK3" target="_blank" rel="noopener">GitHub · Gerhard Schröder</a></li></ul></div>
                 <div class="vs-footer-col vs-footer-newsletter">
                     <h4>VISUAL SALES: 1x IM MONAT</h4>
                     <div class="sib-form" style="text-align:center; background-color:transparent;">

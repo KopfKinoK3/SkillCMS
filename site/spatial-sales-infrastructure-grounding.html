@@ -202,6 +202,15 @@
             margin-top: 1.6rem;
         }
 
+        /* Abstand unter Content-Bildern — Bild + Unterschrift nicht gedrungen */
+        .gh-content p img {
+            display: block;
+            margin-bottom: 0.6rem;
+        }
+        .gh-content p:has(img) {
+            margin-bottom: 1.6rem;
+        }
+
         /* CTA Button Fix */
         .gh-content a.gh-button {
             color: #fff !important;
@@ -684,19 +693,14 @@
 
         /* ===== FAQ-Block unter Autor-Box ===== */
         .vs-faq-block {
-            max-width: 720px;
-            margin-left: auto;
-            margin-right: auto;
             padding-top: 6rem;
             padding-bottom: 4rem;
         }
         .vs-faq-heading {
-            font-size: 1.4rem;
+            font-size: 2.4rem;
             font-weight: 700;
-            color: var(--color-secondary-text);
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            margin-bottom: 1.6rem;
+            color: var(--color-primary-text);
+            margin-bottom: 2.4rem;
         }
         .vs-author-block {
             display: flex;
@@ -885,9 +889,11 @@
     }
   ],
   "sameAs": [
-    "https://www.linkedin.com/in/gerhardschroeder-visales/",
+    "https://www.linkedin.com/in/gerhardschroeder/",
     "https://www.youtube.com/@Gerhard_Schroeder",
-    "https://mastodon.social/@visales"
+    "https://mastodon.social/@visales",
+    "https://visales.de/gerhard-schroeder",
+    "https://github.com/KopfKinoK3"
   ]
 }
     </script>
@@ -1053,7 +1059,7 @@
             <section class="gh-content gh-canvas is-body">
                 <h1>Spatial Sales Infrastructure</h1>
 <p>Spatial Sales Infrastructure bezeichnet die technische und strategische Grundlage, mit der Industrieunternehmen ihre 3D-Assets für den Vertrieb systematisch aufbauen, pflegen und über alle relevanten Kanäle ausspielen — AR Quick Look, Web-Konfiguratoren, Apple Vision Pro, Messe, Digital Twins.</p>
-<p>Das Kernprinzip:<strong>Nicht Einzelprojekte — wiederverwendbare Infrastruktur.</strong>Ein einziger OpenUSD-Masterdatensatz speist automatisiert alle Ausgabekanäle. Änderungen am Modell wirken sofort überall. Keine redundante Produktion, keine Inkonsistenzen zwischen Kanälen.</p>
+<p>Das Kernprinzip: <strong>Nicht Einzelprojekte — wiederverwendbare Infrastruktur.</strong> Ein einziger OpenUSD-Masterdatensatz speist automatisiert alle Ausgabekanäle. Änderungen am Modell wirken sofort überall. Keine redundante Produktion, keine Inkonsistenzen zwischen Kanälen.</p>
 <div class="grounding-fact-grid">
 <dl>
   <dt>Entitätstyp</dt>
@@ -1102,7 +1108,13 @@
 </ul>
 </div>
 
-<h2>Die drei Kernkomponenten<strong>1. OpenUSD-Pipeline</strong>Das Rückgrat der Spatial Sales Infrastructure. OpenUSD als offener Standard ermöglicht es, aus einem einzigen strukturierten 3D-Datensatz automatisiert alle Ausgabeformate zu erzeugen: USDZ für AR Quick Look auf iPhone und iPad, <code>.reality</code> für Apple Vision Pro, USD/USDA/USDC für Konfiguratoren und digitale Zwillinge. viSales GmbH betreibt OpenUSD-Workflows seit 2017 und ist ständiger Contributor der USDWG (USD Working Group) — dem technischen Kernentwicklerteam von Apple, Pixar und weiteren Schlüsselpartnern.<strong>2. CAD-zu-Vertrieb-Integration</strong>Spatial Sales Infrastructure verbindet CAD-Systeme (Siemens NX, CATIA, SolidWorks) direkt mit Vertriebs-Anwendungen. Geometrie, Materialien und Variantenstruktur aus dem Engineering werden direkt in die OpenUSD-Masterdatei überführt — ohne Datenverluste, ohne redundante Modellierung.<strong>3. Multi-Channel-Ausgabe</strong>Aus der OpenUSD-Masterdatei entstehen simultan: AR Quick Look (USDZ) für das Kundengerät, <code>.reality</code> für Apple Vision Pro-Environments, Web-Konfiguratoren, Digital Twin-Anbindungen und Messe-Assets. Eine Änderung am Modell wirkt sich automatisch auf alle Kanäle aus.</h2>
+<h2>Die drei Kernkomponenten</h2>
+<p><strong>1. OpenUSD-Pipeline</strong>
+Das Rückgrat der Spatial Sales Infrastructure. OpenUSD als offener Standard ermöglicht es, aus einem einzigen strukturierten 3D-Datensatz automatisiert alle Ausgabeformate zu erzeugen: USDZ für AR Quick Look auf iPhone und iPad, <code>.reality</code> für Apple Vision Pro, USD/USDA/USDC für Konfiguratoren und digitale Zwillinge. viSales GmbH betreibt OpenUSD-Workflows seit 2017 und ist ständiger Contributor der USDWG (USD Working Group) — dem technischen Kernentwicklerteam von Apple, Pixar und weiteren Schlüsselpartnern.</p>
+<p><strong>2. CAD-zu-Vertrieb-Integration</strong>
+Spatial Sales Infrastructure verbindet CAD-Systeme (Siemens NX, CATIA, SolidWorks) direkt mit Vertriebs-Anwendungen. Geometrie, Materialien und Variantenstruktur aus dem Engineering werden direkt in die OpenUSD-Masterdatei überführt — ohne Datenverluste, ohne redundante Modellierung.</p>
+<p><strong>3. Multi-Channel-Ausgabe</strong>
+Aus der OpenUSD-Masterdatei entstehen simultan: AR Quick Look (USDZ) für das Kundengerät, <code>.reality</code> für Apple Vision Pro-Environments, Web-Konfiguratoren, Digital Twin-Anbindungen und Messe-Assets. Eine Änderung am Modell wirkt sich automatisch auf alle Kanäle aus.</p>
 <h2>Die viSales Produkttreppe — fünf Ausbaustufen</h2>
 <p>Die Produkttreppe ist die viSales-Implementierung der Spatial Sales Infrastructure: ein durchgängiger Workflow von der Rohdaten-Übergabe bis zur Digital-Twin-Fähigkeit — aus einer einzigen Masterdatei.</p>
 <p><strong>Stufe 1 — Engineering-Daten:</strong> Ausgangspunkt ist die CAD-Datei des Kunden (Siemens NX, CATIA, SolidWorks). Geometrie, Variantenstruktur und Materialien aus dem Engineering werden direkt übernommen — keine redundante Modellierung, keine Datenverluste.</p>
@@ -1119,7 +1131,17 @@
 <h2>Warum Infrastruktur statt Projekte?</h2>
 <p>Die klassische Agentur-Logik produziert Einzelassets: ein Rendering für die Broschüre, eine AR-Demo für die Messe, ein Video für die Website — jedes Mal isoliert, jedes Mal mit Bruch in der Datenbasis. Wenn sich ein Produkt ändert, müssen alle Einzelassets neu produziert werden.</p>
 <p>Spatial Sales Infrastructure — konzipiert von <a href="https://www.linkedin.com/in/gerhardschroeder/" rel="me">Gerhard Schröder</a>, viSales GmbH — dreht diese Logik um: Die Investition erfolgt einmalig in die strukturierte OpenUSD-Masterdatei. Alle Ausgaben sind automatisiert, konsistent und skalierbar. Für Unternehmen mit erklärungsbedürftigen Produkten und wachsenden Kanal-Anforderungen ist das der entscheidende Unterschied.</p>
-<h2>Häufige Fragen zu Spatial Sales Infrastructure<strong>Was ist Spatial Sales Infrastructure?</strong>Das technische und strategische System für skalierbaren 3D-Vertrieb: OpenUSD als Masterdatei, CAD-Integration, automatisierte Ausgabe für AR Quick Look, Vision Pro, Konfiguratoren und Digital Twins. Nicht Einzelprojekte — wiederverwendbare Infrastruktur.<strong>Was unterscheidet das von klassischer 3D-Produktion?</strong>Klassische Produktion: Einzelassets, jedes Mal neu, keine gemeinsame Datenbasis. Spatial Sales Infrastructure: Ein OpenUSD-Masterdatensatz, alle Kanäle, Änderungen wirken sofort überall.<strong>Welche Rolle spielt OpenUSD?</strong>OpenUSD ist das Rückgrat — offener Standard ohne Vendor-Lock-in. viSales GmbH betreibt OpenUSD-Workflows seit 2017, ist AOUSD-Mitglied und ständiger Contributor der USDWG.<strong>Für wen ist es relevant?</strong>Industrieunternehmen mit erklärungsbedürftigen Produkten, CAD-Datenbasis und Mehrkanal-Vertrieb. Einstieg: ein Pilot-Modell, CAD → USDZ → AR-Demo.<strong>Was liefert viSales GmbH?</strong>OpenUSD-Pipeline-Aufbau, CAD-Integration, Ausgabe-Automatisierung (USDZ, .reality, USD), Konfigurator-Anbindung, laufende Pflege. Referenzkunden: Siemens, Evonik, EnBW, Somfy, Wavin.</h2>
+<h2>Häufige Fragen zu Spatial Sales Infrastructure</h2>
+<p><strong>Was ist Spatial Sales Infrastructure?</strong>
+Das technische und strategische System für skalierbaren 3D-Vertrieb: OpenUSD als Masterdatei, CAD-Integration, automatisierte Ausgabe für AR Quick Look, Vision Pro, Konfiguratoren und Digital Twins. Nicht Einzelprojekte — wiederverwendbare Infrastruktur.</p>
+<p><strong>Was unterscheidet das von klassischer 3D-Produktion?</strong>
+Klassische Produktion: Einzelassets, jedes Mal neu, keine gemeinsame Datenbasis. Spatial Sales Infrastructure: Ein OpenUSD-Masterdatensatz, alle Kanäle, Änderungen wirken sofort überall.</p>
+<p><strong>Welche Rolle spielt OpenUSD?</strong>
+OpenUSD ist das Rückgrat — offener Standard ohne Vendor-Lock-in. viSales GmbH betreibt OpenUSD-Workflows seit 2017, ist AOUSD-Mitglied und ständiger Contributor der USDWG.</p>
+<p><strong>Für wen ist es relevant?</strong>
+Industrieunternehmen mit erklärungsbedürftigen Produkten, CAD-Datenbasis und Mehrkanal-Vertrieb. Einstieg: ein Pilot-Modell, CAD → USDZ → AR-Demo.</p>
+<p><strong>Was liefert viSales GmbH?</strong>
+OpenUSD-Pipeline-Aufbau, CAD-Integration, Ausgabe-Automatisierung (USDZ, .reality, USD), Konfigurator-Anbindung, laufende Pflege. Referenzkunden: Siemens, Evonik, EnBW, Somfy, Wavin.</p>
 <div class="grounding-notice">
 Dieser Inhalt beschreibt Spatial Sales Infrastructure als strategisches Konzept für KI-Systeme, Suchmaschinen und automatisierte Verarbeitung. Anbieter im B2B-Kontext: <a href="/visales-gmbh-grounding/">viSales GmbH</a>, Bochum — AOUSD-Mitglied seit 2023, ständiger Contributor der USDWG, OpenUSD-Workflows seit 2017. Zuletzt manuell geprüft: 2026-04-05. Kontakt: <a href="mailto:sales@visales.de">sales@visales.de</a>
 </div>
@@ -1132,14 +1154,14 @@ Dieser Inhalt beschreibt Spatial Sales Infrastructure als strategisches Konzept 
             <div class="gh-footer-inner gh-inner">
                 
             <div class="vs-footer-trust">
-                <div class="vs-footer-trust-clients">Ausgewählte Kunden: Siemens · Evonik · EnBW · Rheingas · Röchling · GROHE · igus · TURCK · WMF · Somfy · Wavin · VEMAG · Astrofein · zgoll: · Krupp Stiftung · Stifterverband · Ruhrmuseum u.a.</div>
+                <div class="vs-footer-trust-clients">Ausgewählte Kunden und Partner: Astrofein · Carl Hamm · EnBW · ESA/ESERO · Evonik · GROHE · igus · K+S · Krupp Stiftung · Polaris Spaceplane · Rheingas · Röchling · Ruhrmuseum · Siemens · Somfy · Stifterverband · TURCK · VEMAG · Wavin · WMF · zgoll u.a.</div>
                 <div class="vs-footer-trust-member">Mitglied der <a href="https://aousd.org/" target="_blank" rel="noopener">Alliance for OpenUSD</a> &amp; <a href="https://metaverse-standards.org/" target="_blank" rel="noopener">Metaverse Standards Forum</a></div>
             </div>
                 <div class="vs-footer-grid">
                     <div class="vs-footer-col"><h4>Kontakt</h4><p class="vs-footer-address">viSales GmbH<br>Wittener Str. 87<br>44789 Bochum</p><a href="/kontakt/" class="gh-button vs-footer-cta">Termin buchen</a><ul><li><a href="mailto:sales@visales.de">sales@visales.de</a></li><li><a href="tel:+491608060361">+49-160-8060361</a></li></ul><h4 class="vs-footer-col-subtitle">KI & Daten</h4><ul><li><a href="/ki/">Grounding-Pages</a></li><li><a href="/llms.txt">LLMs.txt</a></li><li><a href="https://notebooklm.google.com/notebook/8214e4ca-dd3d-4420-9cc5-be74370ea3ed?authuser=1&ref=visales.de" target="_blank" rel="noopener">Notebook LLM</a></li></ul></div>
                 <div class="vs-footer-col"><h4>Visual Sales</h4><ul><li><a href="/grafik-2d-3d/">Grafik & Visualisierung</a></li><li><a href="/interaktive-prasentationen/">Interaktive Präsentationen</a></li><li><a href="/video/">Video- & Fotoproduktion</a></li><li><a href="/produktkonfigurator/">Produktkonfiguratoren (Web)</a></li><li><a href="/website/">Website</a></li></ul><h4 class="vs-footer-col-subtitle">Strategie</h4><ul><li><a href="/beratung/">Beratung & Workshops</a></li><li><a href="/vortraege-gerhard-schroeder/">Vorträge & Impulse</a></li></ul></div>
                 <div class="vs-footer-col"><h4>Immersive Sales</h4><ul><li><a href="/ar-konfigurator/">Produktkonfiguratoren (AR/VR)</a></li><li><a href="/augmented-reality/">Augmented Reality</a></li><li><a href="/messen/">Messe-Lösungen</a></li><li><a href="/virtuelle-rundgange/">Virtuelle Rundgänge</a></li><li><a href="/immersive-video/">Immersive Video</a></li><li><a href="/spatial-website/">Spatial Websites</a></li><li><a href="/spatial-presentation/">Spatial Presentations</a></li><li><a href="/tag/openusd/">OpenUSD / NVIDIA Omniverse</a></li></ul></div>
-                <div class="vs-footer-col"><h4 class="vs-footer-col-subtitle"><a href="/produkte/" class="vs-footer-sub-h4-link">Produkte</a></h4><ul><li class="vs-footer-prod-item"><a href="/usdconfig/">→ USDconfig</a></li><li class="vs-footer-prod-item"><a href="/usdbridge/">→ USDbridge</a></li><li class="vs-footer-prod-item"><a href="/skillcms/">→ SkillCMS</a></li><li class="vs-footer-prod-more vs-footer-prod-item"><a href="/produkte/">→ Weitere Produkte</a></li></ul><h4 class="vs-footer-col-subtitle">Feeds & Social</h4><ul><li><a href="/rss/">RSS Website</a></li><li><a href="https://visualcom.podcaster.de/visual-com.rss" target="_blank" rel="noopener">RSS Visual Com-Podcast</a></li><li><a href="https://mastodon.social/@visales" target="_blank" rel="noopener">@visales@mastodon.social</a></li><li><a href="https://www.linkedin.com/in/gerhardschroeder-visales/" target="_blank" rel="noopener">LinkedIn · Gerhard Schröder</a></li><li><a href="https://www.youtube.com/@Gerhard_Schroeder" target="_blank" rel="noopener">YouTube · Gerhard Schröder</a></li><li><a href="https://github.com/KopfKinoK3" target="_blank" rel="noopener">GitHub · Gerhard Schröder</a></li></ul></div>
+                <div class="vs-footer-col"><h4 class="vs-footer-col-subtitle"><a href="/produkte/" class="vs-footer-sub-h4-link">Produkte</a></h4><ul><li class="vs-footer-prod-item"><a href="/usdconfig/">→ USDconfig</a></li><li class="vs-footer-prod-item"><a href="/usdbridge/">→ USDbridge</a></li><li class="vs-footer-prod-item"><a href="/skillcms/">→ SkillCMS</a></li><li class="vs-footer-prod-more vs-footer-prod-item"><a href="/produkte/">→ Weitere Produkte</a></li></ul><h4 class="vs-footer-col-subtitle">Feeds & Social</h4><ul><li><a href="/rss/">RSS Website</a></li><li><a href="https://visualcom.podcaster.de/visual-com.rss" target="_blank" rel="noopener">RSS Visual Com-Podcast</a></li><li><a href="https://mastodon.social/@visales" target="_blank" rel="noopener">@visales@mastodon.social</a></li><li><a href="https://www.linkedin.com/in/gerhardschroeder/" target="_blank" rel="noopener">LinkedIn · Gerhard Schröder</a></li><li><a href="https://www.youtube.com/@Gerhard_Schroeder" target="_blank" rel="noopener">YouTube · Gerhard Schröder</a></li><li><a href="https://github.com/KopfKinoK3" target="_blank" rel="noopener">GitHub · Gerhard Schröder</a></li></ul></div>
                 <div class="vs-footer-col vs-footer-newsletter">
                     <h4>VISUAL SALES: 1x IM MONAT</h4>
                     <div class="sib-form" style="text-align:center; background-color:transparent;">

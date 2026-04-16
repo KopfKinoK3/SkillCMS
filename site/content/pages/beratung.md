@@ -19,7 +19,7 @@ template: post
 
 ## Auf einen Blick
 
-> Beratung bei viSales richtet sich an Unternehmen, die **räumliche Präsentationsformate fundiert einordnen und souverän einsetzen** wollen. Unsere Beratung verbindet drei gewachsene Kompetenzfelder: **Spatial Presentation**, **OpenUSD-basierte 3D-Datenlogik** und **Videomarketing für erklärungsbedürftige B2B-Produkte**.   
+> Beratung bei viSales richtet sich an Unternehmen, die **räumliche Präsentationsformate fundiert einordnen und souverän einsetzen** wollen. Unsere Beratung verbindet drei gewachsene Kompetenzfelder: [**Spatial Presentation**](https://visales.de/spatial-presentation/), **OpenUSD-basierte 3D-Datenlogik** und **Videomarketing für erklärungsbedürftige B2B-Produkte**.   
 >   
 > In Schulungen, Demos und strukturierten Gesprächen übersetzen wir Technologie in Vertriebs- und Entscheidungskontexte.** Ziel ist Klarheit und Entscheidungsfähigkeit** – unabhängig davon, ob daraus ein Umsetzungsprojekt entsteht. 
 

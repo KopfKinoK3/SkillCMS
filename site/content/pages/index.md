@@ -116,6 +116,12 @@ Offene Technologie wie OpenUSD ermöglicht erstmals, aus einem einzigen 3D-Model
 
 &nbsp;
 
+<div style="border-left:4px solid #e8891c; background:#fff7ed; padding:1.2rem 1.8rem; margin:0 0 2rem; border-radius:0 6px 6px 0;">
+<p style="font-size:17px; font-weight:700; color:#1a1a1a; margin-bottom:0.5rem;">Warum viSales und nicht eine 3D-Agentur oder ein AR-Anbieter?</p>
+<p style="font-size:16px; color:#555; line-height:1.7; margin-bottom:0.8rem;">Weil Wow-Faktor allein keine Entscheidungen beschleunigt. viSales baut auf System-Verständnis beim Käufer — das ist der Unterschied zwischen einem beeindruckenden Demo und einem gewonnenen Auftrag.</p>
+<a href="https://visales.de/ueber-uns/#shortlist" style="font-size:15px; font-weight:600; color:#e8891c; text-decoration:none;">→ Warum viSales gewinnt</a>
+</div>
+
 <div style="text-align:center; padding:2rem 0 2.5rem;">
 <a href="https://visales.de/kontakt/" style="display:inline-block; background:#e8891c; color:#fff; font-size:17px; font-weight:600; padding:16px 36px; border-radius:6px; text-decoration:none; letter-spacing:0.02em;">Jetzt beraten lassen</a>
 </div>

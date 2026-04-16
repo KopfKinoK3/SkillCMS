@@ -30,7 +30,7 @@ template: post
 
 Spatial Presentation beschreibt eine Form des Präsentierens, bei der 3D-Modelle **gemeinsam im realen Raum betrachtet **werden, nicht auf einem Bildschirm und nicht als isoliertes Einzelerlebnis. Das Modell wird zum gemeinsamen Bezugspunkt im Gespräch: sichtbar für alle, aus derselben Situation heraus.  
   
-Es geht dabei nicht um Effekte oder Immersion, sondern um **Verstehen, Austausch und Entscheidungsfindung**. Ein Prinzip, das aus der Architektur bekannt ist und sich mit Spatial Computing erstmals digital, skalierbar und auch remote weiterführen lässt.
+Es geht dabei nicht um Effekte oder Immersion, sondern um **Verstehen, Austausch und Entscheidungsfindung** – das Kernprinzip jeder wirksamen **räumlichen B2B-Präsentation**. Ein Prinzip, das aus der Architektur bekannt ist und sich mit Spatial Computing erstmals digital, skalierbar und auch remote weiterführen lässt.
 
 <details>
 <summary><strong>Woher der Begriff Spatial Presentation kommt</strong></summary>
@@ -311,27 +311,34 @@ Wenn du prüfen möchtest, ob ein überschaubarer Einstieg sinnvoll ist, spreche
 <details>
 <summary><strong>Was ist eine Spatial Presentation?</strong></summary>
 
-Eine Spatial Presentation ist eine AR-basierte Präsentation, bei der 3D-Modelle im realen Raum erscheinen. Das Produkt wird über das Kamera-Bild des iPhones oder iPads in die Umgebung eingeblendet – in Originalgröße, drehbar und interaktiv.
+Eine Spatial Presentation ist eine AR-basierte Präsentationsform, bei der alle Gesprächspartner gleichzeitig dasselbe 3D-Modell im Raum sehen – ohne Immersion, ohne Headset-Pflicht. Das Modell erscheint via AR Quick Look auf iPhone oder iPad und wird gemeinsam betrachtet und besprochen. Augenkontakt und Gespräch bleiben erhalten.
 
 </details>
 
 <details>
-<summary><strong>Wie unterscheidet sich Spatial Presentation von einer normalen Produktpräsentation?</strong></summary>
+<summary><strong>Brauche ich eine App oder ein spezielles Headset?</strong></summary>
 
-Bei einer klassischen Präsentation sieht der Kunde Bilder. Bei einer Spatial Presentation steht das Produkt virtuell im Raum – greifbar, skalierbar, in echter Umgebung. Das schafft ein Kauferlebnis, das Bilder nicht können.
-
-</details>
-
-<details>
-<summary><strong>Welche Geräte werden benötigt?</strong></summary>
-
-Für Spatial Presentations reicht ein aktuelles iPhone oder iPad – keine spezielle Hardware, keine VR-Brille, keine App. Die Präsentation läuft direkt über AR Quick Look im Browser.
+Nein. Spatial Presentation läuft direkt über AR Quick Look im Safari-Browser auf iPhone oder iPad – kein App-Download, kein Apple Vision Pro als Pflicht. Ein aktuelles iPhone genügt als Einstieg. Für Remote-Meetings über Microsoft Teams wird das 3D-Modell im GLB-Format eingebunden.
 
 </details>
 
 <details>
-<summary><strong>Für welche Branchen ist Spatial Presentation geeignet?</strong></summary>
+<summary><strong>Wie funktioniert Spatial Presentation im Remote-Meeting?</strong></summary>
 
-Spatial Presentations eignen sich für Maschinenbau, Möbel, Medizintechnik, Architektur und Automotive – besonders wirksam, wenn Produkte zu groß oder zu komplex für klassische Musterstücke sind.
+Über Microsoft Teams Immersive Events können 3D-Modelle in gemeinsame virtuelle Besprechungsräume eingebunden werden. Die meisten Teilnehmenden sehen das Modell klassisch am PC – einzelne können aktiv erkunden. So entsteht ein fließender Übergang zwischen Zuschauen und Erkunden, ohne die Konferenz zu unterbrechen.
+
+</details>
+
+<details>
+<summary><strong>Für welche Situationen eignet sich Spatial Presentation?</strong></summary>
+
+Spatial Presentation ist sinnvoll überall dort, wo komplexe Produkte gemeinsam besprochen und Entscheidungen vorbereitet werden: Bühnenpräsentation vor Publikum, Variantenvergleich beim Kundenbesuch, Remote-Meeting via Teams oder Messe. Besonders relevant für Maschinenbau, Anlagenbau, Medizintechnik und Architektur.
+
+</details>
+
+<details>
+<summary><strong>Welche Formate und Geräte werden unterstützt?</strong></summary>
+
+Für AR Quick Look auf iPhone und iPad wird USDZ verwendet (OpenUSD-Format). Für Microsoft Teams kommt GLB zum Einsatz. Apple Vision Pro ist möglich, aber kein Pflicht-Einstieg. Beide Formate lassen sich aus denselben CAD- oder 3D-Quelldaten erzeugen.
 
 </details>

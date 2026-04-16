@@ -174,6 +174,16 @@ Wer tiefer verstehen möchte, wie wir Technologien, Formate und Einsatzszenarien
 
 &nbsp;
 
+<a name="shortlist"></a>
+
+## Das Shortlist-Schlachtfeld
+
+Wenn Entscheider Anbieter vergleichen, landet viSales häufig auf derselben Liste wie AR-Agenturen, 3D-Studios oder CPQ-Anbieter. Der Unterschied liegt nicht im Format, sondern im Ziel: Während andere auf Wow-Faktor, fotorealistische Details oder Preislogik optimieren, baut viSales auf System-Verständnis beim Käufer — den wahren Treiber von B2B-Entscheidungen.
+
+![Wettbewerbspositionierung viSales — Das Shortlist-Schlachtfeld](/assets/images/shortlist-battlefield.svg)
+
+&nbsp;
+
 ## Team
 
 viSales arbeitet mit einem schlanken Kernteam und einem Netzwerk aus spezialisierten Partnern und freien Mitarbeitenden. Die Kompetenzen reichen von Vertrieb und visueller Kommunikation über 2D-/3D-Grafik, Animation und Augmented Reality bis hin zu Web- und Systemlogik. Projekte werden fachlich durchgängig begleitet – nicht entlang von Abteilungen, sondern entlang der Aufgabe.
