@@ -139,7 +139,7 @@ Für viele Produkte lassen sich 3D-Modelle auch aus Fotomaterial ableiten, ggf. 
 Reale Objekte, Prototypen oder bestehende Anlagen können direkt gescannt werden. So entstehen realitätsnahe Modelle, die sich für räumliche Präsentationen, Vergleiche oder Schulungen nutzen lassen – auch dann, wenn keine digitalen Konstruktionsdaten verfügbar sind.
 
 **Welche Lösung ist die richtige?**  
-Das hängt vom Einsatzzweck ab: viSales berät, welcher Weg sinnvoll ist – und bereitet die Daten so auf, dass sie für [Spatial Presentation](https://visales.de/spatial-presentation/), AR, Meetings oder Messen langfristig nutzbar bleiben. Wie OpenUSD dabei als gemeinsames Datenformat funktioniert:
+Das hängt vom Einsatzzweck ab: viSales berät, welcher Weg sinnvoll ist – und bereitet die Daten so auf, dass sie für [Spatial Presentation](https://visales.de/spatial-presentation/), AR, Meetings oder Messen langfristig nutzbar bleiben. Wie [OpenUSD](https://visales.de/openusd/) dabei als gemeinsames Datenformat funktioniert:
 
 → [OpenUSD im Maschinenbau: CAD-Daten mehrfach nutzen](https://visales.de/openusd-maschinenbau-cad-daten/)
 

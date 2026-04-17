@@ -73,4 +73,4 @@ Eine Übersicht über Konferenzbeiträge, Impulse und Buchungsmöglichkeiten fin
 
 &nbsp;
 
-**Ist Gerhard Schröder für Vorträge buchbar?** Ja. Themen: AR im B2B-Vertrieb, OpenUSD in der Praxis, Spatial Sales Infrastructure. Anfragen über [das Kontaktformular](https://visales.de/kontakt/).
+**Ist Gerhard Schröder für Vorträge buchbar?** Ja. Themen: AR im B2B-Vertrieb, OpenUSD in der Praxis, [Spatial Sales Infrastructure](https://visales.de/spatial-sales-infrastructure/). Anfragen über [das Kontaktformular](https://visales.de/kontakt/).

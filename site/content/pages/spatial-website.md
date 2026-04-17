@@ -169,7 +169,7 @@ Der Model-Player ist kein Ersatz für klassische Inhalte: Er ist eine **Erweite
 Für Marketing und Vertrieb bedeutet das: Ein Produkt, eine Logik, eine Datenbasis – nutzbar in Website, Präsentation, Messe und Kundengespräch.
 
 →** ** [Fallbeispiel RENZ: Augmented-Reality-Produktkonfigurator](https://visales.de/renz-augmented-reality-produktkonfigurator-fallbeispiel/)  
-→** ** [USDconfig-Seite](https://visales.de/usdconfig/)
+→** ** [USDconfig-Seite](https://visales.de/usdconfig/) · [Live-Demo](https://visales.de/usdconfig-demo/)
 
 Wie räumliche Inhalte konkret im Verkaufsgespräch eingesetzt werden — vor Ort, auf der Messe oder remote — beschreibt die Seite [Spatial Presentation](https://visales.de/spatial-presentation/).
 

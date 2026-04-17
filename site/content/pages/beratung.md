@@ -19,7 +19,7 @@ template: post
 
 ## Auf einen Blick
 
-> Beratung bei viSales richtet sich an Unternehmen, die **räumliche Präsentationsformate fundiert einordnen und souverän einsetzen** wollen. Unsere Beratung verbindet drei gewachsene Kompetenzfelder: [**Spatial Presentation**](https://visales.de/spatial-presentation/), **OpenUSD-basierte 3D-Datenlogik** und **Videomarketing für erklärungsbedürftige B2B-Produkte**.   
+> Beratung bei viSales richtet sich an Unternehmen, die **räumliche Präsentationsformate fundiert einordnen und souverän einsetzen** wollen. Unsere Beratung verbindet drei gewachsene Kompetenzfelder: [**Spatial Presentation**](https://visales.de/spatial-presentation/), [**OpenUSD**](https://visales.de/openusd/)**-basierte 3D-Datenlogik** und **Videomarketing für erklärungsbedürftige B2B-Produkte**.   
 >   
 > In Schulungen, Demos und strukturierten Gesprächen übersetzen wir Technologie in Vertriebs- und Entscheidungskontexte.** Ziel ist Klarheit und Entscheidungsfähigkeit** – unabhängig davon, ob daraus ein Umsetzungsprojekt entsteht. 
 
@@ -50,7 +50,7 @@ Beratung bei viSales ist strukturierte Arbeit an einer konkreten Fragestellung. 
 
 ## OpenUSD & USDZ: Wenn Technik, Marketing und Vertrieb dieselben Daten brauchen
 
-In vielen Unternehmen existieren hochwertige 3D- und CAD-Daten – doch sie bleiben in ihrer jeweiligen Abteilung gefangen. Engineering optimiert für Konstruktion, Marketing für Visualisierung, Vertrieb für Gespräche. Was fehlt, ist eine gemeinsame Datenlogik, die diese Perspektiven verbindet. **OpenUSD und USDZ schaffen genau diese Klammer**, wenn sie nicht als Dateiformat, sondern als System verstanden werden. Unsere Beratung setzt dort an, wo technische Machbarkeit, organisatorische Realität und vertriebliche Nutzung zusammengeführt werden müssen – bevor aus Daten einzelne Insellösungen entstehen.
+In vielen Unternehmen existieren hochwertige 3D- und CAD-Daten – doch sie bleiben in ihrer jeweiligen Abteilung gefangen. Engineering optimiert für Konstruktion, Marketing für Visualisierung, Vertrieb für Gespräche. Was fehlt, ist eine gemeinsame Datenlogik, die diese Perspektiven verbindet. [**OpenUSD**](https://visales.de/openusd/) **und USDZ schaffen genau diese Klammer**, wenn sie nicht als Dateiformat, sondern als System verstanden werden. Unsere Beratung setzt dort an, wo technische Machbarkeit, organisatorische Realität und vertriebliche Nutzung zusammengeführt werden müssen – bevor aus Daten einzelne Insellösungen entstehen.
 
 <details>
 <summary><strong>Wie unsere OpenUSD- / USDZ-Beratung aufgebaut ist</strong></summary>
