@@ -4,8 +4,8 @@ slug: was-ist-spatial-video-vr180-3d-foto-volumetrisches-video
 status: published
 primary_tag: visual-sales
 tags: [visual-sales, glossar, spatial-computing, 3d-visualisierung]
-meta_title: "Spatial Video, VR180 & 360° Video: Formate im Vergleich [2026]"
-meta_description: "Spatial Video, VR180, 360°, 3D-Foto oder volumetrisches Video — was ist der Unterschied? Alle immersiven Videoformate für B2B und Content kurz erklärt, mit Vergleichstabelle."
+meta_title: "Spatial Video, VR180, 360°, volumetrisch — was ist was? Alle Formate 2026"
+meta_description: "Die Formate sehen ähnlich aus, funktionieren aber grundverschieden. Spatial Video, VR180, 3D-Foto und 360°-Video im direkten Vergleich — damit du sofort weißt, welches Format zu deinem Einsatz passt."
 feature_image: /assets/images/2025/11/Spatial_Video.jpeg
 author: "Gerhard Schröder"
 author_slug: gerhard
