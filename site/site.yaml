@@ -128,7 +128,7 @@ navigation:
 
 nav_cta:
   label: "Kontakt"
-  url: "/kontakt/"
+  url: "/kontakt.html"
 
 social:
   linkedin: "https://www.linkedin.com/in/gerhardschroeder/"
@@ -158,7 +158,7 @@ footer:
       ki_title: "KI & Daten"
       ki_items:
         - label: "Grounding-Pages"
-          url: "/ki/"
+          url: "/ki.html"
         - label: "LLMs.txt"
           url: "/llms.txt"
         - label: "Notebook LLM"
@@ -168,52 +168,52 @@ footer:
     - title: "Visual Sales"
       links:
         - label: "Grafik & Visualisierung"
-          url: "/grafik-2d-3d/"
+          url: "/grafik-2d-3d.html"
         - label: "Interaktive Präsentationen"
-          url: "/interaktive-prasentationen/"
+          url: "/interaktive-prasentationen.html"
         - label: "Video- & Fotoproduktion"
-          url: "/video/"
+          url: "/video.html"
         - label: "Produktkonfiguratoren (Web)"
-          url: "/produktkonfigurator/"
+          url: "/produktkonfigurator.html"
         - label: "Website"
-          url: "/website/"
+          url: "/website.html"
       strategie_title: "Strategie"
       strategie_items:
         - label: "Beratung & Workshops"
-          url: "/beratung/"
+          url: "/beratung.html"
         - label: "Vorträge & Impulse"
-          url: "/vortraege-gerhard-schroeder/"
+          url: "/vortraege-gerhard-schroeder.html"
 
     - title: "Immersive Sales"
       links:
         - label: "Produktkonfiguratoren (AR/VR)"
-          url: "/ar-konfigurator/"
+          url: "/ar-konfigurator.html"
         - label: "Augmented Reality"
-          url: "/augmented-reality/"
+          url: "/augmented-reality.html"
         - label: "Messe-Lösungen"
-          url: "/messen/"
+          url: "/messen.html"
         - label: "Virtuelle Rundgänge"
-          url: "/virtuelle-rundgange/"
+          url: "/virtuelle-rundgange.html"
         - label: "Immersive Video"
-          url: "/immersive-video/"
+          url: "/immersive-video.html"
         - label: "Spatial Websites"
-          url: "/spatial-website/"
+          url: "/spatial-website.html"
         - label: "Spatial Presentations"
-          url: "/spatial-presentation/"
+          url: "/spatial-presentation.html"
         - label: "OpenUSD / NVIDIA Omniverse"
-          url: "/tag/openusd/"
+          url: "/tag/openusd.html"
 
     - title: ""
       links: []
       products_title: "Produkte"
-      products_url: "/produkte/"
+      products_url: "/produkte.html"
       products:
         - label: "USDconfig"
-          url: "/usdconfig/"
+          url: "/usdconfig.html"
         - label: "USDbridge"
-          url: "/usdbridge/"
+          url: "/usdbridge.html"
         - label: "SkillCMS"
-          url: "/skillcms/"
+          url: "/skillcms.html"
       feeds_title: "Feeds & Social"
       feeds_items:
         - label: "RSS Website"
@@ -237,17 +237,17 @@ footer:
     - title: "VISUAL SALES: 1x IM MONAT"
       type: "newsletter"
       teaser: ""
-      signup_url: "/newsletter/"
+      signup_url: "/newsletter.html"
       signup_label: "Anmeldung →"
-      archive_url: "/newsletter/"
+      archive_url: "/newsletter.html"
       archive_label: "Alle Ausgaben & Podcasts"
       brevo_embed_file: "_brevo-form.html"
 
 legal:
   - label: "Impressum"
-    url: "/impressum/"
+    url: "/impressum.html"
   - label: "Datenschutz"
-    url: "/datenschutz/"
+    url: "/datenschutz.html"
 
 build:
   include_drafts: false

@@ -434,7 +434,7 @@ def build_nav_html(active_slug=""):
     for item in nav_items:
         label = item.get("label", "")
         slug  = item.get("slug", "")
-        url   = item.get("url", f"/{slug}/")
+        url   = item.get("url", f"/{slug}.html")
 
         css_class = f"nav-{slug}"
         if slug == active_slug:
